@@ -10,26 +10,54 @@ fetch('release_artifacts/releases.yaml')
     const urlParams = new URLSearchParams(window.location.search);
     const releaseName = urlParams.get('release');
 
-    for (const release of parsedData.releases) {
-      if (release.release_name === releaseName) {
-        for (const image of release.images) {
+    for (const releaseData of parsedData.releases) {
+      if (releaseData.release_name === releaseName) {
+        for (const image of releaseData.images) {
           const releaseRow = document.createElement('tr');
 
-          const releaseNameCell = document.createElement('td');
-          releaseNameCell.textContent = image.name;
-          releaseRow.appendChild(releaseNameCell);
+          const imageNameCell = document.createElement('td');
+          imageNameCell.textContent = image.name;
+          releaseRow.appendChild(imageNameCell);
 
-          const quayTagShaCell = document.createElement('td');
-          const quayTag = image.tags.quay.tag;
-          const quaySha = image.tags.quay.sha;
-          quayTagShaCell.textContent = `Tag: ${quayTag}, SHA: ${quaySha}`;
-          releaseRow.appendChild(quayTagShaCell);
+          const commitCell = document.createElement('td');
+          commitCell.textContent = image.commit;
+          releaseRow.appendChild(commitCell);
 
-          const dockerTagShaCell = document.createElement('td');
-          const dockerTag = image.tags.docker.tag;
-          const dockerSha = image.tags.docker.sha;
-          dockerTagShaCell.textContent = `Tag: ${dockerTag}, SHA: ${dockerSha}`;
-          releaseRow.appendChild(dockerTagShaCell);
+          const quayTagsCell = document.createElement('td');
+          const quayTags = image.quay.map(tag => tag.tag).join('\n ');
+          quayTagsCell.textContent = quayTags;
+          releaseRow.appendChild(quayTagsCell);
+
+          const quaySHACell = document.createElement('td');
+          const quaySHAs = image.quay.map(tag => tag.sha).join('\n ');
+          quaySHACell.textContent = quaySHAs;
+          releaseRow.appendChild(quaySHACell);
+
+          const dockerTagsCell = document.createElement('td');
+          const dockerTags = image.docker.map(tag => tag.tag).join('\n ');
+          dockerTagsCell.textContent = dockerTags;
+          releaseRow.appendChild(dockerTagsCell);
+
+          const dockerSHACell = document.createElement('td');
+          const dockerSHAs = image.docker.map(tag => tag.sha).join('\n ');
+          dockerSHACell.textContent = dockerSHAs;
+          releaseRow.appendChild(dockerSHACell);
+ 
+          /*const quayTagCell = document.createElement('td');
+          quayTagCell.textContent = `Tag: ${image.tags.quay.tag}`;
+          releaseRow.appendChild(quayTagCell);
+
+          const quayShaCell = document.createElement('td');
+          quayShaCell.textContent = `SHA: ${image.tags.quay.sha}`;
+          releaseRow.appendChild(quayShaCell);
+
+          const dockerTagCell = document.createElement('td');
+          dockerTagCell.textContent = `Tag: ${image.tags.docker.tag}`;
+          releaseRow.appendChild(dockerTagCell);
+
+          const dockerShaCell = document.createElement('td');
+          dockerShaCell.textContent = `SHA: ${image.tags.docker.sha}`;
+          releaseRow.appendChild(dockerShaCell);*/
 
           const sbomCell = document.createElement('td');
           sbomCell.textContent = image.sbom;
@@ -45,6 +73,7 @@ fetch('release_artifacts/releases.yaml')
 
           tableBody.appendChild(releaseRow);
         }
+        // Exit the loop once the specific release is found
         break;
       }
     }
