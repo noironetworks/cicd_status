@@ -1,5 +1,5 @@
-# cicd_status
-CICI Status
+# cicd-status
+CICD Status
 
 #run locally:
 cd cicd_status/docs
