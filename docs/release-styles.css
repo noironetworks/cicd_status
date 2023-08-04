@@ -1,0 +1,132 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Change font to Segoe UI or any other preferred font */
+  margin: 20px;
+}
+
+h1 {
+  color: #0033A0;
+}
+
+h2 {
+  color: #0075be;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 8px;
+}
+
+th {
+  background-color: #3eaef3;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+td {
+  text-align: left;
+}
+
+
+/* Set the column widths for the acc-provision-table */
+#acc-provision-table th:nth-child(1), #acc-provision-table td:nth-child(1) {
+  width: 15%;
+}
+
+#acc-provision-table th:nth-child(2), #acc-provision-table td:nth-child(2) {
+  width: 85%;
+}
+
+/* menu */
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100%;
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.menu-container h2 {
+  font-family: Arial, sans-serif;
+  color: #0075be; /* Cisco blue color */
+  padding: 8px 0;
+  margin: 0;
+}
+
+.menu-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-container li {
+  margin: 5px 0;
+}
+
+.menu-container a {
+  font-family: Arial, sans-serif;
+  color: #0075be;
+  text-decoration: none;
+}
+
+.menu-container a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  margin-left: 10%; /* Width of the menu */
+  padding: 20px;
+}
+
+
+/* Add styles for the code box container */
+.code-box-container {
+  border: 1px solid #b0c3d9;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Style the pre tag within the code box container */
+.code-box-container pre {
+  white-space: pre-wrap;
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Style the copy button */
+.code-box-container button {
+  background-color: #3c97f1;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* On hover, darken the copy button */
+.code-box-container button:hover {
+  background-color: #306bb8;
+}
+
+/* Make the copy button responsive to fit the code-box width */
+@media screen and (max-width: 500px) {
+  .code-box-container button {
+    width: 100%;
+  }
+}

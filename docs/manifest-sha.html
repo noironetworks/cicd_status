@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ACI Containers</title>
+  <title>SHA Manifest</title>
   <link rel="stylesheet" type="text/css" href="release-styles.css">
 </head>
 <body>
@@ -11,25 +11,20 @@
       <!-- List of tags will be dynamically populated here from listReleases.js -->
     </ul>
   </div>
-
   <div class="content">
-    <!-- Add the container around the table -->
-    <div class="table-container">
-      <table id="release-table">
-    <thead>
-      <tr>
-        <th>Tag</th>
-        <th>Last Modified</th>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  <h2>ACI Containers:</h2>
-
-  <ul id="release-list"></ul>
+    <h3>SHA256 Manifest</h3>
+    <body>
+      <h5>Image Registry: <span id="image-prefix"></span></h5>
+  
+      <div class="code-box-container">
+        <pre id="code-box"></pre>
+        <button onclick="copyCodeToClipboard()">Copy</button>
+      </div>
+    </body>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/3.14.1/js-yaml.min.js"></script>
-  <script src="listReleases.js"></script>
+  <script src="manifest-sha.js"></script>
   <script src="menu.js"></script>
 </body>
 </html>
