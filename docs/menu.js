@@ -41,10 +41,9 @@ fetch('release_artifacts/releases.yaml')
       if (match) {
         const username = match[1];
         const repository = match[2];  
-        // Add link to commit history called "Previous Releases"
         const previousReleasesLink = document.createElement('a');
         previousReleasesLink.href = `https://github.com/${username}/${repository}/commits/main`;
-        previousReleasesLink.textContent = 'Previous Releases';
+        previousReleasesLink.textContent = 'Previous Commits';
         const previousReleasesListItem = document.createElement('li');
         previousReleasesListItem.appendChild(previousReleasesLink);
         tagMenu.appendChild(previousReleasesListItem);
