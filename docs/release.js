@@ -8,6 +8,7 @@ fetch('release_artifacts/releases.yaml')
     const accProvisionTable = document.querySelector('#acc-provision-table');
     const tableBody = releaseTable.querySelector('tbody');
     const accProvisionTableBody = accProvisionTable.querySelector('tbody');
+    const prevCommit = document.getElementById('previous-commits')
 
     const urlParams = new URLSearchParams(window.location.search);
     const releaseName = urlParams.get('release');
@@ -140,6 +141,26 @@ fetch('release_artifacts/releases.yaml')
         // Exit the loop once the specific release is found
         break;
       }
+    }
+    if (window.location.pathname.includes('release.html')) {
+      // Extract username and repository name from GitHub Pages URL
+      const ghPagesUrl = window.location.origin + window.location.pathname;
+      const match = ghPagesUrl.match(/https:\/\/([\w-]+)\.github\.io\/([\w-]+)\//);
+      const h4Element = document.createElement('h4');
+      const link = document.createElement('a');
+    
+      if (match) {
+        const username = match[1];
+        const repository = match[2];  
+        link.href = `https://github.com/${username}/${repository}/commits/main`;
+        link.textContent = 'Previous Commits';
+      } else {
+        console.log("The provided URL does not match the expected GitHub Pages format.");
+        link.href = 'https://github.com/noironetworks/test-cicd-status/commits/main';
+        link.textContent = 'Test Commit History URL';
+      }
+      h4Element.appendChild(link);
+      prevCommit.appendChild(h4Element);
     }
   })
   .catch(error => {
