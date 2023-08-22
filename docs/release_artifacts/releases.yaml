@@ -82,33 +82,42 @@ releases:
       L: 0
       M: 10
       U: 0
-  - build-logs: release_artifacts/6.0.3.1/aci-containers-controller/6.0.3.1-buildlog.txt
-    build-time: 2023-08-21 01:07:11 PDT
+  - base-image:
+    - cve: release_artifacts/6.0.3.1/aci-containers-controller/6.0.3.1-cve-base.txt
+      severity:
+      - C: 0
+        H: 1
+        L: 0
+        M: 7
+        U: 0
+      sha: c35238b35cbebe4e6c5d0f63a54e54dba41d0b425f2d101ad9f04a5e5ec100b8
+    build-logs: release_artifacts/6.0.3.1/aci-containers-controller/6.0.3.1-buildlog.txt
+    build-time: 2023-08-22 16:52:52 PDT
     commit:
-    - link: https://github.com/noironetworks/aci-containers/commit/7f91f641142aecc9fe79e28daba6583f49601c3c
-      sha: 7f91f641142aecc9fe79e28daba6583f49601c3c
+    - link: https://github.com/noironetworks/aci-containers/commit/96089d15d521d27c07f5bc35a1abf758a4559102
+      sha: 96089d15d521d27c07f5bc35a1abf758a4559102
     cve: release_artifacts/6.0.3.1/aci-containers-controller/6.0.3.1-cve.txt
     docker:
-    - link: https://hub.docker.com/layers/noiro/aci-containers-controller/6.0.3.1.81c2369.z/images/sha256-15c907b5b0eee06149be3af987b877a5695f91ccc404e08d7cb933cc41101b14?context=explore
-      sha: sha256:efd7594beecda0552718632491c1c353de83bc767d7eb041802d838ca1e6abb5
-      tag: 6.0.3.1.81c2369.z
-    - link: https://hub.docker.com/layers/noiro/aci-containers-controller/6.0.3.1.81c2369.082123.7840/images/sha256-15c907b5b0eee06149be3af987b877a5695f91ccc404e08d7cb933cc41101b14?context=explore
-      sha: sha256:efd7594beecda0552718632491c1c353de83bc767d7eb041802d838ca1e6abb5
-      tag: 6.0.3.1.81c2369.082123.7840
+    - link: https://hub.docker.com/layers/noiro/aci-containers-controller/6.0.3.1.testbase.81c2369.z/images/sha256-e91e99b693e41406915ba310c09f3bb974faa910694051e7ed7c58c94d5efc8e?context=explore
+      sha: sha256:8f7458af9210c4a0669a0f93d092e6957a3f0204dd371e816f79e5f07010f57b
+      tag: 6.0.3.1.testbase.81c2369.z
+    - link: https://hub.docker.com/layers/noiro/aci-containers-controller/6.0.3.1.testbase.81c2369.082223.7844/images/sha256-e91e99b693e41406915ba310c09f3bb974faa910694051e7ed7c58c94d5efc8e?context=explore
+      sha: sha256:8f7458af9210c4a0669a0f93d092e6957a3f0204dd371e816f79e5f07010f57b
+      tag: 6.0.3.1.testbase.81c2369.082223.7844
     name: aci-containers-controller
     quay:
-    - link: https://quay.io/noirolabs/aci-containers-controller:6.0.3.1.81c2369.z
-      sha: sha256:efd7594beecda0552718632491c1c353de83bc767d7eb041802d838ca1e6abb5
-      tag: 6.0.3.1.81c2369.z
-    - link: https://quay.io/noirolabs/aci-containers-controller:6.0.3.1.81c2369.082123.7840
-      sha: sha256:efd7594beecda0552718632491c1c353de83bc767d7eb041802d838ca1e6abb5
-      tag: 6.0.3.1.81c2369.082123.7840
+    - link: https://quay.io/noirolabs/aci-containers-controller:6.0.3.1.testbase.81c2369.z
+      sha: sha256:8f7458af9210c4a0669a0f93d092e6957a3f0204dd371e816f79e5f07010f57b
+      tag: 6.0.3.1.testbase.81c2369.z
+    - link: https://quay.io/noirolabs/aci-containers-controller:6.0.3.1.testbase.81c2369.082223.7844
+      sha: sha256:8f7458af9210c4a0669a0f93d092e6957a3f0204dd371e816f79e5f07010f57b
+      tag: 6.0.3.1.testbase.81c2369.082223.7844
     sbom: release_artifacts/6.0.3.1/aci-containers-controller/6.0.3.1-sbom.txt
     severity:
     - C: 2
       H: 23
       L: 6
-      M: 25
+      M: 23
       U: 0
   - build-logs: release_artifacts/6.0.3.1/cnideploy/6.0.3.1-buildlog.txt
     build-time: 2023-08-21 01:08:05 PDT
@@ -222,5 +231,5 @@ releases:
       L: 0
       M: 4
       U: 0
-  last_updated: 2023-08-22 16:51:43 PDT
+  last_updated: 2023-08-22 16:52:52 PDT
   release_name: 6.0.3.1
