@@ -119,27 +119,36 @@ releases:
       L: 6
       M: 23
       U: 0
-  - build-logs: release_artifacts/6.0.3.1/cnideploy/6.0.3.1-buildlog.txt
-    build-time: 2023-08-21 01:08:05 PDT
+  - base-image:
+    - cve: release_artifacts/6.0.3.1/cnideploy/6.0.3.1-cve-base.txt
+      severity:
+      - C: 0
+        H: 1
+        L: 0
+        M: 7
+        U: 0
+      sha: c35238b35cbebe4e6c5d0f63a54e54dba41d0b425f2d101ad9f04a5e5ec100b8
+    build-logs: release_artifacts/6.0.3.1/cnideploy/6.0.3.1-buildlog.txt
+    build-time: 2023-08-22 16:53:44 PDT
     commit:
-    - link: https://github.com/noironetworks/aci-containers/commit/7f91f641142aecc9fe79e28daba6583f49601c3c
-      sha: 7f91f641142aecc9fe79e28daba6583f49601c3c
+    - link: https://github.com/noironetworks/aci-containers/commit/96089d15d521d27c07f5bc35a1abf758a4559102
+      sha: 96089d15d521d27c07f5bc35a1abf758a4559102
     cve: release_artifacts/6.0.3.1/cnideploy/6.0.3.1-cve.txt
     docker:
-    - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.3.1.81c2369.z/images/sha256-2e197351bb7ead1c751dcc63f5a26bc7e3916b2cbbbdcbc2e9e1e2356f06c2e2?context=explore
-      sha: sha256:118bb6fb78af711f1cce8508c3bdc3a07571a273a6fa6067502c5d7d10eb381a
-      tag: 6.0.3.1.81c2369.z
-    - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.3.1.81c2369.082123.7840/images/sha256-2e197351bb7ead1c751dcc63f5a26bc7e3916b2cbbbdcbc2e9e1e2356f06c2e2?context=explore
-      sha: sha256:118bb6fb78af711f1cce8508c3bdc3a07571a273a6fa6067502c5d7d10eb381a
-      tag: 6.0.3.1.81c2369.082123.7840
+    - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.3.1.testbase.81c2369.z/images/sha256-f5b8fb1c330bfff802341b6e549d9e64d24a90bda34482679fec4f526c3e4849?context=explore
+      sha: sha256:c85f6268eb3c0c26aae0ddb15bd95e5d07d0d427eb00d86f65a8bca82b5ccdac
+      tag: 6.0.3.1.testbase.81c2369.z
+    - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.3.1.testbase.81c2369.082223.7844/images/sha256-f5b8fb1c330bfff802341b6e549d9e64d24a90bda34482679fec4f526c3e4849?context=explore
+      sha: sha256:c85f6268eb3c0c26aae0ddb15bd95e5d07d0d427eb00d86f65a8bca82b5ccdac
+      tag: 6.0.3.1.testbase.81c2369.082223.7844
     name: cnideploy
     quay:
-    - link: https://quay.io/noirolabs/cnideploy:6.0.3.1.81c2369.z
-      sha: sha256:118bb6fb78af711f1cce8508c3bdc3a07571a273a6fa6067502c5d7d10eb381a
-      tag: 6.0.3.1.81c2369.z
-    - link: https://quay.io/noirolabs/cnideploy:6.0.3.1.81c2369.082123.7840
-      sha: sha256:118bb6fb78af711f1cce8508c3bdc3a07571a273a6fa6067502c5d7d10eb381a
-      tag: 6.0.3.1.81c2369.082123.7840
+    - link: https://quay.io/noirolabs/cnideploy:6.0.3.1.testbase.81c2369.z
+      sha: sha256:c85f6268eb3c0c26aae0ddb15bd95e5d07d0d427eb00d86f65a8bca82b5ccdac
+      tag: 6.0.3.1.testbase.81c2369.z
+    - link: https://quay.io/noirolabs/cnideploy:6.0.3.1.testbase.81c2369.082223.7844
+      sha: sha256:c85f6268eb3c0c26aae0ddb15bd95e5d07d0d427eb00d86f65a8bca82b5ccdac
+      tag: 6.0.3.1.testbase.81c2369.082223.7844
     sbom: release_artifacts/6.0.3.1/cnideploy/6.0.3.1-sbom.txt
     severity:
     - C: 0
@@ -231,5 +240,5 @@ releases:
       L: 0
       M: 4
       U: 0
-  last_updated: 2023-08-22 16:52:52 PDT
+  last_updated: 2023-08-22 16:53:44 PDT
   release_name: 6.0.3.1
