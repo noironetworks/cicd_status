@@ -23,15 +23,22 @@ fetch('release_artifacts/releases.yaml')
 
           // create a link to commit
           const commitCell = document.createElement('td');
+          if (image.hasOwnProperty('commit') === false) {
+            commitCell.textContent = '';
+          } else {
           const commitLink = document.createElement('a');
           commitLink.href = image.commit[0].link;
           commitLink.textContent = image.commit[0].sha.substring(0, 7);
           commitCell.appendChild(commitLink);
+          }
           releaseRow.appendChild(commitCell);
 
           // create a link for quay tags
           const quayTagsCell = document.createElement('td');
           const quayTagsList = document.createElement('ul');
+          if (image.hasOwnProperty('quay') === false) {
+            quayTagsCell.textContent = '';
+          } else {
           for (const quayTag of image.quay) {
             const quayTagItem = document.createElement('li');
             const quayTagLink = document.createElement('a');
@@ -41,19 +48,27 @@ fetch('release_artifacts/releases.yaml')
             quayTagsList.appendChild(quayTagItem);
           }
           quayTagsCell.appendChild(quayTagsList);
+          }
           releaseRow.appendChild(quayTagsCell);
 
           const quaySHACell = document.createElement('td');
+          if (image.quay[0].hasOwnProperty('sha') === false) {
+            releaseRow.appendChild(quaySHACell.textContent = '');
+          } else {
           const quaySHALink = document.createElement('a');
           const quay = "quay";
           quaySHALink.href = `manifest-sha.html?release=${encodeURIComponent(releaseData.release_name)}&dq=${encodeURIComponent(quay)}`
           quaySHALink.textContent = image.quay[0].sha.replace('sha256:', '').substring(0, 12);
           quaySHACell.appendChild(quaySHALink);
           releaseRow.appendChild(quaySHACell);
+          }
 
           // create a link for docker tags
           const dockerTagsCell = document.createElement('td');
           const dockerTagsList = document.createElement('ul');
+          if (!image.hasOwnProperty('docker')) {
+            dockerTagsCell.textContent = '';
+          } else {
           for (const dockerTag of image.docker) {
             const dockerTagItem = document.createElement('li');
             const dockerTagLink = document.createElement('a');
@@ -63,15 +78,54 @@ fetch('release_artifacts/releases.yaml')
             dockerTagsList.appendChild(dockerTagItem);
           }
           dockerTagsCell.appendChild(dockerTagsList);
+          }
           releaseRow.appendChild(dockerTagsCell);
 
           const dockerSHACell = document.createElement('td');
-          const dockerSHALink = document.createElement('a');
-          const docker = "docker";
-          dockerSHALink.href = `manifest-sha.html?release=${encodeURIComponent(releaseData.release_name)}&dq=${encodeURIComponent(docker)}`
-          dockerSHALink.textContent = image.docker[0].sha.replace('sha256:', '').substring(0, 12);
-          dockerSHACell.appendChild(dockerSHALink);
+          if (!image.docker[0].hasOwnProperty('sha')) {
+            releaseRow.appendChild(dockerSHACell.textContent = '');
+          } else {
+            const dockerSHALink = document.createElement('a');
+            const docker = "docker";
+            dockerSHALink.href = `manifest-sha.html?release=${encodeURIComponent(releaseData.release_name)}&dq=${encodeURIComponent(docker)}`
+            dockerSHALink.textContent = image.docker[0].sha.replace('sha256:', '').substring(0, 12);
+            dockerSHACell.appendChild(dockerSHALink);
+          }
           releaseRow.appendChild(dockerSHACell);
+
+          const baseImageCVECell = document.createElement('td');
+          const baseImageCVELink = document.createElement('a');
+
+          if (!image['base-image'] || !image['base-image'][0] || !image['base-image'][0].hasOwnProperty('cve')) {
+            baseImageCVECell.textContent = '';
+          } else {
+            baseImageCVELink.href = image['base-image'][0].cve;
+            const baseImageC = image['base-image'][0].severity[0].C.toString();
+            const baseImageH = image['base-image'][0].severity[0].H.toString();
+            const baseImageM = image['base-image'][0].severity[0].M.toString();
+            const baseImageL = image['base-image'][0].severity[0].L.toString();
+            const baseImageU = image['base-image'][0].severity[0].U.toString();
+
+            const baseImageCVEText = `<span class="cve-letter cve-c">C:${baseImageC}</span><br>
+            <span class="cve-letter cve-h">H:${baseImageH}</span><br>
+            <span class="cve-letter cve-m">M:${baseImageM}</span><br>
+            <span class="cve-letter cve-l">L:${baseImageL}</span><br>
+            <span class="cve-letter cve-u">U:${baseImageU}</span>`;
+            
+            baseImageCVELink.innerHTML = baseImageCVEText;
+            baseImageCVECell.appendChild(baseImageCVELink);
+          }
+          releaseRow.appendChild(baseImageCVECell);
+
+          const baseImageSHACell = document.createElement('td');
+          const baseImageSHALink = document.createElement('a');
+          if (!image['base-image'] || !image['base-image'][0] || !image['base-image'][0].hasOwnProperty('cve')) {
+            baseImageSHACell.textContent = '';
+          } else {
+          baseImageSHALink.textContent = image['base-image'][0].sha.replace('sha256:', '').substring(0, 12);
+          baseImageSHACell.appendChild(baseImageSHALink);
+          }
+          releaseRow.appendChild(baseImageSHACell);
 
           const sbomCell = document.createElement('td');
           const sbomLink = document.createElement('a');
