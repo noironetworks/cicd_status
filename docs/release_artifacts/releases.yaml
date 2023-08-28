@@ -230,27 +230,36 @@ releases:
       L: 0
       M: 4
       U: 0
-  - build-logs: release_artifacts/6.0.3.1/opflex/6.0.3.1-buildlog.txt
-    build-time: 2023-08-18 21:01:55 PDT
+  - base-image:
+    - cve: release_artifacts/6.0.3.1/opflex/6.0.3.1-cve-base.txt
+      severity:
+      - C: 0
+        H: 0
+        L: 0
+        M: 0
+        U: 0
+      sha: 35c99977ee5baa359bdc80f9ccc360644d2dbccb7462ca0fd97a23170a00cfd1
+    build-logs: release_artifacts/6.0.3.1/opflex/6.0.3.1-buildlog.txt
+    build-time: 2023-08-28 15:40:53 PDT
     commit:
     - link: https://github.com/noironetworks/opflex/commit/b676dd976d6e77e270fd902c6b4736b6c7a7f296
       sha: b676dd976d6e77e270fd902c6b4736b6c7a7f296
     cve: release_artifacts/6.0.3.1/opflex/6.0.3.1-cve.txt
     docker:
-    - link: https://hub.docker.com/layers/noiro/opflex/6.0.3.1.81c2369.z/images/sha256-6ae620eb8ba66a627a9c96b0e34b5d31b05aa22c9196b1885362c6273b0b76e4?context=explore
-      sha: sha256:d48d2a093cba203c464bbf25ad53b2a9d5e0da489bcd94a1bc49d4b10dbd4bf8
+    - link: https://hub.docker.com/layers/noiro/opflex/6.0.3.1.81c2369.z/images/sha256-2607b3e352396f176bbcc91de8785e6ccafdd470eca5ef0a133e0f5392bc1cd5?context=explore
+      sha: sha256:4beb485705dc34017d05918d651c298983730208f7938b8822eb01398eaf8987
       tag: 6.0.3.1.81c2369.z
-    - link: https://hub.docker.com/layers/noiro/opflex/6.0.3.1.81c2369.081923.3019/images/sha256-6ae620eb8ba66a627a9c96b0e34b5d31b05aa22c9196b1885362c6273b0b76e4?context=explore
-      sha: sha256:d48d2a093cba203c464bbf25ad53b2a9d5e0da489bcd94a1bc49d4b10dbd4bf8
-      tag: 6.0.3.1.81c2369.081923.3019
+    - link: https://hub.docker.com/layers/noiro/opflex/6.0.3.1.81c2369.082823.3019/images/sha256-2607b3e352396f176bbcc91de8785e6ccafdd470eca5ef0a133e0f5392bc1cd5?context=explore
+      sha: sha256:4beb485705dc34017d05918d651c298983730208f7938b8822eb01398eaf8987
+      tag: 6.0.3.1.81c2369.082823.3019
     name: opflex
     quay:
     - link: https://quay.io/noirolabs/opflex:6.0.3.1.81c2369.z
-      sha: sha256:d48d2a093cba203c464bbf25ad53b2a9d5e0da489bcd94a1bc49d4b10dbd4bf8
+      sha: sha256:4beb485705dc34017d05918d651c298983730208f7938b8822eb01398eaf8987
       tag: 6.0.3.1.81c2369.z
-    - link: https://quay.io/noirolabs/opflex:6.0.3.1.81c2369.081923.3019
-      sha: sha256:d48d2a093cba203c464bbf25ad53b2a9d5e0da489bcd94a1bc49d4b10dbd4bf8
-      tag: 6.0.3.1.81c2369.081923.3019
+    - link: https://quay.io/noirolabs/opflex:6.0.3.1.81c2369.082823.3019
+      sha: sha256:4beb485705dc34017d05918d651c298983730208f7938b8822eb01398eaf8987
+      tag: 6.0.3.1.81c2369.082823.3019
     sbom: release_artifacts/6.0.3.1/opflex/6.0.3.1-sbom.txt
     severity:
     - C: 0
@@ -258,5 +267,5 @@ releases:
       L: 0
       M: 4
       U: 0
-  last_updated: 2023-08-28 13:21:13 PDT
+  last_updated: 2023-08-28 15:40:53 PDT
   release_name: 6.0.3.1
