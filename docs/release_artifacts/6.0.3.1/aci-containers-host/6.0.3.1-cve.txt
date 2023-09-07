@@ -13,7 +13,7 @@ setuptools         53.0.0               python     CVE-2022-40897       Medium
 
 quay.io/noiro/aci-containers-host:6.0.3.1.81c2369.z (redhat 9.2)
 ================================================================
-Total: 201 (UNKNOWN: 0, LOW: 134, MEDIUM: 65, HIGH: 2, CRITICAL: 0)
+Total: 207 (UNKNOWN: 0, LOW: 140, MEDIUM: 65, HIGH: 2, CRITICAL: 0)
 
 ┌────────────────────────────┬────────────────┬──────────┬─────────────────────┬─────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │          Library           │ Vulnerability  │ Severity │       Status        │  Installed Version  │ Fixed Version │                            Title                             │
@@ -164,8 +164,7 @@ Total: 201 (UNKNOWN: 0, LOW: 134, MEDIUM: 65, HIGH: 2, CRITICAL: 0)
 │                            │ CVE-2021-45941 │          │                     │                     │               │ heap-based buffer overflow (8 bytes) in __bpf_object__open   │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2021-45941                   │
 │                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2022-3606  │          │                     │                     │               │ kernel: libbpf: NULL pointer dereference in                  │
-│                            │                │          │                     │                     │               │ find_prog_by_sec_insn                                        │
+│                            │ CVE-2022-3606  │          │                     │                     │               │ NULL pointer dereference in find_prog_by_sec_insn            │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2022-3606                    │
 ├────────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ libcap                     │ CVE-2023-2603  │          │ affected            │ 2.48-9.el9          │               │ Integer Overflow in _libcap_strdup()                         │
@@ -677,6 +676,24 @@ Total: 201 (UNKNOWN: 0, LOW: 134, MEDIUM: 65, HIGH: 2, CRITICAL: 0)
 │                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-2610  │          │                     │                     │               │ integer overflow vulnerability in vim                        │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-2610                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4734  │          │                     │                     │               │ segmentation fault in function f_fullcommand in vim/vim      │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4734                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4735  │          │                     │                     │               │ OOB Write ops.c in vim/vim                                   │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4735                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4738  │          │                     │                     │               │ heap-buffer-overflow in vim_regsub_both in vim/vim           │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4738                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4751  │          │                     │                     │               │ heap-buffer-overflow in function utfc_ptr2len in vim/vim     │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4751                    │
+│                            ├────────────────┤          ├─────────────────────┤                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4752  │          │ affected            │                     │               │ use-after-free in function ins_compl_get_exp in vim/vim      │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4752                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4781  │          │                     │                     │               │ heap-buffer-overflow in function vim_regsub_both in vim/vim  │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4781                    │
 ├────────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ xz-libs                    │ CVE-2020-22916 │          │ under_investigation │ 5.2.5-8.el9_0       │               │ Denial of service via decompression of crafted file          │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2020-22916                   │
@@ -684,23 +701,19 @@ Total: 201 (UNKNOWN: 0, LOW: 134, MEDIUM: 65, HIGH: 2, CRITICAL: 0)
 
 usr/local/bin/aci-containers-host-agent (gobinary)
 ==================================================
-Total: 4 (UNKNOWN: 0, LOW: 0, MEDIUM: 4, HIGH: 0, CRITICAL: 0)
+Total: 3 (UNKNOWN: 0, LOW: 0, MEDIUM: 3, HIGH: 0, CRITICAL: 0)
 
-┌───────────────────┬──────────────────┬──────────┬──────────┬───────────────────┬──────────────────────────────────┬───────────────────────────────────────────────────────────┐
-│      Library      │  Vulnerability   │ Severity │  Status  │ Installed Version │          Fixed Version           │                           Title                           │
-├───────────────────┼──────────────────┼──────────┼──────────┼───────────────────┼──────────────────────────────────┼───────────────────────────────────────────────────────────┤
-│ k8s.io/kubernetes │ CVE-2017-1002102 │ MEDIUM   │ affected │ v1.27.0           │                                  │ kubernetes: Malicious containers can delete any file from │
-│                   │                  │          │          │                   │                                  │ the node                                                  │
-│                   │                  │          │          │                   │                                  │ https://avd.aquasec.com/nvd/cve-2017-1002102              │
-│                   ├──────────────────┤          ├──────────┤                   ├──────────────────────────────────┼───────────────────────────────────────────────────────────┤
-│                   │ CVE-2023-2431    │          │ fixed    │                   │ 1.24.14, 1.25.10, 1.26.5, 1.27.2 │ Bypass of seccomp profile enforcement                     │
-│                   │                  │          │          │                   │                                  │ https://avd.aquasec.com/nvd/cve-2023-2431                 │
-│                   ├──────────────────┤          │          │                   ├──────────────────────────────────┼───────────────────────────────────────────────────────────┤
-│                   │ CVE-2023-2727    │          │          │                   │ 1.27.3, 1.26.6, 1.25.11, 1.24.15 │ Bypassing policies imposed by the ImagePolicyWebhook      │
-│                   │                  │          │          │                   │                                  │ admission plugin                                          │
-│                   │                  │          │          │                   │                                  │ https://avd.aquasec.com/nvd/cve-2023-2727                 │
-│                   ├──────────────────┤          │          │                   │                                  ├───────────────────────────────────────────────────────────┤
-│                   │ CVE-2023-2728    │          │          │                   │                                  │ Bypassing enforce mountable secrets policy imposed by the │
-│                   │                  │          │          │                   │                                  │ ServiceAccount admission plugin...                        │
-│                   │                  │          │          │                   │                                  │ https://avd.aquasec.com/nvd/cve-2023-2728                 │
-└───────────────────┴──────────────────┴──────────┴──────────┴───────────────────┴──────────────────────────────────┴───────────────────────────────────────────────────────────┘
+┌───────────────────┬───────────────┬──────────┬────────┬───────────────────┬──────────────────────────────────┬───────────────────────────────────────────────────────────┐
+│      Library      │ Vulnerability │ Severity │ Status │ Installed Version │          Fixed Version           │                           Title                           │
+├───────────────────┼───────────────┼──────────┼────────┼───────────────────┼──────────────────────────────────┼───────────────────────────────────────────────────────────┤
+│ k8s.io/kubernetes │ CVE-2023-2431 │ MEDIUM   │ fixed  │ v1.27.0           │ 1.24.14, 1.25.10, 1.26.5, 1.27.2 │ Bypass of seccomp profile enforcement                     │
+│                   │               │          │        │                   │                                  │ https://avd.aquasec.com/nvd/cve-2023-2431                 │
+│                   ├───────────────┤          │        │                   ├──────────────────────────────────┼───────────────────────────────────────────────────────────┤
+│                   │ CVE-2023-2727 │          │        │                   │ 1.27.3, 1.26.6, 1.25.11, 1.24.15 │ Bypassing policies imposed by the ImagePolicyWebhook      │
+│                   │               │          │        │                   │                                  │ admission plugin                                          │
+│                   │               │          │        │                   │                                  │ https://avd.aquasec.com/nvd/cve-2023-2727                 │
+│                   ├───────────────┤          │        │                   │                                  ├───────────────────────────────────────────────────────────┤
+│                   │ CVE-2023-2728 │          │        │                   │                                  │ Bypassing enforce mountable secrets policy imposed by the │
+│                   │               │          │        │                   │                                  │ ServiceAccount admission plugin...                        │
+│                   │               │          │        │                   │                                  │ https://avd.aquasec.com/nvd/cve-2023-2728                 │
+└───────────────────┴───────────────┴──────────┴────────┴───────────────────┴──────────────────────────────────┴───────────────────────────────────────────────────────────┘
