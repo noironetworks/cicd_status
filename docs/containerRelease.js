@@ -99,7 +99,7 @@ fetch('release_artifacts/releases.yaml')
           } else {
             baseImageCVELink.href = image['base-image'][0].cve;
            
-            if (image['base-image'][0].severity.length === 5) {
+            if (image.hasOwnProperty('base-image') && image['base-image'].length > 0 && image['base-image'][0].hasOwnProperty('severity') && image['base-image'][0].severity !== null) {
               const baseImageC = image['base-image'][0].severity[0].C.toString();
               const baseImageH = image['base-image'][0].severity[0].H.toString();
               const baseImageM = image['base-image'][0].severity[0].M.toString();
@@ -141,7 +141,7 @@ fetch('release_artifacts/releases.yaml')
           const cveCell = document.createElement('td');
           const cveLink = document.createElement('a');
           cveLink.href = image.cve;
-          if (image.severity.length === 5) {
+          if (image.hasOwnProperty('severity') && image.severity !== null) {
             const C = image.severity[0].C.toString();
             const H = image.severity[0].H.toString();
             const M = image.severity[0].M.toString();
