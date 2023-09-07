@@ -6,7 +6,7 @@ rpm   4.16.1.3             python  CVE-2021-3521   Medium
 
 quay.io/noiro/openvswitch:6.0.3.1.81c2369.z (redhat 9.2)
 ========================================================
-Total: 183 (UNKNOWN: 0, LOW: 115, MEDIUM: 65, HIGH: 3, CRITICAL: 0)
+Total: 189 (UNKNOWN: 0, LOW: 121, MEDIUM: 65, HIGH: 3, CRITICAL: 0)
 
 ┌────────────────────────────┬────────────────┬──────────┬─────────────────────┬─────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │          Library           │ Vulnerability  │ Severity │       Status        │  Installed Version  │ Fixed Version │                            Title                             │
@@ -68,8 +68,7 @@ Total: 183 (UNKNOWN: 0, LOW: 115, MEDIUM: 65, HIGH: 3, CRITICAL: 0)
 │                            │ CVE-2021-45941 │          │                     │                     │               │ heap-based buffer overflow (8 bytes) in __bpf_object__open   │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2021-45941                   │
 │                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2022-3606  │          │                     │                     │               │ kernel: libbpf: NULL pointer dereference in                  │
-│                            │                │          │                     │                     │               │ find_prog_by_sec_insn                                        │
+│                            │ CVE-2022-3606  │          │                     │                     │               │ NULL pointer dereference in find_prog_by_sec_insn            │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2022-3606                    │
 ├────────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ libcap                     │ CVE-2023-2603  │          │ affected            │ 2.48-9.el9          │               │ Integer Overflow in _libcap_strdup()                         │
@@ -609,6 +608,24 @@ Total: 183 (UNKNOWN: 0, LOW: 115, MEDIUM: 65, HIGH: 3, CRITICAL: 0)
 │                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-2610  │          │                     │                     │               │ integer overflow vulnerability in vim                        │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-2610                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4734  │          │                     │                     │               │ segmentation fault in function f_fullcommand in vim/vim      │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4734                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4735  │          │                     │                     │               │ OOB Write ops.c in vim/vim                                   │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4735                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4738  │          │                     │                     │               │ heap-buffer-overflow in vim_regsub_both in vim/vim           │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4738                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4751  │          │                     │                     │               │ heap-buffer-overflow in function utfc_ptr2len in vim/vim     │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4751                    │
+│                            ├────────────────┤          ├─────────────────────┤                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4752  │          │ affected            │                     │               │ use-after-free in function ins_compl_get_exp in vim/vim      │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4752                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4781  │          │                     │                     │               │ heap-buffer-overflow in function vim_regsub_both in vim/vim  │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4781                    │
 ├────────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ xz-libs                    │ CVE-2020-22916 │          │ under_investigation │ 5.2.5-8.el9_0       │               │ Denial of service via decompression of crafted file          │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2020-22916                   │
