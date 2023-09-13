@@ -6,7 +6,7 @@ rpm   4.16.1.3             python  CVE-2021-3521   Medium
 
 quay.io/noiro/openvswitch:6.0.3.1.81c2369.z (redhat 9.2)
 ========================================================
-Total: 189 (UNKNOWN: 0, LOW: 121, MEDIUM: 65, HIGH: 3, CRITICAL: 0)
+Total: 199 (UNKNOWN: 0, LOW: 120, MEDIUM: 76, HIGH: 3, CRITICAL: 0)
 
 ┌────────────────────────────┬────────────────┬──────────┬─────────────────────┬─────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │          Library           │ Vulnerability  │ Severity │       Status        │  Installed Version  │ Fixed Version │                            Title                             │
@@ -43,8 +43,44 @@ Total: 189 (UNKNOWN: 0, LOW: 121, MEDIUM: 65, HIGH: 3, CRITICAL: 0)
 │                            │ CVE-2023-32665 │          │                     │                     │               │ GVariant deserialisation does not match spec for non-normal  │
 │                            │                │          │                     │                     │               │ data                                                         │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-32665                   │
-├────────────────────────────┼────────────────┤          │                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ gmp                        │ CVE-2021-43618 │          │                     │ 1:6.2.0-13.el9      │               │ Integer overflow and resultant buffer overflow via crafted   │
+├────────────────────────────┼────────────────┼──────────┤                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ glibc                      │ CVE-2023-4527  │ MEDIUM   │                     │ 2.34-82.el9         │               │ Stack read overflow in getaddrinfo in no-aaaa mode           │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4527                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4806  │          │                     │                     │               │ potential use-after-free in getaddrinfo()                    │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4806                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4813  │          │                     │                     │               │ potential use-after-free in gaih_inet()                      │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4813                    │
+├────────────────────────────┼────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ glibc-common               │ CVE-2023-4527  │          │                     │                     │               │ Stack read overflow in getaddrinfo in no-aaaa mode           │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4527                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4806  │          │                     │                     │               │ potential use-after-free in getaddrinfo()                    │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4806                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4813  │          │                     │                     │               │ potential use-after-free in gaih_inet()                      │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4813                    │
+├────────────────────────────┼────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ glibc-langpack-en          │ CVE-2023-4527  │          │                     │                     │               │ Stack read overflow in getaddrinfo in no-aaaa mode           │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4527                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4806  │          │                     │                     │               │ potential use-after-free in getaddrinfo()                    │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4806                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4813  │          │                     │                     │               │ potential use-after-free in gaih_inet()                      │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4813                    │
+├────────────────────────────┼────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ glibc-minimal-langpack     │ CVE-2023-4527  │          │                     │                     │               │ Stack read overflow in getaddrinfo in no-aaaa mode           │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4527                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4806  │          │                     │                     │               │ potential use-after-free in getaddrinfo()                    │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4806                    │
+│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4813  │          │                     │                     │               │ potential use-after-free in gaih_inet()                      │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4813                    │
+├────────────────────────────┼────────────────┼──────────┤                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ gmp                        │ CVE-2021-43618 │ LOW      │                     │ 1:6.2.0-13.el9      │               │ Integer overflow and resultant buffer overflow via crafted   │
 │                            │                │          │                     │                     │               │ input                                                        │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2021-43618                   │
 ├────────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
@@ -71,13 +107,7 @@ Total: 189 (UNKNOWN: 0, LOW: 121, MEDIUM: 65, HIGH: 3, CRITICAL: 0)
 │                            │ CVE-2022-3606  │          │                     │                     │               │ NULL pointer dereference in find_prog_by_sec_insn            │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2022-3606                    │
 ├────────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libcap                     │ CVE-2023-2603  │          │ affected            │ 2.48-9.el9          │               │ Integer Overflow in _libcap_strdup()                         │
-│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-2603                    │
-│                            ├────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2023-2602  │ LOW      │                     │                     │               │ Memory Leak on pthread_create() Error                        │
-│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-2602                    │
-├────────────────────────────┼────────────────┼──────────┤                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libcurl-minimal            │ CVE-2023-27536 │ MEDIUM   │                     │ 7.76.1-26.el9       │               │ GSS delegation too eager connection re-use                   │
+│ libcurl-minimal            │ CVE-2023-27536 │          │ affected            │ 7.76.1-26.el9       │               │ GSS delegation too eager connection re-use                   │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-27536                   │
 │                            ├────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-27533 │ LOW      │                     │                     │               │ TELNET option IAC injection                                  │
