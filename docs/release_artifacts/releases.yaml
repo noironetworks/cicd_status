@@ -194,7 +194,39 @@ releases:
         L: 0
         M: 8
         U: 0
-    last_updated: 2023-09-13 17:31:19 PDT
+    - base-image:
+      - cve: release_artifacts/6.0.3.1/z/openvswitch/6.0.3.1-cve-base.txt
+        severity: []
+        sha: 0dfa71a7ec2caf445e7ac6b7422ae67f3518960bd6dbf62a7b77fa7a6cfc02b1
+      build-logs: release_artifacts/6.0.3.1/z/openvswitch/6.0.3.1-buildlog.txt
+      build-time: 2023-09-13 17:33:16 PDT
+      commit:
+      - link: https://github.com/noironetworks/aci-containers/commit/f73a7e8571aeea79e3f31e85261cc67ba92ba422
+        sha: f73a7e8571aeea79e3f31e85261cc67ba92ba422
+      cve: release_artifacts/6.0.3.1/z/openvswitch/6.0.3.1-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.3.1.81c2369.z/images/sha256-4bafdf66cdb4e8a47db32e32d7ffc3ab361fe7379a2a2f858962cf798fae621d?context=explore
+        sha: sha256:3676f276d85007571cae98c0ffefca007baef7e1b2eea5b2fd1a38effa91f118
+        tag: 6.0.3.1.81c2369.z
+      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.3.1.81c2369.091423.7982/images/sha256-4bafdf66cdb4e8a47db32e32d7ffc3ab361fe7379a2a2f858962cf798fae621d?context=explore
+        sha: sha256:3676f276d85007571cae98c0ffefca007baef7e1b2eea5b2fd1a38effa91f118
+        tag: 6.0.3.1.81c2369.091423.7982
+      name: openvswitch
+      quay:
+      - link: https://quay.io/noiro/openvswitch:6.0.3.1.81c2369.z
+        sha: sha256:3676f276d85007571cae98c0ffefca007baef7e1b2eea5b2fd1a38effa91f118
+        tag: 6.0.3.1.81c2369.z
+      - link: https://quay.io/noiro/openvswitch:6.0.3.1.81c2369.091423.7982
+        sha: sha256:3676f276d85007571cae98c0ffefca007baef7e1b2eea5b2fd1a38effa91f118
+        tag: 6.0.3.1.81c2369.091423.7982
+      sbom: release_artifacts/6.0.3.1/z/openvswitch/6.0.3.1-sbom.txt
+      severity:
+      - C: 0
+        H: 0
+        L: 0
+        M: 4
+        U: 0
+    last_updated: 2023-09-13 17:33:16 PDT
     release_name: 6.0.3.1.z
   - acc_provision: []
     container_images: []
