@@ -23,7 +23,7 @@ fetch('release_artifacts/releases.yaml')
                 const releaseNameCell = document.createElement('td');
                 const releaseLink = document.createElement('a');
                 releaseLink.href = `release.html?release=${encodeURIComponent(releaseName+'.z')}`;
-                releaseLink.textContent = "This release is not yet available, check out the z-streams for the latest release.";
+                releaseLink.textContent = "This final release for this version is not yet available, check out the z-stream for the latest continous release.";
                 releaseNameCell.appendChild(releaseLink);
                 releaseNameCell.colSpan = 11;
 

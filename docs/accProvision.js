@@ -63,8 +63,11 @@ fetch('release_artifacts/releases.yaml')
                 // If there are no acc_provision entries, display a message in a single row
                 const noAccProvisionRow = document.createElement('tr');
                 const noAccProvisionCell = document.createElement('td');
-                noAccProvisionCell.textContent = 'No ACC-PROVISION data available';
+                const releaseLink = document.createElement('a');
+                releaseLink.href = `release.html?release=${encodeURIComponent(releaseName+'.z')}`;
+                releaseLink.textContent = "This final release for this version is not yet available, check out the z-stream for the latest continous release.";
                 noAccProvisionCell.colSpan = 4;
+                noAccProvisionCell.appendChild(releaseLink);
                 noAccProvisionRow.appendChild(noAccProvisionCell);
                 accProvisionTableBody.appendChild(noAccProvisionRow);
               }
