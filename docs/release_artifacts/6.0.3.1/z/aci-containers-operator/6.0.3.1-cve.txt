@@ -1,17 +1,18 @@
-NAME            INSTALLED                           FIXED-IN  TYPE       VULNERABILITY        SEVERITY 
-istio.io/istio  v0.0.0-20230607011503-697f4ff0fe6e  1.1.13    go-module  GHSA-qcvw-82hh-gq38  High      
-istio.io/istio  v0.0.0-20230607011503-697f4ff0fe6e  1.9.8     go-module  GHSA-hqxw-mm44-gc4r  High      
-istio.io/istio  v0.0.0-20230607011503-697f4ff0fe6e  1.11.7    go-module  GHSA-856q-xv3c-7f2f  High      
-istio.io/istio  v0.0.0-20230607011503-697f4ff0fe6e  1.9.8     go-module  GHSA-7774-7vr3-cc8j  High      
-istio.io/istio  v0.0.0-20230607011503-697f4ff0fe6e  1.12.18   go-module  GHSA-xwx5-5c9g-x68x  Medium    
-requests        2.25.1                              2.31.0    python     GHSA-j8r2-6x86-q33q  Medium    
-requests        2.25.1                                        python     CVE-2023-32681       Medium    
-rpm             4.16.1.3                                      python     CVE-2021-35939       Medium    
-rpm             4.16.1.3                                      python     CVE-2021-35938       Medium    
-rpm             4.16.1.3                                      python     CVE-2021-35937       Medium    
-rpm             4.16.1.3                                      python     CVE-2021-3521        Medium    
-setuptools      53.0.0                              65.5.1    python     GHSA-r9hx-vwmv-q579  High      
-setuptools      53.0.0                                        python     CVE-2022-40897       Medium
+NAME              INSTALLED                           FIXED-IN  TYPE       VULNERABILITY        SEVERITY 
+istio.io/istio    v0.0.0-20230607011503-697f4ff0fe6e  1.1.13    go-module  GHSA-qcvw-82hh-gq38  High      
+istio.io/istio    v0.0.0-20230607011503-697f4ff0fe6e  1.9.8     go-module  GHSA-hqxw-mm44-gc4r  High      
+istio.io/istio    v0.0.0-20230607011503-697f4ff0fe6e  1.11.7    go-module  GHSA-856q-xv3c-7f2f  High      
+istio.io/istio    v0.0.0-20230607011503-697f4ff0fe6e  1.9.8     go-module  GHSA-7774-7vr3-cc8j  High      
+istio.io/istio    v0.0.0-20230607011503-697f4ff0fe6e  1.12.18   go-module  GHSA-xwx5-5c9g-x68x  Medium    
+k8s.io/apiserver  v0.27.0                             1.15.10   go-module  GHSA-82hx-w2r5-c2wq  Medium    
+requests          2.25.1                              2.31.0    python     GHSA-j8r2-6x86-q33q  Medium    
+requests          2.25.1                                        python     CVE-2023-32681       Medium    
+rpm               4.16.1.3                                      python     CVE-2021-35939       Medium    
+rpm               4.16.1.3                                      python     CVE-2021-35938       Medium    
+rpm               4.16.1.3                                      python     CVE-2021-35937       Medium    
+rpm               4.16.1.3                                      python     CVE-2021-3521        Medium    
+setuptools        53.0.0                              65.5.1    python     GHSA-r9hx-vwmv-q579  High      
+setuptools        53.0.0                                        python     CVE-2022-40897       Medium
 
 quay.io/noiro/aci-containers-operator:6.0.3.1.81c2369.z (redhat 9.2)
 ====================================================================
@@ -866,3 +867,15 @@ Total: 251 (UNKNOWN: 0, LOW: 142, MEDIUM: 107, HIGH: 2, CRITICAL: 0)
 │ xz-libs                │ CVE-2020-22916   │          │              │ 5.2.5-8.el9_0       │               │ Denial of service via decompression of crafted file          │
 │                        │                  │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2020-22916                   │
 └────────────────────────┴──────────────────┴──────────┴──────────────┴─────────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
+
+usr/local/bin/aci-containers-operator (gobinary)
+================================================
+Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 1, HIGH: 0, CRITICAL: 0)
+
+┌──────────────────┬───────────────┬──────────┬────────┬───────────────────┬─────────────────────────┬─────────────────────────────────────────────────────────┐
+│     Library      │ Vulnerability │ Severity │ Status │ Installed Version │      Fixed Version      │                          Title                          │
+├──────────────────┼───────────────┼──────────┼────────┼───────────────────┼─────────────────────────┼─────────────────────────────────────────────────────────┤
+│ k8s.io/apiserver │ CVE-2020-8552 │ MEDIUM   │ fixed  │ v0.27.0           │ 1.15.10, 1.16.7, 1.17.3 │ kubernetes: Use of unbounded 'client' label in          │
+│                  │               │          │        │                   │                         │ apiserver_request_total allows for memory exhaustion... │
+│                  │               │          │        │                   │                         │ https://avd.aquasec.com/nvd/cve-2020-8552               │
+└──────────────────┴───────────────┴──────────┴────────┴───────────────────┴─────────────────────────┴─────────────────────────────────────────────────────────┘
