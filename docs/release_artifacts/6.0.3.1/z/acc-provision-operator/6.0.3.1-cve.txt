@@ -530,8 +530,8 @@ python3-libxml2                         2.9.7-16.el8                            
 python3-libxml2                         2.9.7-16.el8                              0:2.9.7-16.el8_8.1   rpm     CVE-2023-29469       Medium    
 python3-libxml2                         2.9.7-16.el8                              0:2.9.7-16.el8_8.1   rpm     CVE-2023-28484       Medium    
 python3-pip-wheel                       9.0.3-22.el8                              (won't fix)          rpm     CVE-2018-20225       Low       
-python3-requests                        2.20.0-2.1.el8_1                          0:2.20.0-3.el8_8     rpm     CVE-2023-32681       Medium    
 python3-requests                        2.20.0-2.1.el8_1                                               rpm     CVE-2023-32681       Medium    
+python3-requests                        2.20.0-2.1.el8_1                          0:2.20.0-3.el8_8     rpm     CVE-2023-32681       Medium    
 python3-rpm                             4.14.3-26.el8                             (won't fix)          rpm     CVE-2021-35939       Medium    
 python3-rpm                             4.14.3-26.el8                             (won't fix)          rpm     CVE-2021-35938       Medium    
 python3-rpm                             4.14.3-26.el8                             (won't fix)          rpm     CVE-2021-35937       Medium    
@@ -646,7 +646,7 @@ vim-minimal                             2:8.0.1763-19.el8_6.4                   
 
 quay.io/noiro/acc-provision-operator:6.0.3.1.81c2369.z (redhat 8.8)
 ===================================================================
-Total: 579 (UNKNOWN: 0, LOW: 267, MEDIUM: 296, HIGH: 16, CRITICAL: 0)
+Total: 579 (UNKNOWN: 0, LOW: 263, MEDIUM: 300, HIGH: 16, CRITICAL: 0)
 
 ┌────────────────────────────────────────┬──────────────────┬──────────┬─────────────────────┬──────────────────────────────────────────┬─────────────────────┬──────────────────────────────────────────────────────────────┐
 │                Library                 │  Vulnerability   │ Severity │       Status        │            Installed Version             │    Fixed Version    │                            Title                             │
@@ -673,8 +673,15 @@ Total: 579 (UNKNOWN: 0, LOW: 267, MEDIUM: 296, HIGH: 16, CRITICAL: 0)
 │                                        │ CVE-2019-9077    │          │                     │                                          │                     │ binutils: heap-based buffer overflow in function             │
 │                                        │                  │          │                     │                                          │                     │ process_mips_specific in readelf.c                           │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2019-9077                    │
+│                                        ├──────────────────┤          ├─────────────────────┤                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2020-19726   │          │ affected            │                                          │                     │ heap-based buffer overflow in bfd_getl32() in bfd/libbfd.c   │
+│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2020-19726                   │
 │                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                                        │ CVE-2021-32256   │          │                     │                                          │                     │ stack-overflow issue in demangle_type in rust-demangle.c.    │
+│                                        │ CVE-2020-35342   │          │                     │                                          │                     │ uninitialized heap memory in tic4x_print_cond() in           │
+│                                        │                  │          │                     │                                          │                     │ opcodes/tic4x-dis.c                                          │
+│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2020-35342                   │
+│                                        ├──────────────────┤          ├─────────────────────┤                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2021-32256   │          │ will_not_fix        │                                          │                     │ stack-overflow issue in demangle_type in rust-demangle.c.    │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2021-32256                   │
 │                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2021-45078   │          │                     │                                          │                     │ out-of-bounds write in stab_xcoff_builtin_type() in stabs.c  │
@@ -793,15 +800,8 @@ Total: 579 (UNKNOWN: 0, LOW: 267, MEDIUM: 296, HIGH: 16, CRITICAL: 0)
 │                                        │ CVE-2020-19724   │          │ affected            │                                          │                     │ memory leak in get_data() in nm.c                            │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2020-19724                   │
 │                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                                        │ CVE-2020-19726   │          │                     │                                          │                     │ heap-based buffer overflow in bfd_getl32() in bfd/libbfd.c   │
-│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2020-19726                   │
-│                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2020-21490   │          │                     │                                          │                     │ memory leak in get_field() in microblaze-dis.c               │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2020-21490                   │
-│                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                                        │ CVE-2020-35342   │          │                     │                                          │                     │ uninitialized heap memory in tic4x_print_cond() in           │
-│                                        │                  │          │                     │                                          │                     │ opcodes/tic4x-dis.c                                          │
-│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2020-35342                   │
 │                                        ├──────────────────┤          ├─────────────────────┤                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2020-35493   │          │ will_not_fix        │                                          │                     │ heap-based buffer overflow in bfd_pef_parse_function_stubs   │
 │                                        │                  │          │                     │                                          │                     │ function in bfd/pef.c via crafted PEF file...                │
@@ -1037,8 +1037,15 @@ Total: 579 (UNKNOWN: 0, LOW: 267, MEDIUM: 296, HIGH: 16, CRITICAL: 0)
 │                                        │ CVE-2022-27943   │          │                     │                                          │                     │ libiberty/rust-demangle.c in GNU GCC 11.2 allows stack       │
 │                                        │                  │          │                     │                                          │                     │ exhaustion in demangle_const                                 │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
-├────────────────────────────────────────┼──────────────────┼──────────┤                     ├──────────────────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
-│ gdb-gdbserver                          │ CVE-2021-32256   │ MEDIUM   │                     │ 8.2-19.el8                               │                     │ stack-overflow issue in demangle_type in rust-demangle.c.    │
+├────────────────────────────────────────┼──────────────────┼──────────┼─────────────────────┼──────────────────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
+│ gdb-gdbserver                          │ CVE-2020-19726   │ MEDIUM   │ affected            │ 8.2-19.el8                               │                     │ heap-based buffer overflow in bfd_getl32() in bfd/libbfd.c   │
+│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2020-19726                   │
+│                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2020-35342   │          │                     │                                          │                     │ uninitialized heap memory in tic4x_print_cond() in           │
+│                                        │                  │          │                     │                                          │                     │ opcodes/tic4x-dis.c                                          │
+│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2020-35342                   │
+│                                        ├──────────────────┤          ├─────────────────────┤                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2021-32256   │          │ will_not_fix        │                                          │                     │ stack-overflow issue in demangle_type in rust-demangle.c.    │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2021-32256                   │
 │                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2023-2222    │          │                     │                                          │                     │ 2060                                                         │
@@ -1050,15 +1057,8 @@ Total: 579 (UNKNOWN: 0, LOW: 267, MEDIUM: 296, HIGH: 16, CRITICAL: 0)
 │                                        │ CVE-2020-19724   │ LOW      │ affected            │                                          │                     │ memory leak in get_data() in nm.c                            │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2020-19724                   │
 │                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                                        │ CVE-2020-19726   │          │                     │                                          │                     │ heap-based buffer overflow in bfd_getl32() in bfd/libbfd.c   │
-│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2020-19726                   │
-│                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2020-21490   │          │                     │                                          │                     │ memory leak in get_field() in microblaze-dis.c               │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2020-21490                   │
-│                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                                        │ CVE-2020-35342   │          │                     │                                          │                     │ uninitialized heap memory in tic4x_print_cond() in           │
-│                                        │                  │          │                     │                                          │                     │ opcodes/tic4x-dis.c                                          │
-│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2020-35342                   │
 │                                        ├──────────────────┤          ├─────────────────────┤                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2021-46174   │          │ will_not_fix        │                                          │                     │ heap-based buffer overflow in bfd_getl32() in libbfd.c via   │
 │                                        │                  │          │                     │                                          │                     │ objdump                                                      │
