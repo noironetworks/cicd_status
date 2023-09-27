@@ -277,14 +277,217 @@ releases:
     released: false
   - acc_provision:
     - build-logs: release_artifacts/6.0.3.1/rc1/acc-provision/6.0.3.1-buildlog.txt
-      build-time: 2023-09-26 22:39:51 PDT
+      build-time: 2023-09-27 00:50:32 PDT
       commit:
       - link: https://github.com/noironetworks/acc-provision/commit/048eb370de0953989dfc19f593171675294fcd60
         sha: 048eb370de0953989dfc19f593171675294fcd60
       link: https://pypi.org/project/acc-provision/6.0.3.1rc1/#files
       tag: acc_provision-6.0.3.1rc1
-    container_images: []
-    last_updated: 2023-09-26 22:39:51 PDT
+    container_images:
+    - base-image:
+      - cve: release_artifacts/6.0.3.1/rc1/acc-provision-operator/6.0.3.1-cve-base.txt
+        severity:
+        - C: 4
+          H: 12
+          L: 136
+          M: 108
+          U: 3
+        sha: 0fb346fdc395bcf5be4154628a7b3fe8e193a0c2fcee51824e44f11551331f8a
+      build-logs: release_artifacts/6.0.3.1/rc1/acc-provision-operator/6.0.3.1-buildlog.txt
+      build-time: 2023-09-27 00:52:00 PDT
+      commit: *id001
+      cve: release_artifacts/6.0.3.1/rc1/acc-provision-operator/6.0.3.1-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.3.1.81c2369.rc1/images/sha256-error?context=explore
+        sha: error
+        tag: 6.0.3.1.81c2369.rc1
+      name: acc-provision-operator
+      quay:
+      - link: https://quay.io/noiro/acc-provision-operator:6.0.3.1.81c2369.rc1
+        sha: 729385bbfb0e6131aa9156f4f41545e9efd1f6d5ecef62f69095073d28389219
+        tag: 6.0.3.1.81c2369.rc1
+      sbom: release_artifacts/6.0.3.1/rc1/acc-provision-operator/6.0.3.1-sbom.txt
+      severity:
+      - C: 6
+        H: 20
+        L: 266
+        M: 354
+        U: 6
+    - base-image:
+      - cve: release_artifacts/6.0.3.1/rc1/aci-containers-host/6.0.3.1-cve-base.txt
+        severity:
+        - C: 0
+          H: 1
+          L: 0
+          M: 7
+          U: 0
+        sha: 351ed8b24d440c348486efd99587046e88bb966890a9207a5851d3a34a4dd346
+      build-logs: release_artifacts/6.0.3.1/rc1/aci-containers-host/6.0.3.1-buildlog.txt
+      build-time: 2023-09-27 00:52:01 PDT
+      commit: *id002
+      cve: release_artifacts/6.0.3.1/rc1/aci-containers-host/6.0.3.1-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/aci-containers-host/6.0.3.1.81c2369.rc1/images/sha256-error?context=explore
+        sha: error
+        tag: 6.0.3.1.81c2369.rc1
+      name: aci-containers-host
+      quay:
+      - link: https://quay.io/noiro/aci-containers-host:6.0.3.1.81c2369.rc1
+        sha: 2407449c73bafc9536d5b992b2cee5c100d4a5a39990d8b0a2db52c272addf11
+        tag: 6.0.3.1.81c2369.rc1
+      sbom: release_artifacts/6.0.3.1/rc1/aci-containers-host/6.0.3.1-sbom.txt
+      severity:
+      - C: 0
+        H: 1
+        L: 0
+        M: 7
+        U: 0
+    - base-image:
+      - cve: release_artifacts/6.0.3.1/rc1/aci-containers-controller/6.0.3.1-cve-base.txt
+        severity:
+        - C: 0
+          H: 1
+          L: 0
+          M: 7
+          U: 0
+        sha: 351ed8b24d440c348486efd99587046e88bb966890a9207a5851d3a34a4dd346
+      build-logs: release_artifacts/6.0.3.1/rc1/aci-containers-controller/6.0.3.1-buildlog.txt
+      build-time: 2023-09-27 00:52:03 PDT
+      commit: *id003
+      cve: release_artifacts/6.0.3.1/rc1/aci-containers-controller/6.0.3.1-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/aci-containers-controller/6.0.3.1.81c2369.rc1/images/sha256-error?context=explore
+        sha: error
+        tag: 6.0.3.1.81c2369.rc1
+      name: aci-containers-controller
+      quay:
+      - link: https://quay.io/noiro/aci-containers-controller:6.0.3.1.81c2369.rc1
+        sha: 297ab35a0e56aa5bfe38162ee554d6157699419e35f4de0f6145d634d2e1753d
+        tag: 6.0.3.1.81c2369.rc1
+      sbom: release_artifacts/6.0.3.1/rc1/aci-containers-controller/6.0.3.1-sbom.txt
+      severity:
+      - C: 0
+        H: 5
+        L: 0
+        M: 10
+        U: 0
+    - base-image:
+      - cve: release_artifacts/6.0.3.1/rc1/cnideploy/6.0.3.1-cve-base.txt
+        severity:
+        - C: 0
+          H: 1
+          L: 0
+          M: 7
+          U: 0
+        sha: 351ed8b24d440c348486efd99587046e88bb966890a9207a5851d3a34a4dd346
+      build-logs: release_artifacts/6.0.3.1/rc1/cnideploy/6.0.3.1-buildlog.txt
+      build-time: 2023-09-27 00:52:04 PDT
+      commit: *id004
+      cve: release_artifacts/6.0.3.1/rc1/cnideploy/6.0.3.1-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.3.1.81c2369.rc1/images/sha256-error?context=explore
+        sha: error
+        tag: 6.0.3.1.81c2369.rc1
+      name: cnideploy
+      quay:
+      - link: https://quay.io/noiro/cnideploy:6.0.3.1.81c2369.rc1
+        sha: 7020270d86331772269f7c66388d0ba6f268abf25701e0a859f840d41944c1bd
+        tag: 6.0.3.1.81c2369.rc1
+      sbom: release_artifacts/6.0.3.1/rc1/cnideploy/6.0.3.1-sbom.txt
+      severity:
+      - C: 0
+        H: 1
+        L: 0
+        M: 9
+        U: 0
+    - base-image:
+      - cve: release_artifacts/6.0.3.1/rc1/aci-containers-operator/6.0.3.1-cve-base.txt
+        severity:
+        - C: 0
+          H: 1
+          L: 0
+          M: 7
+          U: 0
+        sha: 351ed8b24d440c348486efd99587046e88bb966890a9207a5851d3a34a4dd346
+      build-logs: release_artifacts/6.0.3.1/rc1/aci-containers-operator/6.0.3.1-buildlog.txt
+      build-time: 2023-09-27 00:52:05 PDT
+      commit: *id005
+      cve: release_artifacts/6.0.3.1/rc1/aci-containers-operator/6.0.3.1-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/aci-containers-operator/6.0.3.1.81c2369.rc1/images/sha256-error?context=explore
+        sha: error
+        tag: 6.0.3.1.81c2369.rc1
+      name: aci-containers-operator
+      quay:
+      - link: https://quay.io/noiro/aci-containers-operator:6.0.3.1.81c2369.rc1
+        sha: ffc2534d4fabd9bfcf08f713a03edaa1e9b286c07db104cceb1ddef67180604e
+        tag: 6.0.3.1.81c2369.rc1
+      sbom: release_artifacts/6.0.3.1/rc1/aci-containers-operator/6.0.3.1-sbom.txt
+      severity:
+      - C: 0
+        H: 5
+        L: 0
+        M: 8
+        U: 0
+    - base-image:
+      - cve: release_artifacts/6.0.3.1/rc1/openvswitch/6.0.3.1-cve-base.txt
+        severity:
+        - C: 0
+          H: 0
+          L: 0
+          M: 0
+          U: 0
+        sha: 0dfa71a7ec2caf445e7ac6b7422ae67f3518960bd6dbf62a7b77fa7a6cfc02b1
+      build-logs: release_artifacts/6.0.3.1/rc1/openvswitch/6.0.3.1-buildlog.txt
+      build-time: 2023-09-27 00:52:07 PDT
+      commit: *id006
+      cve: release_artifacts/6.0.3.1/rc1/openvswitch/6.0.3.1-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.3.1.81c2369.rc1/images/sha256-error?context=explore
+        sha: error
+        tag: 6.0.3.1.81c2369.rc1
+      name: openvswitch
+      quay:
+      - link: https://quay.io/noiro/openvswitch:6.0.3.1.81c2369.rc1
+        sha: b49a9a33a2dc24249ab48577bde2864468e06990a83df9be45e8cc4bca2cf678
+        tag: 6.0.3.1.81c2369.rc1
+      sbom: release_artifacts/6.0.3.1/rc1/openvswitch/6.0.3.1-sbom.txt
+      severity:
+      - C: 0
+        H: 0
+        L: 0
+        M: 4
+        U: 0
+    - base-image:
+      - cve: release_artifacts/6.0.3.1/rc1/opflex/6.0.3.1-cve-base.txt
+        severity:
+        - C: 0
+          H: 0
+          L: 0
+          M: 0
+          U: 0
+        sha: 0dfa71a7ec2caf445e7ac6b7422ae67f3518960bd6dbf62a7b77fa7a6cfc02b1
+      build-logs: release_artifacts/6.0.3.1/rc1/opflex/6.0.3.1-buildlog.txt
+      build-time: 2023-09-27 00:52:08 PDT
+      commit: *id007
+      cve: release_artifacts/6.0.3.1/rc1/opflex/6.0.3.1-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/opflex/6.0.3.1.81c2369.rc1/images/sha256-error?context=explore
+        sha: error
+        tag: 6.0.3.1.81c2369.rc1
+      name: opflex
+      quay:
+      - link: https://quay.io/noiro/opflex:6.0.3.1.81c2369.rc1
+        sha: 8e6748644d875af73bb35d7ecde0cbfacc48947fcd1e21d8a659125cde957e62
+        tag: 6.0.3.1.81c2369.rc1
+      sbom: release_artifacts/6.0.3.1/rc1/opflex/6.0.3.1-sbom.txt
+      severity:
+      - C: 0
+        H: 0
+        L: 0
+        M: 4
+        U: 0
+    last_updated: 2023-09-27 00:50:32 PDT
     release_name: 6.0.3.1.rc1
     released: false
   release_tag: 6.0.3.1
