@@ -2,7 +2,6 @@ fetch('release_artifacts/releases.yaml')
   .then(response => response.text())
   .then(data => {
     const parsedData = jsyaml.load(data);
-    console.log("Parsed YAML file 'release_artifacts/releases.yaml':", parsedData);
 
     const releaseTable = document.querySelector('#container-release-table');
     const tableBody = releaseTable.querySelector('tbody');
@@ -11,13 +10,10 @@ fetch('release_artifacts/releases.yaml')
     const releaseTag = releaseName.replace(/(\.z|.rc[0-9]+)$/, '');
     var accProcOpRow = document.createElement('tr');
 
-    console.log("releaseTag", releaseTag);
     for (const releaseData of parsedData.releases) {
       if (releaseData.release_tag === releaseTag) {
-        console.log("log", releaseData.release_tag);
         for (const releaseStream of releaseData.release_streams) {
           if (releaseStream.release_name === releaseName) {
-            console.log("log", releaseStream);
             if (releaseName === releaseTag) {
               if (releaseStream.released === false) {
                 const releaseRow = document.createElement('tr');
@@ -73,13 +69,15 @@ fetch('release_artifacts/releases.yaml')
               const quaySHACell = document.createElement('td');
               if (image.quay[0].hasOwnProperty('sha') === false) {
                 releaseRow.appendChild(quaySHACell.textContent = '');
+              } else if (image.quay[0].sha === "error") {
+                  quaySHACell.textContent = 'N/A';
               } else {
-              const quaySHALink = document.createElement('a');
-              const quay = "quay";
-              quaySHALink.href = `manifest-sha.html?release=${encodeURIComponent(releaseName)}&dq=${encodeURIComponent(quay)}`
-              quaySHALink.textContent = image.quay[0].sha.replace('sha256:', '').substring(0, 12);
-              quaySHACell.appendChild(quaySHALink);
-              releaseRow.appendChild(quaySHACell);
+                const quaySHALink = document.createElement('a');
+                const quay = "quay";
+                quaySHALink.href = `manifest-sha.html?release=${encodeURIComponent(releaseName)}&dq=${encodeURIComponent(quay)}`
+                quaySHALink.textContent = image.quay[0].sha.replace('sha256:', '').substring(0, 12);
+                quaySHACell.appendChild(quaySHALink);
+                releaseRow.appendChild(quaySHACell);
               }
 
               // create a link for docker tags
@@ -103,12 +101,14 @@ fetch('release_artifacts/releases.yaml')
               const dockerSHACell = document.createElement('td');
               if (!image.docker[0].hasOwnProperty('sha')) {
                 releaseRow.appendChild(dockerSHACell.textContent = '');
+              } else if (image.docker[0].sha === "error") {
+                  dockerSHACell.textContent = 'N/A';
               } else {
-                const dockerSHALink = document.createElement('a');
-                const docker = "docker";
-                dockerSHALink.href = `manifest-sha.html?release=${encodeURIComponent(releaseName)}&dq=${encodeURIComponent(docker)}`
-                dockerSHALink.textContent = image.docker[0].sha.replace('sha256:', '').substring(0, 12);
-                dockerSHACell.appendChild(dockerSHALink);
+                  const dockerSHALink = document.createElement('a');
+                  const docker = "docker";
+                  dockerSHALink.href = `manifest-sha.html?release=${encodeURIComponent(releaseName)}&dq=${encodeURIComponent(docker)}`
+                  dockerSHALink.textContent = image.docker[0].sha.replace('sha256:', '').substring(0, 12);
+                  dockerSHACell.appendChild(dockerSHALink);
               }
               releaseRow.appendChild(dockerSHACell);
 

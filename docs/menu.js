@@ -2,7 +2,6 @@ fetch('release_artifacts/releases.yaml')
   .then(response => response.text())
   .then(data => {
     const parsedData = jsyaml.load(data);
-    console.log("Parsed YAML file 'release_artifacts/releases.yaml':", parsedData);
 
     const sortedReleases = parsedData.releases.sort((a, b) => {
       if (a.release_tag > b.release_tag) return -1;

@@ -2,7 +2,6 @@ fetch('release_artifacts/releases.yaml')
   .then(response => response.text())
   .then(data => {
     const parsedData = jsyaml.load(data);
-    console.log("Parsed YAML file 'release_artifacts/releases.yaml':", parsedData);
 
     const accProvisionTable = document.querySelector('#acc-provision-table');
     const accProvisionTableBody = accProvisionTable.querySelector('tbody');
