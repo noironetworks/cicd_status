@@ -6,7 +6,7 @@ rpm   4.16.1.3             python  CVE-2021-3521   Medium
 
 quay.io/noiro/openvswitch:6.0.3.1.81c2369.z (redhat 9.2)
 ========================================================
-Total: 192 (UNKNOWN: 0, LOW: 118, MEDIUM: 71, HIGH: 3, CRITICAL: 0)
+Total: 196 (UNKNOWN: 0, LOW: 118, MEDIUM: 71, HIGH: 7, CRITICAL: 0)
 
 ┌────────────────────────────┬────────────────┬──────────┬──────────────┬─────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │          Library           │ Vulnerability  │ Severity │    Status    │  Installed Version  │ Fixed Version │                            Title                             │
@@ -44,7 +44,10 @@ Total: 192 (UNKNOWN: 0, LOW: 118, MEDIUM: 71, HIGH: 3, CRITICAL: 0)
 │                            │                │          │              │                     │               │ data                                                         │
 │                            │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-32665                   │
 ├────────────────────────────┼────────────────┼──────────┤              ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ glibc                      │ CVE-2023-4527  │ MEDIUM   │              │ 2.34-82.el9         │               │ Stack read overflow in getaddrinfo in no-aaaa mode           │
+│ glibc                      │ CVE-2023-4911  │ HIGH     │              │ 2.34-82.el9         │               │ buffer overflow in ld.so leading to privilege escalation     │
+│                            │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4911                    │
+│                            ├────────────────┼──────────┤              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4527  │ MEDIUM   │              │                     │               │ Stack read overflow in getaddrinfo in no-aaaa mode           │
 │                            │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4527                    │
 │                            ├────────────────┤          │              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-4806  │          │              │                     │               │ potential use-after-free in getaddrinfo()                    │
@@ -55,8 +58,11 @@ Total: 192 (UNKNOWN: 0, LOW: 118, MEDIUM: 71, HIGH: 3, CRITICAL: 0)
 │                            ├────────────────┤          │              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-5156  │          │              │                     │               │ DoS due to memory leak in getaddrinfo.c                      │
 │                            │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-5156                    │
-├────────────────────────────┼────────────────┤          │              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ glibc-common               │ CVE-2023-4527  │          │              │                     │               │ Stack read overflow in getaddrinfo in no-aaaa mode           │
+├────────────────────────────┼────────────────┼──────────┤              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ glibc-common               │ CVE-2023-4911  │ HIGH     │              │                     │               │ buffer overflow in ld.so leading to privilege escalation     │
+│                            │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4911                    │
+│                            ├────────────────┼──────────┤              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4527  │ MEDIUM   │              │                     │               │ Stack read overflow in getaddrinfo in no-aaaa mode           │
 │                            │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4527                    │
 │                            ├────────────────┤          │              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-4806  │          │              │                     │               │ potential use-after-free in getaddrinfo()                    │
@@ -67,8 +73,11 @@ Total: 192 (UNKNOWN: 0, LOW: 118, MEDIUM: 71, HIGH: 3, CRITICAL: 0)
 │                            ├────────────────┤          │              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-5156  │          │              │                     │               │ DoS due to memory leak in getaddrinfo.c                      │
 │                            │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-5156                    │
-├────────────────────────────┼────────────────┤          │              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ glibc-langpack-en          │ CVE-2023-4527  │          │              │                     │               │ Stack read overflow in getaddrinfo in no-aaaa mode           │
+├────────────────────────────┼────────────────┼──────────┤              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ glibc-langpack-en          │ CVE-2023-4911  │ HIGH     │              │                     │               │ buffer overflow in ld.so leading to privilege escalation     │
+│                            │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4911                    │
+│                            ├────────────────┼──────────┤              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4527  │ MEDIUM   │              │                     │               │ Stack read overflow in getaddrinfo in no-aaaa mode           │
 │                            │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4527                    │
 │                            ├────────────────┤          │              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-4806  │          │              │                     │               │ potential use-after-free in getaddrinfo()                    │
@@ -79,8 +88,11 @@ Total: 192 (UNKNOWN: 0, LOW: 118, MEDIUM: 71, HIGH: 3, CRITICAL: 0)
 │                            ├────────────────┤          │              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-5156  │          │              │                     │               │ DoS due to memory leak in getaddrinfo.c                      │
 │                            │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-5156                    │
-├────────────────────────────┼────────────────┤          │              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ glibc-minimal-langpack     │ CVE-2023-4527  │          │              │                     │               │ Stack read overflow in getaddrinfo in no-aaaa mode           │
+├────────────────────────────┼────────────────┼──────────┤              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ glibc-minimal-langpack     │ CVE-2023-4911  │ HIGH     │              │                     │               │ buffer overflow in ld.so leading to privilege escalation     │
+│                            │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4911                    │
+│                            ├────────────────┼──────────┤              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4527  │ MEDIUM   │              │                     │               │ Stack read overflow in getaddrinfo in no-aaaa mode           │
 │                            │                │          │              │                     │               │ https://avd.aquasec.com/nvd/cve-2023-4527                    │
 │                            ├────────────────┤          │              │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-4806  │          │              │                     │               │ potential use-after-free in getaddrinfo()                    │
