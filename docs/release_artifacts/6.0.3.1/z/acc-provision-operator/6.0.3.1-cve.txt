@@ -180,6 +180,9 @@ kernel-headers                          4.18.0-477.27.1.el8_8                   
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-4132        Medium    
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-40283       Medium    
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-4010        Medium    
+kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-39193       Medium    
+kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-39192       Medium    
+kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-39189       Medium    
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-38409       Medium    
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-3772        Medium    
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-37454       Medium    
@@ -332,6 +335,7 @@ kernel-headers                          4.18.0-477.27.1.el8_8                   
 kernel-headers                          4.18.0-477.27.1.el8_8                     (won't fix)          rpm     CVE-2011-1180        Medium    
 kernel-headers                          4.18.0-477.27.1.el8_8                     (won't fix)          rpm     CVE-2011-1017        Medium    
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-4194        Low       
+kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-39194       Low       
 kernel-headers                          4.18.0-477.27.1.el8_8                     (won't fix)          rpm     CVE-2023-3358        Low       
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-3212        Low       
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-3159        Low       
@@ -385,6 +389,7 @@ kernel-headers                          4.18.0-477.27.1.el8_8                   
 kernel-headers                          4.18.0-477.27.1.el8_8                     (won't fix)          rpm     CVE-2018-7273        Low       
 kernel-headers                          4.18.0-477.27.1.el8_8                     (won't fix)          rpm     CVE-2010-4529        Low       
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-4563        Unknown   
+kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-39195       Unknown   
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-3327        Unknown   
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm     CVE-2023-0047        Unknown   
 krb5-libs                               1.18.2-25.el8_8                           (won't fix)          rpm     CVE-2020-17049       Medium    
@@ -572,6 +577,7 @@ tar                                     2:1.30-9.el8                            
 tar                                     2:1.30-9.el8                              (won't fix)          rpm     CVE-2005-2541        Medium    
 tar                                     2:1.30-9.el8                              (won't fix)          rpm     CVE-2019-9923        Low       
 tpm2-tss                                2.3.2-4.el8                                                    rpm     CVE-2023-22745       Low       
+vim-minimal                             2:8.0.1763-19.el8_6.4                                          rpm     CVE-2023-5441        Low       
 vim-minimal                             2:8.0.1763-19.el8_6.4                     (won't fix)          rpm     CVE-2023-5344        Low       
 vim-minimal                             2:8.0.1763-19.el8_6.4                     (won't fix)          rpm     CVE-2023-4781        Low       
 vim-minimal                             2:8.0.1763-19.el8_6.4                                          rpm     CVE-2023-4752        Low       
@@ -638,7 +644,7 @@ vim-minimal                             2:8.0.1763-19.el8_6.4                   
 
 quay.io/noiro/acc-provision-operator:6.0.3.1.81c2369.z (redhat 8.8)
 ===================================================================
-Total: 567 (UNKNOWN: 0, LOW: 290, MEDIUM: 257, HIGH: 20, CRITICAL: 0)
+Total: 567 (UNKNOWN: 0, LOW: 289, MEDIUM: 258, HIGH: 20, CRITICAL: 0)
 
 ┌────────────────────────────────────────┬──────────────────┬──────────┬─────────────────────┬──────────────────────────────────────────┬─────────────────────┬──────────────────────────────────────────────────────────────┐
 │                Library                 │  Vulnerability   │ Severity │       Status        │            Installed Version             │    Fixed Version    │                            Title                             │
@@ -1039,16 +1045,9 @@ Total: 567 (UNKNOWN: 0, LOW: 290, MEDIUM: 257, HIGH: 20, CRITICAL: 0)
 │                                        │                  │          │                     │                                          │                     │ objdump                                                      │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2021-46174                   │
 │                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                                        │ CVE-2022-35205   │          │                     │                                          │                     │ reachable assertion in display_debug_names() in dwarf.c      │
-│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2022-35205                   │
-│                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2022-35206   │          │                     │                                          │                     │ NULL pointer dereference in read_and_display_attr_value() in │
 │                                        │                  │          │                     │                                          │                     │ dwarf.c                                                      │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2022-35206                   │
-│                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                                        │ CVE-2022-44840   │          │                     │                                          │                     │ heap-based buffer overflow in find_section_in_set() in       │
-│                                        │                  │          │                     │                                          │                     │ readelf.c                                                    │
-│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2022-44840                   │
 │                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2022-45703   │          │                     │                                          │                     │ heap-based buffer overflow in display_debug_section() in     │
 │                                        │                  │          │                     │                                          │                     │ readelf.c                                                    │
@@ -1669,6 +1668,9 @@ Total: 567 (UNKNOWN: 0, LOW: 290, MEDIUM: 257, HIGH: 20, CRITICAL: 0)
 │                                        │ CVE-2023-38409   │          │                     │                                          │                     │ out-of-sync arrays in fbcon_mode_deleted due to wrong        │
 │                                        │                  │          │                     │                                          │                     │ con2fb_map assignment                                        │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-38409                   │
+│                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2023-39189   │          │                     │                                          │                     │ nftables out-of-bounds read in nf_osf_match_one()            │
+│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-39189                   │
 │                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2023-39192   │          │                     │                                          │                     │ xtables out-of-bounds read in u32_match_it()                 │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-39192                   │
@@ -2659,6 +2661,9 @@ Total: 567 (UNKNOWN: 0, LOW: 290, MEDIUM: 257, HIGH: 20, CRITICAL: 0)
 │                                        ├──────────────────┤          ├─────────────────────┤                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2023-5344    │          │ will_not_fix        │                                          │                     │ Heap-based Buffer Overflow in trunc_string()                 │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-5344                    │
+│                                        ├──────────────────┤          ├─────────────────────┤                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2023-5441    │          │ affected            │                                          │                     │ NULL pointer dereference in screen_line() in src/screen.c    │
+│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-5441                    │
 └────────────────────────────────────────┴──────────────────┴──────────┴─────────────────────┴──────────────────────────────────────────┴─────────────────────┴──────────────────────────────────────────────────────────────┘
 
 Python (python-pkg)
