@@ -722,8 +722,45 @@ releases:
         sha: fb59dfc79491e8ca046b7e2e526d1db59158dfc7
       link: https://test.pypi.org/project/acc-provision/6.0.3.2.dev8238/#files
       tag: acc_provision-6.0.3.2.dev8238
-    container_images: []
-    last_updated: 2023-10-11 18:25:49 PDT
+    container_images:
+    - base-image:
+      - cve: release_artifacts/6.0.3.2/z/acc-provision-operator/6.0.3.2-cve-base.txt
+        severity:
+        - C: 4
+          H: 16
+          L: 153
+          M: 99
+          U: 4
+        sha: 0fb346fdc395bcf5be4154628a7b3fe8e193a0c2fcee51824e44f11551331f8a
+      build-logs: release_artifacts/6.0.3.2/z/acc-provision-operator/6.0.3.2-buildlog.txt
+      build-time: 2023-10-11 18:28:59 PDT
+      commit:
+      - link: https://github.com/noironetworks/acc-provision-operator/commit/576259933e3ad4c9d84e4bf6873471d0edf126f5
+        sha: 576259933e3ad4c9d84e4bf6873471d0edf126f5
+      cve: release_artifacts/6.0.3.2/z/acc-provision-operator/6.0.3.2-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.3.2.81c2369.z/images/sha256-11852f2782eae172730b3f62b6da904cda2ce002bc5a2324610b52fe8ecfc68e?context=explore
+        sha: 11852f2782eae172730b3f62b6da904cda2ce002bc5a2324610b52fe8ecfc68e
+        tag: 6.0.3.2.81c2369.z
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.3.2.81c2369.101223.608/images/sha256-11852f2782eae172730b3f62b6da904cda2ce002bc5a2324610b52fe8ecfc68e?context=explore
+        sha: 11852f2782eae172730b3f62b6da904cda2ce002bc5a2324610b52fe8ecfc68e
+        tag: 6.0.3.2.81c2369.101223.608
+      name: acc-provision-operator
+      quay:
+      - link: https://quay.io/noiro/acc-provision-operator:6.0.3.2.81c2369.z
+        sha: 24312778b153914164a49e67d7c0fce38d49b466928cc38265673584dba0759a
+        tag: 6.0.3.2.81c2369.z
+      - link: https://quay.io/noiro/acc-provision-operator:6.0.3.2.81c2369.101223.608
+        sha: 24312778b153914164a49e67d7c0fce38d49b466928cc38265673584dba0759a
+        tag: 6.0.3.2.81c2369.101223.608
+      sbom: release_artifacts/6.0.3.2/z/acc-provision-operator/6.0.3.2-sbom.txt
+      severity:
+      - C: 8
+        H: 21
+        L: 294
+        M: 313
+        U: 9
+    last_updated: 2023-10-11 18:28:59 PDT
     release_name: 6.0.3.2.z
   - acc_provision: []
     container_images: []
