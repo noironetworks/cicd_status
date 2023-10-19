@@ -1,27 +1,26 @@
-NAME              INSTALLED                           FIXED-IN  TYPE       VULNERABILITY        SEVERITY 
-golang.org/x/net  v0.10.0                             0.17.0    go-module  GHSA-qppj-fm5r-hxr3  Medium    
-golang.org/x/net  v0.10.0                             0.17.0    go-module  GHSA-4374-p667-p6c8  Medium    
-golang.org/x/net  v0.10.0                             0.13.0    go-module  GHSA-2wrh-6pvc-2jm9  Medium    
-istio.io/istio    v0.0.0-20230607011503-697f4ff0fe6e  1.1.13    go-module  GHSA-qcvw-82hh-gq38  High      
-istio.io/istio    v0.0.0-20230607011503-697f4ff0fe6e  1.9.8     go-module  GHSA-hqxw-mm44-gc4r  High      
-istio.io/istio    v0.0.0-20230607011503-697f4ff0fe6e  1.11.7    go-module  GHSA-856q-xv3c-7f2f  High      
-istio.io/istio    v0.0.0-20230607011503-697f4ff0fe6e  1.9.8     go-module  GHSA-7774-7vr3-cc8j  High      
-istio.io/istio    v0.0.0-20230607011503-697f4ff0fe6e  1.12.18   go-module  GHSA-xwx5-5c9g-x68x  Medium    
-requests          2.25.1                              2.31.0    python     GHSA-j8r2-6x86-q33q  Medium    
-setuptools        53.0.0                              65.5.1    python     GHSA-r9hx-vwmv-q579  High      
-urllib3           1.26.5                              1.26.17   python     GHSA-v845-jxx5-vc9f  Medium
+NAME                                                           INSTALLED                           FIXED-IN  TYPE       VULNERABILITY        SEVERITY 
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp  v0.42.0                             0.44.0    go-module  GHSA-rcjv-mgp8-qvmr  High      
+golang.org/x/net                                               v0.10.0                             0.17.0    go-module  GHSA-qppj-fm5r-hxr3  Medium    
+golang.org/x/net                                               v0.10.0                             0.17.0    go-module  GHSA-4374-p667-p6c8  Medium    
+golang.org/x/net                                               v0.10.0                             0.13.0    go-module  GHSA-2wrh-6pvc-2jm9  Medium    
+istio.io/istio                                                 v0.0.0-20230607011503-697f4ff0fe6e  1.1.13    go-module  GHSA-qcvw-82hh-gq38  High      
+istio.io/istio                                                 v0.0.0-20230607011503-697f4ff0fe6e  1.9.8     go-module  GHSA-hqxw-mm44-gc4r  High      
+istio.io/istio                                                 v0.0.0-20230607011503-697f4ff0fe6e  1.11.7    go-module  GHSA-856q-xv3c-7f2f  High      
+istio.io/istio                                                 v0.0.0-20230607011503-697f4ff0fe6e  1.9.8     go-module  GHSA-7774-7vr3-cc8j  High      
+istio.io/istio                                                 v0.0.0-20230607011503-697f4ff0fe6e  1.12.18   go-module  GHSA-xwx5-5c9g-x68x  Medium    
+requests                                                       2.25.1                              2.31.0    python     GHSA-j8r2-6x86-q33q  Medium    
+setuptools                                                     53.0.0                              65.5.1    python     GHSA-r9hx-vwmv-q579  High      
+urllib3                                                        1.26.5                              1.26.17   python     GHSA-v845-jxx5-vc9f  Medium    
+urllib3                                                        1.26.5                              1.26.18   python     GHSA-g4mx-q9vg-27p4  Medium
 
 quay.io/noiro/aci-containers-operator:6.0.3.2.81c2369.z (redhat 9.2)
 ====================================================================
-Total: 225 (UNKNOWN: 0, LOW: 142, MEDIUM: 80, HIGH: 3, CRITICAL: 0)
+Total: 222 (UNKNOWN: 0, LOW: 140, MEDIUM: 81, HIGH: 1, CRITICAL: 0)
 
 ┌────────────────────┬──────────────────┬──────────┬─────────────────────┬─────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │      Library       │  Vulnerability   │ Severity │       Status        │  Installed Version  │ Fixed Version │                            Title                             │
 ├────────────────────┼──────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ curl               │ CVE-2023-38545   │ HIGH     │ affected            │ 7.76.1-23.el9_2.2   │               │ a heap based buffer overflow in the SOCKS5 proxy handshake   │
-│                    │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-38545                   │
-│                    ├──────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                    │ CVE-2023-27536   │ MEDIUM   │                     │                     │               │ GSS delegation too eager connection re-use                   │
+│ curl               │ CVE-2023-27536   │ MEDIUM   │ affected            │ 7.76.1-23.el9_2.4   │               │ GSS delegation too eager connection re-use                   │
 │                    │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-27536                   │
 │                    ├──────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                    │ CVE-2023-27533   │ LOW      │                     │                     │               │ TELNET option IAC injection                                  │
@@ -32,9 +31,6 @@ Total: 225 (UNKNOWN: 0, LOW: 142, MEDIUM: 80, HIGH: 3, CRITICAL: 0)
 │                    ├──────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                    │ CVE-2023-27538   │          │                     │                     │               │ SSH connection too eager reuse still                         │
 │                    │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-27538                   │
-│                    ├──────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                    │ CVE-2023-38546   │          │                     │                     │               │ cookie injection with none file                              │
-│                    │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-38546                   │
 ├────────────────────┼──────────────────┤          │                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ emacs-filesystem   │ CVE-2017-1000383 │          │                     │ 1:27.2-8.el9_2.1    │               │ emacs: Ignores umask when creating a swap file               │
 │                    │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2017-1000383                 │
@@ -141,11 +137,8 @@ Total: 225 (UNKNOWN: 0, LOW: 142, MEDIUM: 80, HIGH: 3, CRITICAL: 0)
 │ libarchive         │ CVE-2023-30571   │          │ will_not_fix        │ 3.5.3-4.el9         │               │ Race condition in multi-threaded use of                      │
 │                    │                  │          │                     │                     │               │ archive_write_disk_header() on posix based systems           │
 │                    │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-30571                   │
-├────────────────────┼──────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libcurl-minimal    │ CVE-2023-38545   │ HIGH     │ affected            │ 7.76.1-23.el9_2.2   │               │ a heap based buffer overflow in the SOCKS5 proxy handshake   │
-│                    │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-38545                   │
-│                    ├──────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                    │ CVE-2023-27536   │ MEDIUM   │                     │                     │               │ GSS delegation too eager connection re-use                   │
+├────────────────────┼──────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libcurl-minimal    │ CVE-2023-27536   │          │ affected            │ 7.76.1-23.el9_2.4   │               │ GSS delegation too eager connection re-use                   │
 │                    │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-27536                   │
 │                    ├──────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                    │ CVE-2023-27533   │ LOW      │                     │                     │               │ TELNET option IAC injection                                  │
@@ -156,9 +149,6 @@ Total: 225 (UNKNOWN: 0, LOW: 142, MEDIUM: 80, HIGH: 3, CRITICAL: 0)
 │                    ├──────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                    │ CVE-2023-27538   │          │                     │                     │               │ SSH connection too eager reuse still                         │
 │                    │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-27538                   │
-│                    ├──────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                    │ CVE-2023-38546   │          │                     │                     │               │ cookie injection with none file                              │
-│                    │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-38546                   │
 ├────────────────────┼──────────────────┼──────────┤                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ libgcc             │ CVE-2023-4039    │ MEDIUM   │                     │ 11.3.1-4.3.el9      │               │ -fstack-protector fails to guard dynamic stack allocations   │
 │                    │                  │          │                     │                     │               │ on ARM64                                                     │
@@ -785,6 +775,10 @@ Total: 225 (UNKNOWN: 0, LOW: 142, MEDIUM: 80, HIGH: 3, CRITICAL: 0)
 │                    ├──────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                    │ CVE-2023-5441    │          │                     │                     │               │ NULL pointer dereference in screen_line() in src/screen.c    │
 │                    │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-5441                    │
+├────────────────────┼──────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ zlib               │ CVE-2023-45853   │ MEDIUM   │ under_investigation │ 1.2.11-39.el9       │               │ integer overflow and resultant heap-based buffer overflow in │
+│                    │                  │          │                     │                     │               │ zipOpenNewFileInZip4_6                                       │
+│                    │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-45853                   │
 └────────────────────┴──────────────────┴──────────┴─────────────────────┴─────────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
 
 usr/local/bin/aci-containers-operator (gobinary)
