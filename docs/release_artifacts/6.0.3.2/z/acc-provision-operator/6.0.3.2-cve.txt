@@ -156,6 +156,7 @@ golang.org/x/net                        v0.10.0                                 
 golang.org/x/net                        v0.10.0                                   0.17.0               go-module  GHSA-4374-p667-p6c8  Medium    
 golang.org/x/net                        v0.10.0                                   0.13.0               go-module  GHSA-2wrh-6pvc-2jm9  Medium    
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-5345        High      
+kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-5178        High      
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-42753       High      
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-3812        High      
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-3611        High      
@@ -328,7 +329,10 @@ kernel-headers                          4.18.0-477.27.1.el8_8                   
 kernel-headers                          4.18.0-477.27.1.el8_8                     (won't fix)          rpm        CVE-2011-4087        Medium    
 kernel-headers                          4.18.0-477.27.1.el8_8                     (won't fix)          rpm        CVE-2011-1180        Medium    
 kernel-headers                          4.18.0-477.27.1.el8_8                     (won't fix)          rpm        CVE-2011-1017        Medium    
+kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-45871       Low       
+kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-45862       Low       
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-4194        Low       
+kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-40791       Low       
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-39194       Low       
 kernel-headers                          4.18.0-477.27.1.el8_8                     (won't fix)          rpm        CVE-2023-3358        Low       
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-3212        Low       
@@ -409,7 +413,7 @@ libgomp                                 8.5.0-18.el8                            
 libgomp                                 8.5.0-18.el8                              (won't fix)          rpm        CVE-2022-27943       Low       
 libgomp                                 8.5.0-18.el8                              (won't fix)          rpm        CVE-2019-14250       Low       
 libgomp                                 8.5.0-18.el8                              (won't fix)          rpm        CVE-2018-20657       Low       
-libnghttp2                              1.33.0-3.el8_2.1                                               rpm        CVE-2023-44487       High      
+libnghttp2                              1.33.0-3.el8_2.1                          0:1.33.0-5.el8_8     rpm        CVE-2023-44487       High      
 libpkgconf                              1.4.2-1.el8                                                    rpm        CVE-2023-24056       Low       
 libstdc++                               8.5.0-18.el8                                                   rpm        CVE-2023-4039        Medium    
 libstdc++                               8.5.0-18.el8                              (won't fix)          rpm        CVE-2021-42694       Medium    
@@ -516,8 +520,8 @@ python3-libxml2                         2.9.7-16.el8                            
 python3-libxml2                         2.9.7-16.el8                              0:2.9.7-16.el8_8.1   rpm        CVE-2023-29469       Medium    
 python3-libxml2                         2.9.7-16.el8                              0:2.9.7-16.el8_8.1   rpm        CVE-2023-28484       Medium    
 python3-pip-wheel                       9.0.3-22.el8                              (won't fix)          rpm        CVE-2018-20225       Low       
-python3-requests                        2.20.0-2.1.el8_1                          0:2.20.0-3.el8_8     rpm        CVE-2023-32681       Medium    
 python3-requests                        2.20.0-2.1.el8_1                                               rpm        CVE-2023-32681       Medium    
+python3-requests                        2.20.0-2.1.el8_1                          0:2.20.0-3.el8_8     rpm        CVE-2023-32681       Medium    
 python3-rpm                             4.14.3-26.el8                             (won't fix)          rpm        CVE-2021-35939       Medium    
 python3-rpm                             4.14.3-26.el8                             (won't fix)          rpm        CVE-2021-35938       Medium    
 python3-rpm                             4.14.3-26.el8                             (won't fix)          rpm        CVE-2021-35937       Medium    
@@ -636,7 +640,7 @@ vim-minimal                             2:8.0.1763-19.el8_6.4                   
 
 quay.io/noiro/acc-provision-operator:6.0.3.2.81c2369.z (redhat 8.8)
 ===================================================================
-Total: 563 (UNKNOWN: 0, LOW: 291, MEDIUM: 250, HIGH: 22, CRITICAL: 0)
+Total: 568 (UNKNOWN: 0, LOW: 294, MEDIUM: 252, HIGH: 22, CRITICAL: 0)
 
 ┌────────────────────────────────────────┬──────────────────┬──────────┬─────────────────────┬──────────────────────────────────────────┬─────────────────────┬──────────────────────────────────────────────────────────────┐
 │                Library                 │  Vulnerability   │ Severity │       Status        │            Installed Version             │    Fixed Version    │                            Title                             │
@@ -1160,9 +1164,6 @@ Total: 563 (UNKNOWN: 0, LOW: 291, MEDIUM: 250, HIGH: 22, CRITICAL: 0)
 │                                        │ CVE-2023-3812    │          │                     │                                          │                     │ bugs for oversize packet when napi frags enabled in          │
 │                                        │                  │          │                     │                                          │                     │ tun_napi_alloc_frags                                         │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-3812                    │
-│                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                                        │ CVE-2023-4128    │          │                     │                                          │                     │ cls_fw, cls_u32 and cls_route                                │
-│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-4128                    │
 │                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2023-42753   │          │                     │                                          │                     │ potential slab-out-of-bound access due to integer underflow  │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-42753                   │
@@ -1713,8 +1714,12 @@ Total: 563 (UNKNOWN: 0, LOW: 291, MEDIUM: 250, HIGH: 22, CRITICAL: 0)
 │                                        │ CVE-2023-4569    │          │                     │                                          │                     │ information leak in nft_set_catchall_flush in                │
 │                                        │                  │          │                     │                                          │                     │ net/netfilter/nf_tables_api.c                                │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-4569                    │
-│                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                                        │ CVE-2023-4610    │          │                     │                                          │                     │ slab-use-after-free Read in radix_tree_lookup while fuzzing  │
+│                                        ├──────────────────┤          ├─────────────────────┤                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2023-45863   │          │ under_investigation │                                          │                     │ lib/kobject.c vulnerable to fill_kobj_path out-of-bounds     │
+│                                        │                  │          │                     │                                          │                     │ write                                                        │
+│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-45863                   │
+│                                        ├──────────────────┤          ├─────────────────────┤                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2023-4610    │          │ affected            │                                          │                     │ slab-use-after-free Read in radix_tree_lookup while fuzzing  │
 │                                        │                  │          │                     │                                          │                     │ Linux kernel 6.4-rc6 with syzkaller.                         │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-4610                    │
 │                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
@@ -1930,9 +1935,18 @@ Total: 563 (UNKNOWN: 0, LOW: 291, MEDIUM: 250, HIGH: 22, CRITICAL: 0)
 │                                        │ CVE-2023-39194   │          │ affected            │                                          │                     │ out-of-bounds read in __xfrm_state_filter_match()            │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-39194                   │
 │                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2023-40791   │          │                     │                                          │                     │ lib/scatterlist.c fails to unpin pages                       │
+│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-40791                   │
+│                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2023-4194    │          │                     │                                          │                     │ correctly initialize socket uid next fix of i_uid to         │
 │                                        │                  │          │                     │                                          │                     │ current_fsuid                                                │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-4194                    │
+│                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2023-45862   │          │                     │                                          │                     │ drivers/usb/storage/ene_ub6250.c                             │
+│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-45862                   │
+│                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2023-45871   │          │                     │                                          │                     │ IGB driver inadequate buffer size for frames larger than MTU │
+│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-45871                   │
 ├────────────────────────────────────────┼──────────────────┼──────────┼─────────────────────┼──────────────────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
 │ krb5-libs                              │ CVE-2020-17049   │ MEDIUM   │ will_not_fix        │ 1.18.2-25.el8_8                          │                     │ delegation constrain bypass in S4U2Proxy                     │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2020-17049                   │
@@ -2018,8 +2032,12 @@ Total: 563 (UNKNOWN: 0, LOW: 291, MEDIUM: 250, HIGH: 22, CRITICAL: 0)
 │                                        │ CVE-2022-27943   │          │                     │                                          │                     │ libiberty/rust-demangle.c in GNU GCC 11.2 allows stack       │
 │                                        │                  │          │                     │                                          │                     │ exhaustion in demangle_const                                 │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
-├────────────────────────────────────────┼──────────────────┤          ├─────────────────────┼──────────────────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
-│ libpkgconf                             │ CVE-2023-24056   │          │ affected            │ 1.4.2-1.el8                              │                     │ unbounded string expansion due to incorrect checks may       │
+├────────────────────────────────────────┼──────────────────┼──────────┼─────────────────────┼──────────────────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libnghttp2                             │ CVE-2023-44487   │ HIGH     │ fixed               │ 1.33.0-3.el8_2.1                         │ 1.33.0-5.el8_8      │ Multiple HTTP/2 enabled web servers are vulnerable to a DDoS │
+│                                        │                  │          │                     │                                          │                     │ attack (Rapid...                                             │
+│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-44487                   │
+├────────────────────────────────────────┼──────────────────┼──────────┼─────────────────────┼──────────────────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libpkgconf                             │ CVE-2023-24056   │ LOW      │ affected            │ 1.4.2-1.el8                              │                     │ unbounded string expansion due to incorrect checks may       │
 │                                        │                  │          │                     │                                          │                     │ result in buffer overflow...                                 │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-24056                   │
 ├────────────────────────────────────────┼──────────────────┼──────────┼─────────────────────┼──────────────────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
@@ -2636,6 +2654,10 @@ Total: 563 (UNKNOWN: 0, LOW: 291, MEDIUM: 250, HIGH: 22, CRITICAL: 0)
 │                                        ├──────────────────┤          │                     │                                          ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2023-5441    │          │                     │                                          │                     │ NULL pointer dereference in screen_line() in src/screen.c    │
 │                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-5441                    │
+├────────────────────────────────────────┼──────────────────┼──────────┼─────────────────────┼──────────────────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
+│ zlib                                   │ CVE-2023-45853   │ MEDIUM   │ under_investigation │ 1.2.11-21.el8_7                          │                     │ integer overflow and resultant heap-based buffer overflow in │
+│                                        │                  │          │                     │                                          │                     │ zipOpenNewFileInZip4_6                                       │
+│                                        │                  │          │                     │                                          │                     │ https://avd.aquasec.com/nvd/cve-2023-45853                   │
 └────────────────────────────────────────┴──────────────────┴──────────┴─────────────────────┴──────────────────────────────────────────┴─────────────────────┴──────────────────────────────────────────────────────────────┘
 
 Python (python-pkg)
