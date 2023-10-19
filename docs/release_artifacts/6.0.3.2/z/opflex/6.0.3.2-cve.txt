@@ -2,15 +2,12 @@ No vulnerabilities found
 
 quay.io/noiro/opflex:6.0.3.2.81c2369.z (redhat 9.2)
 ===================================================
-Total: 86 (UNKNOWN: 0, LOW: 34, MEDIUM: 50, HIGH: 2, CRITICAL: 0)
+Total: 83 (UNKNOWN: 0, LOW: 32, MEDIUM: 51, HIGH: 0, CRITICAL: 0)
 
 ┌────────────────────────────┬────────────────┬──────────┬─────────────────────┬─────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │          Library           │ Vulnerability  │ Severity │       Status        │  Installed Version  │ Fixed Version │                            Title                             │
 ├────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ curl-minimal               │ CVE-2023-38545 │ HIGH     │ affected            │ 7.76.1-28.el9       │               │ a heap based buffer overflow in the SOCKS5 proxy handshake   │
-│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-38545                   │
-│                            ├────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2023-27536 │ MEDIUM   │                     │                     │               │ GSS delegation too eager connection re-use                   │
+│ curl-minimal               │ CVE-2023-27536 │ MEDIUM   │ affected            │ 7.76.1-28.el9       │               │ GSS delegation too eager connection re-use                   │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-27536                   │
 │                            ├────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-27533 │ LOW      │                     │                     │               │ TELNET option IAC injection                                  │
@@ -21,9 +18,6 @@ Total: 86 (UNKNOWN: 0, LOW: 34, MEDIUM: 50, HIGH: 2, CRITICAL: 0)
 │                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-27538 │          │                     │                     │               │ SSH connection too eager reuse still                         │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-27538                   │
-│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2023-38546 │          │                     │                     │               │ cookie injection with none file                              │
-│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-38546                   │
 ├────────────────────────────┼────────────────┤          │                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ file-libs                  │ CVE-2022-48554 │          │                     │ 5.39-14.el9         │               │ stack-based buffer over-read in file_copystr in funcs.c      │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2022-48554                   │
@@ -63,11 +57,8 @@ Total: 86 (UNKNOWN: 0, LOW: 34, MEDIUM: 50, HIGH: 2, CRITICAL: 0)
 │ libarchive                 │ CVE-2023-30571 │          │ will_not_fix        │ 3.5.3-4.el9         │               │ Race condition in multi-threaded use of                      │
 │                            │                │          │                     │                     │               │ archive_write_disk_header() on posix based systems           │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-30571                   │
-├────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libcurl-minimal            │ CVE-2023-38545 │ HIGH     │ affected            │ 7.76.1-28.el9       │               │ a heap based buffer overflow in the SOCKS5 proxy handshake   │
-│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-38545                   │
-│                            ├────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2023-27536 │ MEDIUM   │                     │                     │               │ GSS delegation too eager connection re-use                   │
+├────────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libcurl-minimal            │ CVE-2023-27536 │          │ affected            │ 7.76.1-28.el9       │               │ GSS delegation too eager connection re-use                   │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-27536                   │
 │                            ├────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-27533 │ LOW      │                     │                     │               │ TELNET option IAC injection                                  │
@@ -78,9 +69,6 @@ Total: 86 (UNKNOWN: 0, LOW: 34, MEDIUM: 50, HIGH: 2, CRITICAL: 0)
 │                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-27538 │          │                     │                     │               │ SSH connection too eager reuse still                         │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-27538                   │
-│                            ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2023-38546 │          │                     │                     │               │ cookie injection with none file                              │
-│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-38546                   │
 ├────────────────────────────┼────────────────┼──────────┤                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ libgcc                     │ CVE-2023-4039  │ MEDIUM   │                     │ 11.4.1-2.3.el9      │               │ -fstack-protector fails to guard dynamic stack allocations   │
 │                            │                │          │                     │                     │               │ on ARM64                                                     │
@@ -310,4 +298,8 @@ Total: 86 (UNKNOWN: 0, LOW: 34, MEDIUM: 50, HIGH: 2, CRITICAL: 0)
 ├────────────────────────────┼────────────────┼──────────┤                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ tpm2-tss                   │ CVE-2023-22745 │ LOW      │                     │ 3.2.2-2.el9         │               │ Buffer Overlow in TSS2_RC_Decode                             │
 │                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-22745                   │
+├────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ zlib                       │ CVE-2023-45853 │ MEDIUM   │ under_investigation │ 1.2.11-40.el9       │               │ integer overflow and resultant heap-based buffer overflow in │
+│                            │                │          │                     │                     │               │ zipOpenNewFileInZip4_6                                       │
+│                            │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-45853                   │
 └────────────────────────────┴────────────────┴──────────┴─────────────────────┴─────────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
