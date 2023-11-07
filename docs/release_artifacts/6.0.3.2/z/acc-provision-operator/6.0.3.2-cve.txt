@@ -169,6 +169,7 @@ kernel-headers                          4.18.0-477.27.1.el8_8                   
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-2163        High      
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2022-4744        High      
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2022-0886        High      
+kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-5090        Medium    
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-4732        Medium    
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-4622        Medium    
 kernel-headers                          4.18.0-477.27.1.el8_8                                          rpm        CVE-2023-45862       Medium    
@@ -641,7 +642,7 @@ zlib                                    1.2.11-21.el8_7                         
 
 quay.io/noiro/acc-provision-operator:6.0.3.2.81c2369.z (redhat 8.8)
 ===================================================================
-Total: 557 (UNKNOWN: 0, LOW: 296, MEDIUM: 239, HIGH: 22, CRITICAL: 0)
+Total: 558 (UNKNOWN: 0, LOW: 297, MEDIUM: 239, HIGH: 22, CRITICAL: 0)
 
 ┌────────────────────────────────────────┬──────────────────┬──────────┬─────────────────────┬────────────────────────┬─────────────────────┬──────────────────────────────────────────────────────────────┐
 │                Library                 │  Vulnerability   │ Severity │       Status        │   Installed Version    │    Fixed Version    │                            Title                             │
@@ -1718,7 +1719,8 @@ Total: 557 (UNKNOWN: 0, LOW: 296, MEDIUM: 239, HIGH: 22, CRITICAL: 0)
 │                                        │                  │          │                     │                        │                     │ exit_mmap to release...                                      │
 │                                        │                  │          │                     │                        │                     │ https://avd.aquasec.com/nvd/cve-2023-4732                    │
 │                                        ├──────────────────┤          │                     │                        ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                                        │ CVE-2023-5090    │          │                     │                        │                     │ [x86: KVM: SVM: always update the x2avic msr interception]   │
+│                                        │ CVE-2023-5090    │          │                     │                        │                     │ improper check in svm_set_x2apic_msr_interception allows     │
+│                                        │                  │          │                     │                        │                     │ direct access to host x2apic msrs                            │
 │                                        │                  │          │                     │                        │                     │ https://avd.aquasec.com/nvd/cve-2023-5090                    │
 │                                        ├──────────────────┤          ├─────────────────────┤                        ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2023-5717    │          │ under_investigation │                        │                     │ A heap out-of-bounds write                                   │
@@ -1934,6 +1936,10 @@ Total: 557 (UNKNOWN: 0, LOW: 296, MEDIUM: 239, HIGH: 22, CRITICAL: 0)
 │                                        │ CVE-2023-4194    │          │                     │                        │                     │ correctly initialize socket uid next fix of i_uid to         │
 │                                        │                  │          │                     │                        │                     │ current_fsuid                                                │
 │                                        │                  │          │                     │                        │                     │ https://avd.aquasec.com/nvd/cve-2023-4194                    │
+│                                        ├──────────────────┤          ├─────────────────────┤                        ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2023-47233   │          │ under_investigation │                        │                     │ Use after free in brcmf_cfg80211_escan_timeout_worker in     │
+│                                        │                  │          │                     │                        │                     │ drivers/net/wireless/broadcom/brcm80211/brcmfmac/cfg80211.c  │
+│                                        │                  │          │                     │                        │                     │ https://avd.aquasec.com/nvd/cve-2023-47233                   │
 ├────────────────────────────────────────┼──────────────────┼──────────┼─────────────────────┼────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
 │ krb5-libs                              │ CVE-2020-17049   │ MEDIUM   │ will_not_fix        │ 1.18.2-25.el8_8        │                     │ delegation constrain bypass in S4U2Proxy                     │
 │                                        │                  │          │                     │                        │                     │ https://avd.aquasec.com/nvd/cve-2020-17049                   │
