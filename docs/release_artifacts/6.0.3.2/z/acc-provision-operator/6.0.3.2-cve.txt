@@ -642,7 +642,7 @@ zlib                                    1.2.11-21.el8_7                         
 
 quay.io/noiro/acc-provision-operator:6.0.3.2.81c2369.z (redhat 8.8)
 ===================================================================
-Total: 558 (UNKNOWN: 0, LOW: 297, MEDIUM: 239, HIGH: 22, CRITICAL: 0)
+Total: 560 (UNKNOWN: 0, LOW: 299, MEDIUM: 239, HIGH: 22, CRITICAL: 0)
 
 ┌────────────────────────────────────────┬──────────────────┬──────────┬─────────────────────┬────────────────────────┬─────────────────────┬──────────────────────────────────────────────────────────────┐
 │                Library                 │  Vulnerability   │ Severity │       Status        │   Installed Version    │    Fixed Version    │                            Title                             │
@@ -2213,8 +2213,12 @@ Total: 558 (UNKNOWN: 0, LOW: 297, MEDIUM: 239, HIGH: 22, CRITICAL: 0)
 │                                        ├──────────────────┤          │                     │                        ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2023-3817    │          │                     │                        │                     │ Excessive time spent checking DH q parameter value           │
 │                                        │                  │          │                     │                        │                     │ https://avd.aquasec.com/nvd/cve-2023-3817                    │
-├────────────────────────────────────────┼──────────────────┤          │                     │                        ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│ openssl-libs                           │ CVE-2023-0464    │          │                     │                        │                     │ Denial of service by excessive resource usage in verifying   │
+│                                        ├──────────────────┤          ├─────────────────────┤                        ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2023-5678    │          │ under_investigation │                        │                     │ Generating excessively long X9.42 DH keys or checking        │
+│                                        │                  │          │                     │                        │                     │ excessively long X9.42 DH...                                 │
+│                                        │                  │          │                     │                        │                     │ https://avd.aquasec.com/nvd/cve-2023-5678                    │
+├────────────────────────────────────────┼──────────────────┤          ├─────────────────────┤                        ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│ openssl-libs                           │ CVE-2023-0464    │          │ will_not_fix        │                        │                     │ Denial of service by excessive resource usage in verifying   │
 │                                        │                  │          │                     │                        │                     │ X509 policy constraints...                                   │
 │                                        │                  │          │                     │                        │                     │ https://avd.aquasec.com/nvd/cve-2023-0464                    │
 │                                        ├──────────────────┤          │                     │                        ├─────────────────────┼──────────────────────────────────────────────────────────────┤
@@ -2233,6 +2237,10 @@ Total: 558 (UNKNOWN: 0, LOW: 297, MEDIUM: 239, HIGH: 22, CRITICAL: 0)
 │                                        ├──────────────────┤          │                     │                        ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2023-3817    │          │                     │                        │                     │ Excessive time spent checking DH q parameter value           │
 │                                        │                  │          │                     │                        │                     │ https://avd.aquasec.com/nvd/cve-2023-3817                    │
+│                                        ├──────────────────┤          ├─────────────────────┤                        ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2023-5678    │          │ under_investigation │                        │                     │ Generating excessively long X9.42 DH keys or checking        │
+│                                        │                  │          │                     │                        │                     │ excessively long X9.42 DH...                                 │
+│                                        │                  │          │                     │                        │                     │ https://avd.aquasec.com/nvd/cve-2023-5678                    │
 ├────────────────────────────────────────┼──────────────────┼──────────┼─────────────────────┼────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
 │ perl-Errno                             │ CVE-2023-31484   │ MEDIUM   │ affected            │ 1.28-422.el8           │                     │ CPAN.pm does not verify TLS certificates when downloading    │
 │                                        │                  │          │                     │                        │                     │ distributions over HTTPS                                     │
