@@ -24,7 +24,7 @@ urllib3                                                                      1.2
 
 quay.io/noiro/aci-containers-controller:6.0.3.2.81c2369.z (redhat 9.3)
 ======================================================================
-Total: 164 (UNKNOWN: 0, LOW: 126, MEDIUM: 38, HIGH: 0, CRITICAL: 0)
+Total: 165 (UNKNOWN: 0, LOW: 126, MEDIUM: 39, HIGH: 0, CRITICAL: 0)
 
 ┌────────────────────┬────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │      Library       │ Vulnerability  │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -59,8 +59,11 @@ Total: 164 (UNKNOWN: 0, LOW: 126, MEDIUM: 38, HIGH: 0, CRITICAL: 0)
 │ gnupg2             │ CVE-2022-3219  │          │ will_not_fix        │ 2.3.3-4.el9                   │               │ denial of service issue (resource consumption) using         │
 │                    │                │          │                     │                               │               │ compressed packets                                           │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-3219                    │
-├────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libarchive         │ CVE-2023-30571 │ MEDIUM   │                     │ 3.5.3-4.el9                   │               │ libarchive: Race condition in multi-threaded use of          │
+├────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ gnutls             │ CVE-2023-5981  │ MEDIUM   │ affected            │ 3.7.6-23.el9                  │               │ gnutls: timing side-channel in the RSA-PSK authentication    │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5981                    │
+├────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libarchive         │ CVE-2023-30571 │          │ will_not_fix        │ 3.5.3-4.el9                   │               │ libarchive: Race condition in multi-threaded use of          │
 │                    │                │          │                     │                               │               │ archive_write_disk_header() on posix based systems...        │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-30571                   │
 ├────────────────────┼────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
@@ -140,8 +143,8 @@ Total: 164 (UNKNOWN: 0, LOW: 126, MEDIUM: 38, HIGH: 0, CRITICAL: 0)
 │                    │                │          │                     │                               │               │ checking excessively long X9.42...                           │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5678                    │
 ├────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3            │ CVE-2021-23336 │ MEDIUM   │ affected            │ 3.9.18-1.el9_3                │               │ Web cache poisoning via urllib.parse.parse_qsl and           │
-│                    │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon in...             │
+│ python3            │ CVE-2021-23336 │ MEDIUM   │ affected            │ 3.9.18-1.el9_3                │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+│                    │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                    ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                    │ CVE-2022-0391  │          │                     │                               │               │ python: urllib.parse does not sanitize URLs containing ASCII │
@@ -156,8 +159,8 @@ Total: 164 (UNKNOWN: 0, LOW: 126, MEDIUM: 38, HIGH: 0, CRITICAL: 0)
 │                    │                │          │                     │                               │               │ object                                                       │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-36632                   │
 ├────────────────────┼────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-libs       │ CVE-2021-23336 │          │ affected            │                               │               │ Web cache poisoning via urllib.parse.parse_qsl and           │
-│                    │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon in...             │
+│ python3-libs       │ CVE-2021-23336 │          │ affected            │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+│                    │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                    ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                    │ CVE-2022-0391  │          │                     │                               │               │ python: urllib.parse does not sanitize URLs containing ASCII │
@@ -518,7 +521,7 @@ Total: 164 (UNKNOWN: 0, LOW: 126, MEDIUM: 38, HIGH: 0, CRITICAL: 0)
 │                    │ CVE-2023-2610  │          │                     │                               │               │ integer overflow vulnerability in vim                        │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-2610                    │
 │                    ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                    │ CVE-2023-46246 │          │ under_investigation │                               │               │ Integer Overflow in :history command                         │
+│                    │ CVE-2023-46246 │          │ under_investigation │                               │               │ vim: Integer Overflow in :history command                    │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-46246                   │
 │                    ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                    │ CVE-2023-4734  │          │ will_not_fix        │                               │               │ segmentation fault in function f_fullcommand in vim/vim      │
@@ -580,8 +583,8 @@ Total: 11 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 9, CRITICAL: 0)
 ┌──────────────────────────────────────────────────────────────┬─────────────────────┬──────────┬────────┬────────────────────────────────────┬──────────────────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │                           Library                            │    Vulnerability    │ Severity │ Status │         Installed Version          │              Fixed Version               │                            Title                             │
 ├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┼────────┼────────────────────────────────────┼──────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ go.opentelemetry.io/contrib/instrumentation/google.golang.o- │ CVE-2023-47108      │ HIGH     │ fixed  │ v0.44.0                            │ 0.46.0                                   │ otelgrpc DoS vulnerability due to unbound cardinality        │
-│ rg/grpc/otelgrpc                                             │                     │          │        │                                    │                                          │ metrics                                                      │
+│ go.opentelemetry.io/contrib/instrumentation/google.golang.o- │ CVE-2023-47108      │ HIGH     │ fixed  │ v0.44.0                            │ 0.46.0                                   │ opentelemetry-go-contrib: DoS vulnerability in otelgrpc due  │
+│ rg/grpc/otelgrpc                                             │                     │          │        │                                    │                                          │ to unbound cardinality metrics                               │
 │                                                              │                     │          │        │                                    │                                          │ https://avd.aquasec.com/nvd/cve-2023-47108                   │
 ├──────────────────────────────────────────────────────────────┼─────────────────────┤          │        ├────────────────────────────────────┼──────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ google.golang.org/grpc                                       │ GHSA-m425-mq94-257g │          │        │ v1.58.2                            │ 1.56.3, 1.57.1, 1.58.3                   │ gRPC-Go HTTP/2 Rapid Reset vulnerability                     │
@@ -609,12 +612,12 @@ Total: 11 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 9, CRITICAL: 0)
 │                                                              │ CVE-2022-31045      │ MEDIUM   │        │                                    │ 1.12.18, 1.13.5, 1.14.1                  │ Unsafe memory access in metadata exchange.                   │
 │                                                              │                     │          │        │                                    │                                          │ https://avd.aquasec.com/nvd/cve-2022-31045                   │
 ├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├────────────────────────────────────┼──────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ k8s.io/kubernetes                                            │ CVE-2023-3676       │ HIGH     │        │ v1.27.3                            │ 1.28.1, 1.27.5, 1.26.8, 1.25.13, 1.24.17 │ Insufficient input sanitization on Windows nodes leads to    │
-│                                                              │                     │          │        │                                    │                                          │ privilege escalation                                         │
+│ k8s.io/kubernetes                                            │ CVE-2023-3676       │ HIGH     │        │ v1.27.3                            │ 1.28.1, 1.27.5, 1.26.8, 1.25.13, 1.24.17 │ kubernetes: Insufficient input sanitization on Windows nodes │
+│                                                              │                     │          │        │                                    │                                          │ leads to privilege escalation                                │
 │                                                              │                     │          │        │                                    │                                          │ https://avd.aquasec.com/nvd/cve-2023-3676                    │
 │                                                              ├─────────────────────┤          │        │                                    │                                          ├──────────────────────────────────────────────────────────────┤
-│                                                              │ CVE-2023-3955       │          │        │                                    │                                          │ Insufficient input sanitization on Windows nodes leads to    │
-│                                                              │                     │          │        │                                    │                                          │ privilege escalation                                         │
+│                                                              │ CVE-2023-3955       │          │        │                                    │                                          │ kubernetes: Insufficient input sanitization on Windows nodes │
+│                                                              │                     │          │        │                                    │                                          │ leads to privilege escalation                                │
 │                                                              │                     │          │        │                                    │                                          │ https://avd.aquasec.com/nvd/cve-2023-3955                    │
 │                                                              ├─────────────────────┤          │        │                                    ├──────────────────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                                              │ CVE-2023-5528       │          │        │                                    │ 1.28.4, 1.27.8, 1.26.11, 1.25.16         │ kubernetes: Insufficient input sanitization in in-tree       │
