@@ -7,7 +7,7 @@ urllib3           1.26.5                              1.26.18                   
 
 quay.io/noiro/cnideploy:6.0.3.2.81c2369.z (redhat 9.3)
 ======================================================
-Total: 165 (UNKNOWN: 0, LOW: 126, MEDIUM: 39, HIGH: 0, CRITICAL: 0)
+Total: 166 (UNKNOWN: 0, LOW: 126, MEDIUM: 40, HIGH: 0, CRITICAL: 0)
 
 ┌────────────────────┬────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │      Library       │ Vulnerability  │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -42,8 +42,11 @@ Total: 165 (UNKNOWN: 0, LOW: 126, MEDIUM: 39, HIGH: 0, CRITICAL: 0)
 │ gnupg2             │ CVE-2022-3219  │          │ will_not_fix        │ 2.3.3-4.el9                   │               │ denial of service issue (resource consumption) using         │
 │                    │                │          │                     │                               │               │ compressed packets                                           │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-3219                    │
-├────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libarchive         │ CVE-2023-30571 │ MEDIUM   │                     │ 3.5.3-4.el9                   │               │ libarchive: Race condition in multi-threaded use of          │
+├────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ gnutls             │ CVE-2023-5981  │ MEDIUM   │ affected            │ 3.7.6-23.el9                  │               │ gnutls: timing side-channel in the RSA-PSK authentication    │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5981                    │
+├────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libarchive         │ CVE-2023-30571 │          │ will_not_fix        │ 3.5.3-4.el9                   │               │ libarchive: Race condition in multi-threaded use of          │
 │                    │                │          │                     │                               │               │ archive_write_disk_header() on posix based systems...        │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-30571                   │
 ├────────────────────┼────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
@@ -123,8 +126,8 @@ Total: 165 (UNKNOWN: 0, LOW: 126, MEDIUM: 39, HIGH: 0, CRITICAL: 0)
 │                    │                │          │                     │                               │               │ checking excessively long X9.42...                           │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5678                    │
 ├────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3            │ CVE-2021-23336 │ MEDIUM   │ affected            │ 3.9.18-1.el9_3                │               │ Web cache poisoning via urllib.parse.parse_qsl and           │
-│                    │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon in...             │
+│ python3            │ CVE-2021-23336 │ MEDIUM   │ affected            │ 3.9.18-1.el9_3                │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+│                    │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                    ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                    │ CVE-2022-0391  │          │                     │                               │               │ python: urllib.parse does not sanitize URLs containing ASCII │
@@ -139,8 +142,8 @@ Total: 165 (UNKNOWN: 0, LOW: 126, MEDIUM: 39, HIGH: 0, CRITICAL: 0)
 │                    │                │          │                     │                               │               │ object                                                       │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-36632                   │
 ├────────────────────┼────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-libs       │ CVE-2021-23336 │          │ affected            │                               │               │ Web cache poisoning via urllib.parse.parse_qsl and           │
-│                    │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon in...             │
+│ python3-libs       │ CVE-2021-23336 │          │ affected            │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+│                    │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                    ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                    │ CVE-2022-0391  │          │                     │                               │               │ python: urllib.parse does not sanitize URLs containing ASCII │
@@ -501,7 +504,7 @@ Total: 165 (UNKNOWN: 0, LOW: 126, MEDIUM: 39, HIGH: 0, CRITICAL: 0)
 │                    │ CVE-2023-2610  │          │                     │                               │               │ integer overflow vulnerability in vim                        │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-2610                    │
 │                    ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                    │ CVE-2023-46246 │          │ under_investigation │                               │               │ Integer Overflow in :history command                         │
+│                    │ CVE-2023-46246 │          │ under_investigation │                               │               │ vim: Integer Overflow in :history command                    │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-46246                   │
 │                    ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                    │ CVE-2023-4734  │          │ will_not_fix        │                               │               │ segmentation fault in function f_fullcommand in vim/vim      │
