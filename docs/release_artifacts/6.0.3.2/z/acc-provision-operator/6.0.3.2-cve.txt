@@ -578,7 +578,7 @@ vim-minimal                             2:8.0.1763-19.el8_6.4                   
 
 quay.io/noiro/acc-provision-operator:6.0.3.2.81c2369.z (redhat 8.8)
 ===================================================================
-Total: 483 (UNKNOWN: 0, LOW: 288, MEDIUM: 180, HIGH: 15, CRITICAL: 0)
+Total: 482 (UNKNOWN: 0, LOW: 288, MEDIUM: 179, HIGH: 15, CRITICAL: 0)
 
 ┌────────────────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────┬─────────────────────┬──────────────────────────────────────────────────────────────┐
 │                Library                 │  Vulnerability   │ Severity │       Status        │   Installed Version   │    Fixed Version    │                            Title                             │
@@ -1054,7 +1054,8 @@ Total: 483 (UNKNOWN: 0, LOW: 288, MEDIUM: 180, HIGH: 15, CRITICAL: 0)
 │                                        │                  │          │                     │                       │                     │ resource exhaustion                                          │
 │                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2019-20794                   │
 │                                        ├──────────────────┤          │                     │                       ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                                        │ CVE-2020-10135   │          │                     │                       │                     │ BR/EDR Bluetooth Impersonation Attacks (BIAS)                │
+│                                        │ CVE-2020-10135   │          │                     │                       │                     │ kernel: bluetooth: BR/EDR Bluetooth Impersonation Attacks    │
+│                                        │                  │          │                     │                       │                     │ (BIAS)                                                       │
 │                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2020-10135                   │
 │                                        ├──────────────────┤          ├─────────────────────┤                       ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2020-13844   │          │ will_not_fix        │                       │                     │ ARM straight-line speculation vulnerability                  │
@@ -1063,10 +1064,6 @@ Total: 483 (UNKNOWN: 0, LOW: 288, MEDIUM: 180, HIGH: 15, CRITICAL: 0)
 │                                        │ CVE-2020-14416   │          │ affected            │                       │                     │ slcan : race over tty->disc_data can lead use-after-free     │
 │                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2020-14416                   │
 │                                        ├──────────────────┤          │                     │                       ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                                        │ CVE-2020-15802   │          │                     │                       │                     │ "Dual mode" hardware using CTKD are vulnerable to key        │
-│                                        │                  │          │                     │                       │                     │ overwrite                                                    │
-│                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2020-15802                   │
-│                                        ├──────────────────┤          │                     │                       ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2020-25645   │          │                     │                       │                     │ kernel: Geneve/IPsec traffic may be unencrypted between two  │
 │                                        │                  │          │                     │                       │                     │ Geneve endpoints                                             │
 │                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2020-25645                   │
@@ -1074,8 +1071,8 @@ Total: 483 (UNKNOWN: 0, LOW: 288, MEDIUM: 180, HIGH: 15, CRITICAL: 0)
 │                                        │ CVE-2020-25656   │          │                     │                       │                     │ kernel: use-after-free in read in vt_do_kdgkb_ioctl          │
 │                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2020-25656                   │
 │                                        ├──────────────────┤          ├─────────────────────┤                       ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                                        │ CVE-2020-26555   │          │ will_not_fix        │                       │                     │ Bluetooth BR/EDR PIN Pairing procedure is vulnerable to an   │
-│                                        │                  │          │                     │                       │                     │ impersonation attack                                         │
+│                                        │ CVE-2020-26555   │          │ will_not_fix        │                       │                     │ kernel: Bluetooth BR/EDR PIN Pairing procedure is vulnerable │
+│                                        │                  │          │                     │                       │                     │ to an impersonation attack...                                │
 │                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2020-26555                   │
 │                                        ├──────────────────┤          ├─────────────────────┤                       ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2020-27170   │          │ affected            │                       │                     │ kernel: Speculation on pointer arithmetic against            │
