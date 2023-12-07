@@ -60,6 +60,7 @@ cpp                                     8.5.0-20.el8                            
 cpp                                     8.5.0-20.el8                              (won't fix)          rpm        CVE-2022-27943       Low       
 cpp                                     8.5.0-20.el8                              (won't fix)          rpm        CVE-2019-14250       Low       
 cpp                                     8.5.0-20.el8                              (won't fix)          rpm        CVE-2018-20657       Low       
+curl                                    7.61.1-30.el8_8.2                                              rpm        CVE-2023-46218       Medium    
 curl                                    7.61.1-30.el8_8.2                         0:7.61.1-30.el8_8.3  rpm        CVE-2023-28321       Medium    
 curl                                    7.61.1-30.el8_8.2                         0:7.61.1-30.el8_8.3  rpm        CVE-2023-27536       Medium    
 curl                                    7.61.1-30.el8_8.2                                              rpm        CVE-2023-38546       Low       
@@ -317,6 +318,7 @@ libarchive                              3.3.3-5.el8                             
 libarchive                              3.3.3-5.el8                               (won't fix)          rpm        CVE-2018-1000879     Low       
 libcap                                  2.48-4.el8                                0:2.48-5.el8_8       rpm        CVE-2023-2603        Medium    
 libcap                                  2.48-4.el8                                0:2.48-5.el8_8       rpm        CVE-2023-2602        Low       
+libcurl                                 7.61.1-30.el8_8.2                                              rpm        CVE-2023-46218       Medium    
 libcurl                                 7.61.1-30.el8_8.2                         0:7.61.1-30.el8_8.3  rpm        CVE-2023-28321       Medium    
 libcurl                                 7.61.1-30.el8_8.2                         0:7.61.1-30.el8_8.3  rpm        CVE-2023-27536       Medium    
 libcurl                                 7.61.1-30.el8_8.2                                              rpm        CVE-2023-38546       Low       
@@ -577,7 +579,7 @@ vim-minimal                             2:8.0.1763-19.el8_6.4                   
 
 quay.io/noiro/acc-provision-operator:6.0.3.2.81c2369.z (redhat 8.8)
 ===================================================================
-Total: 480 (UNKNOWN: 0, LOW: 287, MEDIUM: 178, HIGH: 15, CRITICAL: 0)
+Total: 481 (UNKNOWN: 0, LOW: 287, MEDIUM: 179, HIGH: 15, CRITICAL: 0)
 
 ┌────────────────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────┬─────────────────────┬──────────────────────────────────────────────────────────────┐
 │                Library                 │  Vulnerability   │ Severity │       Status        │   Installed Version   │    Fixed Version    │                            Title                             │
@@ -797,6 +799,9 @@ Total: 480 (UNKNOWN: 0, LOW: 287, MEDIUM: 178, HIGH: 15, CRITICAL: 0)
 │                                        │ CVE-2023-28321   │          │                     │                       │                     │ curl: IDN wildcard match may lead to Improper Cerificate     │
 │                                        │                  │          │                     │                       │                     │ Validation                                                   │
 │                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2023-28321                   │
+│                                        ├──────────────────┤          ├─────────────────────┤                       ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2023-46218   │          │ affected            │                       │                     │ curl: information disclosure by exploiting a mixed case flaw │
+│                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2023-46218                   │
 │                                        ├──────────────────┼──────────┼─────────────────────┤                       ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2023-27534   │ LOW      │ will_not_fix        │                       │                     │ curl: SFTP path ~ resolving discrepancy                      │
 │                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2023-27534                   │
@@ -1602,12 +1607,8 @@ Total: 480 (UNKNOWN: 0, LOW: 287, MEDIUM: 178, HIGH: 15, CRITICAL: 0)
 ├────────────────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
 │ krb5-libs                              │ CVE-2020-17049   │ MEDIUM   │ will_not_fix        │ 1.18.2-25.el8_8       │                     │ Kerberos: delegation constrain bypass in S4U2Proxy           │
 │                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2020-17049                   │
-├────────────────────────────────────────┼──────────────────┤          ├─────────────────────┼───────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
-│ libarchive                             │ CVE-2023-30571   │          │ affected            │ 3.3.3-5.el8           │                     │ libarchive: Race condition in multi-threaded use of          │
-│                                        │                  │          │                     │                       │                     │ archive_write_disk_header() on posix based systems...        │
-│                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2023-30571                   │
-│                                        ├──────────────────┼──────────┼─────────────────────┤                       ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                                        │ CVE-2018-1000879 │ LOW      │ will_not_fix        │                       │                     │ libarchive: NULL pointer dereference in ACL parser resulting │
+├────────────────────────────────────────┼──────────────────┼──────────┤                     ├───────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libarchive                             │ CVE-2018-1000879 │ LOW      │                     │ 3.3.3-5.el8           │                     │ libarchive: NULL pointer dereference in ACL parser resulting │
 │                                        │                  │          │                     │                       │                     │ in a denial of...                                            │
 │                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2018-1000879                 │
 │                                        ├──────────────────┤          │                     │                       ├─────────────────────┼──────────────────────────────────────────────────────────────┤
@@ -1631,6 +1632,9 @@ Total: 480 (UNKNOWN: 0, LOW: 287, MEDIUM: 178, HIGH: 15, CRITICAL: 0)
 │                                        │ CVE-2023-28321   │          │                     │                       │                     │ curl: IDN wildcard match may lead to Improper Cerificate     │
 │                                        │                  │          │                     │                       │                     │ Validation                                                   │
 │                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2023-28321                   │
+│                                        ├──────────────────┤          ├─────────────────────┤                       ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                        │ CVE-2023-46218   │          │ affected            │                       │                     │ curl: information disclosure by exploiting a mixed case flaw │
+│                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2023-46218                   │
 │                                        ├──────────────────┼──────────┼─────────────────────┤                       ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                        │ CVE-2023-27534   │ LOW      │ will_not_fix        │                       │                     │ curl: SFTP path ~ resolving discrepancy                      │
 │                                        │                  │          │                     │                       │                     │ https://avd.aquasec.com/nvd/cve-2023-27534                   │
