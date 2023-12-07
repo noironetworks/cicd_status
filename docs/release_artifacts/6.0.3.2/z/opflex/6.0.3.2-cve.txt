@@ -2,7 +2,7 @@ No vulnerabilities found
 
 quay.io/noiro/opflex:6.0.3.2.81c2369.z (redhat 9.3)
 ===================================================
-Total: 177 (UNKNOWN: 0, LOW: 128, MEDIUM: 47, HIGH: 2, CRITICAL: 0)
+Total: 180 (UNKNOWN: 0, LOW: 128, MEDIUM: 50, HIGH: 2, CRITICAL: 0)
 
 ┌────────────────────────────┬────────────────┬──────────┬─────────────────────┬───────────────────────────────┬─────────────────────┬──────────────────────────────────────────────────────────────┐
 │          Library           │ Vulnerability  │ Severity │       Status        │       Installed Version       │    Fixed Version    │                            Title                             │
@@ -55,12 +55,15 @@ Total: 177 (UNKNOWN: 0, LOW: 128, MEDIUM: 47, HIGH: 2, CRITICAL: 0)
 │                            ├────────────────┤          │                     │                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-3817  │          │                     │                               │                     │ OpenSSL: Excessive time spent checking DH q parameter value  │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-3817                    │
-│                            ├────────────────┤          │                     │                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2023-5678  │          │                     │                               │                     │ openssl: Generating excessively long X9.42 DH keys or        │
+│                            ├────────────────┤          ├─────────────────────┤                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-5678  │          │ affected            │                               │                     │ openssl: Generating excessively long X9.42 DH keys or        │
 │                            │                │          │                     │                               │                     │ checking excessively long X9.42...                           │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-5678                    │
-├────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
-│ file-libs                  │ CVE-2022-48554 │          │ affected            │ 5.39-14.el9                   │                     │ file: stack-based buffer over-read in file_copystr in        │
+├────────────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
+│ curl-minimal               │ CVE-2023-46218 │ MEDIUM   │                     │ 7.76.1-28.el9                 │                     │ curl: information disclosure by exploiting a mixed case flaw │
+│                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-46218                   │
+├────────────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
+│ file-libs                  │ CVE-2022-48554 │ LOW      │                     │ 5.39-14.el9                   │                     │ file: stack-based buffer over-read in file_copystr in        │
 │                            │                │          │                     │                               │                     │ funcs.c                                                      │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2022-48554                   │
 ├────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
@@ -80,8 +83,11 @@ Total: 177 (UNKNOWN: 0, LOW: 128, MEDIUM: 47, HIGH: 2, CRITICAL: 0)
 │ libarchive                 │ CVE-2023-30571 │          │ will_not_fix        │ 3.5.3-4.el9                   │                     │ libarchive: Race condition in multi-threaded use of          │
 │                            │                │          │                     │                               │                     │ archive_write_disk_header() on posix based systems...        │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-30571                   │
-├────────────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
-│ libgcc                     │ CVE-2022-27943 │ LOW      │                     │ 11.4.1-2.3.el9                │                     │ libiberty/rust-demangle.c in GNU GCC 11.2 allows stack       │
+├────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libcurl-minimal            │ CVE-2023-46218 │          │ affected            │ 7.76.1-28.el9                 │                     │ curl: information disclosure by exploiting a mixed case flaw │
+│                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-46218                   │
+├────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
+│ libgcc                     │ CVE-2022-27943 │ LOW      │ will_not_fix        │ 11.4.1-2.3.el9                │                     │ libiberty/rust-demangle.c in GNU GCC 11.2 allows stack       │
 │                            │                │          │                     │                               │                     │ exhaustion in demangle_const                                 │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
 ├────────────────────────────┤                │          │                     │                               ├─────────────────────┤                                                              │
@@ -124,12 +130,12 @@ Total: 177 (UNKNOWN: 0, LOW: 128, MEDIUM: 47, HIGH: 2, CRITICAL: 0)
 │                            ├────────────────┤          │                     │                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-3817  │          │                     │                               │                     │ OpenSSL: Excessive time spent checking DH q parameter value  │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-3817                    │
-│                            ├────────────────┤          │                     │                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2023-5678  │          │                     │                               │                     │ openssl: Generating excessively long X9.42 DH keys or        │
+│                            ├────────────────┤          ├─────────────────────┤                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-5678  │          │ affected            │                               │                     │ openssl: Generating excessively long X9.42 DH keys or        │
 │                            │                │          │                     │                               │                     │ checking excessively long X9.42...                           │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-5678                    │
-├────────────────────────────┼────────────────┼──────────┼─────────────────────┤                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│ openssl-libs               │ CVE-2023-5363  │ MEDIUM   │ affected            │                               │                     │ openssl: Incorrect cipher key and IV length processing       │
+├────────────────────────────┼────────────────┼──────────┤                     │                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│ openssl-libs               │ CVE-2023-5363  │ MEDIUM   │                     │                               │                     │ openssl: Incorrect cipher key and IV length processing       │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-5363                    │
 │                            ├────────────────┼──────────┤                     │                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-2975  │ LOW      │                     │                               │                     │ openssl: AES-SIV cipher implementation contains a bug that   │
@@ -142,12 +148,12 @@ Total: 177 (UNKNOWN: 0, LOW: 128, MEDIUM: 47, HIGH: 2, CRITICAL: 0)
 │                            ├────────────────┤          │                     │                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-3817  │          │                     │                               │                     │ OpenSSL: Excessive time spent checking DH q parameter value  │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-3817                    │
-│                            ├────────────────┤          │                     │                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2023-5678  │          │                     │                               │                     │ openssl: Generating excessively long X9.42 DH keys or        │
+│                            ├────────────────┤          ├─────────────────────┤                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-5678  │          │ affected            │                               │                     │ openssl: Generating excessively long X9.42 DH keys or        │
 │                            │                │          │                     │                               │                     │ checking excessively long X9.42...                           │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-5678                    │
-├────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
-│ python-unversioned-command │ CVE-2021-23336 │ MEDIUM   │ affected            │ 3.9.18-1.el9_3                │                     │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+├────────────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
+│ python-unversioned-command │ CVE-2021-23336 │ MEDIUM   │                     │ 3.9.18-1.el9_3                │                     │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                            │                │          │                     │                               │                     │ urllib.parse.parse_qs by using a semicolon...                │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                            ├────────────────┤          │                     │                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
@@ -194,8 +200,12 @@ Total: 177 (UNKNOWN: 0, LOW: 128, MEDIUM: 47, HIGH: 2, CRITICAL: 0)
 │                            │ CVE-2023-36632 │          │                     │                               │                     │ maximum recursion depth exceeded while calling a Python      │
 │                            │                │          │                     │                               │                     │ object                                                       │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-36632                   │
-├────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-pip-wheel          │ CVE-2021-3572  │ LOW      │ affected            │ 21.2.3-7.el9                  │                     │ python-pip: Incorrect handling of unicode separators in git  │
+├────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-pip-wheel          │ CVE-2023-45803 │          │ under_investigation │ 21.2.3-7.el9                  │                     │ urllib3: Request body not stripped after redirect from 303   │
+│                            │                │          │                     │                               │                     │ status changes...                                            │
+│                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-45803                   │
+│                            ├────────────────┼──────────┼─────────────────────┤                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2021-3572  │ LOW      │ affected            │                               │                     │ python-pip: Incorrect handling of unicode separators in git  │
 │                            │                │          │                     │                               │                     │ references                                                   │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2021-3572                    │
 ├────────────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼─────────────────────┼──────────────────────────────────────────────────────────────┤
@@ -538,14 +548,14 @@ Total: 177 (UNKNOWN: 0, LOW: 128, MEDIUM: 47, HIGH: 2, CRITICAL: 0)
 │                            ├────────────────┤          │                     │                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-2610  │          │                     │                               │                     │ integer overflow vulnerability in vim                        │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-2610                    │
-│                            ├────────────────┤          ├─────────────────────┤                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2023-46246 │          │ under_investigation │                               │                     │ vim: Integer Overflow in :history command                    │
+│                            ├────────────────┤          │                     │                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-46246 │          │                     │                               │                     │ vim: Integer Overflow in :history command                    │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-46246                   │
-│                            ├────────────────┤          ├─────────────────────┤                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2023-4734  │          │ will_not_fix        │                               │                     │ segmentation fault in function f_fullcommand in vim/vim      │
+│                            ├────────────────┤          │                     │                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-4734  │          │                     │                               │                     │ segmentation fault in function f_fullcommand in vim/vim      │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-4734                    │
 │                            ├────────────────┤          │                     │                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2023-4735  │          │                     │                               │                     │ OOB Write ops.c in vim/vim                                   │
+│                            │ CVE-2023-4735  │          │                     │                               │                     │ vim: OOB Write ops.c in vim/vim                              │
 │                            │                │          │                     │                               │                     │ https://avd.aquasec.com/nvd/cve-2023-4735                    │
 │                            ├────────────────┤          │                     │                               ├─────────────────────┼──────────────────────────────────────────────────────────────┤
 │                            │ CVE-2023-4738  │          │                     │                               │                     │ heap-buffer-overflow in vim_regsub_both in vim/vim           │
