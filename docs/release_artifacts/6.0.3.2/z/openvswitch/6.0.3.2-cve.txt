@@ -2,7 +2,7 @@ No vulnerabilities found
 
 quay.io/noiro/openvswitch:6.0.3.2.81c2369.z (redhat 9.3)
 ========================================================
-Total: 170 (UNKNOWN: 0, LOW: 123, MEDIUM: 47, HIGH: 0, CRITICAL: 0)
+Total: 175 (UNKNOWN: 0, LOW: 123, MEDIUM: 52, HIGH: 0, CRITICAL: 0)
 
 ┌────────────────────────────┬────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │          Library           │ Vulnerability  │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -235,28 +235,47 @@ Total: 170 (UNKNOWN: 0, LOW: 123, MEDIUM: 47, HIGH: 0, CRITICAL: 0)
 │                            │ CVE-2021-35939 │          │                     │                               │               │ rpm: checks for unsafe symlinks are not performed for        │
 │                            │                │          │                     │                               │               │ intermediary directories                                     │
 │                            │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-35939                   │
-├────────────────────────────┼────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ systemd                    │ CVE-2021-3997  │          │                     │ 252-18.el9                    │               │ Uncontrolled recursion in systemd-tmpfiles when removing     │
+├────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ sqlite-libs                │ CVE-2023-7104  │          │ under_investigation │ 3.34.1-6.el9_1                │               │ sqlite: heap-buffer-overflow at sessionfuzz                  │
+│                            │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-7104                    │
+├────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ systemd                    │ CVE-2021-3997  │          │ affected            │ 252-18.el9                    │               │ Uncontrolled recursion in systemd-tmpfiles when removing     │
 │                            │                │          │                     │                               │               │ files                                                        │
 │                            │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-3997                    │
-├────────────────────────────┤                │          │                     │                               ├───────────────┤                                                              │
-│ systemd-libs               │                │          │                     │                               │               │                                                              │
-│                            │                │          │                     │                               │               │                                                              │
-│                            │                │          │                     │                               │               │                                                              │
-├────────────────────────────┤                │          │                     │                               ├───────────────┤                                                              │
-│ systemd-pam                │                │          │                     │                               │               │                                                              │
-│                            │                │          │                     │                               │               │                                                              │
-│                            │                │          │                     │                               │               │                                                              │
-├────────────────────────────┤                │          │                     │                               ├───────────────┤                                                              │
-│ systemd-rpm-macros         │                │          │                     │                               │               │                                                              │
-│                            │                │          │                     │                               │               │                                                              │
-│                            │                │          │                     │                               │               │                                                              │
+│                            ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-7008  │          │                     │                               │               │ systemd-resolved: Unsigned name response in signed zone is   │
+│                            │                │          │                     │                               │               │ not refused when DNSSEC=yes...                               │
+│                            │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-7008                    │
+├────────────────────────────┼────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ systemd-libs               │ CVE-2021-3997  │          │                     │                               │               │ Uncontrolled recursion in systemd-tmpfiles when removing     │
+│                            │                │          │                     │                               │               │ files                                                        │
+│                            │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-3997                    │
+│                            ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-7008  │          │                     │                               │               │ systemd-resolved: Unsigned name response in signed zone is   │
+│                            │                │          │                     │                               │               │ not refused when DNSSEC=yes...                               │
+│                            │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-7008                    │
+├────────────────────────────┼────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ systemd-pam                │ CVE-2021-3997  │          │                     │                               │               │ Uncontrolled recursion in systemd-tmpfiles when removing     │
+│                            │                │          │                     │                               │               │ files                                                        │
+│                            │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-3997                    │
+│                            ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-7008  │          │                     │                               │               │ systemd-resolved: Unsigned name response in signed zone is   │
+│                            │                │          │                     │                               │               │ not refused when DNSSEC=yes...                               │
+│                            │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-7008                    │
+├────────────────────────────┼────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ systemd-rpm-macros         │ CVE-2021-3997  │          │                     │                               │               │ Uncontrolled recursion in systemd-tmpfiles when removing     │
+│                            │                │          │                     │                               │               │ files                                                        │
+│                            │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-3997                    │
+│                            ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-7008  │          │                     │                               │               │ systemd-resolved: Unsigned name response in signed zone is   │
+│                            │                │          │                     │                               │               │ not refused when DNSSEC=yes...                               │
+│                            │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-7008                    │
 ├────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ tar                        │ CVE-2005-2541  │          │ will_not_fix        │ 2:1.34-6.el9_1                │               │ tar: does not properly warn the user when extracting setuid  │
 │                            │                │          │                     │                               │               │ or setgid...                                                 │
 │                            │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2005-2541                    │
-│                            ├────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2023-39804 │ LOW      │ under_investigation │                               │               │ tar: Incorrectly handled extension attributes in PAX         │
+│                            ├────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                            │ CVE-2023-39804 │ LOW      │                     │                               │               │ tar: Incorrectly handled extension attributes in PAX         │
 │                            │                │          │                     │                               │               │ archives can lead to a...                                    │
 │                            │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-39804                   │
 ├────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
