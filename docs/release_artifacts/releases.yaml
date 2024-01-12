@@ -1478,7 +1478,14 @@ releases:
     released: false
   release_tag: 6.0.3.3
 - release_streams:
-  - acc_provision: []
+  - acc_provision:
+    - build-logs: release_artifacts/6.0.4.1/z/acc-provision/6.0.4.1-buildlog.txt
+      build-time: 2024-01-12 15:51:35 PST
+      commit:
+      - link: https://github.com/noironetworks/acc-provision/commit/92f163ffac4972cf78b16a6989a423ce7f2dfca9
+        sha: 92f163ffac4972cf78b16a6989a423ce7f2dfca9
+      link: https://test.pypi.org/project/acc-provision/6.0.4.1.dev8670/#files
+      tag: acc_provision-6.0.4.1.dev8670
     container_images:
     - base-image:
       - cve: release_artifacts/6.0.4.1/z/opflex/6.0.4.1-cve-base.txt
@@ -1739,7 +1746,7 @@ releases:
         L: 0
         M: 0
         U: 0
-    last_updated: 2024-01-12 13:50:27 PST
+    last_updated: 2024-01-12 15:51:35 PST
     release_name: 6.0.4.1.z
   - acc_provision: []
     container_images: []
