@@ -1200,3 +1200,51 @@ releases:
     release_name: 6.0.3.2
     released: true
   release_tag: 6.0.3.2
+- release_streams:
+  - acc_provision: []
+    container_images:
+    - base-image:
+      - cve: release_artifacts/6.0.3.3/z/acc-provision-operator/6.0.3.3-cve-base.txt
+        severity:
+        - C: 5
+          H: 0
+          L: 159
+          M: 74
+          U: 4
+        sha: e64bd1ffb71bf4ebded91f28f649f36765b171d6d8755b346a3c09b11bac7402
+      build-logs: release_artifacts/6.0.3.3/z/acc-provision-operator/6.0.3.3-buildlog.txt
+      build-time: 2024-01-12 00:25:43 PST
+      commit:
+      - link: https://github.com/noironetworks/acc-provision-operator/commit/b7900c74d0692c68dbd208d2b3f94692e80ea887
+        sha: b7900c74d0692c68dbd208d2b3f94692e80ea887
+      cve: release_artifacts/6.0.3.3/z/acc-provision-operator/6.0.3.3-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.3.3.81c2369.z/images/sha256-097f1a73fb0c92c7e8ca9a0d37f9b7a5acc5080535cd47a8b3927229e1d75e66?context=explore
+        sha: 097f1a73fb0c92c7e8ca9a0d37f9b7a5acc5080535cd47a8b3927229e1d75e66
+        tag: 6.0.3.3.81c2369.z
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.3.3.81c2369.011224.685/images/sha256-097f1a73fb0c92c7e8ca9a0d37f9b7a5acc5080535cd47a8b3927229e1d75e66?context=explore
+        sha: 097f1a73fb0c92c7e8ca9a0d37f9b7a5acc5080535cd47a8b3927229e1d75e66
+        tag: 6.0.3.3.81c2369.011224.685
+      name: acc-provision-operator
+      quay:
+      - link: https://quay.io/noiro/acc-provision-operator:6.0.3.3.81c2369.z
+        sha: 097f1a73fb0c92c7e8ca9a0d37f9b7a5acc5080535cd47a8b3927229e1d75e66
+        tag: 6.0.3.3.81c2369.z
+      - link: https://quay.io/noiro/acc-provision-operator:6.0.3.3.81c2369.011224.685
+        sha: 097f1a73fb0c92c7e8ca9a0d37f9b7a5acc5080535cd47a8b3927229e1d75e66
+        tag: 6.0.3.3.81c2369.011224.685
+      sbom: release_artifacts/6.0.3.3/z/acc-provision-operator/6.0.3.3-sbom.txt
+      severity:
+      - C: 7
+        H: 6
+        L: 289
+        M: 259
+        U: 9
+    last_updated: 2024-01-12 00:25:43 PST
+    release_name: 6.0.3.3.z
+  - acc_provision: []
+    container_images: []
+    last_updated: 2024-01-12 00:25:40 PST
+    release_name: 6.0.3.3
+    released: false
+  release_tag: 6.0.3.3
