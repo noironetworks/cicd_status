@@ -64,7 +64,11 @@ fetch('release_artifacts/releases.yaml')
                 const noAccProvisionCell = document.createElement('td');
                 const releaseLink = document.createElement('a');
                 releaseLink.href = `release.html?release=${encodeURIComponent(releaseName+'.z')}`;
-                releaseLink.textContent = "This final release for this version is not yet available, check out the z-stream for the latest continous release.";
+                releaseLink.textContent = "The final release for this version is not yet available, check out the z-stream for the latest continous release.";
+                if (releaseName.match(/\.z/) || releaseName.match(/rc[0-9]+$/)) {
+                  releaseLink.textContent = "This version is not yet available. Please check other releases.";
+                  releaseLink.href = 'index.html';
+                }
                 noAccProvisionCell.colSpan = 4;
                 noAccProvisionCell.appendChild(releaseLink);
                 noAccProvisionRow.appendChild(noAccProvisionCell);
