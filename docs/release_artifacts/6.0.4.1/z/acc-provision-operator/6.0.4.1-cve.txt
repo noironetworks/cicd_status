@@ -112,6 +112,8 @@ glibc-langpack-en                  2.28-236.el8.7                          (won'
 glibc-minimal-langpack             2.28-236.el8.7                          (won't fix)         rpm   CVE-2019-1010022  Critical  
 gmp                                1:6.1.2-10.el8                                              rpm   CVE-2021-43618    Medium    
 gnupg2                             2.2.20-3.el8_6                          (won't fix)         rpm   CVE-2022-3219     Low       
+gnutls                             3.6.16-8.el8_9                                              rpm   CVE-2024-0567     Medium    
+gnutls                             3.6.16-8.el8_9                                              rpm   CVE-2024-0553     Medium    
 gnutls                             3.6.16-8.el8_9                          (won't fix)         rpm   CVE-2021-4209     Low       
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-6817     High      
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-6546     High      
@@ -119,6 +121,7 @@ kernel-headers                     4.18.0-513.11.1.el8_9                        
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-4623     High      
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-45871    High      
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2022-0886     High      
+kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2024-0607     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2024-0562     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-7192     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-6931     Medium    
@@ -562,7 +565,7 @@ vim-minimal                        2:8.0.1763-19.el8_6.4                   (won'
 
 quay.io/noiro/acc-provision-operator:6.0.4.1.81c2369.z (redhat 8.9)
 ===================================================================
-Total: 479 (UNKNOWN: 0, LOW: 293, MEDIUM: 179, HIGH: 7, CRITICAL: 0)
+Total: 481 (UNKNOWN: 0, LOW: 293, MEDIUM: 181, HIGH: 7, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬──────────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │  Fixed Version   │                            Title                             │
@@ -585,7 +588,8 @@ Total: 479 (UNKNOWN: 0, LOW: 293, MEDIUM: 179, HIGH: 7, CRITICAL: 0)
 │                             │                  │          │                     │                               │                  │ in readelf.c                                                 │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2019-9077                    │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-45078   │          │                     │                               │                  │ out-of-bounds write in stab_xcoff_builtin_type() in stabs.c  │
+│                             │ CVE-2021-45078   │          │                     │                               │                  │ binutils: out-of-bounds write in stab_xcoff_builtin_type()   │
+│                             │                  │          │                     │                               │                  │ in stabs.c                                                   │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2021-45078                   │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-1579    │          │ affected            │                               │                  │ binutils: Heap-buffer-overflow binutils-gdb/bfd/libbfd.c in  │
@@ -873,7 +877,7 @@ Total: 479 (UNKNOWN: 0, LOW: 293, MEDIUM: 179, HIGH: 7, CRITICAL: 0)
 │                             │                  │          │                     │                               │                  │ allowing for unverified...                                   │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2018-1000021                 │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-21300   │          │ affected            │                               │                  │ remote code execution during clone operation on              │
+│                             │ CVE-2021-21300   │          │ affected            │                               │                  │ git: remote code execution during clone operation on         │
 │                             │                  │          │                     │                               │                  │ case-insensitive filesystems                                 │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2021-21300                   │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
@@ -885,7 +889,7 @@ Total: 479 (UNKNOWN: 0, LOW: 293, MEDIUM: 179, HIGH: 7, CRITICAL: 0)
 │                             │                  │          │                     │                               │                  │ allowing for unverified...                                   │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2018-1000021                 │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-21300   │          │ affected            │                               │                  │ remote code execution during clone operation on              │
+│                             │ CVE-2021-21300   │          │ affected            │                               │                  │ git: remote code execution during clone operation on         │
 │                             │                  │          │                     │                               │                  │ case-insensitive filesystems                                 │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2021-21300                   │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
@@ -897,7 +901,7 @@ Total: 479 (UNKNOWN: 0, LOW: 293, MEDIUM: 179, HIGH: 7, CRITICAL: 0)
 │                             │                  │          │                     │                               │                  │ allowing for unverified...                                   │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2018-1000021                 │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-21300   │          │ affected            │                               │                  │ remote code execution during clone operation on              │
+│                             │ CVE-2021-21300   │          │ affected            │                               │                  │ git: remote code execution during clone operation on         │
 │                             │                  │          │                     │                               │                  │ case-insensitive filesystems                                 │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2021-21300                   │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
@@ -928,9 +932,11 @@ Total: 479 (UNKNOWN: 0, LOW: 293, MEDIUM: 179, HIGH: 7, CRITICAL: 0)
 │                             │                  │          │                     │                               │                  │ compressed packets                                           │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2022-3219                    │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
-│ gnutls                      │ CVE-2024-0553    │ MEDIUM   │ affected            │ 3.6.16-8.el8_9                │                  │                                                              │
+│ gnutls                      │ CVE-2024-0553    │ MEDIUM   │ affected            │ 3.6.16-8.el8_9                │                  │ gnutls: incomplete fix for CVE-2023-5981                     │
+│                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0553                    │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-0567    │          │                     │                               │                  │                                                              │
+│                             │ CVE-2024-0567    │          │                     │                               │                  │ gnutls: rejects certificate chain with distributed trust     │
+│                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0567                    │
 │                             ├──────────────────┼──────────┼─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2021-4209    │ LOW      │ will_not_fix        │                               │                  │ GnuTLS: Null pointer dereference in MD_UPDATE                │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2021-4209                    │
@@ -975,7 +981,8 @@ Total: 479 (UNKNOWN: 0, LOW: 293, MEDIUM: 179, HIGH: 7, CRITICAL: 0)
 │                             │                  │          │                     │                               │                  │ drivers/input/tablet/gtco.c                                  │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2019-13631                   │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2019-14283   │          │                     │                               │                  │ integer overflow and OOB read in drivers/block/floppy.c      │
+│                             │ CVE-2019-14283   │          │                     │                               │                  │ kernel: integer overflow and OOB read in                     │
+│                             │                  │          │                     │                               │                  │ drivers/block/floppy.c                                       │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2019-14283                   │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2019-15213   │          │                     │                               │                  │ kernel: use-after-free caused by malicious USB device in     │
@@ -1389,6 +1396,14 @@ Total: 479 (UNKNOWN: 0, LOW: 293, MEDIUM: 179, HIGH: 7, CRITICAL: 0)
 │                             │ CVE-2024-0562    │          │                     │                               │                  │ kernel: use-after-free after removing device in              │
 │                             │                  │          │                     │                               │                  │ wb_inode_writeback_end in mm/page-writeback.c                │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0562                    │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-0584    │          │ under_investigation │                               │                  │ kernel: refcnt uaf issue when receiving igmp query packet in │
+│                             │                  │          │                     │                               │                  │ igmp_start_timer                                             │
+│                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0584                    │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-0607    │          │ affected            │                               │                  │ kernel: nf_tables: pointer math issue in                     │
+│                             │                  │          │                     │                               │                  │ nft_byteorder_eval()                                         │
+│                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0607                    │
 │                             ├──────────────────┼──────────┼─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2018-7273    │ LOW      │ will_not_fix        │                               │                  │ kernel: Kernel address information leak in                   │
 │                             │                  │          │                     │                               │                  │ drivers/block/floppy.c:show_floppy function potentially      │
@@ -1767,7 +1782,8 @@ Total: 479 (UNKNOWN: 0, LOW: 293, MEDIUM: 179, HIGH: 7, CRITICAL: 0)
 │                             │                  │          │                     │                               │                  │ tinfo/comp_hash.c:70                                         │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2020-19190                   │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-39537   │          │ affected            │                               │                  │ heap-based buffer overflow in _nc_captoinfo() in captoinfo.c │
+│                             │ CVE-2021-39537   │          │ affected            │                               │                  │ ncurses: heap-based buffer overflow in _nc_captoinfo() in    │
+│                             │                  │          │                     │                               │                  │ captoinfo.c                                                  │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2021-39537                   │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-50495   │          │                     │                               │                  │ ncurses: segmentation fault via _nc_wrap_entry()             │
@@ -1804,7 +1820,8 @@ Total: 479 (UNKNOWN: 0, LOW: 293, MEDIUM: 179, HIGH: 7, CRITICAL: 0)
 │                             │                  │          │                     │                               │                  │ tinfo/comp_hash.c:70                                         │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2020-19190                   │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-39537   │          │ affected            │                               │                  │ heap-based buffer overflow in _nc_captoinfo() in captoinfo.c │
+│                             │ CVE-2021-39537   │          │ affected            │                               │                  │ ncurses: heap-based buffer overflow in _nc_captoinfo() in    │
+│                             │                  │          │                     │                               │                  │ captoinfo.c                                                  │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2021-39537                   │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-50495   │          │                     │                               │                  │ ncurses: segmentation fault via _nc_wrap_entry()             │
@@ -1841,7 +1858,8 @@ Total: 479 (UNKNOWN: 0, LOW: 293, MEDIUM: 179, HIGH: 7, CRITICAL: 0)
 │                             │                  │          │                     │                               │                  │ tinfo/comp_hash.c:70                                         │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2020-19190                   │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-39537   │          │ affected            │                               │                  │ heap-based buffer overflow in _nc_captoinfo() in captoinfo.c │
+│                             │ CVE-2021-39537   │          │ affected            │                               │                  │ ncurses: heap-based buffer overflow in _nc_captoinfo() in    │
+│                             │                  │          │                     │                               │                  │ captoinfo.c                                                  │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2021-39537                   │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-50495   │          │                     │                               │                  │ ncurses: segmentation fault via _nc_wrap_entry()             │
@@ -1926,7 +1944,7 @@ Total: 479 (UNKNOWN: 0, LOW: 293, MEDIUM: 179, HIGH: 7, CRITICAL: 0)
 │                             │                  │          │                     │                               │                  │ allowing for unverified...                                   │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2018-1000021                 │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-21300   │          │ affected            │                               │                  │ remote code execution during clone operation on              │
+│                             │ CVE-2021-21300   │          │ affected            │                               │                  │ git: remote code execution during clone operation on         │
 │                             │                  │          │                     │                               │                  │ case-insensitive filesystems                                 │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2021-21300                   │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
