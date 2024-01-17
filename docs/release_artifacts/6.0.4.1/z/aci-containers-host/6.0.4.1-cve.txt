@@ -1,13 +1,8 @@
-NAME                                                                         INSTALLED  FIXED-IN  TYPE       VULNERABILITY        SEVERITY 
-go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc  v0.44.0    0.46.0    go-module  GHSA-8pgv-569h-w5rw  High      
-golang.org/x/crypto                                                          v0.14.0    0.17.0    go-module  GHSA-45x7-px36-x8w8  Medium    
-google.golang.org/grpc                                                       v1.58.2    1.58.3    go-module  GHSA-m425-mq94-257g  High      
-google.golang.org/grpc                                                       v1.58.2    1.58.3    go-module  GHSA-qppj-fm5r-hxr3  Medium    
-k8s.io/kubernetes                                                            v1.28.3    1.28.4    go-module  GHSA-hq6q-c2x6-hmch  High      
-requests                                                                     2.25.1     2.31.0    python     GHSA-j8r2-6x86-q33q  Medium    
-setuptools                                                                   53.0.0     65.5.1    python     GHSA-r9hx-vwmv-q579  High      
-urllib3                                                                      1.26.5     1.26.17   python     GHSA-v845-jxx5-vc9f  Medium    
-urllib3                                                                      1.26.5     1.26.18   python     GHSA-g4mx-q9vg-27p4  Medium
+NAME        INSTALLED  FIXED-IN  TYPE    VULNERABILITY        SEVERITY 
+requests    2.25.1     2.31.0    python  GHSA-j8r2-6x86-q33q  Medium    
+setuptools  53.0.0     65.5.1    python  GHSA-r9hx-vwmv-q579  High      
+urllib3     1.26.5     1.26.17   python  GHSA-v845-jxx5-vc9f  Medium    
+urllib3     1.26.5     1.26.18   python  GHSA-g4mx-q9vg-27p4  Medium
 
 quay.io/noiro/aci-containers-host:6.0.4.1.81c2369.z (redhat 9.3)
 ================================================================
@@ -49,9 +44,11 @@ Total: 183 (UNKNOWN: 0, LOW: 134, MEDIUM: 49, HIGH: 0, CRITICAL: 0)
 │ gnutls                     │ CVE-2023-5981  │ MEDIUM   │ affected     │ 3.8.2-2.el9                   │               │ gnutls: timing side-channel in the RSA-PSK authentication    │
 │                            │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5981                    │
 │                            ├────────────────┤          │              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2024-0553  │          │              │                               │               │                                                              │
+│                            │ CVE-2024-0553  │          │              │                               │               │ gnutls: incomplete fix for CVE-2023-5981                     │
+│                            │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0553                    │
 │                            ├────────────────┤          │              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                            │ CVE-2024-0567  │          │              │                               │               │                                                              │
+│                            │ CVE-2024-0567  │          │              │                               │               │ gnutls: rejects certificate chain with distributed trust     │
+│                            │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0567                    │
 ├────────────────────────────┼────────────────┤          ├──────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ libarchive                 │ CVE-2023-30571 │          │ will_not_fix │ 3.5.3-4.el9                   │               │ libarchive: Race condition in multi-threaded use of          │
 │                            │                │          │              │                               │               │ archive_write_disk_header() on posix based systems...        │
@@ -626,30 +623,3 @@ Total: 183 (UNKNOWN: 0, LOW: 134, MEDIUM: 49, HIGH: 0, CRITICAL: 0)
 │                            │ CVE-2023-5535  │          │              │                               │               │ vim: use after free                                          │
 │                            │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5535                    │
 └────────────────────────────┴────────────────┴──────────┴──────────────┴───────────────────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
-
-usr/local/bin/aci-containers-host-agent (gobinary)
-==================================================
-Total: 5 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 3, CRITICAL: 0)
-
-┌──────────────────────────────────────────────────────────────┬─────────────────────┬──────────┬────────┬───────────────────┬──────────────────────────────────┬─────────────────────────────────────────────────────────────┐
-│                           Library                            │    Vulnerability    │ Severity │ Status │ Installed Version │          Fixed Version           │                            Title                            │
-├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┼────────┼───────────────────┼──────────────────────────────────┼─────────────────────────────────────────────────────────────┤
-│ go.opentelemetry.io/contrib/instrumentation/google.golang.o- │ CVE-2023-47108      │ HIGH     │ fixed  │ v0.44.0           │ 0.46.0                           │ opentelemetry-go-contrib: DoS vulnerability in otelgrpc due │
-│ rg/grpc/otelgrpc                                             │                     │          │        │                   │                                  │ to unbound cardinality metrics                              │
-│                                                              │                     │          │        │                   │                                  │ https://avd.aquasec.com/nvd/cve-2023-47108                  │
-├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────────┼─────────────────────────────────────────────────────────────┤
-│ golang.org/x/crypto                                          │ CVE-2023-48795      │ MEDIUM   │        │ v0.14.0           │ 0.17.0                           │ ssh: Prefix truncation attack on Binary Packet Protocol     │
-│                                                              │                     │          │        │                   │                                  │ (BPP)                                                       │
-│                                                              │                     │          │        │                   │                                  │ https://avd.aquasec.com/nvd/cve-2023-48795                  │
-├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────────┼─────────────────────────────────────────────────────────────┤
-│ google.golang.org/grpc                                       │ GHSA-m425-mq94-257g │ HIGH     │        │ v1.58.2           │ 1.56.3, 1.57.1, 1.58.3           │ gRPC-Go HTTP/2 Rapid Reset vulnerability                    │
-│                                                              │                     │          │        │                   │                                  │ https://github.com/advisories/GHSA-m425-mq94-257g           │
-│                                                              ├─────────────────────┼──────────┤        │                   ├──────────────────────────────────┼─────────────────────────────────────────────────────────────┤
-│                                                              │ CVE-2023-44487      │ MEDIUM   │        │                   │ 1.58.3, 1.57.1, 1.56.3           │ HTTP/2: Multiple HTTP/2 enabled web servers are vulnerable  │
-│                                                              │                     │          │        │                   │                                  │ to a DDoS attack...                                         │
-│                                                              │                     │          │        │                   │                                  │ https://avd.aquasec.com/nvd/cve-2023-44487                  │
-├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┤        ├───────────────────┼──────────────────────────────────┼─────────────────────────────────────────────────────────────┤
-│ k8s.io/kubernetes                                            │ CVE-2023-5528       │ HIGH     │        │ v1.28.3           │ 1.28.4, 1.27.8, 1.26.11, 1.25.16 │ kubernetes: Insufficient input sanitization in in-tree      │
-│                                                              │                     │          │        │                   │                                  │ storage plugin leads to privilege escalation...             │
-│                                                              │                     │          │        │                   │                                  │ https://avd.aquasec.com/nvd/cve-2023-5528                   │
-└──────────────────────────────────────────────────────────────┴─────────────────────┴──────────┴────────┴───────────────────┴──────────────────────────────────┴─────────────────────────────────────────────────────────────┘
