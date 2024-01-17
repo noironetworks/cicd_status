@@ -565,7 +565,7 @@ vim-minimal                        2:8.0.1763-19.el8_6.4                   (won'
 
 quay.io/noiro/acc-provision-operator:6.0.4.1.81c2369.z (redhat 8.9)
 ===================================================================
-Total: 481 (UNKNOWN: 0, LOW: 293, MEDIUM: 181, HIGH: 7, CRITICAL: 0)
+Total: 482 (UNKNOWN: 0, LOW: 293, MEDIUM: 182, HIGH: 7, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬──────────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │  Fixed Version   │                            Title                             │
@@ -1223,10 +1223,6 @@ Total: 481 (UNKNOWN: 0, LOW: 293, MEDIUM: 181, HIGH: 7, CRITICAL: 0)
 │                             │                  │          │                     │                               │                  │ vhost_net_set_backend()                                      │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2023-1838                    │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-21102   │          │                     │                               │                  │ kernel: bypass of shadow stack protection due to a logic     │
-│                             │                  │          │                     │                               │                  │ error                                                        │
-│                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2023-21102                   │
-│                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-2166    │          │                     │                               │                  │ Kernel: NULL pointer dereference in can_rcv_filter           │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2023-2166                    │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
@@ -1404,6 +1400,14 @@ Total: 481 (UNKNOWN: 0, LOW: 293, MEDIUM: 181, HIGH: 7, CRITICAL: 0)
 │                             │ CVE-2024-0607    │          │ affected            │                               │                  │ kernel: nf_tables: pointer math issue in                     │
 │                             │                  │          │                     │                               │                  │ nft_byteorder_eval()                                         │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0607                    │
+│                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-0639    │          │                     │                               │                  │ kernel: potential deadlock on &net->sctp.addr_wq_lock        │
+│                             │                  │          │                     │                               │                  │ leading to DOS                                               │
+│                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0639                    │
+│                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-0641    │          │                     │                               │                  │ kernel: deadlock leading to denail of service in             │
+│                             │                  │          │                     │                               │                  │ tipc_crypto_key_revoke                                       │
+│                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0641                    │
 │                             ├──────────────────┼──────────┼─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2018-7273    │ LOW      │ will_not_fix        │                               │                  │ kernel: Kernel address information leak in                   │
 │                             │                  │          │                     │                               │                  │ drivers/block/floppy.c:show_floppy function potentially      │
