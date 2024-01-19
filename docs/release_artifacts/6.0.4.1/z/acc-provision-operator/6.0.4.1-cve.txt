@@ -563,7 +563,7 @@ vim-minimal                        2:8.0.1763-19.el8_6.4                   (won'
 
 quay.io/noiro/acc-provision-operator:6.0.4.1.81c2369.z (redhat 8.9)
 ===================================================================
-Total: 483 (UNKNOWN: 0, LOW: 293, MEDIUM: 183, HIGH: 7, CRITICAL: 0)
+Total: 482 (UNKNOWN: 0, LOW: 293, MEDIUM: 182, HIGH: 7, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬──────────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │  Fixed Version   │                            Title                             │
@@ -932,9 +932,6 @@ Total: 483 (UNKNOWN: 0, LOW: 293, MEDIUM: 183, HIGH: 7, CRITICAL: 0)
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
 │ gnutls                      │ CVE-2024-0553    │ MEDIUM   │ affected            │ 3.6.16-8.el8_9                │                  │ gnutls: incomplete fix for CVE-2023-5981                     │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0553                    │
-│                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-0567    │          │                     │                               │                  │ gnutls: rejects certificate chain with distributed trust     │
-│                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0567                    │
 │                             ├──────────────────┼──────────┼─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2021-4209    │ LOW      │ will_not_fix        │                               │                  │ GnuTLS: Null pointer dereference in MD_UPDATE                │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2021-4209                    │
@@ -958,10 +955,10 @@ Total: 483 (UNKNOWN: 0, LOW: 293, MEDIUM: 183, HIGH: 7, CRITICAL: 0)
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-6817    │          │                     │                               │                  │ kernel: inactive elements in nft_pipapo_walk                 │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2023-6817                    │
-│                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-0565    │          │ under_investigation │                               │                  │ kernel: CIFS Filesystem Decryption Improper Input Validation │
-│                             │                  │          │                     │                               │                  │ Remote Code Execution Vulnerability                          │
-│                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0565                    │
+│                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-0646    │          │                     │                               │                  │ kernel: ktls overwrites readonly memory pages when using     │
+│                             │                  │          │                     │                               │                  │ function splice with a...                                    │
+│                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0646                    │
 │                             ├──────────────────┼──────────┼─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2018-15594   │ MEDIUM   │ will_not_fix        │                               │                  │ kernel: Mishandling of indirect calls weakens Spectre        │
 │                             │                  │          │                     │                               │                  │ mitigation for paravirtual guests                            │
@@ -1390,6 +1387,10 @@ Total: 483 (UNKNOWN: 0, LOW: 293, MEDIUM: 183, HIGH: 7, CRITICAL: 0)
 │                             │ CVE-2024-0562    │          │                     │                               │                  │ kernel: use-after-free after removing device in              │
 │                             │                  │          │                     │                               │                  │ wb_inode_writeback_end in mm/page-writeback.c                │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0562                    │
+│                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-0565    │          │                     │                               │                  │ kernel: CIFS Filesystem Decryption Improper Input Validation │
+│                             │                  │          │                     │                               │                  │ Remote Code Execution Vulnerability in...                    │
+│                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0565                    │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-0584    │          │ under_investigation │                               │                  │ kernel: refcnt uaf issue when receiving igmp query packet in │
 │                             │                  │          │                     │                               │                  │ igmp_start_timer                                             │
@@ -1406,10 +1407,6 @@ Total: 483 (UNKNOWN: 0, LOW: 293, MEDIUM: 183, HIGH: 7, CRITICAL: 0)
 │                             │ CVE-2024-0641    │          │                     │                               │                  │ kernel: deadlock leading to denail of service in             │
 │                             │                  │          │                     │                               │                  │ tipc_crypto_key_revoke                                       │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0641                    │
-│                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-0646    │          │                     │                               │                  │ kernel: ktls overwrites readonly memory pages when using     │
-│                             │                  │          │                     │                               │                  │ function splice with a...                                    │
-│                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-0646                    │
 │                             ├──────────────────┼──────────┼─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2018-7273    │ LOW      │ will_not_fix        │                               │                  │ kernel: Kernel address information leak in                   │
 │                             │                  │          │                     │                               │                  │ drivers/block/floppy.c:show_floppy function potentially      │
