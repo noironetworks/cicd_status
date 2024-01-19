@@ -34,7 +34,14 @@ fetch('release_artifacts/releases.yaml')
                 break;
               }
             }
-            for (const image of releaseStream.container_images) {
+
+            // Sort the images by name
+            const sortedImages = releaseStream.container_images.sort((a, b) => {
+              if (a.name > b.name) return 1;
+              if (a.name < b.name) return -1;
+              return 0;
+            });
+            for (const image of sortedImages) {
               const releaseRow = document.createElement('tr');
 
               const imageNameCell = document.createElement('td');
