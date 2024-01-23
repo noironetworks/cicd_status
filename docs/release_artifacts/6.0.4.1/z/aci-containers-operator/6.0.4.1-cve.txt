@@ -11,7 +11,7 @@ urllib3         1.26.5                              1.26.18   python     GHSA-g4
 
 quay.io/noiro/aci-containers-operator:6.0.4.1.81c2369.z (redhat 9.3)
 ====================================================================
-Total: 221 (UNKNOWN: 0, LOW: 139, MEDIUM: 82, HIGH: 0, CRITICAL: 0)
+Total: 220 (UNKNOWN: 0, LOW: 139, MEDIUM: 81, HIGH: 0, CRITICAL: 0)
 
 ┌────────────────────┬──────────────────┬──────────┬──────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │      Library       │  Vulnerability   │ Severity │    Status    │       Installed Version       │ Fixed Version │                            Title                             │
@@ -143,11 +143,8 @@ Total: 221 (UNKNOWN: 0, LOW: 139, MEDIUM: 82, HIGH: 0, CRITICAL: 0)
 │                    ├──────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                    │ CVE-2016-20012   │ LOW      │              │                               │               │ openssh: Public key information leak                         │
 │                    │                  │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2016-20012                   │
-├────────────────────┼──────────────────┼──────────┼──────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ openssl            │ CVE-2023-5363    │ MEDIUM   │ affected     │ 1:3.0.7-24.el9                │               │ openssl: Incorrect cipher key and IV length processing       │
-│                    │                  │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5363                    │
-│                    ├──────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                    │ CVE-2023-2975    │ LOW      │              │                               │               │ openssl: AES-SIV cipher implementation contains a bug that   │
+├────────────────────┼──────────────────┤          ├──────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ openssl            │ CVE-2023-2975    │          │ affected     │ 1:3.0.7-25.el9_3              │               │ openssl: AES-SIV cipher implementation contains a bug that   │
 │                    │                  │          │              │                               │               │ causes it to ignore...                                       │
 │                    │                  │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-2975                    │
 │                    ├──────────────────┤          ├──────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -169,11 +166,8 @@ Total: 221 (UNKNOWN: 0, LOW: 139, MEDIUM: 82, HIGH: 0, CRITICAL: 0)
 │                    │ CVE-2023-6237    │          │              │                               │               │ openssl: Excessive time spent checking invalid RSA public    │
 │                    │                  │          │              │                               │               │ keys                                                         │
 │                    │                  │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6237                    │
-├────────────────────┼──────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ openssl-libs       │ CVE-2023-5363    │ MEDIUM   │              │                               │               │ openssl: Incorrect cipher key and IV length processing       │
-│                    │                  │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5363                    │
-│                    ├──────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                    │ CVE-2023-2975    │ LOW      │              │                               │               │ openssl: AES-SIV cipher implementation contains a bug that   │
+├────────────────────┼──────────────────┤          │              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ openssl-libs       │ CVE-2023-2975    │          │              │                               │               │ openssl: AES-SIV cipher implementation contains a bug that   │
 │                    │                  │          │              │                               │               │ causes it to ignore...                                       │
 │                    │                  │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-2975                    │
 │                    ├──────────────────┤          ├──────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -196,7 +190,11 @@ Total: 221 (UNKNOWN: 0, LOW: 139, MEDIUM: 82, HIGH: 0, CRITICAL: 0)
 │                    │                  │          │              │                               │               │ keys                                                         │
 │                    │                  │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6237                    │
 ├────────────────────┼──────────────────┼──────────┤              ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ perl-AutoLoader    │ CVE-2023-47038   │ MEDIUM   │              │ 5.74-480.el9                  │               │ perl: Write past buffer end via illegal user-defined Unicode │
+│ pam                │ CVE-2024-22365   │ MEDIUM   │              │ 1.5.1-15.el9                  │               │ pam: allowing unpriledged user to block another user         │
+│                    │                  │          │              │                               │               │ namespace                                                    │
+│                    │                  │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-22365                   │
+├────────────────────┼──────────────────┤          │              ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ perl-AutoLoader    │ CVE-2023-47038   │          │              │ 5.74-480.el9                  │               │ perl: Write past buffer end via illegal user-defined Unicode │
 │                    │                  │          │              │                               │               │ property                                                     │
 │                    │                  │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-47038                   │
 ├────────────────────┤                  │          │              ├───────────────────────────────┼───────────────┤                                                              │
