@@ -116,6 +116,7 @@ kernel-headers                     4.18.0-513.11.1.el8_9                        
 kernel-headers                     4.18.0-513.11.1.el8_9                                rpm   CVE-2023-6546     High      
 kernel-headers                     4.18.0-513.11.1.el8_9                                rpm   CVE-2023-4921     High      
 kernel-headers                     4.18.0-513.11.1.el8_9                                rpm   CVE-2022-0886     High      
+kernel-headers                     4.18.0-513.11.1.el8_9                                rpm   CVE-2024-0841     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                rpm   CVE-2024-0641     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                rpm   CVE-2024-0639     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                rpm   CVE-2024-0607     Medium    
@@ -130,6 +131,7 @@ kernel-headers                     4.18.0-513.11.1.el8_9                        
 kernel-headers                     4.18.0-513.11.1.el8_9                                rpm   CVE-2023-6535     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                rpm   CVE-2023-6356     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                rpm   CVE-2023-5717     Medium    
+kernel-headers                     4.18.0-513.11.1.el8_9                                rpm   CVE-2023-52340    Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                rpm   CVE-2023-51780    Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                rpm   CVE-2023-51779    Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                rpm   CVE-2023-5090     Medium    
@@ -370,14 +372,14 @@ openldap                           2.4.46-18.el8                           (won'
 openssh                            8.0p1-19.el8_8                          (won't fix)  rpm   CVE-2023-51767    Medium    
 openssh                            8.0p1-19.el8_8                                       rpm   CVE-2023-51385    Medium    
 openssh                            8.0p1-19.el8_8                                       rpm   CVE-2023-48795    Medium    
-openssh                            8.0p1-19.el8_8                          (won't fix)  rpm   CVE-2020-15778    Medium    
+openssh                            8.0p1-19.el8_8                                       rpm   CVE-2020-15778    Medium    
 openssh                            8.0p1-19.el8_8                          (won't fix)  rpm   CVE-2019-6110     Low       
 openssh                            8.0p1-19.el8_8                          (won't fix)  rpm   CVE-2018-15919    Low       
 openssh                            8.0p1-19.el8_8                          (won't fix)  rpm   CVE-2016-20012    Low       
 openssh-clients                    8.0p1-19.el8_8                          (won't fix)  rpm   CVE-2023-51767    Medium    
 openssh-clients                    8.0p1-19.el8_8                                       rpm   CVE-2023-51385    Medium    
 openssh-clients                    8.0p1-19.el8_8                                       rpm   CVE-2023-48795    Medium    
-openssh-clients                    8.0p1-19.el8_8                          (won't fix)  rpm   CVE-2020-15778    Medium    
+openssh-clients                    8.0p1-19.el8_8                                       rpm   CVE-2020-15778    Medium    
 openssh-clients                    8.0p1-19.el8_8                          (won't fix)  rpm   CVE-2019-6110     Low       
 openssh-clients                    8.0p1-19.el8_8                          (won't fix)  rpm   CVE-2018-15919    Low       
 openssh-clients                    8.0p1-19.el8_8                          (won't fix)  rpm   CVE-2016-20012    Low       
@@ -547,7 +549,7 @@ vim-minimal                        2:8.0.1763-19.el8_6.4                   (won'
 
 quay.io/noiro/acc-provision-operator:6.0.4.1.81c2369.z (redhat 8.9)
 ===================================================================
-Total: 480 (UNKNOWN: 0, LOW: 293, MEDIUM: 183, HIGH: 4, CRITICAL: 0)
+Total: 482 (UNKNOWN: 0, LOW: 293, MEDIUM: 185, HIGH: 4, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -1317,6 +1319,10 @@ Total: 480 (UNKNOWN: 0, LOW: 293, MEDIUM: 183, HIGH: 4, CRITICAL: 0)
 │                             │ CVE-2023-51780   │          │                     │                               │               │ kernel: use-after-free in net/atm/ioctl.c                    │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-51780                   │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52340   │          │                     │                               │               │ kernel: ICMPv6 “Packet Too Big” packets force a DoS of the   │
+│                             │                  │          │                     │                               │               │ Linux...                                                     │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52340                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-5717    │          │                     │                               │               │ kernel: A heap out-of-bounds write                           │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5717                    │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -1373,6 +1379,10 @@ Total: 480 (UNKNOWN: 0, LOW: 293, MEDIUM: 183, HIGH: 4, CRITICAL: 0)
 │                             │ CVE-2024-0641    │          │                     │                               │               │ kernel: deadlock leading to denial of service in             │
 │                             │                  │          │                     │                               │               │ tipc_crypto_key_revoke                                       │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0641                    │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-0841    │          │                     │                               │               │ kernel: hugetlbfs: Null pointer dereference in               │
+│                             │                  │          │                     │                               │               │ hugetlbfs_fill_super function                                │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0841                    │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-22705   │          │ under_investigation │                               │               │ kernel: out-of-bounds access smb2_get_data_area_len          │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-22705                   │
@@ -1858,12 +1868,12 @@ Total: 480 (UNKNOWN: 0, LOW: 293, MEDIUM: 183, HIGH: 4, CRITICAL: 0)
 ├─────────────────────────────┼──────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ openldap                    │ CVE-2023-2953    │          │ will_not_fix        │ 2.4.46-18.el8                 │               │ null pointer dereference in ber_memalloc_x function          │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-2953                    │
-├─────────────────────────────┼──────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ openssh                     │ CVE-2020-15778   │ MEDIUM   │                     │ 8.0p1-19.el8_8                │               │ openssh: scp allows command injection when using backtick    │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ openssh                     │ CVE-2020-15778   │ MEDIUM   │ affected            │ 8.0p1-19.el8_8                │               │ openssh: scp allows command injection when using backtick    │
 │                             │                  │          │                     │                               │               │ characters in the destination...                             │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2020-15778                   │
-│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-51385   │          │ affected            │                               │               │ openssh: potential command injection via shell               │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-51385   │          │                     │                               │               │ openssh: potential command injection via shell               │
 │                             │                  │          │                     │                               │               │ metacharacters                                               │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-51385                   │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -1880,12 +1890,12 @@ Total: 480 (UNKNOWN: 0, LOW: 293, MEDIUM: 183, HIGH: 4, CRITICAL: 0)
 │                             │ CVE-2019-6110    │          │                     │                               │               │ openssh: Acceptance and display of arbitrary stderr allows   │
 │                             │                  │          │                     │                               │               │ for spoofing of scp...                                       │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2019-6110                    │
-├─────────────────────────────┼──────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ openssh-clients             │ CVE-2020-15778   │ MEDIUM   │                     │                               │               │ openssh: scp allows command injection when using backtick    │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ openssh-clients             │ CVE-2020-15778   │ MEDIUM   │ affected            │                               │               │ openssh: scp allows command injection when using backtick    │
 │                             │                  │          │                     │                               │               │ characters in the destination...                             │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2020-15778                   │
-│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-51385   │          │ affected            │                               │               │ openssh: potential command injection via shell               │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-51385   │          │                     │                               │               │ openssh: potential command injection via shell               │
 │                             │                  │          │                     │                               │               │ metacharacters                                               │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-51385                   │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
