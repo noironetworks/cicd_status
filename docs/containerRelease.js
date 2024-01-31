@@ -180,11 +180,23 @@ fetch('release_artifacts/releases.yaml')
                 const M = image.severity[0].M.toString();
                 const L = image.severity[0].L.toString();
                 const U = image.severity[0].U.toString();
-                const cveText = `<span class="cve-letter cve-c">C:${C}</span><br>
-                      <span class="cve-letter cve-h">H:${H}</span><br>
-                      <span class="cve-letter cve-m">M:${M}</span><br>
-                      <span class="cve-letter cve-l">L:${L}</span><br>
-                      <span class="cve-letter cve-u">U:${U}</span>`;
+                
+                let severityType = 'GRYPE';
+                let severityTypeClass = 'severity_type_grype';
+                if (image.hasOwnProperty('severity_type')) {
+                  severityType = image.severity_type;
+                  if (severityType.toLowerCase() === 'quay') {
+                    severityTypeClass = 'severity_type_quay';
+                  }
+                }
+                severityType = severityType.toUpperCase()
+                const cveText = ` <div class="${severityTypeClass}">${severityType}</div>
+                                  <hr>
+                                  <span class="cve-letter cve-c">C:${C}</span><br>
+                                  <span class="cve-letter cve-h">H:${H}</span><br>
+                                  <span class="cve-letter cve-m">M:${M}</span><br>
+                                  <span class="cve-letter cve-l">L:${L}</span><br>
+                                  <span class="cve-letter cve-u">U:${U}</span>`;
                 cveLink.innerHTML = cveText;
                 cveCell.appendChild(cveLink);
               } else {
@@ -192,6 +204,7 @@ fetch('release_artifacts/releases.yaml')
                 cveCell.appendChild(cveLink);
               }
               releaseRow.appendChild(cveCell);
+              
 
               const buildLogsCell = document.createElement('td');
               const buildLogsLink = document.createElement('a');
