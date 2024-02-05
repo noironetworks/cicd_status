@@ -116,6 +116,7 @@ kernel-headers                     4.18.0-513.11.1.el8_9                        
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-6546     High      
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-4921     High      
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2022-0886     High      
+kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2024-1086     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2024-1085     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2024-0841     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2024-0641     Medium    
@@ -132,6 +133,7 @@ kernel-headers                     4.18.0-513.11.1.el8_9                        
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-6536     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-6535     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-6356     Medium    
+kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-6240     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-5717     Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-52340    Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm   CVE-2023-51780    Medium    
@@ -549,7 +551,7 @@ vim-minimal                        2:8.0.1763-19.el8_6.4                   (won'
 
 quay.io/noiro/acc-provision-operator:6.0.3.3.81c2369.z (redhat 8.9)
 ===================================================================
-Total: 484 (UNKNOWN: 0, LOW: 294, MEDIUM: 186, HIGH: 4, CRITICAL: 0)
+Total: 485 (UNKNOWN: 0, LOW: 294, MEDIUM: 187, HIGH: 4, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬──────────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │  Fixed Version   │                            Title                             │
@@ -1319,7 +1321,11 @@ Total: 484 (UNKNOWN: 0, LOW: 294, MEDIUM: 186, HIGH: 4, CRITICAL: 0)
 │                             │                  │          │                     │                               │                  │ nf_tables_newtable()                                         │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2023-6040                    │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-6356    │          │ affected            │                               │                  │ kernel: NULL pointer dereference in nvmet_tcp_build_iovec    │
+│                             │ CVE-2023-6240    │          │ affected            │                               │                  │ kernel: Marvin vulnerability side-channel leakage in the RSA │
+│                             │                  │          │                     │                               │                  │ decryption operation                                         │
+│                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2023-6240                    │
+│                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-6356    │          │                     │                               │                  │ kernel: NULL pointer dereference in nvmet_tcp_build_iovec    │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2023-6356                    │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-6535    │          │                     │                               │                  │ kernel: NULL pointer dereference in                          │
@@ -1380,12 +1386,12 @@ Total: 484 (UNKNOWN: 0, LOW: 294, MEDIUM: 186, HIGH: 4, CRITICAL: 0)
 │                             │ CVE-2024-1085    │          │                     │                               │                  │ kernel: nf_tables: use-after-free vulnerability in the       │
 │                             │                  │          │                     │                               │                  │ nft_setelem_catchall_deactivate() function                   │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-1085                    │
-│                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-1086    │          │ under_investigation │                               │                  │ kernel: nf_tables: use-after-free vulnerability in the       │
+│                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-1086    │          │                     │                               │                  │ kernel: nf_tables: use-after-free vulnerability in the       │
 │                             │                  │          │                     │                               │                  │ nft_verdict_init() function                                  │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-1086                    │
-│                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-21803   │          │                     │                               │                  │ kernel: bluetooth: use-after-free vulnerability in           │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-21803   │          │ under_investigation │                               │                  │ kernel: bluetooth: use-after-free vulnerability in           │
 │                             │                  │          │                     │                               │                  │ af_bluetooth.c                                               │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-21803                   │
 │                             ├──────────────────┤          │                     │                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
