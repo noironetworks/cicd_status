@@ -551,7 +551,7 @@ vim-minimal                        2:8.0.1763-19.el8_6.4                   (won'
 
 quay.io/noiro/acc-provision-operator:6.0.4.1.81c2369.z (redhat 8.9)
 ===================================================================
-Total: 485 (UNKNOWN: 0, LOW: 294, MEDIUM: 187, HIGH: 4, CRITICAL: 0)
+Total: 486 (UNKNOWN: 0, LOW: 294, MEDIUM: 188, HIGH: 4, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬──────────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │  Fixed Version   │                            Title                             │
@@ -1760,8 +1760,11 @@ Total: 485 (UNKNOWN: 0, LOW: 294, MEDIUM: 187, HIGH: 4, CRITICAL: 0)
 │ libtasn1                    │ CVE-2018-1000654 │          │                     │ 4.13-4.el8_7                  │                  │ libtasn1: Infinite loop in _asn1_expand_object_id(ptree)     │
 │                             │                  │          │                     │                               │                  │ leads to memory exhaustion                                   │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2018-1000654                 │
-├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
-│ libxml2                     │ CVE-2023-45322   │          │                     │ 2.9.7-18.el8_9                │                  │ libxml2: use-after-free in xmlUnlinkNode() in tree.c         │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
+│ libxml2                     │ CVE-2024-25062   │ MEDIUM   │ under_investigation │ 2.9.7-18.el8_9                │                  │ libxml2: use-after-free in XMLReader                         │
+│                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2024-25062                   │
+│                             ├──────────────────┼──────────┼─────────────────────┤                               ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-45322   │ LOW      │ will_not_fix        │                               │                  │ libxml2: use-after-free in xmlUnlinkNode() in tree.c         │
 │                             │                  │          │                     │                               │                  │ https://avd.aquasec.com/nvd/cve-2023-45322                   │
 ├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
 │ libzstd                     │ CVE-2021-24032   │          │                     │ 1.4.4-1.el8                   │                  │ zstd: Race condition allows attacker to access               │
