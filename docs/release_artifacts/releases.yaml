@@ -1203,12 +1203,12 @@ releases:
 - release_streams:
   - acc_provision:
     - build-logs: release_artifacts/6.0.3.3/z/acc-provision/6.0.3.3-buildlog.txt
-      build-time: 2024-02-05 19:40:49 PST
+      build-time: 2024-02-05 23:16:34 PST
       commit:
       - link: https://github.com/noironetworks/acc-provision/commit/99bbe81a3c494d81e48e24bad21275d861f03281
         sha: 99bbe81a3c494d81e48e24bad21275d861f03281
-      link: https://test.pypi.org/project/acc-provision/6.0.3.3.dev8823/#files
-      tag: acc_provision-6.0.3.3.dev8823
+      link: https://test.pypi.org/project/acc-provision/6.0.3.3.dev8825/#files
+      tag: acc_provision-6.0.3.3.dev8825
     container_images:
     - base-image:
       - cve: release_artifacts/6.0.3.3/z/acc-provision-operator/6.0.3.3-cve-base.txt
@@ -1224,7 +1224,7 @@ releases:
       commit:
       - link: https://github.com/noironetworks/acc-provision-operator/commit/b7900c74d0692c68dbd208d2b3f94692e80ea887
         sha: b7900c74d0692c68dbd208d2b3f94692e80ea887
-      cve: release_artifacts/6.0.3.3/z/acc-provision-operator/6.0.3.3-cve.txt
+      cve: release_artifacts/6.0.3.3/z/acc-provision-operator/6.0.3.3-quay-cve.txt
       docker:
       - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.3.3.81c2369.z/images/sha256-f96ab67165b7c2ce990edff71dfb0a5f423858380f0105c77e0d72721f7a0133?context=explore
         sha: f96ab67165b7c2ce990edff71dfb0a5f423858380f0105c77e0d72721f7a0133
@@ -1242,11 +1242,12 @@ releases:
         tag: 6.0.3.3.81c2369.020624.715
       sbom: release_artifacts/6.0.3.3/z/acc-provision-operator/6.0.3.3-sbom.txt
       severity:
-      - C: 5
-        H: 5
-        L: 287
-        M: 244
-        U: 9
+      - C: 0
+        H: 0
+        L: 0
+        M: 7
+        U: 0
+      severity_type: quay
     - base-image:
       - cve: release_artifacts/6.0.3.3/z/aci-containers-host/6.0.3.3-cve-base.txt
         severity:
@@ -1261,7 +1262,7 @@ releases:
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/a9970c6df84fe2e246e268f51875f62178560f7d
         sha: a9970c6df84fe2e246e268f51875f62178560f7d
-      cve: release_artifacts/6.0.3.3/z/aci-containers-host/6.0.3.3-cve.txt
+      cve: release_artifacts/6.0.3.3/z/aci-containers-host/6.0.3.3-quay-cve.txt
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-host/6.0.3.3.81c2369.z/images/sha256-1f05cadac4a681387c915046cfc1e9408ca3acff06c382712f74f8c8ef544abf?context=explore
         sha: 1f05cadac4a681387c915046cfc1e9408ca3acff06c382712f74f8c8ef544abf
@@ -1280,10 +1281,11 @@ releases:
       sbom: release_artifacts/6.0.3.3/z/aci-containers-host/6.0.3.3-sbom.txt
       severity:
       - C: 0
-        H: 5
+        H: 0
         L: 0
-        M: 4
+        M: 0
         U: 0
+      severity_type: quay
     - base-image:
       - cve: release_artifacts/6.0.3.3/z/aci-containers-controller/6.0.3.3-cve-base.txt
         severity:
@@ -1298,7 +1300,7 @@ releases:
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/a9970c6df84fe2e246e268f51875f62178560f7d
         sha: a9970c6df84fe2e246e268f51875f62178560f7d
-      cve: release_artifacts/6.0.3.3/z/aci-containers-controller/6.0.3.3-cve.txt
+      cve: release_artifacts/6.0.3.3/z/aci-containers-controller/6.0.3.3-quay-cve.txt
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-controller/6.0.3.3.81c2369.z/images/sha256-be9be161a3d93520afdf054c8e94acfe728475d41d058c0b16daf8ba0c6f3ff4?context=explore
         sha: be9be161a3d93520afdf054c8e94acfe728475d41d058c0b16daf8ba0c6f3ff4
@@ -1317,10 +1319,11 @@ releases:
       sbom: release_artifacts/6.0.3.3/z/aci-containers-controller/6.0.3.3-sbom.txt
       severity:
       - C: 0
-        H: 11
+        H: 0
         L: 0
-        M: 13
-        U: 0
+        M: 0
+        U: 1
+      severity_type: quay
     - base-image:
       - cve: release_artifacts/6.0.3.3/z/cnideploy/6.0.3.3-cve-base.txt
         severity:
@@ -1335,7 +1338,7 @@ releases:
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/a9970c6df84fe2e246e268f51875f62178560f7d
         sha: a9970c6df84fe2e246e268f51875f62178560f7d
-      cve: release_artifacts/6.0.3.3/z/cnideploy/6.0.3.3-cve.txt
+      cve: release_artifacts/6.0.3.3/z/cnideploy/6.0.3.3-quay-cve.txt
       docker:
       - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.3.3.81c2369.z/images/sha256-8ced53450156fec5774ec30d0c4585b0ea534b75ff0a9e370c907ee45a8d3680?context=explore
         sha: 8ced53450156fec5774ec30d0c4585b0ea534b75ff0a9e370c907ee45a8d3680
@@ -1354,10 +1357,11 @@ releases:
       sbom: release_artifacts/6.0.3.3/z/cnideploy/6.0.3.3-sbom.txt
       severity:
       - C: 0
-        H: 1
+        H: 0
         L: 0
-        M: 4
+        M: 0
         U: 0
+      severity_type: quay
     - base-image:
       - cve: release_artifacts/6.0.3.3/z/aci-containers-operator/6.0.3.3-cve-base.txt
         severity:
@@ -1372,7 +1376,7 @@ releases:
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/a9970c6df84fe2e246e268f51875f62178560f7d
         sha: a9970c6df84fe2e246e268f51875f62178560f7d
-      cve: release_artifacts/6.0.3.3/z/aci-containers-operator/6.0.3.3-cve.txt
+      cve: release_artifacts/6.0.3.3/z/aci-containers-operator/6.0.3.3-quay-cve.txt
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-operator/6.0.3.3.81c2369.z/images/sha256-8f0766d63c0fcee873e852689d5580b446a539a2fe1aa3f77a4eb43cb9fce131?context=explore
         sha: 8f0766d63c0fcee873e852689d5580b446a539a2fe1aa3f77a4eb43cb9fce131
@@ -1391,10 +1395,11 @@ releases:
       sbom: release_artifacts/6.0.3.3/z/aci-containers-operator/6.0.3.3-sbom.txt
       severity:
       - C: 0
-        H: 9
+        H: 0
         L: 0
-        M: 5
-        U: 0
+        M: 0
+        U: 1
+      severity_type: quay
     - base-image:
       - cve: release_artifacts/6.0.3.3/z/openvswitch/6.0.3.3-cve-base.txt
         severity:
@@ -1409,7 +1414,7 @@ releases:
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/a9970c6df84fe2e246e268f51875f62178560f7d
         sha: a9970c6df84fe2e246e268f51875f62178560f7d
-      cve: release_artifacts/6.0.3.3/z/openvswitch/6.0.3.3-cve.txt
+      cve: release_artifacts/6.0.3.3/z/openvswitch/6.0.3.3-quay-cve.txt
       docker:
       - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.3.3.81c2369.z/images/sha256-309e7a79a7b247fe843983230b359a3df68dff4f5b11681b79622ee4ba3a990d?context=explore
         sha: 309e7a79a7b247fe843983230b359a3df68dff4f5b11681b79622ee4ba3a990d
@@ -1432,6 +1437,7 @@ releases:
         L: 0
         M: 0
         U: 0
+      severity_type: quay
     - base-image:
       - cve: release_artifacts/6.0.3.3/z/opflex/6.0.3.3-cve-base.txt
         severity:
@@ -1470,7 +1476,7 @@ releases:
         M: 6
         U: 0
       severity_type: quay
-    last_updated: 2024-02-05 23:08:18 PST
+    last_updated: 2024-02-05 23:16:34 PST
     release_name: 6.0.3.3.z
   - acc_provision: []
     container_images: []
