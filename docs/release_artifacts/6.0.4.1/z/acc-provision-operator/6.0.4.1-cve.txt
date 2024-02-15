@@ -539,7 +539,7 @@ vim-minimal                        2:8.0.1763-19.el8_6.4                   (won'
 
 quay.io/noiro/acc-provision-operator:6.0.4.1.81c2369.z (redhat 8.9)
 ===================================================================
-Total: 477 (UNKNOWN: 0, LOW: 296, MEDIUM: 178, HIGH: 3, CRITICAL: 0)
+Total: 477 (UNKNOWN: 0, LOW: 295, MEDIUM: 179, HIGH: 3, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬────────────────────────────────────────┬──────────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │           Installed Version            │  Fixed Version   │                            Title                             │
@@ -994,7 +994,11 @@ Total: 477 (UNKNOWN: 0, LOW: 296, MEDIUM: 178, HIGH: 3, CRITICAL: 0)
 │                             │                  │          │                     │                                        │                  │ to an impersonation attack...                                │
 │                             │                  │          │                     │                                        │                  │ https://avd.aquasec.com/nvd/cve-2020-26555                   │
 │                             ├──────────────────┤          ├─────────────────────┤                                        ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2020-27170   │          │ affected            │                                        │                  │ kernel: Speculation on pointer arithmetic against            │
+│                             │ CVE-2020-26558   │          │ affected            │                                        │                  │ bluez: Passkey Entry protocol of the Bluetooth Core is       │
+│                             │                  │          │                     │                                        │                  │ vulnerable to an...                                          │
+│                             │                  │          │                     │                                        │                  │ https://avd.aquasec.com/nvd/cve-2020-26558                   │
+│                             ├──────────────────┤          │                     │                                        ├──────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2020-27170   │          │                     │                                        │                  │ kernel: Speculation on pointer arithmetic against            │
 │                             │                  │          │                     │                                        │                  │ bpf_context pointer                                          │
 │                             │                  │          │                     │                                        │                  │ https://avd.aquasec.com/nvd/cve-2020-27170                   │
 │                             ├──────────────────┤          │                     │                                        ├──────────────────┼──────────────────────────────────────────────────────────────┤
@@ -1543,10 +1547,6 @@ Total: 477 (UNKNOWN: 0, LOW: 296, MEDIUM: 178, HIGH: 3, CRITICAL: 0)
 │                             │                  │          │                     │                                        │                  │ 32-bit systems                                               │
 │                             │                  │          │                     │                                        │                  │ https://avd.aquasec.com/nvd/cve-2023-1513                    │
 │                             ├──────────────────┤          │                     │                                        ├──────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-2269    │          │                     │                                        │                  │ kernel: A possible deadlock in dm_get_inactive_table in dm-  │
-│                             │                  │          │                     │                                        │                  │ ioctl.c leads to...                                          │
-│                             │                  │          │                     │                                        │                  │ https://avd.aquasec.com/nvd/cve-2023-2269                    │
-│                             ├──────────────────┤          │                     │                                        ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-3159    │          │                     │                                        │                  │ kernel: use after free issue in driver/firewire in           │
 │                             │                  │          │                     │                                        │                  │ outbound_phy_packet_callback                                 │
 │                             │                  │          │                     │                                        │                  │ https://avd.aquasec.com/nvd/cve-2023-3159                    │
@@ -1703,7 +1703,7 @@ Total: 477 (UNKNOWN: 0, LOW: 296, MEDIUM: 178, HIGH: 3, CRITICAL: 0)
 │                             │                  │          │                     │                                        │                  │ leads to memory exhaustion                                   │
 │                             │                  │          │                     │                                        │                  │ https://avd.aquasec.com/nvd/cve-2018-1000654                 │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼────────────────────────────────────────┼──────────────────┼──────────────────────────────────────────────────────────────┤
-│ libxml2                     │ CVE-2024-25062   │ MEDIUM   │ under_investigation │ 2.9.7-18.el8_9                         │                  │ libxml2: use-after-free in XMLReader                         │
+│ libxml2                     │ CVE-2024-25062   │ MEDIUM   │ affected            │ 2.9.7-18.el8_9                         │                  │ libxml2: use-after-free in XMLReader                         │
 │                             │                  │          │                     │                                        │                  │ https://avd.aquasec.com/nvd/cve-2024-25062                   │
 │                             ├──────────────────┼──────────┼─────────────────────┤                                        ├──────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-45322   │ LOW      │ will_not_fix        │                                        │                  │ libxml2: use-after-free in xmlUnlinkNode() in tree.c         │
@@ -2308,7 +2308,7 @@ Total: 2 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 0, CRITICAL: 0)
 ┌─────────────────────────┬────────────────┬──────────┬────────┬───────────────────┬─────────────────────────┬──────────────────────────────────────────────────────────────┐
 │         Library         │ Vulnerability  │ Severity │ Status │ Installed Version │      Fixed Version      │                            Title                             │
 ├─────────────────────────┼────────────────┼──────────┼────────┼───────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ ansible-core (METADATA) │ CVE-2024-0690  │ MEDIUM   │ fixed  │ 2.15.8            │ 2.16.3, 2.15.9, 2.14.14 │ ansible-core: possible information leak in tasks that ignore │
+│ ansible-core (METADATA) │ CVE-2024-0690  │ MEDIUM   │ fixed  │ 2.15.8            │ 2.14.14, 2.16.3, 2.15.9 │ ansible-core: possible information leak in tasks that ignore │
 │                         │                │          │        │                   │                         │ ANSIBLE_NO_LOG configuration                                 │
 │                         │                │          │        │                   │                         │ https://avd.aquasec.com/nvd/cve-2024-0690                    │
 ├─────────────────────────┼────────────────┤          │        ├───────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
