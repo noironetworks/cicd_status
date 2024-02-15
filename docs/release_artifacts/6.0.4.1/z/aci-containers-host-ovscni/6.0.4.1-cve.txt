@@ -6,7 +6,7 @@ urllib3     1.26.5     1.26.18   python  GHSA-g4mx-q9vg-27p4  Medium
 
 quay.io/noiro/aci-containers-host-ovscni:6.0.4.1.81c2369.z (redhat 9.3)
 =======================================================================
-Total: 161 (UNKNOWN: 0, LOW: 138, MEDIUM: 23, HIGH: 0, CRITICAL: 0)
+Total: 175 (UNKNOWN: 0, LOW: 138, MEDIUM: 25, HIGH: 12, CRITICAL: 0)
 
 ┌────────────────────┬────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │      Library       │ Vulnerability  │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -17,7 +17,61 @@ Total: 161 (UNKNOWN: 0, LOW: 138, MEDIUM: 23, HIGH: 0, CRITICAL: 0)
 │ curl               │ CVE-2023-46218 │ MEDIUM   │                     │ 7.76.1-28.el9                 │               │ curl: information disclosure by exploiting a mixed case flaw │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-46218                   │
 ├────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ file-libs          │ CVE-2022-48554 │ LOW      │                     │ 5.39-14.el9                   │               │ file: stack-based buffer over-read in file_copystr in        │
+│ dhcp-client        │ CVE-2023-4408  │ HIGH     │                     │ 12:4.4.2-19.b1.el9            │               │ bind9: Parsing large DNS messages may cause excessive CPU    │
+│                    │                │          │                     │                               │               │ load                                                         │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-4408                    │
+│                    ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-50387 │          │                     │                               │               │ bind9: KeyTrap - Extreme CPU consumption in DNSSEC validator │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-50387                   │
+│                    ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-50868 │          │                     │                               │               │ bind9: Preparing an NSEC3 closest encloser proof can exhaust │
+│                    │                │          │                     │                               │               │ CPU resources                                                │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-50868                   │
+│                    ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-5517  │          │                     │                               │               │ bind9: Querying RFC 1918 reverse zones may cause an          │
+│                    │                │          │                     │                               │               │ assertion failure when...                                    │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5517                    │
+│                    ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-5679  │          │                     │                               │               │ bind9: Enabling both DNS64 and serve-stale may cause an      │
+│                    │                │          │                     │                               │               │ assertion failure during...                                  │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5679                    │
+│                    ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-6516  │          │                     │                               │               │ bind9: Specific recursive query patterns may lead to an      │
+│                    │                │          │                     │                               │               │ out-of-memory condition                                      │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6516                    │
+│                    ├────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-5680  │ MEDIUM   │ under_investigation │                               │               │ bind9: Cleaning an ECS-enabled cache may cause excessive CPU │
+│                    │                │          │                     │                               │               │ load                                                         │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5680                    │
+├────────────────────┼────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ dhcp-common        │ CVE-2023-4408  │ HIGH     │ affected            │                               │               │ bind9: Parsing large DNS messages may cause excessive CPU    │
+│                    │                │          │                     │                               │               │ load                                                         │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-4408                    │
+│                    ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-50387 │          │                     │                               │               │ bind9: KeyTrap - Extreme CPU consumption in DNSSEC validator │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-50387                   │
+│                    ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-50868 │          │                     │                               │               │ bind9: Preparing an NSEC3 closest encloser proof can exhaust │
+│                    │                │          │                     │                               │               │ CPU resources                                                │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-50868                   │
+│                    ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-5517  │          │                     │                               │               │ bind9: Querying RFC 1918 reverse zones may cause an          │
+│                    │                │          │                     │                               │               │ assertion failure when...                                    │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5517                    │
+│                    ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-5679  │          │                     │                               │               │ bind9: Enabling both DNS64 and serve-stale may cause an      │
+│                    │                │          │                     │                               │               │ assertion failure during...                                  │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5679                    │
+│                    ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-6516  │          │                     │                               │               │ bind9: Specific recursive query patterns may lead to an      │
+│                    │                │          │                     │                               │               │ out-of-memory condition                                      │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6516                    │
+│                    ├────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                    │ CVE-2023-5680  │ MEDIUM   │ under_investigation │                               │               │ bind9: Cleaning an ECS-enabled cache may cause excessive CPU │
+│                    │                │          │                     │                               │               │ load                                                         │
+│                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5680                    │
+├────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ file-libs          │ CVE-2022-48554 │ LOW      │ affected            │ 5.39-14.el9                   │               │ file: stack-based buffer over-read in file_copystr in        │
 │                    │                │          │                     │                               │               │ funcs.c                                                      │
 │                    │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-48554                   │
 ├────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
