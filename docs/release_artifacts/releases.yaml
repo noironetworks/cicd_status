@@ -1755,38 +1755,38 @@ releases:
         - C: 3
           H: 1
           L: 154
-          M: 61
+          M: 63
           U: 4
         sha: 66623b32a47bebfc8ceae69b7324fe31416d6cea380e78abc57ae670e0492dcd
       build-logs: release_artifacts/6.0.4.1/z/acc-provision-operator/6.0.4.1-buildlog.txt
-      build-time: 2024-02-16 02:05:37 PST
+      build-time: 2024-02-16 22:57:19 PST
       commit:
       - link: https://github.com/noironetworks/acc-provision-operator/commit/5db0396ae9eff09b5b954a3e6f66e12353e35065
         sha: 5db0396ae9eff09b5b954a3e6f66e12353e35065
-      cve: release_artifacts/6.0.4.1/z/acc-provision-operator/6.0.4.1-quay-cve.txt
+      cve: release_artifacts/6.0.4.1/z/acc-provision-operator/6.0.4.1-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.4.1.81c2369.z/images/sha256-bd40454b8a52932a14d7022ca2022f6cb56860c111a5fbf5c1a1c7bc63236648?context=explore
-        sha: bd40454b8a52932a14d7022ca2022f6cb56860c111a5fbf5c1a1c7bc63236648
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.4.1.81c2369.z/images/sha256-900c4a75874bb474a01de4c9689ceddb19859b2da4335aeaf71225849a9f2ebd?context=explore
+        sha: 900c4a75874bb474a01de4c9689ceddb19859b2da4335aeaf71225849a9f2ebd
         tag: 6.0.4.1.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.4.1.81c2369.021624.721/images/sha256-bd40454b8a52932a14d7022ca2022f6cb56860c111a5fbf5c1a1c7bc63236648?context=explore
-        sha: bd40454b8a52932a14d7022ca2022f6cb56860c111a5fbf5c1a1c7bc63236648
-        tag: 6.0.4.1.81c2369.021624.721
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.4.1.81c2369.021724.722/images/sha256-900c4a75874bb474a01de4c9689ceddb19859b2da4335aeaf71225849a9f2ebd?context=explore
+        sha: 900c4a75874bb474a01de4c9689ceddb19859b2da4335aeaf71225849a9f2ebd
+        tag: 6.0.4.1.81c2369.021724.722
       name: acc-provision-operator
       quay:
       - link: https://quay.io/noiro/acc-provision-operator:6.0.4.1.81c2369.z
-        sha: bd40454b8a52932a14d7022ca2022f6cb56860c111a5fbf5c1a1c7bc63236648
+        sha: 900c4a75874bb474a01de4c9689ceddb19859b2da4335aeaf71225849a9f2ebd
         tag: 6.0.4.1.81c2369.z
-      - link: https://quay.io/noiro/acc-provision-operator:6.0.4.1.81c2369.021624.721
-        sha: bd40454b8a52932a14d7022ca2022f6cb56860c111a5fbf5c1a1c7bc63236648
-        tag: 6.0.4.1.81c2369.021624.721
+      - link: https://quay.io/noiro/acc-provision-operator:6.0.4.1.81c2369.021724.722
+        sha: 900c4a75874bb474a01de4c9689ceddb19859b2da4335aeaf71225849a9f2ebd
+        tag: 6.0.4.1.81c2369.021724.722
       sbom: release_artifacts/6.0.4.1/z/acc-provision-operator/6.0.4.1-sbom.txt
       severity:
-      - C: 0
-        H: 0
-        L: 0
-        M: 9
-        U: 0
-      severity_type: quay
+      - C: 5
+        H: 3
+        L: 288
+        M: 235
+        U: 9
+      severity_type: grype
     - base-image:
       - cve: release_artifacts/6.0.4.1/z/aci-containers-host/6.0.4.1-cve-base.txt
         severity:
@@ -2091,7 +2091,7 @@ releases:
         M: 0
         U: 0
       severity_type: quay
-    last_updated: 2024-02-16 22:32:53 PST
+    last_updated: 2024-02-16 22:57:19 PST
     release_name: 6.0.4.1.z
   - acc_provision: []
     container_images: []

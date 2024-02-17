@@ -61,6 +61,7 @@ cpp                                8.5.0-20.el8                            (won'
 cpp                                8.5.0-20.el8                            (won't fix)         rpm     CVE-2019-14250       Low       
 cpp                                8.5.0-20.el8                            (won't fix)         rpm     CVE-2018-20657       Low       
 cryptography                       41.0.7                                  42.0.0              python  GHSA-3ww4-gg4f-jr7f  High      
+cryptography                       41.0.7                                  42.0.2              python  GHSA-9v9h-cgj8-h64p  Medium    
 curl                               7.61.1-33.el8                                               rpm     CVE-2023-46218       Medium    
 curl                               7.61.1-33.el8                                               rpm     CVE-2023-38546       Low       
 curl                               7.61.1-33.el8                                               rpm     CVE-2023-28322       Low       
@@ -121,7 +122,7 @@ kernel-headers                     4.18.0-513.11.1.el8_9                        
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm     CVE-2024-0841        Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm     CVE-2024-0641        Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm     CVE-2024-0639        Medium    
-kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm     CVE-2024-0607        Medium    
+kernel-headers                     4.18.0-513.11.1.el8_9                   (won't fix)         rpm     CVE-2024-0607        Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm     CVE-2024-0565        Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm     CVE-2024-0564        Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm     CVE-2023-7192        Medium    
@@ -205,6 +206,7 @@ kernel-headers                     4.18.0-513.11.1.el8_9                        
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm     CVE-2020-28097       Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm     CVE-2020-27171       Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm     CVE-2020-27170       Medium    
+kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm     CVE-2020-26558       Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm     CVE-2020-26555       Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm     CVE-2020-25656       Medium    
 kernel-headers                     4.18.0-513.11.1.el8_9                                       rpm     CVE-2020-25645       Medium    
@@ -327,6 +329,7 @@ libstdc++                          8.5.0-20.el8                            (won'
 libstdc++                          8.5.0-20.el8                            (won't fix)         rpm     CVE-2019-14250       Low       
 libstdc++                          8.5.0-20.el8                            (won't fix)         rpm     CVE-2018-20657       Low       
 libtasn1                           4.13-4.el8_7                            (won't fix)         rpm     CVE-2018-1000654     Low       
+libxml2                            2.9.7-18.el8_9                                              rpm     CVE-2024-25062       Medium    
 libxml2                            2.9.7-18.el8_9                          (won't fix)         rpm     CVE-2023-45322       Low       
 libzstd                            1.4.4-1.el8                             (won't fix)         rpm     CVE-2022-4899        Low       
 libzstd                            1.4.4-1.el8                             (won't fix)         rpm     CVE-2021-24032       Low       
@@ -2303,7 +2306,7 @@ Total: 477 (UNKNOWN: 0, LOW: 295, MEDIUM: 179, HIGH: 3, CRITICAL: 0)
 
 Python (python-pkg)
 ===================
-Total: 2 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 0, CRITICAL: 0)
+Total: 3 (UNKNOWN: 0, LOW: 0, MEDIUM: 3, HIGH: 0, CRITICAL: 0)
 
 ┌─────────────────────────┬────────────────┬──────────┬────────┬───────────────────┬─────────────────────────┬──────────────────────────────────────────────────────────────┐
 │         Library         │ Vulnerability  │ Severity │ Status │ Installed Version │      Fixed Version      │                            Title                             │
@@ -2315,4 +2318,7 @@ Total: 2 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 0, CRITICAL: 0)
 │ cryptography (METADATA) │ CVE-2023-50782 │          │        │ 41.0.7            │ 42.0.0                  │ python-cryptography: Bleichenbacher timing oracle attack     │
 │                         │                │          │        │                   │                         │ against RSA decryption - incomplete fix for...               │
 │                         │                │          │        │                   │                         │ https://avd.aquasec.com/nvd/cve-2023-50782                   │
+│                         ├────────────────┤          │        │                   ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                         │ CVE-2024-0727  │          │        │                   │ 42.0.2                  │ openssl: denial of service via null dereference              │
+│                         │                │          │        │                   │                         │ https://avd.aquasec.com/nvd/cve-2024-0727                    │
 └─────────────────────────┴────────────────┴──────────┴────────┴───────────────────┴─────────────────────────┴──────────────────────────────────────────────────────────────┘
