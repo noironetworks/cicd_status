@@ -18,6 +18,7 @@ bzip2-libs                                              1.0.6-26.el8            
 ca-certificates                                         2023.2.60_v7.0.306-80.0.el8_8             rpm        
 cachetools                                              5.3.2                                     python     
 certifi                                                 2023.11.17                                python     
+certifi                                                 2024.2.2                                  python     
 cffi                                                    1.16.0                                    python     
 chardet                                                 3.0.4                                     python     
 charset-normalizer                                      3.3.2                                     python     
@@ -99,7 +100,7 @@ github.com/modern-go/reflect2                           v1.0.2                  
 github.com/munnerz/goautoneg                            v0.0.0-20191010083416-a7dc8b61c822        go-module  
 github.com/mxk/go-flowrate                              v0.0.0-20140419014527-cca7078d478f        go-module  
 github.com/onsi/gomega                                  v1.30.0                                   go-module  
-github.com/operator-framework/ansible-operator-plugins  d26c43bf94960d292152862a6685696be33190fb  go-module  
+github.com/operator-framework/ansible-operator-plugins  cee66e55d33944e843b6055d5e3a0fb10da1003f  go-module  
 github.com/operator-framework/api                       v0.21.0                                   go-module  
 github.com/operator-framework/operator-lib              v0.12.0                                   go-module  
 github.com/operator-framework/operator-registry         v1.35.0                                   go-module  
@@ -121,7 +122,7 @@ glibc-headers                                           2.28-236.el8.7          
 glibc-minimal-langpack                                  2.28-236.el8.7                            rpm        
 gmp                                                     1:6.1.2-10.el8                            rpm        
 gnupg2                                                  2.2.20-3.el8_6                            rpm        
-gnutls                                                  3.6.16-8.el8_9                            rpm        
+gnutls                                                  3.6.16-8.el8_9.1                          rpm        
 go.uber.org/multierr                                    v1.11.0                                   go-module  
 go.uber.org/zap                                         v1.25.0                                   go-module  
 gobject-introspection                                   1.56.1-1.el8                              rpm        
@@ -216,8 +217,8 @@ libsepol                                                2.9-3.el8               
 libsigsegv                                              2.11-5.el8                                rpm        
 libsmartcols                                            2.32.1-43.el8                             rpm        
 libsolv                                                 0.7.20-6.el8                              rpm        
-libssh                                                  0.9.6-10.el8_8                            rpm        
-libssh-config                                           0.9.6-10.el8_8                            rpm        
+libssh                                                  0.9.6-13.el8_9                            rpm        
+libssh-config                                           0.9.6-13.el8_9                            rpm        
 libstdc++                                               8.5.0-20.el8                              rpm        
 libtasn1                                                4.13-4.el8_7                              rpm        
 libtirpc                                                1.1.4-8.el8                               rpm        
@@ -310,7 +311,7 @@ pkgconf-pkg-config                                      1.4.2-1.el8             
 platform-python                                         3.6.8-56.el8_9.3                          rpm        
 platform-python-pip                                     9.0.3-23.el8                              rpm        
 platform-python-setuptools                              39.2.0-7.el8                              rpm        
-platformdirs                                            4.1.0                                     python     
+platformdirs                                            4.2.0                                     python     
 popt                                                    1.18-1.el8                                rpm        
 ptyprocess                                              0.7.0                                     python     
 publicsuffix-list-dafsa                                 20180723-1.el8                            rpm        
@@ -343,7 +344,7 @@ python3-libs                                            3.6.8-56.el8_9.3        
 python3-pip-wheel                                       9.0.3-23.el8                              rpm        
 python3-pysocks                                         1.6.8-3.el8                               rpm        
 python3-requests                                        2.20.0-3.el8_8                            rpm        
-python3-rpm                                             4.14.3-26.el8                             rpm        
+python3-rpm                                             4.14.3-28.el8_9                           rpm        
 python3-setuptools-wheel                                39.2.0-7.el8                              rpm        
 python3-six                                             1.11.0-8.el8                              rpm        
 python3-subscription-manager-rhsm                       1.28.40-1.el8_9                           rpm        
@@ -365,9 +366,9 @@ requests-unixsocket                                     0.3.0                   
 resolvelib                                              1.0.1                                     python     
 rootfiles                                               8.1-22.el8                                rpm        
 rpm                                                     4.14.3                                    python     
-rpm                                                     4.14.3-26.el8                             rpm        
-rpm-build-libs                                          4.14.3-26.el8                             rpm        
-rpm-libs                                                4.14.3-26.el8                             rpm        
+rpm                                                     4.14.3-28.el8_9                           rpm        
+rpm-build-libs                                          4.14.3-28.el8_9                           rpm        
+rpm-libs                                                4.14.3-28.el8_9                           rpm        
 rsa                                                     4.9                                       python     
 rust                                                    1.71.1-1.module+el8.9.0+19676+2215d419    rpm        
 rust-std-static                                         1.71.1-1.module+el8.9.0+19676+2215d419    rpm        
@@ -376,6 +377,7 @@ semantic-version                                        2.10.0                  
 setup                                                   2.12.2-9.el8                              rpm        
 setuptools                                              39.2.0                                    python     
 setuptools                                              69.0.3                                    python     
+setuptools                                              69.1.0                                    python     
 setuptools-rust                                         1.8.1                                     python     
 shadow-utils                                            2:4.6-19.el8                              rpm        
 sigs.k8s.io/controller-runtime                          v0.16.3                                   go-module  
@@ -396,7 +398,9 @@ systemd-python                                          234                     
 tar                                                     2:1.30-9.el8                              rpm        
 tomli                                                   2.0.1                                     python     
 tpm2-tss                                                2.3.2-5.el8                               rpm        
-tzdata                                                  2023d-1.el8                               rpm        
+trousers                                                0.3.15-1.el8                              rpm        
+trousers-lib                                            0.3.15-1.el8                              rpm        
+tzdata                                                  2024a-1.el8                               rpm        
 urllib3                                                 1.24.2                                    python     
 urllib3                                                 1.26.18                                   python     
 usermode                                                1.113-2.el8                               rpm        
