@@ -11,7 +11,7 @@ urllib3         1.26.5                              1.26.18   python     GHSA-g4
 
 quay.io/noiro/aci-containers-operator:6.0.4.1.81c2369.z (redhat 9.3)
 ====================================================================
-Total: 202 (UNKNOWN: 0, LOW: 143, MEDIUM: 59, HIGH: 0, CRITICAL: 0)
+Total: 203 (UNKNOWN: 0, LOW: 143, MEDIUM: 60, HIGH: 0, CRITICAL: 0)
 
 ┌────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │      Library       │  Vulnerability   │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -48,8 +48,12 @@ Total: 202 (UNKNOWN: 0, LOW: 143, MEDIUM: 59, HIGH: 0, CRITICAL: 0)
 │ gnupg2             │ CVE-2022-3219    │          │ will_not_fix        │ 2.3.3-4.el9                   │               │ denial of service issue (resource consumption) using         │
 │                    │                  │          │                     │                               │               │ compressed packets                                           │
 │                    │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-3219                    │
-├────────────────────┼──────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libarchive         │ CVE-2023-30571   │ MEDIUM   │                     │ 3.5.3-4.el9                   │               │ libarchive: Race condition in multi-threaded use of          │
+├────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ less               │ CVE-2022-48624   │ MEDIUM   │ affected            │ 590-2.el9_2                   │               │ less: missing quoting of shell metacharacters in LESSCLOSE   │
+│                    │                  │          │                     │                               │               │ handling                                                     │
+│                    │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-48624                   │
+├────────────────────┼──────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libarchive         │ CVE-2023-30571   │          │ will_not_fix        │ 3.5.3-4.el9                   │               │ libarchive: Race condition in multi-threaded use of          │
 │                    │                  │          │                     │                               │               │ archive_write_disk_header() on posix based systems...        │
 │                    │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-30571                   │
 ├────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
