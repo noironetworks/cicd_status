@@ -139,7 +139,18 @@ fetch('release_artifacts/releases.yaml')
                   const baseImageL = image['base-image'][0].severity[0].L.toString();
                   const baseImageU = image['base-image'][0].severity[0].U.toString();
 
-                  const baseImageCVEText = `<span class="cve-letter cve-c">C:${baseImageC}</span><br>
+                  let severityType = 'GRYPE';
+                  let severityTypeClass = 'severity_type_grype';
+                  if (image['base-image'][0].hasOwnProperty('severity_type')) {
+                    severityType = image['base-image'][0].severity_type;
+                    if (severityType.toLowerCase() === 'quay') {
+                      severityTypeClass = 'severity_type_quay';
+                    }
+                  }
+                  severityType = severityType.toUpperCase()
+                  const baseImageCVEText = ` <div class="${severityTypeClass}">${severityType}</div>
+                  <hr>
+                  <span class="cve-letter cve-c">C:${baseImageC}</span><br>
                   <span class="cve-letter cve-h">H:${baseImageH}</span><br>
                   <span class="cve-letter cve-m">M:${baseImageM}</span><br>
                   <span class="cve-letter cve-l">L:${baseImageL}</span><br>
