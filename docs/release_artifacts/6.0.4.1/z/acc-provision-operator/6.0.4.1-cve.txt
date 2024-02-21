@@ -130,7 +130,6 @@ kernel-headers                     4.18.0-513.18.1.el8_9                        
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-6931        Medium    
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-6915        Medium    
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-6622        Medium    
-kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-6606        Medium    
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-6240        Medium    
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-52340       Medium    
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-51780       Medium    
@@ -299,6 +298,7 @@ kernel-headers                     4.18.0-513.18.1.el8_9                        
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-3327        Unknown   
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-0047        Unknown   
 krb5-libs                          1.18.2-26.el8_9                                      rpm     CVE-2023-5455        Medium    
+less                               530-1.el8                                            rpm     CVE-2022-48624       Medium    
 libarchive                         3.3.3-5.el8                             (won't fix)  rpm     CVE-2020-21674       Medium    
 libarchive                         3.3.3-5.el8                             (won't fix)  rpm     CVE-2018-1000880     Low       
 libarchive                         3.3.3-5.el8                             (won't fix)  rpm     CVE-2018-1000879     Low       
@@ -529,7 +529,7 @@ vim-minimal                        2:8.0.1763-19.el8_6.4                   (won'
 
 quay.io/noiro/acc-provision-operator:6.0.4.1.81c2369.z (redhat 8.9)
 ===================================================================
-Total: 454 (UNKNOWN: 0, LOW: 295, MEDIUM: 158, HIGH: 1, CRITICAL: 0)
+Total: 458 (UNKNOWN: 0, LOW: 295, MEDIUM: 160, HIGH: 3, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -783,18 +783,30 @@ Total: 454 (UNKNOWN: 0, LOW: 295, MEDIUM: 158, HIGH: 1, CRITICAL: 0)
 │ dbus-tools                  │                  │          │                     │                               │               │                                                              │
 │                             │                  │          │                     │                               │               │                                                              │
 │                             │                  │          │                     │                               │               │                                                              │
-├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ elfutils-default-yama-scope │ CVE-2021-33294   │          │                     │ 0.189-3.el8                   │               │ elfutils: an infinite loop was found in the function         │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ elfutils-default-yama-scope │ CVE-2024-25260   │ MEDIUM   │ under_investigation │ 0.189-3.el8                   │               │ elfutils: global-buffer-overflow exists in the function      │
+│                             │                  │          │                     │                               │               │ ebl_machine_flag_name in eblmachineflagname.c                │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-25260                   │
+│                             ├──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2021-33294   │ LOW      │ will_not_fix        │                               │               │ elfutils: an infinite loop was found in the function         │
 │                             │                  │          │                     │                               │               │ handle_symtab in readelf.c...                                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-33294                   │
-├─────────────────────────────┤                  │          │                     │                               ├───────────────┤                                                              │
-│ elfutils-libelf             │                  │          │                     │                               │               │                                                              │
-│                             │                  │          │                     │                               │               │                                                              │
-│                             │                  │          │                     │                               │               │                                                              │
-├─────────────────────────────┤                  │          │                     │                               ├───────────────┤                                                              │
-│ elfutils-libs               │                  │          │                     │                               │               │                                                              │
-│                             │                  │          │                     │                               │               │                                                              │
-│                             │                  │          │                     │                               │               │                                                              │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ elfutils-libelf             │ CVE-2024-25260   │ MEDIUM   │ under_investigation │                               │               │ elfutils: global-buffer-overflow exists in the function      │
+│                             │                  │          │                     │                               │               │ ebl_machine_flag_name in eblmachineflagname.c                │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-25260                   │
+│                             ├──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2021-33294   │ LOW      │ will_not_fix        │                               │               │ elfutils: an infinite loop was found in the function         │
+│                             │                  │          │                     │                               │               │ handle_symtab in readelf.c...                                │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-33294                   │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ elfutils-libs               │ CVE-2024-25260   │ MEDIUM   │ under_investigation │                               │               │ elfutils: global-buffer-overflow exists in the function      │
+│                             │                  │          │                     │                               │               │ ebl_machine_flag_name in eblmachineflagname.c                │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-25260                   │
+│                             ├──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2021-33294   │ LOW      │ will_not_fix        │                               │               │ elfutils: an infinite loop was found in the function         │
+│                             │                  │          │                     │                               │               │ handle_symtab in readelf.c...                                │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-33294                   │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ emacs-filesystem            │ CVE-2022-48338   │ MEDIUM   │ affected            │ 1:26.1-11.el8                 │               │ local command injection in ruby-mode.el                      │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-48338                   │
@@ -888,9 +900,17 @@ Total: 454 (UNKNOWN: 0, LOW: 295, MEDIUM: 158, HIGH: 1, CRITICAL: 0)
 │ gnutls                      │ CVE-2021-4209    │          │                     │ 3.6.16-8.el8_9.1              │               │ GnuTLS: Null pointer dereference in MD_UPDATE                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-4209                    │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ kernel-headers              │ CVE-2023-6546    │ HIGH     │ affected            │ 4.18.0-513.18.1.el8_9         │               │ kernel: GSM multiplexing race condition leads to privilege   │
+│ kernel-headers              │ CVE-2023-52433   │ HIGH     │ under_investigation │ 4.18.0-513.18.1.el8_9         │               │ kernel: nf_tables: nft_set_rbtree skip sync GC for new       │
+│                             │                  │          │                     │                               │               │ elements in this transaction...                              │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52433                   │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-6546    │          │ affected            │                               │               │ kernel: GSM multiplexing race condition leads to privilege   │
 │                             │                  │          │                     │                               │               │ escalation                                                   │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6546                    │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-26581   │          │ under_investigation │                               │               │ kernel: nftables: nft_set_rbtree skip end interval element   │
+│                             │                  │          │                     │                               │               │ from gc                                                      │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26581                   │
 │                             ├──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2018-15594   │ MEDIUM   │ will_not_fix        │                               │               │ kernel: Mishandling of indirect calls weakens Spectre        │
 │                             │                  │          │                     │                               │               │ mitigation for paravirtual guests                            │
@@ -1245,9 +1265,6 @@ Total: 454 (UNKNOWN: 0, LOW: 295, MEDIUM: 158, HIGH: 1, CRITICAL: 0)
 │                             │ CVE-2023-6240    │          │ affected            │                               │               │ kernel: Marvin vulnerability side-channel leakage in the RSA │
 │                             │                  │          │                     │                               │               │ decryption operation                                         │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6240                    │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-6606    │          │                     │                               │               │ kernel: Out-Of-Bounds Read vulnerability in smbCalcSize      │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6606                    │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-6622    │          │                     │                               │               │ kernel: null pointer dereference vulnerability in            │
 │                             │                  │          │                     │                               │               │ nft_dynset_init()                                            │
