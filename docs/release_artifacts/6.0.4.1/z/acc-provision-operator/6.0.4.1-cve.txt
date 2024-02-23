@@ -115,6 +115,9 @@ gmp                                1:6.1.2-10.el8                               
 gnupg2                             2.2.20-3.el8_6                          (won't fix)  rpm     CVE-2022-3219        Low       
 gnutls                             3.6.16-8.el8_9.1                        (won't fix)  rpm     CVE-2021-4209        Low       
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2022-0886        High      
+kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2024-26585       Medium    
+kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2024-26584       Medium    
+kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2024-26583       Medium    
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2024-1151        Medium    
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2024-0841        Medium    
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2024-0641        Medium    
@@ -128,6 +131,7 @@ kernel-headers                     4.18.0-513.18.1.el8_9                        
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-6622        Medium    
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-6240        Medium    
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-52439       Medium    
+kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-52434       Medium    
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-52340       Medium    
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-51780       Medium    
 kernel-headers                     4.18.0-513.18.1.el8_9                                rpm     CVE-2023-51779       Medium    
@@ -523,7 +527,7 @@ vim-minimal                        2:8.0.1763-19.el8_6.4                   (won'
 
 quay.io/noiro/acc-provision-operator:6.0.4.1.81c2369.z (redhat 8.9)
 ===================================================================
-Total: 463 (UNKNOWN: 0, LOW: 295, MEDIUM: 166, HIGH: 2, CRITICAL: 0)
+Total: 465 (UNKNOWN: 0, LOW: 295, MEDIUM: 170, HIGH: 0, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -893,15 +897,8 @@ Total: 463 (UNKNOWN: 0, LOW: 295, MEDIUM: 166, HIGH: 2, CRITICAL: 0)
 ├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ gnutls                      │ CVE-2021-4209    │          │                     │ 3.6.16-8.el8_9.1              │               │ GnuTLS: Null pointer dereference in MD_UPDATE                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-4209                    │
-├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ kernel-headers              │ CVE-2023-52434   │ HIGH     │ under_investigation │ 4.18.0-513.18.1.el8_9         │               │ kernel: smb: client: fix potential OOBs in                   │
-│                             │                  │          │                     │                               │               │ smb2_parse_contexts()                                        │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52434                   │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-52438   │          │                     │                               │               │ kernel: binder: fix use-after-free in shinker's callback     │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52438                   │
-│                             ├──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2018-15594   │ MEDIUM   │ will_not_fix        │                               │               │ kernel: Mishandling of indirect calls weakens Spectre        │
+├─────────────────────────────┼──────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ kernel-headers              │ CVE-2018-15594   │ MEDIUM   │                     │ 4.18.0-513.18.1.el8_9         │               │ kernel: Mishandling of indirect calls weakens Spectre        │
 │                             │                  │          │                     │                               │               │ mitigation for paravirtual guests                            │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2018-15594                   │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -1250,8 +1247,12 @@ Total: 463 (UNKNOWN: 0, LOW: 295, MEDIUM: 166, HIGH: 2, CRITICAL: 0)
 │                             │ CVE-2023-52433   │          │                     │                               │               │ kernel: nf_tables: nft_set_rbtree skip sync GC for new       │
 │                             │                  │          │                     │                               │               │ elements in this transaction...                              │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52433                   │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-52435   │          │                     │                               │               │ kernel: net: prevent mss overflow in skb_segment()           │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52434   │          │ affected            │                               │               │ kernel: smb: client: fix potential OOBs in                   │
+│                             │                  │          │                     │                               │               │ smb2_parse_contexts()                                        │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52434                   │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52435   │          │ under_investigation │                               │               │ kernel: net: prevent mss overflow in skb_segment()           │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52435                   │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-52436   │          │                     │                               │               │ kernel: f2fs: explicitly null-terminate the xattr list       │
@@ -1263,12 +1264,12 @@ Total: 463 (UNKNOWN: 0, LOW: 295, MEDIUM: 166, HIGH: 2, CRITICAL: 0)
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-52439   │          │ affected            │                               │               │ kernel: uio: Fix use-after-free in uio_open                  │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52439                   │
-│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-6040    │          │ under_investigation │                               │               │ kernel: netfilter: nf_tables: out-of-bounds access in        │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-6040    │          │                     │                               │               │ kernel: netfilter: nf_tables: out-of-bounds access in        │
 │                             │                  │          │                     │                               │               │ nf_tables_newtable()                                         │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6040                    │
-│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-6240    │          │ affected            │                               │               │ kernel: Marvin vulnerability side-channel leakage in the RSA │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-6240    │          │                     │                               │               │ kernel: Marvin vulnerability side-channel leakage in the RSA │
 │                             │                  │          │                     │                               │               │ decryption operation                                         │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6240                    │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -1353,6 +1354,16 @@ Total: 463 (UNKNOWN: 0, LOW: 295, MEDIUM: 166, HIGH: 2, CRITICAL: 0)
 │                             │ CVE-2024-26581   │          │                     │                               │               │ kernel: nftables: nft_set_rbtree skip end interval element   │
 │                             │                  │          │                     │                               │               │ from gc                                                      │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26581                   │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-26583   │          │ affected            │                               │               │ kernel: tls: race between async notify and socket close      │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26583                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-26584   │          │                     │                               │               │ kernel: tls: handle backlogging of crypto requests           │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26584                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-26585   │          │                     │                               │               │ kernel: tls: race between tx work scheduling and socket      │
+│                             │                  │          │                     │                               │               │ close                                                        │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26585                   │
 │                             ├──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2018-7273    │ LOW      │ will_not_fix        │                               │               │ kernel: Kernel address information leak in                   │
 │                             │                  │          │                     │                               │               │ drivers/block/floppy.c:show_floppy function potentially      │
@@ -2032,7 +2043,7 @@ Total: 463 (UNKNOWN: 0, LOW: 295, MEDIUM: 166, HIGH: 2, CRITICAL: 0)
 │                             │ CVE-2022-2124    │          │                     │                               │               │ out of bounds read in current_quote()                        │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-2124                    │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2022-2125    │          │                     │                               │               │ Heap-based Buffer Overflow in get_lisp_indent()              │
+│                             │ CVE-2022-2125    │          │                     │                               │               │ vim: Heap-based Buffer Overflow in get_lisp_indent()         │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-2125                    │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2022-2126    │          │                     │                               │               │ out of bounds read in suggest_trie_walk()                    │
@@ -2234,7 +2245,7 @@ Total: 463 (UNKNOWN: 0, LOW: 295, MEDIUM: 166, HIGH: 2, CRITICAL: 0)
 
 Python (python-pkg)
 ===================
-Total: 4 (UNKNOWN: 0, LOW: 0, MEDIUM: 3, HIGH: 1, CRITICAL: 0)
+Total: 4 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 2, CRITICAL: 0)
 
 ┌─────────────────────────┬────────────────┬──────────┬────────┬───────────────────┬─────────────────────────┬──────────────────────────────────────────────────────────────┐
 │         Library         │ Vulnerability  │ Severity │ Status │ Installed Version │      Fixed Version      │                            Title                             │
@@ -2243,14 +2254,14 @@ Total: 4 (UNKNOWN: 0, LOW: 0, MEDIUM: 3, HIGH: 1, CRITICAL: 0)
 │                         │                │          │        │                   │                         │ ANSIBLE_NO_LOG configuration                                 │
 │                         │                │          │        │                   │                         │ https://avd.aquasec.com/nvd/cve-2024-0690                    │
 ├─────────────────────────┼────────────────┼──────────┤        ├───────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ cryptography (METADATA) │ CVE-2024-26130 │ HIGH     │        │ 41.0.7            │ 42.0.4                  │ cryptography is a package designed to expose cryptographic   │
-│                         │                │          │        │                   │                         │ primitives ...                                               │
-│                         │                │          │        │                   │                         │ https://avd.aquasec.com/nvd/cve-2024-26130                   │
-│                         ├────────────────┼──────────┤        │                   ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                         │ CVE-2023-50782 │ MEDIUM   │        │                   │ 42.0.0                  │ python-cryptography: Bleichenbacher timing oracle attack     │
+│ cryptography (METADATA) │ CVE-2023-50782 │ HIGH     │        │ 41.0.7            │ 42.0.0                  │ python-cryptography: Bleichenbacher timing oracle attack     │
 │                         │                │          │        │                   │                         │ against RSA decryption - incomplete fix for...               │
 │                         │                │          │        │                   │                         │ https://avd.aquasec.com/nvd/cve-2023-50782                   │
 │                         ├────────────────┤          │        │                   ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                         │ CVE-2024-0727  │          │        │                   │ 42.0.2                  │ openssl: denial of service via null dereference              │
+│                         │ CVE-2024-26130 │          │        │                   │ 42.0.4                  │ cryptography is a package designed to expose cryptographic   │
+│                         │                │          │        │                   │                         │ primitives ...                                               │
+│                         │                │          │        │                   │                         │ https://avd.aquasec.com/nvd/cve-2024-26130                   │
+│                         ├────────────────┼──────────┤        │                   ├─────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                         │ CVE-2024-0727  │ MEDIUM   │        │                   │ 42.0.2                  │ openssl: denial of service via null dereference              │
 │                         │                │          │        │                   │                         │ https://avd.aquasec.com/nvd/cve-2024-0727                    │
 └─────────────────────────┴────────────────┴──────────┴────────┴───────────────────┴─────────────────────────┴──────────────────────────────────────────────────────────────┘
