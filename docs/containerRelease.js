@@ -145,6 +145,9 @@ fetch('release_artifacts/releases.yaml')
                     severityType = image['base-image'][0].severity_type;
                     if (severityType.toLowerCase() === 'quay') {
                       severityTypeClass = 'severity_type_quay';
+                      if (image['base-image'][0].severity_link) {
+                        baseImageCVELink.href = image['base-image'][0].severity_link;
+                      }
                     }
                   }
                   severityType = severityType.toUpperCase()
@@ -198,6 +201,9 @@ fetch('release_artifacts/releases.yaml')
                   severityType = image.severity_type;
                   if (severityType.toLowerCase() === 'quay') {
                     severityTypeClass = 'severity_type_quay';
+                    if (image.severity_link) {
+                      cveLink.href = image.severity_link;
+                    }
                   }
                 }
                 severityType = severityType.toUpperCase()
