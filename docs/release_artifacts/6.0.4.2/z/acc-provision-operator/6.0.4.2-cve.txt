@@ -543,7 +543,7 @@ vim-minimal                        2:8.0.1763-19.el8_6.4                   (won'
 
 quay.io/noiro/acc-provision-operator:6.0.4.2.81c2369.z (redhat 8.9)
 ===================================================================
-Total: 631 (UNKNOWN: 0, LOW: 328, MEDIUM: 300, HIGH: 3, CRITICAL: 0)
+Total: 660 (UNKNOWN: 0, LOW: 333, MEDIUM: 324, HIGH: 3, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -1268,16 +1268,6 @@ Total: 631 (UNKNOWN: 0, LOW: 328, MEDIUM: 300, HIGH: 3, CRITICAL: 0)
 │                             │ CVE-2021-46959   │          │                     │                               │               │ kernel: spi: Fix use-after-free with devm_spi_alloc_*        │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-46959                   │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-46960   │          │                     │                               │               │ kernel: cifs: Return correct error code from                 │
-│                             │                  │          │                     │                               │               │ smb2_get_enc_key                                             │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-46960                   │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-46963   │          │                     │                               │               │ kernel: scsi: qla2xxx: Fix crash in qla2xxx_mqueuecommand()  │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-46963                   │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-46964   │          │                     │                               │               │ kernel: scsi: qla2xxx: Reserve extra IRQ vectors             │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-46964                   │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2021-46966   │          │                     │                               │               │ kernel: ACPI: custom_method: fix potential use-after-free    │
 │                             │                  │          │                     │                               │               │ issue                                                        │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-46966                   │
@@ -1506,6 +1496,10 @@ Total: 631 (UNKNOWN: 0, LOW: 328, MEDIUM: 300, HIGH: 3, CRITICAL: 0)
 │                             │ CVE-2021-47081   │          │                     │                               │               │ kernel: habanalabs/gaudi: Fix a potential use after free in  │
 │                             │                  │          │                     │                               │               │ gaudi_memset_device_memory                                   │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-47081                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2021-47106   │          │                     │                               │               │ kernel: netfilter: nf_tables: fix use-after-free in          │
+│                             │                  │          │                     │                               │               │ nft_set_catchall_destroy()                                   │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-47106                   │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2022-0171    │          │ affected            │                               │               │ cache incoherence issue in SEV API may lead to kernel crash  │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-0171                    │
@@ -1729,6 +1723,97 @@ Total: 631 (UNKNOWN: 0, LOW: 328, MEDIUM: 300, HIGH: 3, CRITICAL: 0)
 │                             │ CVE-2023-52473   │          │                     │                               │               │ kernel: NULL pointer dereference in zone registration error  │
 │                             │                  │          │                     │                               │               │ path                                                         │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52473                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52513   │          │                     │                               │               │ kernel: RDMA/siw: Fix connection failure handling            │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52513                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52518   │          │                     │                               │               │ kernel: Bluetooth: hci_codec: Fix leaking content of         │
+│                             │                  │          │                     │                               │               │ local_codecs                                                 │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52518                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52519   │          │                     │                               │               │ kernel: HID: intel-ish-hid: ipc: Disable and reenable ACPI   │
+│                             │                  │          │                     │                               │               │ GPE bit                                                      │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52519                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52520   │          │                     │                               │               │ kernel: platform/x86: think-lmi: Fix reference leak          │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52520                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52522   │          │                     │                               │               │ kernel: net: fix possible store tearing in                   │
+│                             │                  │          │                     │                               │               │ neigh_periodic_work()                                        │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52522                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52523   │          │                     │                               │               │ kernel: bpf, sockmap: Reject sk_msg egress redirects to      │
+│                             │                  │          │                     │                               │               │ non-TCP sockets                                              │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52523                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52528   │          │                     │                               │               │ kernel: net: usb: smsc75xx: Fix uninit-value access in       │
+│                             │                  │          │                     │                               │               │ __smsc75xx_read_reg                                          │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52528                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52529   │          │                     │                               │               │ kernel: HID: sony: Fix a potential memory leak in            │
+│                             │                  │          │                     │                               │               │ sony_probe()                                                 │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52529                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52530   │          │                     │                               │               │ kernel: wifi: mac80211: fix potential key use-after-free     │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52530                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52532   │          │                     │                               │               │ kernel: net: mana: Fix TX CQE error handling                 │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52532                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52559   │          │                     │                               │               │ kernel: iommu/vt-d: Avoid memory allocation in               │
+│                             │                  │          │                     │                               │               │ iommu_suspend()                                              │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52559                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52562   │          │                     │                               │               │ kernel: mm/slab_common: fix slab_caches list corruption      │
+│                             │                  │          │                     │                               │               │ after kmem_cache_destroy()                                   │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52562                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52564   │          │                     │                               │               │ kernel: Revert &#34;tty: n_gsm: fix UAF in                   │
+│                             │                  │          │                     │                               │               │ gsm_cleanup_mux&#34;                                         │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52564                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52565   │          │                     │                               │               │ kernel: media: uvcvideo: Fix OOB read                        │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52565                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52567   │          │                     │                               │               │ kernel: serial: 8250_port: Check IRQ data before use         │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52567                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52568   │          │                     │                               │               │ kernel: x86/sgx: Resolves SECS reclaim vs. page fault for    │
+│                             │                  │          │                     │                               │               │ EAUG race                                                    │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52568                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52569   │          │                     │                               │               │ kernel: btrfs: remove BUG() after failure to insert delayed  │
+│                             │                  │          │                     │                               │               │ dir index item...                                            │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52569                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52570   │          │                     │                               │               │ kernel: vfio/mdev: Fix a null-ptr-deref bug for              │
+│                             │                  │          │                     │                               │               │ mdev_unregister_parent()                                     │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52570                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52572   │          │                     │                               │               │ kernel: cifs: Fix UAF in cifs_demultiplex_thread()           │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52572                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52574   │          │                     │                               │               │ kernel: team: fix null-ptr-deref when team device type is    │
+│                             │                  │          │                     │                               │               │ changed                                                      │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52574                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52575   │          │                     │                               │               │ kernel: x86/srso: Fix SBPB enablement for                    │
+│                             │                  │          │                     │                               │               │ spec_rstack_overflow=off                                     │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52575                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52576   │          │                     │                               │               │ kernel: x86/mm, kexec, ima: Use memblock_free_late() from    │
+│                             │                  │          │                     │                               │               │ ima_free_kexec_buffer()                                      │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52576                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52578   │          │                     │                               │               │ kernel: net: bridge: use DEV_STATS_INC()                     │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52578                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52580   │          │                     │                               │               │ kernel: net/core: Fix ETH_P_1588 flow dissector              │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52580                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-52581   │          │                     │                               │               │ kernel: netfilter: nf_tables: fix memleak when more than 255 │
+│                             │                  │          │                     │                               │               │ elements expired                                             │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-52581                   │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-6040    │          │ affected            │                               │               │ kernel: netfilter: nf_tables: out-of-bounds access in        │
 │                             │                  │          │                     │                               │               │ nf_tables_newtable()                                         │
@@ -1784,6 +1869,13 @@ Total: 631 (UNKNOWN: 0, LOW: 328, MEDIUM: 300, HIGH: 3, CRITICAL: 0)
 │                             │ CVE-2024-21803   │          │ under_investigation │                               │               │ kernel: bluetooth: use-after-free vulnerability in           │
 │                             │                  │          │                     │                               │               │ af_bluetooth.c                                               │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-21803                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-22099   │          │                     │                               │               │ kernel: NULL Pointer dereference bluetooth allows Overflow   │
+│                             │                  │          │                     │                               │               │ Buffers                                                      │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-22099                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-23307   │          │                     │                               │               │ kernel: Integer Overflow in raid5_cache_count                │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-23307                   │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-23848   │          │                     │                               │               │ kernel: use-after-free in cec_queue_msg_fh                   │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-23848                   │
@@ -1846,14 +1938,10 @@ Total: 631 (UNKNOWN: 0, LOW: 328, MEDIUM: 300, HIGH: 3, CRITICAL: 0)
 │                             │ CVE-2024-26599   │          │                     │                               │               │ kernel: pwm: Fix out-of-bounds access in                     │
 │                             │                  │          │                     │                               │               │ of_pwm_single_xlate()                                        │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26599                   │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-26600   │          │                     │                               │               │ kernel: phy: ti: phy-omap-usb2: Fix NULL pointer dereference │
-│                             │                  │          │                     │                               │               │ for SRP                                                      │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26600                   │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-26603   │          │ affected            │                               │               │ kernel: x86/fpu: Stop relying on userspace for info to fault │
-│                             │                  │          │                     │                               │               │ in xsave...                                                  │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26603                   │
+│                             │ CVE-2024-26602   │          │ affected            │                               │               │ kernel: sched/membarrier: reduce the ability to hammer on    │
+│                             │                  │          │                     │                               │               │ sys_membarrier                                               │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26602                   │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-26604   │          │ under_investigation │                               │               │ kernel: null pointer dereference in kobject                  │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26604                   │
@@ -2061,6 +2149,16 @@ Total: 631 (UNKNOWN: 0, LOW: 328, MEDIUM: 300, HIGH: 3, CRITICAL: 0)
 │                             │ CVE-2021-46934   │          │                     │                               │               │ kernel: i2c: validate user data in compat ioctl              │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-46934                   │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2021-46960   │          │                     │                               │               │ kernel: cifs: Return correct error code from                 │
+│                             │                  │          │                     │                               │               │ smb2_get_enc_key                                             │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-46960                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2021-46963   │          │                     │                               │               │ kernel: scsi: qla2xxx: Fix crash in qla2xxx_mqueuecommand()  │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-46963                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2021-46964   │          │                     │                               │               │ kernel: scsi: qla2xxx: Reserve extra IRQ vectors             │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-46964                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2021-47019   │          │                     │                               │               │ kernel:possible invalid register access                      │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-47019                   │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -2192,7 +2290,15 @@ Total: 631 (UNKNOWN: 0, LOW: 328, MEDIUM: 300, HIGH: 3, CRITICAL: 0)
 │                             │                  │          │                     │                               │               │ scsi/lpfc/lpfc_hbadisc.c                                     │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-24855                   │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-26606   │          │                     │                               │               │ kernel: signal epoll threads of self-work                    │
+│                             │ CVE-2024-26600   │          │                     │                               │               │ kernel: phy: ti: phy-omap-usb2: Fix NULL pointer dereference │
+│                             │                  │          │                     │                               │               │ for SRP                                                      │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26600                   │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-26603   │          │ affected            │                               │               │ kernel: x86/fpu: Stop relying on userspace for info to fault │
+│                             │                  │          │                     │                               │               │ in xsave...                                                  │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26603                   │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-26606   │          │ under_investigation │                               │               │ kernel: signal epoll threads of self-work                    │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26606                   │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-26607   │          │                     │                               │               │ kernel: drm/bridge: sii902x: Fix probing race issue          │
@@ -2841,8 +2947,8 @@ Total: 631 (UNKNOWN: 0, LOW: 328, MEDIUM: 300, HIGH: 3, CRITICAL: 0)
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-5535    │          │                     │                               │               │ vim: use after free                                          │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-5535                    │
-│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-22667   │          │ affected            │                               │               │ vim: Stack buffer over flow in did_set_langmap function in   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-22667   │          │                     │                               │               │ vim: Stack buffer over flow in did_set_langmap function in   │
 │                             │                  │          │                     │                               │               │ map.c                                                        │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-22667                   │
 └─────────────────────────────┴──────────────────┴──────────┴─────────────────────┴───────────────────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
