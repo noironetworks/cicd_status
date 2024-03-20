@@ -2719,43 +2719,40 @@ releases:
       - cve: release_artifacts/6.0.4.2/z/aci-containers-webhook/6.0.4.2-cve-base.txt
         severity:
         - C: 0
-          H: 0
+          H: 1
           L: 0
-          M: 0
+          M: 3
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
-        severity_type: quay
-        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
+        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
       build-logs: release_artifacts/6.0.4.2/z/aci-containers-webhook/6.0.4.2-buildlog.txt
-      build-time: 2024-03-12 03:28:42 PDT
+      build-time: 2024-03-19 23:58:53 PDT
       commit:
-      - link: https://github.com/noironetworks/aci-containers/commit/48557789eff7aeca7052d9b0fed4397d9b19c4c4
-        sha: 48557789eff7aeca7052d9b0fed4397d9b19c4c4
-      cve: release_artifacts/6.0.4.2/z/aci-containers-webhook/6.0.4.2-quay-cve.txt
+      - link: https://github.com/noironetworks/aci-containers/commit/b03abda7cdafe84398959bb83baf7f69d6e1470f
+        sha: b03abda7cdafe84398959bb83baf7f69d6e1470f
+      cve: release_artifacts/6.0.4.2/z/aci-containers-webhook/6.0.4.2-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/aci-containers-webhook/6.0.4.2.81c2369.z/images/sha256-f14d63694b9d408b16b166111c30825de9b0664786c4f604078e38f661ccae9c?context=explore
-        sha: f14d63694b9d408b16b166111c30825de9b0664786c4f604078e38f661ccae9c
+      - link: https://hub.docker.com/layers/noiro/aci-containers-webhook/6.0.4.2.81c2369.z/images/sha256-e1c5bd845966ff3c67b104956694ae07ce518d41af5b9dc4d1098b2a37b7c7bb?context=explore
+        sha: e1c5bd845966ff3c67b104956694ae07ce518d41af5b9dc4d1098b2a37b7c7bb
         tag: 6.0.4.2.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/aci-containers-webhook/6.0.4.2.81c2369.031224.8803/images/sha256-f14d63694b9d408b16b166111c30825de9b0664786c4f604078e38f661ccae9c?context=explore
-        sha: f14d63694b9d408b16b166111c30825de9b0664786c4f604078e38f661ccae9c
-        tag: 6.0.4.2.81c2369.031224.8803
+      - link: https://hub.docker.com/layers/noiro/aci-containers-webhook/6.0.4.2.81c2369.032024.8830/images/sha256-e1c5bd845966ff3c67b104956694ae07ce518d41af5b9dc4d1098b2a37b7c7bb?context=explore
+        sha: e1c5bd845966ff3c67b104956694ae07ce518d41af5b9dc4d1098b2a37b7c7bb
+        tag: 6.0.4.2.81c2369.032024.8830
       name: aci-containers-webhook
       quay:
       - link: https://quay.io/noiro/aci-containers-webhook:6.0.4.2.81c2369.z
-        sha: f14d63694b9d408b16b166111c30825de9b0664786c4f604078e38f661ccae9c
+        sha: e1c5bd845966ff3c67b104956694ae07ce518d41af5b9dc4d1098b2a37b7c7bb
         tag: 6.0.4.2.81c2369.z
-      - link: https://quay.io/noiro/aci-containers-webhook:6.0.4.2.81c2369.031224.8803
-        sha: f14d63694b9d408b16b166111c30825de9b0664786c4f604078e38f661ccae9c
-        tag: 6.0.4.2.81c2369.031224.8803
+      - link: https://quay.io/noiro/aci-containers-webhook:6.0.4.2.81c2369.032024.8830
+        sha: e1c5bd845966ff3c67b104956694ae07ce518d41af5b9dc4d1098b2a37b7c7bb
+        tag: 6.0.4.2.81c2369.032024.8830
       sbom: release_artifacts/6.0.4.2/z/aci-containers-webhook/6.0.4.2-sbom.txt
       severity:
       - C: 0
-        H: 0
+        H: 1
         L: 0
-        M: 0
-        U: 2
-      severity_link: https://quay.io/repository/noiro/aci-containers-webhook/manifest/sha256:f14d63694b9d408b16b166111c30825de9b0664786c4f604078e38f661ccae9c?tab=vulnerabilities
-      severity_type: quay
+        M: 4
+        U: 0
+      severity_type: grype
     - base-image:
       - cve: release_artifacts/6.0.4.2/z/aci-containers-certmanager/6.0.4.2-cve-base.txt
         severity:
@@ -2838,7 +2835,7 @@ releases:
         U: 2
       severity_link: https://quay.io/repository/noiro/aci-containers-host-ovscni/manifest/sha256:dd7918ad57b7de3224b5a371683e3f77e55a65f66a7fff5e37c32575de759d83?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-03-19 23:57:34 PDT
+    last_updated: 2024-03-19 23:58:53 PDT
     release_name: 6.0.4.2.z
   - acc_provision: []
     container_images: []
