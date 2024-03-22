@@ -7,7 +7,7 @@ urllib3                     1.26.5     1.26.18   python     GHSA-g4mx-q9vg-27p4 
 
 quay.io/noiro/aci-containers-certmanager:6.0.4.2.81c2369.z (redhat 9.3)
 =======================================================================
-Total: 168 (UNKNOWN: 0, LOW: 145, MEDIUM: 23, HIGH: 0, CRITICAL: 0)
+Total: 170 (UNKNOWN: 0, LOW: 145, MEDIUM: 25, HIGH: 0, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -53,8 +53,14 @@ Total: 168 (UNKNOWN: 0, LOW: 145, MEDIUM: 23, HIGH: 0, CRITICAL: 0)
 │ gnupg2                      │ CVE-2022-3219  │          │ will_not_fix        │ 2.3.3-4.el9                   │               │ denial of service issue (resource consumption) using         │
 │                             │                │          │                     │                               │               │ compressed packets                                           │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-3219                    │
-├─────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ krb5-libs                   │ CVE-2024-26458 │          │ under_investigation │ 1.21.1-1.el9                  │               │ krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c            │
+├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ gnutls                      │ CVE-2024-28834 │ MEDIUM   │ affected            │ 3.7.6-23.el9_3.3              │               │ gnutls: vulnerable to Minerva side-channel information leak  │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-28834                   │
+│                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-28835 │          │                     │                               │               │ gnutls: potential crash during chain building/verification   │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-28835                   │
+├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ krb5-libs                   │ CVE-2024-26458 │ LOW      │ under_investigation │ 1.21.1-1.el9                  │               │ krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c            │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26458                   │
 │                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-26461 │          │                     │                               │               │ krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c    │
