@@ -2685,30 +2685,28 @@ releases:
           L: 0
           M: 0
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d?tab=vulnerabilities
-        severity_type: quay
-        sha: 67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d
+        sha: bc552efb4966aaa44b02532be3168ac1ff18e2af299d0fe89502a1d9fabafbc5
       build-logs: release_artifacts/6.0.4.2/z/openvswitch/6.0.4.2-buildlog.txt
-      build-time: 2024-03-26 16:26:24 PDT
+      build-time: 2024-03-27 00:57:26 PDT
       commit:
-      - link: https://github.com/noironetworks/aci-containers/commit/ffdfb23cb850a21408d931ce1636a22611c7cad9
-        sha: ffdfb23cb850a21408d931ce1636a22611c7cad9
-      cve: release_artifacts/6.0.4.2/z/openvswitch/6.0.4.2-quay-cve.txt
+      - link: https://github.com/noironetworks/aci-containers/commit/08a02e201714d7e2c21eb4ae27012073249cf49e
+        sha: 08a02e201714d7e2c21eb4ae27012073249cf49e
+      cve: release_artifacts/6.0.4.2/z/openvswitch/6.0.4.2-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.4.2.81c2369.z/images/sha256-e65b9d3b52a32f88561933a3ecf2f6ab2f19f1dd394558911361e6ba76618cbf?context=explore
-        sha: e65b9d3b52a32f88561933a3ecf2f6ab2f19f1dd394558911361e6ba76618cbf
+      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.4.2.81c2369.z/images/sha256-85d6955008e058d0b176ee66ab504a1bcb04c5c0faa792a564a1d82f624a34b3?context=explore
+        sha: 85d6955008e058d0b176ee66ab504a1bcb04c5c0faa792a564a1d82f624a34b3
         tag: 6.0.4.2.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.4.2.81c2369.032624.8879/images/sha256-e65b9d3b52a32f88561933a3ecf2f6ab2f19f1dd394558911361e6ba76618cbf?context=explore
-        sha: e65b9d3b52a32f88561933a3ecf2f6ab2f19f1dd394558911361e6ba76618cbf
-        tag: 6.0.4.2.81c2369.032624.8879
+      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.4.2.81c2369.032724.8881/images/sha256-85d6955008e058d0b176ee66ab504a1bcb04c5c0faa792a564a1d82f624a34b3?context=explore
+        sha: 85d6955008e058d0b176ee66ab504a1bcb04c5c0faa792a564a1d82f624a34b3
+        tag: 6.0.4.2.81c2369.032724.8881
       name: openvswitch
       quay:
       - link: https://quay.io/noiro/openvswitch:6.0.4.2.81c2369.z
-        sha: e65b9d3b52a32f88561933a3ecf2f6ab2f19f1dd394558911361e6ba76618cbf
+        sha: 85d6955008e058d0b176ee66ab504a1bcb04c5c0faa792a564a1d82f624a34b3
         tag: 6.0.4.2.81c2369.z
-      - link: https://quay.io/noiro/openvswitch:6.0.4.2.81c2369.032624.8879
-        sha: e65b9d3b52a32f88561933a3ecf2f6ab2f19f1dd394558911361e6ba76618cbf
-        tag: 6.0.4.2.81c2369.032624.8879
+      - link: https://quay.io/noiro/openvswitch:6.0.4.2.81c2369.032724.8881
+        sha: 85d6955008e058d0b176ee66ab504a1bcb04c5c0faa792a564a1d82f624a34b3
+        tag: 6.0.4.2.81c2369.032724.8881
       sbom: release_artifacts/6.0.4.2/z/openvswitch/6.0.4.2-sbom.txt
       severity:
       - C: 0
@@ -2716,8 +2714,7 @@ releases:
         L: 0
         M: 0
         U: 0
-      severity_link: https://quay.io/repository/noiro/openvswitch/manifest/sha256:e65b9d3b52a32f88561933a3ecf2f6ab2f19f1dd394558911361e6ba76618cbf?tab=vulnerabilities
-      severity_type: quay
+      severity_type: grype
     - base-image:
       - cve: release_artifacts/6.0.4.2/z/aci-containers-webhook/6.0.4.2-cve-base.txt
         severity:
@@ -2841,7 +2838,7 @@ releases:
         U: 2
       severity_link: https://quay.io/repository/noiro/aci-containers-host-ovscni/manifest/sha256:90e49690534b6f7a4ab557a4f3bf733adab29672d1bcdc759aea545c89d216af?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-03-27 00:55:33 PDT
+    last_updated: 2024-03-27 00:57:26 PDT
     release_name: 6.0.4.2.z
   - acc_provision: []
     container_images: []
