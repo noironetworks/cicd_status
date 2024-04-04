@@ -6,7 +6,7 @@ urllib3     1.26.5     1.26.18   python  GHSA-g4mx-q9vg-27p4  Medium
 
 quay.io/noiro/aci-containers-operator:6.0.4.2.81c2369.z (redhat 9.3)
 ====================================================================
-Total: 209 (UNKNOWN: 0, LOW: 150, MEDIUM: 59, HIGH: 0, CRITICAL: 0)
+Total: 210 (UNKNOWN: 0, LOW: 150, MEDIUM: 60, HIGH: 0, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -114,8 +114,11 @@ Total: 209 (UNKNOWN: 0, LOW: 150, MEDIUM: 59, HIGH: 0, CRITICAL: 0)
 │                             ├──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-45322   │ LOW      │ will_not_fix        │                               │               │ libxml2: use-after-free in xmlUnlinkNode() in tree.c         │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-45322                   │
-├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libzstd                     │ CVE-2022-4899    │          │                     │ 1.5.1-2.el9                   │               │ zstd: mysql: buffer overrun in util.c                        │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libyaml                     │ CVE-2024-3205    │ MEDIUM   │ under_investigation │ 0.2.5-7.el9                   │               │ libyaml: Heap-Based Buffer Overflow                          │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-3205                    │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libzstd                     │ CVE-2022-4899    │ LOW      │ will_not_fix        │ 1.5.1-2.el9                   │               │ zstd: mysql: buffer overrun in util.c                        │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-4899                    │
 ├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ ncurses                     │ CVE-2022-29458   │          │                     │ 6.2-10.20210508.el9           │               │ segfaulting OOB read                                         │
@@ -136,7 +139,8 @@ Total: 209 (UNKNOWN: 0, LOW: 150, MEDIUM: 59, HIGH: 0, CRITICAL: 0)
 │                             │ CVE-2023-50495   │          │                     │                               │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
 ├─────────────────────────────┼──────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ openldap                    │ CVE-2023-2953    │          │ affected            │ 2.6.3-1.el9                   │               │ null pointer dereference in ber_memalloc_x function          │
+│ openldap                    │ CVE-2023-2953    │          │ affected            │ 2.6.3-1.el9                   │               │ openldap: null pointer dereference in ber_memalloc_x         │
+│                             │                  │          │                     │                               │               │ function                                                     │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-2953                    │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ openssh                     │ CVE-2023-51767   │ MEDIUM   │ will_not_fix        │ 8.7p1-34.el9_3.3              │               │ openssh: authentication bypass via row hammer attack         │
@@ -203,7 +207,7 @@ Total: 209 (UNKNOWN: 0, LOW: 150, MEDIUM: 59, HIGH: 0, CRITICAL: 0)
 │                             │ CVE-2024-0727    │          │ will_not_fix        │                               │               │ openssl: denial of service via null dereference              │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0727                    │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ pam                         │ CVE-2024-22365   │ MEDIUM   │ affected            │ 1.5.1-15.el9                  │               │ pam: allowing unpriledged user to block another user         │
+│ pam                         │ CVE-2024-22365   │ MEDIUM   │ affected            │ 1.5.1-15.el9                  │               │ pam: allowing unprivileged user to block another user        │
 │                             │                  │          │                     │                               │               │ namespace                                                    │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-22365                   │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
