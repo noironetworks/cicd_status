@@ -1,4 +1,5 @@
 NAME        INSTALLED  FIXED-IN  TYPE    VULNERABILITY        SEVERITY 
+idna        2.10       3.7       python  GHSA-jjg7-2v4v-x38h  Medium    
 requests    2.25.1     2.31.0    python  GHSA-j8r2-6x86-q33q  Medium    
 setuptools  53.0.0     65.5.1    python  GHSA-r9hx-vwmv-q579  High      
 urllib3     1.26.5     1.26.17   python  GHSA-v845-jxx5-vc9f  Medium    
@@ -6,7 +7,7 @@ urllib3     1.26.5     1.26.18   python  GHSA-g4mx-q9vg-27p4  Medium
 
 quay.io/noiro/aci-containers-operator:6.0.4.2.81c2369.z (redhat 9.3)
 ====================================================================
-Total: 210 (UNKNOWN: 0, LOW: 150, MEDIUM: 60, HIGH: 0, CRITICAL: 0)
+Total: 216 (UNKNOWN: 0, LOW: 153, MEDIUM: 62, HIGH: 1, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -61,21 +62,20 @@ Total: 210 (UNKNOWN: 0, LOW: 150, MEDIUM: 60, HIGH: 0, CRITICAL: 0)
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-28835   │          │                     │                               │               │ gnutls: potential crash during chain building/verification   │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-28835                   │
-├─────────────────────────────┼──────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ krb5-libs                   │ CVE-2024-26458   │ LOW      │                     │ 1.21.1-1.el9                  │               │ krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c            │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26458                   │
-│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-26461   │          │ under_investigation │                               │               │ krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c    │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26461                   │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-26462   │          │                     │                               │               │ krb5: Memory leak at /krb5/src/kdc/ndr.c                     │
+├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ krb5-libs                   │ CVE-2024-26462   │          │                     │ 1.21.1-1.el9                  │               │ krb5: Memory leak at /krb5/src/kdc/ndr.c                     │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26462                   │
+│                             ├──────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-26458   │ LOW      │                     │                               │               │ krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c            │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26458                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-26461   │          │                     │                               │               │ krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c    │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26461                   │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ less                        │ CVE-2022-48624   │ MEDIUM   │ affected            │ 590-2.el9_2                   │               │ less: missing quoting of shell metacharacters in LESSCLOSE   │
-│                             │                  │          │                     │                               │               │ handling                                                     │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-48624                   │
-├─────────────────────────────┼──────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libarchive                  │ CVE-2023-30571   │          │ will_not_fix        │ 3.5.3-4.el9                   │               │ libarchive: Race condition in multi-threaded use of          │
+│ less                        │ CVE-2024-32487   │ HIGH     │ under_investigation │ 590-3.el9_3                   │               │ less: OS command injection                                   │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-32487                   │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libarchive                  │ CVE-2023-30571   │ MEDIUM   │ will_not_fix        │ 3.5.3-4.el9                   │               │ libarchive: Race condition in multi-threaded use of          │
 │                             │                  │          │                     │                               │               │ archive_write_disk_header() on posix based systems...        │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-30571                   │
 ├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
@@ -104,10 +104,13 @@ Total: 210 (UNKNOWN: 0, LOW: 150, MEDIUM: 60, HIGH: 0, CRITICAL: 0)
 │ libgomp                     │ CVE-2022-27943   │ LOW      │ will_not_fix        │ 11.4.1-2.1.el9                │               │ libiberty/rust-demangle.c in GNU GCC 11.2 allows stack       │
 │                             │                  │          │                     │                               │               │ exhaustion in demangle_const                                 │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
-├─────────────────────────────┤                  │          │                     │                               ├───────────────┤                                                              │
-│ libstdc++                   │                  │          │                     │                               │               │                                                              │
-│                             │                  │          │                     │                               │               │                                                              │
-│                             │                  │          │                     │                               │               │                                                              │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libnghttp2                  │ CVE-2024-27316   │ MEDIUM   │ affected            │ 1.43.0-5.el9_3.1              │               │ httpd: CONTINUATION frames DoS                               │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-27316                   │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libstdc++                   │ CVE-2022-27943   │ LOW      │ will_not_fix        │ 11.4.1-2.1.el9                │               │ libiberty/rust-demangle.c in GNU GCC 11.2 allows stack       │
+│                             │                  │          │                     │                               │               │ exhaustion in demangle_const                                 │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ libxml2                     │ CVE-2024-25062   │ MEDIUM   │ affected            │ 2.9.13-5.el9_3                │               │ libxml2: use-after-free in XMLReader                         │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-25062                   │
@@ -115,7 +118,7 @@ Total: 210 (UNKNOWN: 0, LOW: 150, MEDIUM: 60, HIGH: 0, CRITICAL: 0)
 │                             │ CVE-2023-45322   │ LOW      │ will_not_fix        │                               │               │ libxml2: use-after-free in xmlUnlinkNode() in tree.c         │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-45322                   │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libyaml                     │ CVE-2024-3205    │ MEDIUM   │ under_investigation │ 0.2.5-7.el9                   │               │ libyaml: Heap-Based Buffer Overflow                          │
+│ libyaml                     │ CVE-2024-3205    │ MEDIUM   │ affected            │ 0.2.5-7.el9                   │               │ libyaml: Heap-Based Buffer Overflow                          │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-3205                    │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ libzstd                     │ CVE-2022-4899    │ LOW      │ will_not_fix        │ 1.5.1-2.el9                   │               │ zstd: mysql: buffer overrun in util.c                        │
@@ -180,8 +183,12 @@ Total: 210 (UNKNOWN: 0, LOW: 150, MEDIUM: 60, HIGH: 0, CRITICAL: 0)
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-0727    │          │ will_not_fix        │                               │               │ openssl: denial of service via null dereference              │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0727                    │
-├─────────────────────────────┼──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ openssl-libs                │ CVE-2023-2975    │          │ affected            │                               │               │ openssl: AES-SIV cipher implementation contains a bug that   │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-2511    │          │ affected            │                               │               │ openssl: Unbounded memory growth with session handling in    │
+│                             │                  │          │                     │                               │               │ TLSv1.3                                                      │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-2511                    │
+├─────────────────────────────┼──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ openssl-libs                │ CVE-2023-2975    │          │                     │                               │               │ openssl: AES-SIV cipher implementation contains a bug that   │
 │                             │                  │          │                     │                               │               │ causes it to ignore...                                       │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-2975                    │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -206,8 +213,12 @@ Total: 210 (UNKNOWN: 0, LOW: 150, MEDIUM: 60, HIGH: 0, CRITICAL: 0)
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-0727    │          │ will_not_fix        │                               │               │ openssl: denial of service via null dereference              │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0727                    │
-├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ pam                         │ CVE-2024-22365   │ MEDIUM   │ affected            │ 1.5.1-15.el9                  │               │ pam: allowing unprivileged user to block another user        │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-2511    │          │ affected            │                               │               │ openssl: Unbounded memory growth with session handling in    │
+│                             │                  │          │                     │                               │               │ TLSv1.3                                                      │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-2511                    │
+├─────────────────────────────┼──────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ pam                         │ CVE-2024-22365   │ MEDIUM   │                     │ 1.5.1-15.el9                  │               │ pam: allowing unprivileged user to block another user        │
 │                             │                  │          │                     │                               │               │ namespace                                                    │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-22365                   │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
@@ -350,8 +361,12 @@ Total: 210 (UNKNOWN: 0, LOW: 150, MEDIUM: 60, HIGH: 0, CRITICAL: 0)
 │                             │ CVE-2023-36632   │          │ will_not_fix        │                               │               │ python: RecursionError: maximum recursion depth exceeded     │
 │                             │                  │          │                     │                               │               │ while calling a Python object                                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-36632                   │
-├─────────────────────────────┼──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-libs                │ CVE-2021-23336   │          │ affected            │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+├─────────────────────────────┼──────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-idna                │ CVE-2024-3651    │          │ under_investigation │ 2.10-7.el9                    │               │ python-idna: potential DoS via resource consumption via      │
+│                             │                  │          │                     │                               │               │ specially crafted inputs to idna.encode()...                 │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-3651                    │
+├─────────────────────────────┼──────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-libs                │ CVE-2021-23336   │          │ affected            │ 3.9.18-1.el9_3.1              │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                  │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -671,8 +686,11 @@ Total: 210 (UNKNOWN: 0, LOW: 150, MEDIUM: 60, HIGH: 0, CRITICAL: 0)
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-46246   │          │                     │                               │               │ vim: Integer Overflow in :history command                    │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-46246                   │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-4734    │          │                     │                               │               │ segmentation fault in function f_fullcommand in vim/vim      │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-4733    │          │ affected            │                               │               │ vim: use-after-free in function buflist_altfpos              │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-4733                    │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-4734    │          │ will_not_fix        │                               │               │ segmentation fault in function f_fullcommand in vim/vim      │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-4734                    │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-4735    │          │                     │                               │               │ vim: OOB Write ops.c in vim/vim                              │
@@ -680,8 +698,11 @@ Total: 210 (UNKNOWN: 0, LOW: 150, MEDIUM: 60, HIGH: 0, CRITICAL: 0)
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-4738    │          │                     │                               │               │ heap-buffer-overflow in vim_regsub_both in vim/vim           │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-4738                    │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-4751    │          │                     │                               │               │ heap-buffer-overflow in function utfc_ptr2len in vim/vim     │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-4750    │          │ affected            │                               │               │ vim: use-after-free in function bt_quickfix                  │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-4750                    │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-4751    │          │ will_not_fix        │                               │               │ heap-buffer-overflow in function utfc_ptr2len in vim/vim     │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-4751                    │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-4752    │          │ affected            │                               │               │ vim: use-after-free in function ins_compl_get_exp in vim/vim │
