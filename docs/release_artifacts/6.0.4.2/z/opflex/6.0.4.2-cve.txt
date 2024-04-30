@@ -2,7 +2,7 @@ No vulnerabilities found
 
 quay.io/noiro/opflex:6.0.4.2.81c2369.z (redhat 9.3)
 ===================================================
-Total: 191 (UNKNOWN: 0, LOW: 152, MEDIUM: 34, HIGH: 5, CRITICAL: 0)
+Total: 214 (UNKNOWN: 0, LOW: 160, MEDIUM: 42, HIGH: 12, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬──────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │    Status    │       Installed Version       │ Fixed Version │                            Title                             │
@@ -91,20 +91,80 @@ Total: 191 (UNKNOWN: 0, LOW: 152, MEDIUM: 34, HIGH: 5, CRITICAL: 0)
 │ glibc                       │ CVE-2024-2961  │ HIGH     │              │ 2.34-105.el9                  │               │ glibc: Out of bounds write in iconv may lead to remote       │
 │                             │                │          │              │                               │               │ code...                                                      │
 │                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-2961                    │
-├─────────────────────────────┤                │          │              │                               ├───────────────┤                                                              │
-│ glibc-common                │                │          │              │                               │               │                                                              │
-│                             │                │          │              │                               │               │                                                              │
-│                             │                │          │              │                               │               │                                                              │
-├─────────────────────────────┤                │          │              │                               ├───────────────┤                                                              │
-│ glibc-langpack-en           │                │          │              │                               │               │                                                              │
-│                             │                │          │              │                               │               │                                                              │
-│                             │                │          │              │                               │               │                                                              │
-├─────────────────────────────┤                │          │              │                               ├───────────────┤                                                              │
-│ glibc-minimal-langpack      │                │          │              │                               │               │                                                              │
-│                             │                │          │              │                               │               │                                                              │
-│                             │                │          │              │                               │               │                                                              │
-├─────────────────────────────┼────────────────┼──────────┼──────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ gnupg2                      │ CVE-2022-3219  │ LOW      │ will_not_fix │ 2.3.3-4.el9                   │               │ gnupg: denial of service issue (resource consumption) using  │
+│                             ├────────────────┤          │              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33599 │          │              │                               │               │ glibc: stack-based buffer overflow in netgroup cache         │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33599                   │
+│                             ├────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33600 │ MEDIUM   │              │                               │               │ glibc: null pointer dereferences after failed netgroup cache │
+│                             │                │          │              │                               │               │ insertion                                                    │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33600                   │
+│                             ├────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33601 │ LOW      │              │                               │               │ glibc: netgroup cache may terminate daemon on memory         │
+│                             │                │          │              │                               │               │ allocation failure                                           │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33601                   │
+│                             ├────────────────┤          │              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33602 │          │              │                               │               │ glibc: netgroup cache assumes NSS callback uses in-buffer    │
+│                             │                │          │              │                               │               │ strings                                                      │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33602                   │
+├─────────────────────────────┼────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ glibc-common                │ CVE-2024-2961  │ HIGH     │              │                               │               │ glibc: Out of bounds write in iconv may lead to remote       │
+│                             │                │          │              │                               │               │ code...                                                      │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-2961                    │
+│                             ├────────────────┤          │              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33599 │          │              │                               │               │ glibc: stack-based buffer overflow in netgroup cache         │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33599                   │
+│                             ├────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33600 │ MEDIUM   │              │                               │               │ glibc: null pointer dereferences after failed netgroup cache │
+│                             │                │          │              │                               │               │ insertion                                                    │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33600                   │
+│                             ├────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33601 │ LOW      │              │                               │               │ glibc: netgroup cache may terminate daemon on memory         │
+│                             │                │          │              │                               │               │ allocation failure                                           │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33601                   │
+│                             ├────────────────┤          │              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33602 │          │              │                               │               │ glibc: netgroup cache assumes NSS callback uses in-buffer    │
+│                             │                │          │              │                               │               │ strings                                                      │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33602                   │
+├─────────────────────────────┼────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ glibc-langpack-en           │ CVE-2024-2961  │ HIGH     │              │                               │               │ glibc: Out of bounds write in iconv may lead to remote       │
+│                             │                │          │              │                               │               │ code...                                                      │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-2961                    │
+│                             ├────────────────┤          │              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33599 │          │              │                               │               │ glibc: stack-based buffer overflow in netgroup cache         │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33599                   │
+│                             ├────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33600 │ MEDIUM   │              │                               │               │ glibc: null pointer dereferences after failed netgroup cache │
+│                             │                │          │              │                               │               │ insertion                                                    │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33600                   │
+│                             ├────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33601 │ LOW      │              │                               │               │ glibc: netgroup cache may terminate daemon on memory         │
+│                             │                │          │              │                               │               │ allocation failure                                           │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33601                   │
+│                             ├────────────────┤          │              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33602 │          │              │                               │               │ glibc: netgroup cache assumes NSS callback uses in-buffer    │
+│                             │                │          │              │                               │               │ strings                                                      │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33602                   │
+├─────────────────────────────┼────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ glibc-minimal-langpack      │ CVE-2024-2961  │ HIGH     │              │                               │               │ glibc: Out of bounds write in iconv may lead to remote       │
+│                             │                │          │              │                               │               │ code...                                                      │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-2961                    │
+│                             ├────────────────┤          │              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33599 │          │              │                               │               │ glibc: stack-based buffer overflow in netgroup cache         │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33599                   │
+│                             ├────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33600 │ MEDIUM   │              │                               │               │ glibc: null pointer dereferences after failed netgroup cache │
+│                             │                │          │              │                               │               │ insertion                                                    │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33600                   │
+│                             ├────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33601 │ LOW      │              │                               │               │ glibc: netgroup cache may terminate daemon on memory         │
+│                             │                │          │              │                               │               │ allocation failure                                           │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33601                   │
+│                             ├────────────────┤          │              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-33602 │          │              │                               │               │ glibc: netgroup cache assumes NSS callback uses in-buffer    │
+│                             │                │          │              │                               │               │ strings                                                      │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-33602                   │
+├─────────────────────────────┼────────────────┤          ├──────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ gnupg2                      │ CVE-2022-3219  │          │ will_not_fix │ 2.3.3-4.el9                   │               │ gnupg: denial of service issue (resource consumption) using  │
 │                             │                │          │              │                               │               │ compressed packets                                           │
 │                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2022-3219                    │
 ├─────────────────────────────┼────────────────┼──────────┼──────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
@@ -246,7 +306,10 @@ Total: 191 (UNKNOWN: 0, LOW: 152, MEDIUM: 34, HIGH: 5, CRITICAL: 0)
 │                             │                │          │              │                               │               │                                                              │
 │                             │                │          │              │                               │               │                                                              │
 ├─────────────────────────────┼────────────────┼──────────┼──────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python-unversioned-command  │ CVE-2021-23336 │ MEDIUM   │ affected     │ 3.9.18-3.el9                  │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+│ python-unversioned-command  │ CVE-2023-6597  │ HIGH     │ affected     │ 3.9.18-3.el9                  │               │ python: Path traversal on tempfile.TemporaryDirectory        │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6597                    │
+│                             ├────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2021-23336 │ MEDIUM   │              │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                │          │              │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                             ├────────────────┤          │              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -257,8 +320,15 @@ Total: 191 (UNKNOWN: 0, LOW: 152, MEDIUM: 34, HIGH: 5, CRITICAL: 0)
 │                             │ CVE-2023-36632 │          │ will_not_fix │                               │               │ python: RecursionError: maximum recursion depth exceeded     │
 │                             │                │          │              │                               │               │ while calling a Python object                                │
 │                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-36632                   │
-├─────────────────────────────┼────────────────┤          ├──────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3                     │ CVE-2021-23336 │          │ affected     │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+│                             ├────────────────┤          ├──────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-0450  │          │ affected     │                               │               │ python: The zipfile module is vulnerable to zip-bombs        │
+│                             │                │          │              │                               │               │ leading to denial of...                                      │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0450                    │
+├─────────────────────────────┼────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3                     │ CVE-2023-6597  │ HIGH     │              │                               │               │ python: Path traversal on tempfile.TemporaryDirectory        │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6597                    │
+│                             ├────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2021-23336 │ MEDIUM   │              │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                │          │              │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                             ├────────────────┤          │              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -269,8 +339,15 @@ Total: 191 (UNKNOWN: 0, LOW: 152, MEDIUM: 34, HIGH: 5, CRITICAL: 0)
 │                             │ CVE-2023-36632 │          │ will_not_fix │                               │               │ python: RecursionError: maximum recursion depth exceeded     │
 │                             │                │          │              │                               │               │ while calling a Python object                                │
 │                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-36632                   │
-├─────────────────────────────┼────────────────┤          ├──────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-libs                │ CVE-2021-23336 │          │ affected     │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+│                             ├────────────────┤          ├──────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-0450  │          │ affected     │                               │               │ python: The zipfile module is vulnerable to zip-bombs        │
+│                             │                │          │              │                               │               │ leading to denial of...                                      │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0450                    │
+├─────────────────────────────┼────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-libs                │ CVE-2023-6597  │ HIGH     │              │                               │               │ python: Path traversal on tempfile.TemporaryDirectory        │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6597                    │
+│                             ├────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2021-23336 │ MEDIUM   │              │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                │          │              │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                             ├────────────────┤          │              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -281,8 +358,16 @@ Total: 191 (UNKNOWN: 0, LOW: 152, MEDIUM: 34, HIGH: 5, CRITICAL: 0)
 │                             │ CVE-2023-36632 │          │ will_not_fix │                               │               │ python: RecursionError: maximum recursion depth exceeded     │
 │                             │                │          │              │                               │               │ while calling a Python object                                │
 │                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-36632                   │
-├─────────────────────────────┼────────────────┼──────────┼──────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-pip-wheel           │ CVE-2021-3572  │ LOW      │ affected     │ 21.3.1-1.el9                  │               │ python-pip: Incorrect handling of unicode separators in git  │
+│                             ├────────────────┤          ├──────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-0450  │          │ affected     │                               │               │ python: The zipfile module is vulnerable to zip-bombs        │
+│                             │                │          │              │                               │               │ leading to denial of...                                      │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0450                    │
+├─────────────────────────────┼────────────────┤          │              ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-pip-wheel           │ CVE-2023-45803 │          │              │ 21.3.1-1.el9                  │               │ urllib3: Request body not stripped after redirect from 303   │
+│                             │                │          │              │                               │               │ status changes request...                                    │
+│                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2023-45803                   │
+│                             ├────────────────┼──────────┤              │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2021-3572  │ LOW      │              │                               │               │ python-pip: Incorrect handling of unicode separators in git  │
 │                             │                │          │              │                               │               │ references                                                   │
 │                             │                │          │              │                               │               │ https://avd.aquasec.com/nvd/cve-2021-3572                    │
 ├─────────────────────────────┼────────────────┤          ├──────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
