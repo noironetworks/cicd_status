@@ -2,7 +2,7 @@ No vulnerabilities found
 
 quay.io/noiro/opflex:6.0.4.2.81c2369.z (redhat 9.3)
 ===================================================
-Total: 213 (UNKNOWN: 0, LOW: 156, MEDIUM: 45, HIGH: 12, CRITICAL: 0)
+Total: 212 (UNKNOWN: 0, LOW: 156, MEDIUM: 44, HIGH: 12, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬─────────────────────┬───────────────────────────────┬────────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │       Status        │       Installed Version       │ Fixed Version  │                            Title                             │
@@ -196,13 +196,10 @@ Total: 213 (UNKNOWN: 0, LOW: 156, MEDIUM: 45, HIGH: 12, CRITICAL: 0)
 │ libgomp                     │ CVE-2022-27943 │ LOW      │ will_not_fix        │ 11.4.1-3.el9                  │                │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows   │
 │                             │                │          │                     │                               │                │ stack exhaustion in demangle_const                           │
 │                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
-├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼────────────────┼──────────────────────────────────────────────────────────────┤
-│ libnghttp2                  │ CVE-2024-27316 │ MEDIUM   │ affected            │ 1.43.0-5.el9_3.1              │                │ httpd: CONTINUATION frames DoS                               │
-│                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2024-27316                   │
-├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼────────────────┼──────────────────────────────────────────────────────────────┤
-│ libstdc++                   │ CVE-2022-27943 │ LOW      │ will_not_fix        │ 11.4.1-3.el9                  │                │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows   │
-│                             │                │          │                     │                               │                │ stack exhaustion in demangle_const                           │
-│                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
+├─────────────────────────────┤                │          │                     │                               ├────────────────┤                                                              │
+│ libstdc++                   │                │          │                     │                               │                │                                                              │
+│                             │                │          │                     │                               │                │                                                              │
+│                             │                │          │                     │                               │                │                                                              │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼────────────────┼──────────────────────────────────────────────────────────────┤
 │ libuv                       │ CVE-2024-24806 │ MEDIUM   │ affected            │ 1:1.42.0-1.el9                │                │ libuv: Improper Domain Lookup that potentially leads to SSRF │
 │                             │                │          │                     │                               │                │ attacks                                                      │
