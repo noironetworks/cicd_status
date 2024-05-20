@@ -9,7 +9,7 @@ urllib3            1.26.5     1.26.18   python     GHSA-g4mx-q9vg-27p4  Medium
 
 quay.io/noiro/aci-containers-operator:6.0.4.2.81c2369.z (redhat 9.4)
 ====================================================================
-Total: 225 (UNKNOWN: 0, LOW: 165, MEDIUM: 41, HIGH: 19, CRITICAL: 0)
+Total: 226 (UNKNOWN: 0, LOW: 167, MEDIUM: 40, HIGH: 19, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -236,7 +236,7 @@ Total: 225 (UNKNOWN: 0, LOW: 165, MEDIUM: 41, HIGH: 19, CRITICAL: 0)
 │                             │                  │          │                     │                               │               │ stack exhaustion in demangle_const                           │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-27943                   │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libxml2                     │ CVE-2024-34459   │ MEDIUM   │ under_investigation │ 2.9.13-6.el9_4                │               │ libxml2: buffer over-read in xmlHTMLPrintFileContext in      │
+│ libxml2                     │ CVE-2024-34459   │ MEDIUM   │ affected            │ 2.9.13-6.el9_4                │               │ libxml2: buffer over-read in xmlHTMLPrintFileContext in      │
 │                             │                  │          │                     │                               │               │ xmllint.c                                                    │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-34459                   │
 │                             ├──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -308,8 +308,12 @@ Total: 225 (UNKNOWN: 0, LOW: 165, MEDIUM: 41, HIGH: 19, CRITICAL: 0)
 │                             │ CVE-2024-2511    │          │                     │                               │               │ openssl: Unbounded memory growth with session handling in    │
 │                             │                  │          │                     │                               │               │ TLSv1.3                                                      │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-2511                    │
-├─────────────────────────────┼──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ openssl-libs                │ CVE-2023-3446    │          │                     │                               │               │ openssl: Excessive time spent checking DH keys and           │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-4603    │          │ affected            │                               │               │ openssl: Excessive time spent checking DSA keys and          │
+│                             │                  │          │                     │                               │               │ parameters                                                   │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4603                    │
+├─────────────────────────────┼──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ openssl-libs                │ CVE-2023-3446    │          │ will_not_fix        │                               │               │ openssl: Excessive time spent checking DH keys and           │
 │                             │                  │          │                     │                               │               │ parameters                                                   │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-3446                    │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -334,8 +338,12 @@ Total: 225 (UNKNOWN: 0, LOW: 165, MEDIUM: 41, HIGH: 19, CRITICAL: 0)
 │                             │ CVE-2024-2511    │          │                     │                               │               │ openssl: Unbounded memory growth with session handling in    │
 │                             │                  │          │                     │                               │               │ TLSv1.3                                                      │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-2511                    │
-├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ pcre2                       │ CVE-2022-41409   │          │                     │ 10.40-5.el9                   │               │ pcre2: negative repeat value in a pcre2test subject line     │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-4603    │          │ affected            │                               │               │ openssl: Excessive time spent checking DSA keys and          │
+│                             │                  │          │                     │                               │               │ parameters                                                   │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4603                    │
+├─────────────────────────────┼──────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ pcre2                       │ CVE-2022-41409   │          │ will_not_fix        │ 10.40-5.el9                   │               │ pcre2: negative repeat value in a pcre2test subject line     │
 │                             │                  │          │                     │                               │               │ leads to inifinite...                                        │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-41409                   │
 ├─────────────────────────────┤                  │          │                     │                               ├───────────────┤                                                              │
@@ -399,12 +407,8 @@ Total: 225 (UNKNOWN: 0, LOW: 165, MEDIUM: 41, HIGH: 19, CRITICAL: 0)
 │                             │ CVE-2024-0450    │          │ affected            │                               │               │ python: The zipfile module is vulnerable to zip-bombs        │
 │                             │                  │          │                     │                               │               │ leading to denial of...                                      │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0450                    │
-├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-pip-wheel           │ CVE-2023-45803   │          │                     │ 21.2.3-8.el9                  │               │ urllib3: Request body not stripped after redirect from 303   │
-│                             │                  │          │                     │                               │               │ status changes request...                                    │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-45803                   │
-│                             ├──────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-3572    │ LOW      │                     │                               │               │ python-pip: Incorrect handling of unicode separators in git  │
+├─────────────────────────────┼──────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-pip-wheel           │ CVE-2021-3572    │ LOW      │                     │ 21.2.3-8.el9                  │               │ python-pip: Incorrect handling of unicode separators in git  │
 │                             │                  │          │                     │                               │               │ references                                                   │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-3572                    │
 ├─────────────────────────────┼──────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
