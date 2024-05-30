@@ -2487,44 +2487,41 @@ releases:
     - base-image:
       - cve: release_artifacts/6.0.4.2/z/acc-provision-operator/6.0.4.2-cve-base.txt
         severity:
-        - C: 0
-          H: 34
-          L: 9
-          M: 66
-          U: 0
-        severity_link: https://quay.io/repository/noirolabs/ansible-operator/manifest/sha256:95acab66b626f8b40f577d02d51b4d5e11c5fd7c801a538fd65ced08cc8ee02f?tab=vulnerabilities
-        severity_type: quay
-        sha: 95acab66b626f8b40f577d02d51b4d5e11c5fd7c801a538fd65ced08cc8ee02f
+        - C: 5
+          H: 14
+          L: 170
+          M: 58
+          U: 1
+        sha: 0680348cec8b4d62e7b9313d5d5279ed49f5b6a0de6283fb953d09f94eaa02ab
       build-logs: release_artifacts/6.0.4.2/z/acc-provision-operator/6.0.4.2-buildlog.txt
-      build-time: 2024-05-28 15:36:54 PDT
+      build-time: 2024-05-30 04:59:11 PDT
       commit:
       - link: https://github.com/noironetworks/acc-provision-operator/commit/5db0396ae9eff09b5b954a3e6f66e12353e35065
         sha: 5db0396ae9eff09b5b954a3e6f66e12353e35065
-      cve: release_artifacts/6.0.4.2/z/acc-provision-operator/6.0.4.2-quay-cve.txt
+      cve: release_artifacts/6.0.4.2/z/acc-provision-operator/6.0.4.2-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.4.2.81c2369.z/images/sha256-58d031d23782b566ba2b60735c21edb7fc4aa7e9555e1a9c04b3f82548e503e6?context=explore
-        sha: 58d031d23782b566ba2b60735c21edb7fc4aa7e9555e1a9c04b3f82548e503e6
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.4.2.81c2369.z/images/sha256-a3bd08c1e63ac2f02a28652cfc7c0a1928487fc86843f8c3f46385e48e0f7876?context=explore
+        sha: a3bd08c1e63ac2f02a28652cfc7c0a1928487fc86843f8c3f46385e48e0f7876
         tag: 6.0.4.2.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.4.2.81c2369.052824.750/images/sha256-58d031d23782b566ba2b60735c21edb7fc4aa7e9555e1a9c04b3f82548e503e6?context=explore
-        sha: 58d031d23782b566ba2b60735c21edb7fc4aa7e9555e1a9c04b3f82548e503e6
-        tag: 6.0.4.2.81c2369.052824.750
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.4.2.81c2369.053024.751/images/sha256-a3bd08c1e63ac2f02a28652cfc7c0a1928487fc86843f8c3f46385e48e0f7876?context=explore
+        sha: a3bd08c1e63ac2f02a28652cfc7c0a1928487fc86843f8c3f46385e48e0f7876
+        tag: 6.0.4.2.81c2369.053024.751
       name: acc-provision-operator
       quay:
       - link: https://quay.io/noiro/acc-provision-operator:6.0.4.2.81c2369.z
-        sha: 58d031d23782b566ba2b60735c21edb7fc4aa7e9555e1a9c04b3f82548e503e6
+        sha: a3bd08c1e63ac2f02a28652cfc7c0a1928487fc86843f8c3f46385e48e0f7876
         tag: 6.0.4.2.81c2369.z
-      - link: https://quay.io/noiro/acc-provision-operator:6.0.4.2.81c2369.052824.750
-        sha: 58d031d23782b566ba2b60735c21edb7fc4aa7e9555e1a9c04b3f82548e503e6
-        tag: 6.0.4.2.81c2369.052824.750
+      - link: https://quay.io/noiro/acc-provision-operator:6.0.4.2.81c2369.053024.751
+        sha: a3bd08c1e63ac2f02a28652cfc7c0a1928487fc86843f8c3f46385e48e0f7876
+        tag: 6.0.4.2.81c2369.053024.751
       sbom: release_artifacts/6.0.4.2/z/acc-provision-operator/6.0.4.2-sbom.txt
       severity:
-      - C: 0
-        H: 8
-        L: 3
-        M: 13
-        U: 1
-      severity_link: https://quay.io/repository/noiro/acc-provision-operator/manifest/sha256:58d031d23782b566ba2b60735c21edb7fc4aa7e9555e1a9c04b3f82548e503e6?tab=vulnerabilities
-      severity_type: quay
+      - C: 7
+        H: 13
+        L: 244
+        M: 103
+        U: 2
+      severity_type: grype
     - base-image:
       - cve: release_artifacts/6.0.4.2/z/aci-containers-host/6.0.4.2-cve-base.txt
         severity:
@@ -2894,7 +2891,7 @@ releases:
         U: 0
       severity_link: https://quay.io/repository/noiro/opflex/manifest/sha256:cbcfae162259f23eef5f3d885a101f5e67e442462307575f61be4fc2e92b69ba?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-05-30 02:32:21 PDT
+    last_updated: 2024-05-30 04:59:11 PDT
     release_name: 6.0.4.2.z
   - acc_provision: []
     container_images: []
