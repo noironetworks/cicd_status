@@ -2757,43 +2757,40 @@ releases:
       - cve: release_artifacts/6.0.4.2/z/aci-containers-certmanager/6.0.4.2-cve-base.txt
         severity:
         - C: 0
-          H: 3
-          L: 3
-          M: 10
+          H: 1
+          L: 0
+          M: 5
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
-        severity_type: quay
-        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
+        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
       build-logs: release_artifacts/6.0.4.2/z/aci-containers-certmanager/6.0.4.2-buildlog.txt
-      build-time: 2024-05-30 05:33:59 PDT
+      build-time: 2024-05-30 23:00:58 PDT
       commit:
-      - link: https://github.com/noironetworks/aci-containers/commit/3c6b35b20450120fbc5a0c1606697a49004f9898
-        sha: 3c6b35b20450120fbc5a0c1606697a49004f9898
-      cve: release_artifacts/6.0.4.2/z/aci-containers-certmanager/6.0.4.2-quay-cve.txt
+      - link: https://github.com/noironetworks/aci-containers/commit/bbb4780453e1357702e76ee9df490c68e78290bb
+        sha: bbb4780453e1357702e76ee9df490c68e78290bb
+      cve: release_artifacts/6.0.4.2/z/aci-containers-certmanager/6.0.4.2-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/aci-containers-certmanager/6.0.4.2.81c2369.z/images/sha256-b3151d81c673a59afac7cdf3b95ccf07b91cf378e11c13f6c4ae8361e68f09ce?context=explore
-        sha: b3151d81c673a59afac7cdf3b95ccf07b91cf378e11c13f6c4ae8361e68f09ce
+      - link: https://hub.docker.com/layers/noiro/aci-containers-certmanager/6.0.4.2.81c2369.z/images/sha256-d7502061b4f188222b7aae426a111d025049eb11fd9e14e66388580e4f7bf0de?context=explore
+        sha: d7502061b4f188222b7aae426a111d025049eb11fd9e14e66388580e4f7bf0de
         tag: 6.0.4.2.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/aci-containers-certmanager/6.0.4.2.81c2369.053024.9049/images/sha256-b3151d81c673a59afac7cdf3b95ccf07b91cf378e11c13f6c4ae8361e68f09ce?context=explore
-        sha: b3151d81c673a59afac7cdf3b95ccf07b91cf378e11c13f6c4ae8361e68f09ce
-        tag: 6.0.4.2.81c2369.053024.9049
+      - link: https://hub.docker.com/layers/noiro/aci-containers-certmanager/6.0.4.2.81c2369.053124.9064/images/sha256-d7502061b4f188222b7aae426a111d025049eb11fd9e14e66388580e4f7bf0de?context=explore
+        sha: d7502061b4f188222b7aae426a111d025049eb11fd9e14e66388580e4f7bf0de
+        tag: 6.0.4.2.81c2369.053124.9064
       name: aci-containers-certmanager
       quay:
       - link: https://quay.io/noiro/aci-containers-certmanager:6.0.4.2.81c2369.z
-        sha: b3151d81c673a59afac7cdf3b95ccf07b91cf378e11c13f6c4ae8361e68f09ce
+        sha: d7502061b4f188222b7aae426a111d025049eb11fd9e14e66388580e4f7bf0de
         tag: 6.0.4.2.81c2369.z
-      - link: https://quay.io/noiro/aci-containers-certmanager:6.0.4.2.81c2369.053024.9049
-        sha: b3151d81c673a59afac7cdf3b95ccf07b91cf378e11c13f6c4ae8361e68f09ce
-        tag: 6.0.4.2.81c2369.053024.9049
+      - link: https://quay.io/noiro/aci-containers-certmanager:6.0.4.2.81c2369.053124.9064
+        sha: d7502061b4f188222b7aae426a111d025049eb11fd9e14e66388580e4f7bf0de
+        tag: 6.0.4.2.81c2369.053124.9064
       sbom: release_artifacts/6.0.4.2/z/aci-containers-certmanager/6.0.4.2-sbom.txt
       severity:
       - C: 0
-        H: 3
-        L: 3
-        M: 11
-        U: 1
-      severity_link: https://quay.io/repository/noiro/aci-containers-certmanager/manifest/sha256:b3151d81c673a59afac7cdf3b95ccf07b91cf378e11c13f6c4ae8361e68f09ce?tab=vulnerabilities
-      severity_type: quay
+        H: 1
+        L: 0
+        M: 6
+        U: 0
+      severity_type: grype
     - base-image:
       - cve: release_artifacts/6.0.4.2/z/aci-containers-host-ovscni/6.0.4.2-cve-base.txt
         severity:
@@ -2876,7 +2873,7 @@ releases:
         U: 0
       severity_link: https://quay.io/repository/noiro/opflex/manifest/sha256:cbcfae162259f23eef5f3d885a101f5e67e442462307575f61be4fc2e92b69ba?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-05-30 22:59:57 PDT
+    last_updated: 2024-05-30 23:00:58 PDT
     release_name: 6.0.4.2.z
   - acc_provision: []
     container_images: []
