@@ -9,6 +9,8 @@ fetch('release_artifacts/releases.yaml')
     const releaseName = urlParams.get('release');
     const releaseTag = releaseName.replace(/(\.z|.rc[0-9]+)$/, '');
     var accProcOpRow = document.createElement('tr');
+    var aciConWeb = document.createElement('tr');
+    var aciConCert = document.createElement('tr');
 
     for (const releaseData of parsedData.releases) {
       if (releaseData.release_tag === releaseTag) {
@@ -236,10 +238,16 @@ fetch('release_artifacts/releases.yaml')
 
               if (image.name == "acc-provision-operator") {
                 accProcOpRow = releaseRow;
+              } else if (image.name == "aci-containers-webhook") {
+                aciConWeb = releaseRow;
+              } else if (image.name == "aci-containers-certmanager") {
+                aciConCert = releaseRow;
               } else {
                 tableBody.appendChild(releaseRow);
               }
             }
+            tableBody.appendChild(aciConCert);
+            tableBody.appendChild(aciConWeb);
             tableBody.appendChild(accProcOpRow);
             // Exit the loop once the specific release is found
             break;
