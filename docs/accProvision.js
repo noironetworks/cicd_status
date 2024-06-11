@@ -63,7 +63,7 @@ fetch('release_artifacts/releases.yaml')
                   accProvisionLinkCell.appendChild(linkList);
                   // Create and append the help message
                   const message = document.createElement('p');
-                  message.textContent = "Please copy one of above the manifests to your Acc-Provision input file.";
+                  message.textContent = "Please copy one of the above manifests to your Acc-Provision input file.";
                   accProvisionLinkCell.appendChild(message);
                   // Append the cell to the row
                   accProvisionRow.appendChild(accProvisionLinkCell);
