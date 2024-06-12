@@ -163,9 +163,22 @@ fetch('release_artifacts/releases.yaml')
                   
                   baseImageCVELink.innerHTML = baseImageCVEText;
                   baseImageCVECell.appendChild(baseImageCVELink);
-                } else {
-                  baseImageCVELink.textContent = 'N/A';
-                  baseImageCVECell.appendChild(baseImageCVELink);
+                } else if (image.base_cve_error === 'Scanning Queued in Quay'){
+                  if (image.hasOwnProperty('severity_type')) {
+                    severityType = image.severity_type;
+                    if (severityType.toLowerCase() === 'quay') {
+                      severityTypeClass = 'severity_type_quay';
+                      if (image.severity_link) {
+                        cveLink.href = image.severity_link;
+                      }
+                    }
+                  }
+                  severityType = severityType.toUpperCase()
+                  const cveText = ` <div class="${severityTypeClass}">${severityType}</div>
+                                    <hr>
+                                    <span>Queued</span><br>`;
+                  cveLink.innerHTML = cveText;
+                  cveCell.appendChild(cveLink);
                 }
               }
               releaseRow.appendChild(baseImageCVECell);
@@ -218,8 +231,21 @@ fetch('release_artifacts/releases.yaml')
                                   <span class="cve-letter cve-u">U:${U}</span>`;
                 cveLink.innerHTML = cveText;
                 cveCell.appendChild(cveLink);
-              } else {
-                cveLink.textContent = 'N/A';
+              } else if (image.cve_error === 'Scanning Queued in Quay'){
+                if (image.hasOwnProperty('severity_type')) {
+                  severityType = image.severity_type;
+                  if (severityType.toLowerCase() === 'quay') {
+                    severityTypeClass = 'severity_type_quay';
+                    if (image.severity_link) {
+                      cveLink.href = image.severity_link;
+                    }
+                  }
+                }
+                severityType = severityType.toUpperCase()
+                const cveText = ` <div class="${severityTypeClass}">${severityType}</div>
+                                  <hr>
+                                  <span>Queued</span><br>`;
+                cveLink.innerHTML = cveText;
                 cveCell.appendChild(cveLink);
               }
               releaseRow.appendChild(cveCell);
