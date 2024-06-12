@@ -11,6 +11,7 @@ fetch('release_artifacts/releases.yaml')
     var accProcOpRow = document.createElement('tr');
     var aciConWeb = document.createElement('tr');
     var aciConCert = document.createElement('tr');
+    var aciConHostOvscni = document.createElement('tr');
 
     for (const releaseData of parsedData.releases) {
       if (releaseData.release_tag === releaseTag) {
@@ -268,12 +269,15 @@ fetch('release_artifacts/releases.yaml')
                 aciConWeb = releaseRow;
               } else if (image.name == "aci-containers-certmanager") {
                 aciConCert = releaseRow;
+              } else if (image.name == "aci-containers-host-ovscni") {
+                aciConHostOvscni = releaseRow;
               } else {
                 tableBody.appendChild(releaseRow);
               }
             }
             tableBody.appendChild(aciConCert);
             tableBody.appendChild(aciConWeb);
+            tableBody.appendChild(aciConHostOvscni);
             tableBody.appendChild(accProcOpRow);
             // Exit the loop once the specific release is found
             break;

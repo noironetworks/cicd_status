@@ -2631,7 +2631,7 @@ releases:
       - link: https://github.com/noironetworks/aci-containers/commit/41e40ebebeb8e50ecf64c672f42b2d3ad9280f9e
         sha: 41e40ebebeb8e50ecf64c672f42b2d3ad9280f9e
       cve: release_artifacts/6.0.4.2/z/cnideploy/6.0.4.2-quay-cve.txt
-      cve_error: Scanning Queued in Quay
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.4.2.81c2369.z/images/sha256-94f8debea7c84547071c4e80a1de57fd56208381daf254e7cbbc1d5249913ee8?context=explore
         sha: 94f8debea7c84547071c4e80a1de57fd56208381daf254e7cbbc1d5249913ee8
@@ -2648,7 +2648,12 @@ releases:
         sha: 94f8debea7c84547071c4e80a1de57fd56208381daf254e7cbbc1d5249913ee8
         tag: 6.0.4.2.81c2369.060424.9066
       sbom: release_artifacts/6.0.4.2/z/cnideploy/6.0.4.2-sbom.txt
-      severity: []
+      severity:
+      - C: 0
+        H: 0
+        L: 0
+        M: 1
+        U: 1
       severity_link: https://quay.io/repository/noiro/cnideploy/manifest/sha256:94f8debea7c84547071c4e80a1de57fd56208381daf254e7cbbc1d5249913ee8?tab=vulnerabilities
       severity_type: quay
     - base-image:
@@ -2669,7 +2674,7 @@ releases:
       - link: https://github.com/noironetworks/aci-containers/commit/41e40ebebeb8e50ecf64c672f42b2d3ad9280f9e
         sha: 41e40ebebeb8e50ecf64c672f42b2d3ad9280f9e
       cve: release_artifacts/6.0.4.2/z/aci-containers-operator/6.0.4.2-quay-cve.txt
-      cve_error: Scanning Queued in Quay
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-operator/6.0.4.2.81c2369.z/images/sha256-c252fa1ad04634ed30cf48d64ce48d72e2eebb8cf121d338fc3e886dc1b9a278?context=explore
         sha: c252fa1ad04634ed30cf48d64ce48d72e2eebb8cf121d338fc3e886dc1b9a278
@@ -2686,7 +2691,12 @@ releases:
         sha: c252fa1ad04634ed30cf48d64ce48d72e2eebb8cf121d338fc3e886dc1b9a278
         tag: 6.0.4.2.81c2369.060424.9066
       sbom: release_artifacts/6.0.4.2/z/aci-containers-operator/6.0.4.2-sbom.txt
-      severity: []
+      severity:
+      - C: 0
+        H: 0
+        L: 1
+        M: 2
+        U: 4
       severity_link: https://quay.io/repository/noiro/aci-containers-operator/manifest/sha256:c252fa1ad04634ed30cf48d64ce48d72e2eebb8cf121d338fc3e886dc1b9a278?tab=vulnerabilities
       severity_type: quay
     - base-image:
