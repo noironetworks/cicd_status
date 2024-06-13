@@ -3278,8 +3278,46 @@ releases:
         sha: becc5099c55f94340bd1af097ff1c7931cba8ba9
       link: https://test.pypi.org/project/acc-provision/6.1.1.1.dev9463/#files
       tag: 6.1.1.1.dev9463
-    container_images: []
-    last_updated: 2024-06-13 13:40:17 PDT
+    container_images:
+    - base-image:
+      - cve: release_artifacts/6.1.1.1/z/acc-provision-operator/6.1.1.1-cve-base.txt
+        severity:
+        - C: 5
+          H: 0
+          L: 160
+          M: 35
+          U: 1
+        sha: 4ceb0a2e20e5dcaecfc9cbe2cd4ea045352043762eee42594187eeb3afaa6156
+      build-logs: release_artifacts/6.1.1.1/z/acc-provision-operator/6.1.1.1-buildlog.txt
+      build-time: 2024-06-13 13:43:53 PDT
+      commit:
+      - link: https://github.com/noironetworks/acc-provision-operator/commit/f53eb7501655536c4caede9970993e3853c98f66
+        sha: f53eb7501655536c4caede9970993e3853c98f66
+      cve: release_artifacts/6.1.1.1/z/acc-provision-operator/6.1.1.1-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.1.1.1.81c2369.z/images/sha256-7cd74492648988cb90cc723ce5c9203b22507b8b7596ec6ab77c7aa8086ebc52?context=explore
+        sha: 7cd74492648988cb90cc723ce5c9203b22507b8b7596ec6ab77c7aa8086ebc52
+        tag: 6.1.1.1.81c2369.z
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.1.1.1.81c2369.061324.763/images/sha256-7cd74492648988cb90cc723ce5c9203b22507b8b7596ec6ab77c7aa8086ebc52?context=explore
+        sha: 7cd74492648988cb90cc723ce5c9203b22507b8b7596ec6ab77c7aa8086ebc52
+        tag: 6.1.1.1.81c2369.061324.763
+      name: acc-provision-operator
+      quay:
+      - link: https://quay.io/noiro/acc-provision-operator:6.1.1.1.81c2369.z
+        sha: 7cd74492648988cb90cc723ce5c9203b22507b8b7596ec6ab77c7aa8086ebc52
+        tag: 6.1.1.1.81c2369.z
+      - link: https://quay.io/noiro/acc-provision-operator:6.1.1.1.81c2369.061324.763
+        sha: 7cd74492648988cb90cc723ce5c9203b22507b8b7596ec6ab77c7aa8086ebc52
+        tag: 6.1.1.1.81c2369.061324.763
+      sbom: release_artifacts/6.1.1.1/z/acc-provision-operator/6.1.1.1-sbom.txt
+      severity:
+      - C: 7
+        H: 9
+        L: 244
+        M: 86
+        U: 2
+      severity_type: grype
+    last_updated: 2024-06-13 13:43:53 PDT
     release_name: 6.1.1.1.z
   - acc_provision: []
     container_images: []
