@@ -3667,3 +3667,52 @@ releases:
     release_name: 6.1.1.1
     released: false
   release_tag: 6.1.1.1
+- release_streams:
+  - acc_provision: []
+    container_images:
+    - base-image:
+      - cve: release_artifacts/6.0.4.3/z/opflex/6.0.4.3-cve-base.txt
+        severity:
+        - C: 0
+          H: 0
+          L: 0
+          M: 0
+          U: 0
+        sha: bc552efb4966aaa44b02532be3168ac1ff18e2af299d0fe89502a1d9fabafbc5
+      build-logs: release_artifacts/6.0.4.3/z/opflex/6.0.4.3-buildlog.txt
+      build-time: 2024-06-17 03:54:25 PDT
+      commit:
+      - link: https://github.com/noironetworks/opflex/commit/466a7c1e05e8ea4a1e1cc188c83613cc2d95ef90
+        sha: 466a7c1e05e8ea4a1e1cc188c83613cc2d95ef90
+      cve: release_artifacts/6.0.4.3/z/opflex/6.0.4.3-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/opflex/6.0.4.3.81c2369.z/images/sha256-49876c005da7cba36ec74385c85bb1d0f0796fd9756db5383d41b98a74fe854b?context=explore
+        sha: 49876c005da7cba36ec74385c85bb1d0f0796fd9756db5383d41b98a74fe854b
+        tag: 6.0.4.3.81c2369.z
+      - link: https://hub.docker.com/layers/noiro/opflex/6.0.4.3.81c2369.061724.3781/images/sha256-49876c005da7cba36ec74385c85bb1d0f0796fd9756db5383d41b98a74fe854b?context=explore
+        sha: 49876c005da7cba36ec74385c85bb1d0f0796fd9756db5383d41b98a74fe854b
+        tag: 6.0.4.3.81c2369.061724.3781
+      name: opflex
+      quay:
+      - link: https://quay.io/noiro/opflex:6.0.4.3.81c2369.z
+        sha: 49876c005da7cba36ec74385c85bb1d0f0796fd9756db5383d41b98a74fe854b
+        tag: 6.0.4.3.81c2369.z
+      - link: https://quay.io/noiro/opflex:6.0.4.3.81c2369.061724.3781
+        sha: 49876c005da7cba36ec74385c85bb1d0f0796fd9756db5383d41b98a74fe854b
+        tag: 6.0.4.3.81c2369.061724.3781
+      sbom: release_artifacts/6.0.4.3/z/opflex/6.0.4.3-sbom.txt
+      severity:
+      - C: 0
+        H: 0
+        L: 0
+        M: 0
+        U: 0
+      severity_type: grype
+    last_updated: 2024-06-17 03:54:25 PDT
+    release_name: 6.0.4.3.z
+  - acc_provision: []
+    container_images: []
+    last_updated: 2024-06-17 03:54:22 PDT
+    release_name: 6.0.4.3
+    released: false
+  release_tag: 6.0.4.3
