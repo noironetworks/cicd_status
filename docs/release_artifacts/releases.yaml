@@ -3708,7 +3708,45 @@ releases:
         M: 0
         U: 0
       severity_type: grype
-    last_updated: 2024-06-17 14:20:00 PDT
+    - base-image:
+      - cve: release_artifacts/6.0.4.3/z/acc-provision-operator/6.0.4.3-cve-base.txt
+        severity:
+        - C: 5
+          H: 0
+          L: 165
+          M: 38
+          U: 1
+        sha: b5fbb958dbcb6b27e1b3a183739333b4d91a3c3bb1a6e80eb3eb4a91b2dd588e
+      build-logs: release_artifacts/6.0.4.3/z/acc-provision-operator/6.0.4.3-buildlog.txt
+      build-time: 2024-06-19 00:31:20 PDT
+      commit:
+      - link: https://github.com/noironetworks/acc-provision-operator/commit/5d7135eacafc8cc6a973058ef2ba6625fd855365
+        sha: 5d7135eacafc8cc6a973058ef2ba6625fd855365
+      cve: release_artifacts/6.0.4.3/z/acc-provision-operator/6.0.4.3-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.4.3.81c2369.z/images/sha256-6aa6aed9e374b47132db334071a79fc1af0568dc83456f0ce7b85856a1cd9443?context=explore
+        sha: 6aa6aed9e374b47132db334071a79fc1af0568dc83456f0ce7b85856a1cd9443
+        tag: 6.0.4.3.81c2369.z
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.0.4.3.81c2369.061924.769/images/sha256-6aa6aed9e374b47132db334071a79fc1af0568dc83456f0ce7b85856a1cd9443?context=explore
+        sha: 6aa6aed9e374b47132db334071a79fc1af0568dc83456f0ce7b85856a1cd9443
+        tag: 6.0.4.3.81c2369.061924.769
+      name: acc-provision-operator
+      quay:
+      - link: https://quay.io/noiro/acc-provision-operator:6.0.4.3.81c2369.z
+        sha: 6aa6aed9e374b47132db334071a79fc1af0568dc83456f0ce7b85856a1cd9443
+        tag: 6.0.4.3.81c2369.z
+      - link: https://quay.io/noiro/acc-provision-operator:6.0.4.3.81c2369.061924.769
+        sha: 6aa6aed9e374b47132db334071a79fc1af0568dc83456f0ce7b85856a1cd9443
+        tag: 6.0.4.3.81c2369.061924.769
+      sbom: release_artifacts/6.0.4.3/z/acc-provision-operator/6.0.4.3-sbom.txt
+      severity:
+      - C: 7
+        H: 9
+        L: 250
+        M: 88
+        U: 2
+      severity_type: grype
+    last_updated: 2024-06-19 00:31:20 PDT
     release_name: 6.0.4.3.z
   - acc_provision: []
     container_images: []
