@@ -2,7 +2,7 @@ No vulnerabilities found
 
 quay.io/noiro/openvswitch:6.1.1.1.81c2369.z (redhat 9.4)
 ========================================================
-Total: 178 (UNKNOWN: 0, LOW: 146, MEDIUM: 29, HIGH: 3, CRITICAL: 0)
+Total: 182 (UNKNOWN: 0, LOW: 149, MEDIUM: 30, HIGH: 3, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -89,7 +89,19 @@ Total: 178 (UNKNOWN: 0, LOW: 146, MEDIUM: 29, HIGH: 3, CRITICAL: 0)
 │                             │                │          │                     │                               │               │ xmllint.c                                                    │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-34459                   │
 ├─────────────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libyaml                     │ CVE-2024-35329 │ MEDIUM   │                     │ 0.2.5-7.el9                   │               │ libyaml: vulnerable to a heap-based Buffer Overflow in       │
+│ libyaml                     │ CVE-2024-35325 │ MEDIUM   │                     │ 0.2.5-7.el9                   │               │ libyaml: double-free in yaml_event_delete in                 │
+│                             │                │          │                     │                               │               │ /src/libyaml/src/api.c                                       │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-35325                   │
+│                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-35326 │          │                     │                               │               │ libyaml: double-free in yaml_emitter_emit in                 │
+│                             │                │          │                     │                               │               │ /src/libyaml/src/emitter.c                                   │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-35326                   │
+│                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-35328 │          │                     │                               │               │ libyaml: denial of service in yaml_parser_parse of the file  │
+│                             │                │          │                     │                               │               │ /src/libyaml/src/parser.c.                                   │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-35328                   │
+│                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-35329 │          │                     │                               │               │ libyaml: vulnerable to a heap-based Buffer Overflow in       │
 │                             │                │          │                     │                               │               │ yaml_document_add_sequence in api.c                          │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-35329                   │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
@@ -139,10 +151,10 @@ Total: 178 (UNKNOWN: 0, LOW: 146, MEDIUM: 29, HIGH: 3, CRITICAL: 0)
 │                             │                │          │                     │                               │               │ parameters                                                   │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4603                    │
 │                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-4741  │          │ under_investigation │                               │               │ openssl: Use After Free with SSL_free_buffers                │
+│                             │ CVE-2024-4741  │          │ will_not_fix        │                               │               │ openssl: Use After Free with SSL_free_buffers                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4741                    │
-├─────────────────────────────┼────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ openssl-libs                │ CVE-2023-3446  │          │ will_not_fix        │                               │               │ openssl: Excessive time spent checking DH keys and           │
+├─────────────────────────────┼────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ openssl-libs                │ CVE-2023-3446  │          │                     │                               │               │ openssl: Excessive time spent checking DH keys and           │
 │                             │                │          │                     │                               │               │ parameters                                                   │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-3446                    │
 │                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -169,10 +181,10 @@ Total: 178 (UNKNOWN: 0, LOW: 146, MEDIUM: 29, HIGH: 3, CRITICAL: 0)
 │                             │                │          │                     │                               │               │ parameters                                                   │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4603                    │
 │                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-4741  │          │ under_investigation │                               │               │ openssl: Use After Free with SSL_free_buffers                │
+│                             │ CVE-2024-4741  │          │ will_not_fix        │                               │               │ openssl: Use After Free with SSL_free_buffers                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4741                    │
-├─────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ pcre2                       │ CVE-2022-41409 │          │ will_not_fix        │ 10.40-5.el9                   │               │ pcre2: negative repeat value in a pcre2test subject line     │
+├─────────────────────────────┼────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ pcre2                       │ CVE-2022-41409 │          │                     │ 10.40-5.el9                   │               │ pcre2: negative repeat value in a pcre2test subject line     │
 │                             │                │          │                     │                               │               │ leads to inifinite...                                        │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-41409                   │
 ├─────────────────────────────┤                │          │                     │                               ├───────────────┤                                                              │
@@ -186,10 +198,6 @@ Total: 178 (UNKNOWN: 0, LOW: 146, MEDIUM: 29, HIGH: 3, CRITICAL: 0)
 │                             │ CVE-2021-23336 │ MEDIUM   │                     │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
-│                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2022-0391  │          │                     │                               │               │ python: urllib.parse does not sanitize URLs containing ASCII │
-│                             │                │          │                     │                               │               │ newline and tabs                                             │
-│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-0391                    │
 │                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-36632 │          │ will_not_fix        │                               │               │ python: RecursionError: maximum recursion depth exceeded     │
 │                             │                │          │                     │                               │               │ while calling a Python object                                │
@@ -198,6 +206,9 @@ Total: 178 (UNKNOWN: 0, LOW: 146, MEDIUM: 29, HIGH: 3, CRITICAL: 0)
 │                             │ CVE-2024-0450  │          │ affected            │                               │               │ python: The zipfile module is vulnerable to zip-bombs        │
 │                             │                │          │                     │                               │               │ leading to denial of...                                      │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0450                    │
+│                             ├────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-4032  │ LOW      │                     │                               │               │ python: incorrect IPv4 and IPv6 private ranges               │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4032                    │
 ├─────────────────────────────┼────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │ python3                     │ CVE-2023-6597  │ HIGH     │                     │                               │               │ python: Path traversal on tempfile.TemporaryDirectory        │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6597                    │
@@ -205,10 +216,6 @@ Total: 178 (UNKNOWN: 0, LOW: 146, MEDIUM: 29, HIGH: 3, CRITICAL: 0)
 │                             │ CVE-2021-23336 │ MEDIUM   │                     │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
-│                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2022-0391  │          │                     │                               │               │ python: urllib.parse does not sanitize URLs containing ASCII │
-│                             │                │          │                     │                               │               │ newline and tabs                                             │
-│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-0391                    │
 │                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-36632 │          │ will_not_fix        │                               │               │ python: RecursionError: maximum recursion depth exceeded     │
 │                             │                │          │                     │                               │               │ while calling a Python object                                │
@@ -217,6 +224,9 @@ Total: 178 (UNKNOWN: 0, LOW: 146, MEDIUM: 29, HIGH: 3, CRITICAL: 0)
 │                             │ CVE-2024-0450  │          │ affected            │                               │               │ python: The zipfile module is vulnerable to zip-bombs        │
 │                             │                │          │                     │                               │               │ leading to denial of...                                      │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0450                    │
+│                             ├────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-4032  │ LOW      │                     │                               │               │ python: incorrect IPv4 and IPv6 private ranges               │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4032                    │
 ├─────────────────────────────┼────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │ python3-libs                │ CVE-2023-6597  │ HIGH     │                     │                               │               │ python: Path traversal on tempfile.TemporaryDirectory        │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6597                    │
@@ -224,10 +234,6 @@ Total: 178 (UNKNOWN: 0, LOW: 146, MEDIUM: 29, HIGH: 3, CRITICAL: 0)
 │                             │ CVE-2021-23336 │ MEDIUM   │                     │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
-│                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2022-0391  │          │                     │                               │               │ python: urllib.parse does not sanitize URLs containing ASCII │
-│                             │                │          │                     │                               │               │ newline and tabs                                             │
-│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-0391                    │
 │                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-36632 │          │ will_not_fix        │                               │               │ python: RecursionError: maximum recursion depth exceeded     │
 │                             │                │          │                     │                               │               │ while calling a Python object                                │
@@ -236,12 +242,19 @@ Total: 178 (UNKNOWN: 0, LOW: 146, MEDIUM: 29, HIGH: 3, CRITICAL: 0)
 │                             │ CVE-2024-0450  │          │ affected            │                               │               │ python: The zipfile module is vulnerable to zip-bombs        │
 │                             │                │          │                     │                               │               │ leading to denial of...                                      │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0450                    │
-├─────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-pip-wheel           │ CVE-2024-35195 │          │ under_investigation │ 21.3.1-1.el9                  │               │ requests: subsequent requests to the same host ignore cert   │
+│                             ├────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-4032  │ LOW      │                     │                               │               │ python: incorrect IPv4 and IPv6 private ranges               │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4032                    │
+├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-pip-wheel           │ CVE-2024-35195 │ MEDIUM   │ under_investigation │ 21.3.1-1.el9                  │               │ requests: subsequent requests to the same host ignore cert   │
 │                             │                │          │                     │                               │               │ verification                                                 │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-35195                   │
-│                             ├────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-3572  │ LOW      │ affected            │                               │               │ python-pip: Incorrect handling of unicode separators in git  │
+│                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-37891 │          │ affected            │                               │               │ urllib3: proxy-authorization request header is not stripped  │
+│                             │                │          │                     │                               │               │ during cross-origin redirects                                │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-37891                   │
+│                             ├────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2021-3572  │ LOW      │                     │                               │               │ python-pip: Incorrect handling of unicode separators in git  │
 │                             │                │          │                     │                               │               │ references                                                   │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-3572                    │
 ├─────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
@@ -277,12 +290,12 @@ Total: 178 (UNKNOWN: 0, LOW: 146, MEDIUM: 29, HIGH: 3, CRITICAL: 0)
 ├─────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ tcpdump                     │ CVE-2024-2397  │          │ affected            │ 14:4.99.0-9.el9               │               │ tcpdump: Crafted .pcap file may lead to Denial of Service    │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-2397                    │
-├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ tpm2-tss                    │ CVE-2024-29040 │ MEDIUM   │ under_investigation │ 3.2.3-1.el9                   │               │ tpm2-tss: arbitrary quote data may go undetected by          │
+├─────────────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ tpm2-tss                    │ CVE-2024-29040 │ MEDIUM   │                     │ 3.2.3-1.el9                   │               │ tpm2-tss: arbitrary quote data may go undetected by          │
 │                             │                │          │                     │                               │               │ Fapi_VerifyQuote                                             │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-29040                   │
-├─────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ vim-minimal                 │ CVE-2022-0413  │          │ affected            │ 2:8.2.2637-20.el9_1           │               │ vim: Use after free in src/ex_cmds.c                         │
+├─────────────────────────────┼────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ vim-minimal                 │ CVE-2022-0413  │          │                     │ 2:8.2.2637-20.el9_1           │               │ vim: Use after free in src/ex_cmds.c                         │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-0413                    │
 │                             ├────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2020-20703 │ LOW      │ will_not_fix        │                               │               │ vim: buffer overflow                                         │
