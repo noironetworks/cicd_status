@@ -10,7 +10,7 @@ urllib3           1.26.5                              1.26.19                   
 
 quay.io/noiro/cnideploy:6.1.1.1.81c2369.z (redhat 9.4)
 ======================================================
-Total: 181 (UNKNOWN: 0, LOW: 149, MEDIUM: 30, HIGH: 2, CRITICAL: 0)
+Total: 181 (UNKNOWN: 0, LOW: 151, MEDIUM: 30, HIGH: 0, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -55,6 +55,12 @@ Total: 181 (UNKNOWN: 0, LOW: 149, MEDIUM: 30, HIGH: 2, CRITICAL: 0)
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ krb5-libs                   │ CVE-2024-26462 │ MEDIUM   │ affected            │ 1.21.1-1.el9                  │               │ krb5: Memory leak at /krb5/src/kdc/ndr.c                     │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26462                   │
+│                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-37370 │          │                     │                               │               │ krb5: GSS message token handling                             │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-37370                   │
+│                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-37371 │          │                     │                               │               │ krb5: GSS message token handling                             │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-37371                   │
 │                             ├────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-26458 │ LOW      │                     │                               │               │ krb5: Memory leak at /krb5/src/lib/rpc/pmap_rmt.c            │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26458                   │
@@ -206,41 +212,35 @@ Total: 181 (UNKNOWN: 0, LOW: 149, MEDIUM: 30, HIGH: 2, CRITICAL: 0)
 │                             │                │          │                     │                               │               │                                                              │
 │                             │                │          │                     │                               │               │                                                              │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3                     │ CVE-2023-6597  │ HIGH     │ affected            │ 3.9.18-3.el9_4.1              │               │ python: Path traversal on tempfile.TemporaryDirectory        │
-│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6597                    │
-│                             ├────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-23336 │ MEDIUM   │                     │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+│ python3                     │ CVE-2021-23336 │ MEDIUM   │ affected            │ 3.9.18-3.el9_4.1              │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-36632 │          │ will_not_fix        │                               │               │ python: RecursionError: maximum recursion depth exceeded     │
 │                             │                │          │                     │                               │               │ while calling a Python object                                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-36632                   │
-│                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-0450  │          │ affected            │                               │               │ python: The zipfile module is vulnerable to zip-bombs        │
-│                             │                │          │                     │                               │               │ leading to denial of...                                      │
-│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0450                    │
-│                             ├────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-4032  │ LOW      │                     │                               │               │ python: incorrect IPv4 and IPv6 private ranges               │
+│                             ├────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-4032  │ LOW      │ affected            │                               │               │ python: incorrect IPv4 and IPv6 private ranges               │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4032                    │
+│                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-5642  │          │                     │                               │               │ python: Invalid value for OpenSSL API may cause Buffer       │
+│                             │                │          │                     │                               │               │ over-read when NPN...                                        │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-5642                    │
 ├─────────────────────────────┼────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-libs                │ CVE-2023-6597  │ HIGH     │                     │                               │               │ python: Path traversal on tempfile.TemporaryDirectory        │
-│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-6597                    │
-│                             ├────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-23336 │ MEDIUM   │                     │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+│ python3-libs                │ CVE-2021-23336 │ MEDIUM   │                     │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-36632 │          │ will_not_fix        │                               │               │ python: RecursionError: maximum recursion depth exceeded     │
 │                             │                │          │                     │                               │               │ while calling a Python object                                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-36632                   │
-│                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-0450  │          │ affected            │                               │               │ python: The zipfile module is vulnerable to zip-bombs        │
-│                             │                │          │                     │                               │               │ leading to denial of...                                      │
-│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0450                    │
-│                             ├────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-4032  │ LOW      │                     │                               │               │ python: incorrect IPv4 and IPv6 private ranges               │
+│                             ├────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-4032  │ LOW      │ affected            │                               │               │ python: incorrect IPv4 and IPv6 private ranges               │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4032                    │
+│                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-5642  │          │                     │                               │               │ python: Invalid value for OpenSSL API may cause Buffer       │
+│                             │                │          │                     │                               │               │ over-read when NPN...                                        │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-5642                    │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ python3-pip-wheel           │ CVE-2024-35195 │ MEDIUM   │ under_investigation │ 21.2.3-8.el9                  │               │ requests: subsequent requests to the same host ignore cert   │
 │                             │                │          │                     │                               │               │ verification                                                 │
