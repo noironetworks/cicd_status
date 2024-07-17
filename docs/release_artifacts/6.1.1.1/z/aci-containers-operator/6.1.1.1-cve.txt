@@ -1,12 +1,12 @@
-NAME               INSTALLED  FIXED-IN  TYPE       VULNERABILITY        SEVERITY 
-idna               2.10       3.7       python     GHSA-jjg7-2v4v-x38h  Medium    
-k8s.io/kubernetes  v1.29.0    1.29.4    go-module  GHSA-pxhw-596r-rwq5  Low       
-requests           2.25.1     2.31.0    python     GHSA-j8r2-6x86-q33q  Medium    
-requests           2.25.1     2.32.0    python     GHSA-9wx4-h78v-vm56  Medium    
-setuptools         53.0.0     65.5.1    python     GHSA-r9hx-vwmv-q579  High      
-urllib3            1.26.5     1.26.17   python     GHSA-v845-jxx5-vc9f  Medium    
-urllib3            1.26.5     1.26.18   python     GHSA-g4mx-q9vg-27p4  Medium    
-urllib3            1.26.5     1.26.19   python     GHSA-34jh-p97f-mpxf  Medium
+NAME        INSTALLED  FIXED-IN  TYPE    VULNERABILITY        SEVERITY 
+idna        2.10       3.7       python  GHSA-jjg7-2v4v-x38h  Medium    
+requests    2.25.1     2.31.0    python  GHSA-j8r2-6x86-q33q  Medium    
+requests    2.25.1     2.32.0    python  GHSA-9wx4-h78v-vm56  Medium    
+setuptools  53.0.0     65.5.1    python  GHSA-r9hx-vwmv-q579  High      
+setuptools  53.0.0     70.0.0    python  GHSA-cx63-2mw6-8hw5  High      
+urllib3     1.26.5     1.26.17   python  GHSA-v845-jxx5-vc9f  Medium    
+urllib3     1.26.5     1.26.18   python  GHSA-g4mx-q9vg-27p4  Medium    
+urllib3     1.26.5     1.26.19   python  GHSA-34jh-p97f-mpxf  Medium
 
 quay.io/noiro/aci-containers-operator:6.1.1.1.81c2369.z (redhat 9.4)
 ====================================================================
@@ -164,7 +164,7 @@ Total: 189 (UNKNOWN: 0, LOW: 156, MEDIUM: 33, HIGH: 0, CRITICAL: 0)
 │                             │                  │          │                     │                               │               │ function                                                     │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-2953                    │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ openssh                     │ CVE-2023-51767   │ MEDIUM   │ will_not_fix        │ 8.7p1-38.el9_4.1              │               │ openssh: authentication bypass via row hammer attack         │
+│ openssh                     │ CVE-2023-51767   │ MEDIUM   │ will_not_fix        │ 8.7p1-38.el9_4.4              │               │ openssh: authentication bypass via row hammer attack         │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-51767                   │
 │                             ├──────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2016-20012   │ LOW      │                     │                               │               │ openssh: Public key information leak                         │
@@ -659,15 +659,3 @@ Total: 189 (UNKNOWN: 0, LOW: 156, MEDIUM: 33, HIGH: 0, CRITICAL: 0)
 │                             │                  │          │                     │                               │               │ map.c                                                        │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-22667                   │
 └─────────────────────────────┴──────────────────┴──────────┴─────────────────────┴───────────────────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
-
-usr/local/bin/aci-containers-operator (gobinary)
-================================================
-Total: 1 (UNKNOWN: 0, LOW: 1, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
-
-┌───────────────────┬───────────────┬──────────┬────────┬───────────────────┬─────────────────────────┬──────────────────────────────────────────────────────────┐
-│      Library      │ Vulnerability │ Severity │ Status │ Installed Version │      Fixed Version      │                          Title                           │
-├───────────────────┼───────────────┼──────────┼────────┼───────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────┤
-│ k8s.io/kubernetes │ CVE-2024-3177 │ LOW      │ fixed  │ v1.29.0           │ 1.27.13, 1.29.4, 1.28.9 │ kubernetes: kube-apiserver: bypassing mountable secrets  │
-│                   │               │          │        │                   │                         │ policy imposed by the ServiceAccount admission plugin... │
-│                   │               │          │        │                   │                         │ https://avd.aquasec.com/nvd/cve-2024-3177                │
-└───────────────────┴───────────────┴──────────┴────────┴───────────────────┴─────────────────────────┴──────────────────────────────────────────────────────────┘
