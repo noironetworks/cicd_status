@@ -11,7 +11,7 @@ urllib3           1.26.5                              1.26.19                   
 
 quay.io/noiro/cnideploy:6.1.1.1.81c2369.z (redhat 9.4)
 ======================================================
-Total: 179 (UNKNOWN: 0, LOW: 151, MEDIUM: 28, HIGH: 0, CRITICAL: 0)
+Total: 179 (UNKNOWN: 0, LOW: 149, MEDIUM: 28, HIGH: 2, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -215,37 +215,39 @@ Total: 179 (UNKNOWN: 0, LOW: 151, MEDIUM: 28, HIGH: 0, CRITICAL: 0)
 │                             │                │          │                     │                               │               │                                                              │
 │                             │                │          │                     │                               │               │                                                              │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3                     │ CVE-2021-23336 │ MEDIUM   │ affected            │ 3.9.18-3.el9_4.1              │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+│ python3                     │ CVE-2021-23336 │ MEDIUM   │ affected            │ 3.9.18-3.el9_4.3              │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-36632 │          │ will_not_fix        │                               │               │ python: RecursionError: maximum recursion depth exceeded     │
 │                             │                │          │                     │                               │               │ while calling a Python object                                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-36632                   │
-│                             ├────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-4032  │ LOW      │ affected            │                               │               │ python: incorrect IPv4 and IPv6 private ranges               │
-│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4032                    │
-├─────────────────────────────┼────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-libs                │ CVE-2021-23336 │ MEDIUM   │                     │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+├─────────────────────────────┼────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-libs                │ CVE-2021-23336 │          │ affected            │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-36632 │          │ will_not_fix        │                               │               │ python: RecursionError: maximum recursion depth exceeded     │
 │                             │                │          │                     │                               │               │ while calling a Python object                                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-36632                   │
-│                             ├────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-4032  │ LOW      │ affected            │                               │               │ python: incorrect IPv4 and IPv6 private ranges               │
-│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4032                    │
-├─────────────────────────────┼────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-pip-wheel           │ CVE-2021-3572  │          │                     │ 21.2.3-8.el9                  │               │ python-pip: Incorrect handling of unicode separators in git  │
+├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-pip-wheel           │ CVE-2021-3572  │ LOW      │ affected            │ 21.2.3-8.el9                  │               │ python-pip: Incorrect handling of unicode separators in git  │
 │                             │                │          │                     │                               │               │ references                                                   │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-3572                    │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ python3-requests            │ CVE-2024-35195 │ MEDIUM   │ under_investigation │ 2.25.1-8.el9                  │               │ requests: subsequent requests to the same host ignore cert   │
 │                             │                │          │                     │                               │               │ verification                                                 │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-35195                   │
-├─────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-urllib3             │ CVE-2024-37891 │          │ affected            │ 1.26.5-5.el9                  │               │ urllib3: proxy-authorization request header is not stripped  │
+├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-setuptools          │ CVE-2024-6345  │ HIGH     │ affected            │ 53.0.0-12.el9                 │               │ pypa/setuptools: Remote code execution via download          │
+│                             │                │          │                     │                               │               │ functions in the package_index module in...                  │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-6345                    │
+├─────────────────────────────┤                │          │                     │                               ├───────────────┤                                                              │
+│ python3-setuptools-wheel    │                │          │                     │                               │               │                                                              │
+│                             │                │          │                     │                               │               │                                                              │
+│                             │                │          │                     │                               │               │                                                              │
+├─────────────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-urllib3             │ CVE-2024-37891 │ MEDIUM   │                     │ 1.26.5-5.el9                  │               │ urllib3: proxy-authorization request header is not stripped  │
 │                             │                │          │                     │                               │               │ during cross-origin redirects                                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-37891                   │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
@@ -255,7 +257,7 @@ Total: 179 (UNKNOWN: 0, LOW: 151, MEDIUM: 28, HIGH: 0, CRITICAL: 0)
 │                             │ CVE-2024-0232  │          │ affected            │                               │               │ sqlite: use-after-free bug in jsonParseAddNodeArray          │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0232                    │
 ├─────────────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ systemd                     │ CVE-2021-3997  │ MEDIUM   │                     │ 252-32.el9_4                  │               │ systemd: Uncontrolled recursion in systemd-tmpfiles when     │
+│ systemd                     │ CVE-2021-3997  │ MEDIUM   │                     │ 252-32.el9_4.6                │               │ systemd: Uncontrolled recursion in systemd-tmpfiles when     │
 │                             │                │          │                     │                               │               │ removing files                                               │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-3997                    │
 ├─────────────────────────────┤                │          │                     │                               ├───────────────┤                                                              │
