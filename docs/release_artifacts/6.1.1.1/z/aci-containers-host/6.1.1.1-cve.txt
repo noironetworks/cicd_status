@@ -3,7 +3,7 @@ k8s.io/kubernetes  v1.30.2    1.30.3    go-module  GHSA-82m2-cv7p-4m75  Medium
 
 quay.io/noiro/aci-containers-host:6.1.1.1.81c2369.z (redhat 9.4)
 ================================================================
-Total: 71 (UNKNOWN: 0, LOW: 44, MEDIUM: 26, HIGH: 1, CRITICAL: 0)
+Total: 73 (UNKNOWN: 0, LOW: 46, MEDIUM: 26, HIGH: 1, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬──────────────┬───────────────────────────────┬────────────────┬─────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │    Status    │       Installed Version       │ Fixed Version  │                            Title                            │
@@ -109,14 +109,22 @@ Total: 71 (UNKNOWN: 0, LOW: 44, MEDIUM: 26, HIGH: 1, CRITICAL: 0)
 ├─────────────────────────────┼────────────────┤          │              ├───────────────────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
 │ ncurses-base                │ CVE-2022-29458 │          │              │ 6.2-10.20210508.el9           │                │ ncurses: segfaulting OOB read                               │
 │                             │                │          │              │                               │                │ https://avd.aquasec.com/nvd/cve-2022-29458                  │
-│                             ├────────────────┤          │              │                               ├────────────────┼─────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-50495 │          │              │                               │                │ ncurses: segmentation fault via _nc_wrap_entry()            │
+│                             ├────────────────┤          ├──────────────┤                               ├────────────────┼─────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-45918 │          │ affected     │                               │                │ ncurses: NULL pointer dereference in tgetstr in             │
+│                             │                │          │              │                               │                │ tinfo/lib_termcap.c                                         │
+│                             │                │          │              │                               │                │ https://avd.aquasec.com/nvd/cve-2023-45918                  │
+│                             ├────────────────┤          ├──────────────┤                               ├────────────────┼─────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-50495 │          │ will_not_fix │                               │                │ ncurses: segmentation fault via _nc_wrap_entry()            │
 │                             │                │          │              │                               │                │ https://avd.aquasec.com/nvd/cve-2023-50495                  │
 ├─────────────────────────────┼────────────────┤          │              │                               ├────────────────┼─────────────────────────────────────────────────────────────┤
 │ ncurses-libs                │ CVE-2022-29458 │          │              │                               │                │ ncurses: segfaulting OOB read                               │
 │                             │                │          │              │                               │                │ https://avd.aquasec.com/nvd/cve-2022-29458                  │
-│                             ├────────────────┤          │              │                               ├────────────────┼─────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-50495 │          │              │                               │                │ ncurses: segmentation fault via _nc_wrap_entry()            │
+│                             ├────────────────┤          ├──────────────┤                               ├────────────────┼─────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-45918 │          │ affected     │                               │                │ ncurses: NULL pointer dereference in tgetstr in             │
+│                             │                │          │              │                               │                │ tinfo/lib_termcap.c                                         │
+│                             │                │          │              │                               │                │ https://avd.aquasec.com/nvd/cve-2023-45918                  │
+│                             ├────────────────┤          ├──────────────┤                               ├────────────────┼─────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-50495 │          │ will_not_fix │                               │                │ ncurses: segmentation fault via _nc_wrap_entry()            │
 │                             │                │          │              │                               │                │ https://avd.aquasec.com/nvd/cve-2023-50495                  │
 ├─────────────────────────────┼────────────────┤          ├──────────────┼───────────────────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
 │ openldap                    │ CVE-2023-2953  │          │ affected     │ 2.6.6-3.el9                   │                │ openldap: null pointer dereference in ber_memalloc_x        │
@@ -225,7 +233,7 @@ Total: 71 (UNKNOWN: 0, LOW: 44, MEDIUM: 26, HIGH: 1, CRITICAL: 0)
 │                             │                │          │              │                               │                │ references                                                  │
 │                             │                │          │              │                               │                │ https://avd.aquasec.com/nvd/cve-2021-3572                   │
 ├─────────────────────────────┼────────────────┼──────────┤              ├───────────────────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
-│ python3-setuptools-wheel    │ CVE-2024-6345  │ HIGH     │              │ 53.0.0-12.el9                 │                │ pypa/setuptools: Remote code execution via download         │
+│ python3-setuptools-wheel    │ CVE-2024-6345  │ HIGH     │              │ 53.0.0-13.el9                 │                │ pypa/setuptools: Remote code execution via download         │
 │                             │                │          │              │                               │                │ functions in the package_index module in...                 │
 │                             │                │          │              │                               │                │ https://avd.aquasec.com/nvd/cve-2024-6345                   │
 ├─────────────────────────────┼────────────────┼──────────┼──────────────┼───────────────────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
