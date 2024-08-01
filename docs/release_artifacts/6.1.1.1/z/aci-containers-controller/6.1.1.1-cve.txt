@@ -1,5 +1,6 @@
 NAME                                   INSTALLED             FIXED-IN  TYPE       VULNERABILITY        SEVERITY 
 github.com/cyphar/filepath-securejoin  v0.2.3                0.2.4     go-module  GHSA-6xv5-86q9-7xr8  Medium    
+github.com/docker/docker               v23.0.3+incompatible  23.0.14   go-module  GHSA-v23v-6jw2-98fq  Critical  
 github.com/docker/docker               v23.0.3+incompatible  24.0.9    go-module  GHSA-xw73-rw38-6vjc  Medium    
 github.com/docker/docker               v23.0.3+incompatible  23.0.11   go-module  GHSA-mq39-4gv4-mvpx  Medium    
 github.com/docker/docker               v23.0.3+incompatible  23.0.8    go-module  GHSA-jq35-85cj-fj4p  Medium    
@@ -30,7 +31,7 @@ urllib3                                1.26.5                1.26.19   python   
 
 quay.io/noiro/aci-containers-controller:6.1.1.1.81c2369.z (redhat 9.4)
 ======================================================================
-Total: 177 (UNKNOWN: 0, LOW: 149, MEDIUM: 26, HIGH: 2, CRITICAL: 0)
+Total: 179 (UNKNOWN: 0, LOW: 151, MEDIUM: 26, HIGH: 2, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -146,14 +147,22 @@ Total: 177 (UNKNOWN: 0, LOW: 149, MEDIUM: 26, HIGH: 2, CRITICAL: 0)
 ├─────────────────────────────┼────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ ncurses-base                │ CVE-2022-29458 │          │                     │ 6.2-10.20210508.el9           │               │ ncurses: segfaulting OOB read                                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-29458                   │
-│                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-50495 │          │                     │                               │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
+│                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-45918 │          │ affected            │                               │               │ ncurses: NULL pointer dereference in tgetstr in              │
+│                             │                │          │                     │                               │               │ tinfo/lib_termcap.c                                          │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-45918                   │
+│                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-50495 │          │ will_not_fix        │                               │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
 ├─────────────────────────────┼────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │ ncurses-libs                │ CVE-2022-29458 │          │                     │                               │               │ ncurses: segfaulting OOB read                                │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-29458                   │
-│                             ├────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-50495 │          │                     │                               │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
+│                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-45918 │          │ affected            │                               │               │ ncurses: NULL pointer dereference in tgetstr in              │
+│                             │                │          │                     │                               │               │ tinfo/lib_termcap.c                                          │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-45918                   │
+│                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-50495 │          │ will_not_fix        │                               │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
 ├─────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ openldap                    │ CVE-2023-2953  │          │ affected            │ 2.6.6-3.el9                   │               │ openldap: null pointer dereference in ber_memalloc_x         │
@@ -655,7 +664,7 @@ Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 1, HIGH: 0, CRITICAL: 0)
 
 usr/local/bin/istioctl (gobinary)
 =================================
-Total: 19 (UNKNOWN: 0, LOW: 0, MEDIUM: 16, HIGH: 3, CRITICAL: 0)
+Total: 20 (UNKNOWN: 0, LOW: 0, MEDIUM: 16, HIGH: 3, CRITICAL: 1)
 
 ┌───────────────────────────────────────┬─────────────────────┬──────────┬──────────┬──────────────────────┬─────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │                Library                │    Vulnerability    │ Severity │  Status  │  Installed Version   │        Fixed Version        │                            Title                             │
@@ -663,8 +672,11 @@ Total: 19 (UNKNOWN: 0, LOW: 0, MEDIUM: 16, HIGH: 3, CRITICAL: 0)
 │ github.com/cyphar/filepath-securejoin │ GHSA-6xv5-86q9-7xr8 │ MEDIUM   │ fixed    │ v0.2.3               │ 0.2.4                       │ SecureJoin: on windows, paths outside of the rootfs could be │
 │                                       │                     │          │          │                      │                             │ inadvertently produced...                                    │
 │                                       │                     │          │          │                      │                             │ https://github.com/advisories/GHSA-6xv5-86q9-7xr8            │
-├───────────────────────────────────────┼─────────────────────┤          │          ├──────────────────────┼─────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ github.com/docker/docker              │ CVE-2024-24557      │          │          │ v23.0.3+incompatible │ 24.0.9, 25.0.2              │ moby: classic builder cache poisoning                        │
+├───────────────────────────────────────┼─────────────────────┼──────────┤          ├──────────────────────┼─────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ github.com/docker/docker              │ CVE-2024-41110      │ CRITICAL │          │ v23.0.3+incompatible │ 23.0.14, 26.1.4, 27.1.0     │ moby: Authz zero length regression                           │
+│                                       │                     │          │          │                      │                             │ https://avd.aquasec.com/nvd/cve-2024-41110                   │
+│                                       ├─────────────────────┼──────────┤          │                      ├─────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                                       │ CVE-2024-24557      │ MEDIUM   │          │                      │ 24.0.9, 25.0.2              │ moby: classic builder cache poisoning                        │
 │                                       │                     │          │          │                      │                             │ https://avd.aquasec.com/nvd/cve-2024-24557                   │
 │                                       ├─────────────────────┤          │          │                      ├─────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │                                       │ CVE-2024-29018      │          │          │                      │ 26.0.0-rc3, 25.0.5, 23.0.11 │ moby: external DNS requests from 'internal' networks could   │
