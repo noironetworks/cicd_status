@@ -3885,48 +3885,43 @@ releases:
         U: 0
       severity_type: grype
     - base-image:
-      - base_cve_error: ''
-        cve: release_artifacts/6.0.4.3/z/cnideploy/6.0.4.3-cve-base.txt
+      - cve: release_artifacts/6.0.4.3/z/cnideploy/6.0.4.3-cve-base.txt
         severity:
         - C: 0
-          H: 5
-          L: 3
-          M: 11
+          H: 2
+          L: 0
+          M: 6
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
-        severity_type: quay
-        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
+        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
       build-logs: release_artifacts/6.0.4.3/z/cnideploy/6.0.4.3-buildlog.txt
-      build-time: 2024-06-28 11:27:20 PDT
+      build-time: 2024-08-02 03:11:47 PDT
       commit:
-      - link: https://github.com/noironetworks/aci-containers/commit/6a9a61c0b679f979573c67d3c9828bee8b55e45b
-        sha: 6a9a61c0b679f979573c67d3c9828bee8b55e45b
-      cve: release_artifacts/6.0.4.3/z/cnideploy/6.0.4.3-quay-cve.txt
-      cve_error: ''
+      - link: https://github.com/noironetworks/aci-containers/commit/3ffa9958082d2187c9fb238933dd6bbf9811c280
+        sha: 3ffa9958082d2187c9fb238933dd6bbf9811c280
+      cve: release_artifacts/6.0.4.3/z/cnideploy/6.0.4.3-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.4.3.81c2369.z/images/sha256-e934f35d431884986553e3516ab1d0a3327db3fe3abf79a21b5636b1469c291e?context=explore
-        sha: e934f35d431884986553e3516ab1d0a3327db3fe3abf79a21b5636b1469c291e
+      - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.4.3.81c2369.z/images/sha256-8fca6f5f2c9db04106d2cab2f3140276d84af2f15c433f4be5e1ea74bb5971af?context=explore
+        sha: 8fca6f5f2c9db04106d2cab2f3140276d84af2f15c433f4be5e1ea74bb5971af
         tag: 6.0.4.3.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.4.3.81c2369.062824.9252/images/sha256-e934f35d431884986553e3516ab1d0a3327db3fe3abf79a21b5636b1469c291e?context=explore
-        sha: e934f35d431884986553e3516ab1d0a3327db3fe3abf79a21b5636b1469c291e
-        tag: 6.0.4.3.81c2369.062824.9252
+      - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.4.3.81c2369.080224.9533/images/sha256-8fca6f5f2c9db04106d2cab2f3140276d84af2f15c433f4be5e1ea74bb5971af?context=explore
+        sha: 8fca6f5f2c9db04106d2cab2f3140276d84af2f15c433f4be5e1ea74bb5971af
+        tag: 6.0.4.3.81c2369.080224.9533
       name: cnideploy
       quay:
       - link: https://quay.io/noiro/cnideploy:6.0.4.3.81c2369.z
-        sha: e934f35d431884986553e3516ab1d0a3327db3fe3abf79a21b5636b1469c291e
+        sha: 8fca6f5f2c9db04106d2cab2f3140276d84af2f15c433f4be5e1ea74bb5971af
         tag: 6.0.4.3.81c2369.z
-      - link: https://quay.io/noiro/cnideploy:6.0.4.3.81c2369.062824.9252
-        sha: e934f35d431884986553e3516ab1d0a3327db3fe3abf79a21b5636b1469c291e
-        tag: 6.0.4.3.81c2369.062824.9252
+      - link: https://quay.io/noiro/cnideploy:6.0.4.3.81c2369.080224.9533
+        sha: 8fca6f5f2c9db04106d2cab2f3140276d84af2f15c433f4be5e1ea74bb5971af
+        tag: 6.0.4.3.81c2369.080224.9533
       sbom: release_artifacts/6.0.4.3/z/cnideploy/6.0.4.3-sbom.txt
       severity:
       - C: 0
-        H: 0
+        H: 2
         L: 0
-        M: 0
-        U: 1
-      severity_link: https://quay.io/repository/noiro/cnideploy/manifest/sha256:e934f35d431884986553e3516ab1d0a3327db3fe3abf79a21b5636b1469c291e?tab=vulnerabilities
-      severity_type: quay
+        M: 7
+        U: 0
+      severity_type: grype
     - base-image:
       - base_cve_error: ''
         cve: release_artifacts/6.0.4.3/z/aci-containers-operator/6.0.4.3-cve-base.txt
@@ -4142,7 +4137,7 @@ releases:
         U: 2
       severity_link: https://quay.io/repository/noiro/aci-containers-host-ovscni/manifest/sha256:3647247a3968e281dd7cf97e234d52b9ae82ef10b8f5b46a6d78cd3ff7002ec0?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-08-02 03:10:07 PDT
+    last_updated: 2024-08-02 03:11:47 PDT
     release_name: 6.0.4.3.z
   - acc_provision: []
     container_images: []
