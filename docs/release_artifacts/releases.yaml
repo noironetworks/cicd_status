@@ -3961,39 +3961,35 @@ releases:
         U: 0
       severity_type: grype
     - base-image:
-      - base_cve_error: ''
-        cve: release_artifacts/6.0.4.3/z/openvswitch/6.0.4.3-cve-base.txt
+      - cve: release_artifacts/6.0.4.3/z/openvswitch/6.0.4.3-cve-base.txt
         severity:
         - C: 0
-          H: 3
-          L: 2
-          M: 5
+          H: 0
+          L: 0
+          M: 0
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d?tab=vulnerabilities
-        severity_type: quay
-        sha: 67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d
+        sha: bc552efb4966aaa44b02532be3168ac1ff18e2af299d0fe89502a1d9fabafbc5
       build-logs: release_artifacts/6.0.4.3/z/openvswitch/6.0.4.3-buildlog.txt
-      build-time: 2024-06-28 11:30:49 PDT
+      build-time: 2024-08-02 03:15:25 PDT
       commit:
-      - link: https://github.com/noironetworks/aci-containers/commit/6a9a61c0b679f979573c67d3c9828bee8b55e45b
-        sha: 6a9a61c0b679f979573c67d3c9828bee8b55e45b
-      cve: release_artifacts/6.0.4.3/z/openvswitch/6.0.4.3-quay-cve.txt
-      cve_error: ''
+      - link: https://github.com/noironetworks/aci-containers/commit/3ffa9958082d2187c9fb238933dd6bbf9811c280
+        sha: 3ffa9958082d2187c9fb238933dd6bbf9811c280
+      cve: release_artifacts/6.0.4.3/z/openvswitch/6.0.4.3-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.4.3.81c2369.z/images/sha256-ca337ceeb7d7ba76c478829d96655e4fe9b5e545e4307777bcb84497de1b2beb?context=explore
-        sha: ca337ceeb7d7ba76c478829d96655e4fe9b5e545e4307777bcb84497de1b2beb
+      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.4.3.81c2369.z/images/sha256-01df74e84cbe693298418df30a056c2285a3bb10712a7862ce23c604fdd36605?context=explore
+        sha: 01df74e84cbe693298418df30a056c2285a3bb10712a7862ce23c604fdd36605
         tag: 6.0.4.3.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.4.3.81c2369.062824.9252/images/sha256-ca337ceeb7d7ba76c478829d96655e4fe9b5e545e4307777bcb84497de1b2beb?context=explore
-        sha: ca337ceeb7d7ba76c478829d96655e4fe9b5e545e4307777bcb84497de1b2beb
-        tag: 6.0.4.3.81c2369.062824.9252
+      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.4.3.81c2369.080224.9533/images/sha256-01df74e84cbe693298418df30a056c2285a3bb10712a7862ce23c604fdd36605?context=explore
+        sha: 01df74e84cbe693298418df30a056c2285a3bb10712a7862ce23c604fdd36605
+        tag: 6.0.4.3.81c2369.080224.9533
       name: openvswitch
       quay:
       - link: https://quay.io/noiro/openvswitch:6.0.4.3.81c2369.z
-        sha: ca337ceeb7d7ba76c478829d96655e4fe9b5e545e4307777bcb84497de1b2beb
+        sha: 01df74e84cbe693298418df30a056c2285a3bb10712a7862ce23c604fdd36605
         tag: 6.0.4.3.81c2369.z
-      - link: https://quay.io/noiro/openvswitch:6.0.4.3.81c2369.062824.9252
-        sha: ca337ceeb7d7ba76c478829d96655e4fe9b5e545e4307777bcb84497de1b2beb
-        tag: 6.0.4.3.81c2369.062824.9252
+      - link: https://quay.io/noiro/openvswitch:6.0.4.3.81c2369.080224.9533
+        sha: 01df74e84cbe693298418df30a056c2285a3bb10712a7862ce23c604fdd36605
+        tag: 6.0.4.3.81c2369.080224.9533
       sbom: release_artifacts/6.0.4.3/z/openvswitch/6.0.4.3-sbom.txt
       severity:
       - C: 0
@@ -4001,8 +3997,7 @@ releases:
         L: 0
         M: 0
         U: 0
-      severity_link: https://quay.io/repository/noiro/openvswitch/manifest/sha256:ca337ceeb7d7ba76c478829d96655e4fe9b5e545e4307777bcb84497de1b2beb?tab=vulnerabilities
-      severity_type: quay
+      severity_type: grype
     - base-image:
       - base_cve_error: ''
         cve: release_artifacts/6.0.4.3/z/aci-containers-webhook/6.0.4.3-cve-base.txt
@@ -4132,7 +4127,7 @@ releases:
         U: 2
       severity_link: https://quay.io/repository/noiro/aci-containers-host-ovscni/manifest/sha256:3647247a3968e281dd7cf97e234d52b9ae82ef10b8f5b46a6d78cd3ff7002ec0?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-08-02 03:13:21 PDT
+    last_updated: 2024-08-02 03:15:25 PDT
     release_name: 6.0.4.3.z
   - acc_provision: []
     container_images: []
