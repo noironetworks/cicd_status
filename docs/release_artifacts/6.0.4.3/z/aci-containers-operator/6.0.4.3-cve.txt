@@ -1,16 +1,18 @@
 NAME               INSTALLED  FIXED-IN  TYPE       VULNERABILITY        SEVERITY 
 idna               2.10       3.7       python     GHSA-jjg7-2v4v-x38h  Medium    
+k8s.io/kubernetes  v1.29.0    1.29.7    go-module  GHSA-82m2-cv7p-4m75  Medium    
 k8s.io/kubernetes  v1.29.0    1.29.4    go-module  GHSA-pxhw-596r-rwq5  Low       
 requests           2.25.1     2.31.0    python     GHSA-j8r2-6x86-q33q  Medium    
 requests           2.25.1     2.32.0    python     GHSA-9wx4-h78v-vm56  Medium    
 setuptools         53.0.0     65.5.1    python     GHSA-r9hx-vwmv-q579  High      
+setuptools         53.0.0     70.0.0    python     GHSA-cx63-2mw6-8hw5  High      
 urllib3            1.26.5     1.26.17   python     GHSA-v845-jxx5-vc9f  Medium    
 urllib3            1.26.5     1.26.18   python     GHSA-g4mx-q9vg-27p4  Medium    
 urllib3            1.26.5     1.26.19   python     GHSA-34jh-p97f-mpxf  Medium
 
 quay.io/noiro/aci-containers-operator:6.0.4.3.81c2369.z (redhat 9.4)
 ====================================================================
-Total: 190 (UNKNOWN: 0, LOW: 156, MEDIUM: 34, HIGH: 0, CRITICAL: 0)
+Total: 191 (UNKNOWN: 0, LOW: 157, MEDIUM: 32, HIGH: 2, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -138,37 +140,45 @@ Total: 190 (UNKNOWN: 0, LOW: 156, MEDIUM: 34, HIGH: 0, CRITICAL: 0)
 │                             │ CVE-2024-35328   │          │                     │                               │               │ libyaml: denial of service in yaml_parser_parse of the file  │
 │                             │                  │          │                     │                               │               │ /src/libyaml/src/parser.c.                                   │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-35328                   │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-35329   │          │                     │                               │               │ libyaml: vulnerable to a heap-based Buffer Overflow in       │
-│                             │                  │          │                     │                               │               │ yaml_document_add_sequence in api.c                          │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-35329                   │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ libzstd                     │ CVE-2022-4899    │ LOW      │ will_not_fix        │ 1.5.1-2.el9                   │               │ zstd: mysql: buffer overrun in util.c                        │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-4899                    │
 ├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ ncurses                     │ CVE-2022-29458   │          │                     │ 6.2-10.20210508.el9           │               │ ncurses: segfaulting OOB read                                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-29458                   │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-50495   │          │                     │                               │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-45918   │          │ affected            │                               │               │ ncurses: NULL pointer dereference in tgetstr in              │
+│                             │                  │          │                     │                               │               │ tinfo/lib_termcap.c                                          │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-45918                   │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-50495   │          │ will_not_fix        │                               │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
 ├─────────────────────────────┼──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │ ncurses-base                │ CVE-2022-29458   │          │                     │                               │               │ ncurses: segfaulting OOB read                                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-29458                   │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-50495   │          │                     │                               │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-45918   │          │ affected            │                               │               │ ncurses: NULL pointer dereference in tgetstr in              │
+│                             │                  │          │                     │                               │               │ tinfo/lib_termcap.c                                          │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-45918                   │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-50495   │          │ will_not_fix        │                               │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
 ├─────────────────────────────┼──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │ ncurses-libs                │ CVE-2022-29458   │          │                     │                               │               │ ncurses: segfaulting OOB read                                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-29458                   │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2023-50495   │          │                     │                               │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-45918   │          │ affected            │                               │               │ ncurses: NULL pointer dereference in tgetstr in              │
+│                             │                  │          │                     │                               │               │ tinfo/lib_termcap.c                                          │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-45918                   │
+│                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-50495   │          │ will_not_fix        │                               │               │ ncurses: segmentation fault via _nc_wrap_entry()             │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-50495                   │
 ├─────────────────────────────┼──────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ openldap                    │ CVE-2023-2953    │          │ affected            │ 2.6.6-3.el9                   │               │ openldap: null pointer dereference in ber_memalloc_x         │
 │                             │                  │          │                     │                               │               │ function                                                     │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-2953                    │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ openssh                     │ CVE-2023-51767   │ MEDIUM   │ will_not_fix        │ 8.7p1-38.el9                  │               │ openssh: authentication bypass via row hammer attack         │
+│ openssh                     │ CVE-2023-51767   │ MEDIUM   │ will_not_fix        │ 8.7p1-38.el9_4.4              │               │ openssh: authentication bypass via row hammer attack         │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-51767                   │
 │                             ├──────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2016-20012   │ LOW      │                     │                               │               │ openssh: Public key information leak                         │
@@ -209,6 +219,9 @@ Total: 190 (UNKNOWN: 0, LOW: 156, MEDIUM: 34, HIGH: 0, CRITICAL: 0)
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-4741    │          │ will_not_fix        │                               │               │ openssl: Use After Free with SSL_free_buffers                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4741                    │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-5535    │          │                     │                               │               │ openssl: SSL_select_next_proto buffer overread               │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-5535                    │
 ├─────────────────────────────┼──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │ openssl-libs                │ CVE-2023-3446    │          │                     │                               │               │ openssl: Excessive time spent checking DH keys and           │
 │                             │                  │          │                     │                               │               │ parameters                                                   │
@@ -239,6 +252,9 @@ Total: 190 (UNKNOWN: 0, LOW: 156, MEDIUM: 34, HIGH: 0, CRITICAL: 0)
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-4741    │          │ will_not_fix        │                               │               │ openssl: Use After Free with SSL_free_buffers                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4741                    │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-5535    │          │                     │                               │               │ openssl: SSL_select_next_proto buffer overread               │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-5535                    │
 ├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ pcre2                       │ CVE-2022-41409   │          │                     │ 10.40-5.el9                   │               │ pcre2: negative repeat value in a pcre2test subject line     │
 │                             │                  │          │                     │                               │               │ leads to inifinite...                                        │
@@ -248,49 +264,39 @@ Total: 190 (UNKNOWN: 0, LOW: 156, MEDIUM: 34, HIGH: 0, CRITICAL: 0)
 │                             │                  │          │                     │                               │               │                                                              │
 │                             │                  │          │                     │                               │               │                                                              │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3                     │ CVE-2021-23336   │ MEDIUM   │ affected            │ 3.9.18-3.el9_4.1              │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+│ python3                     │ CVE-2021-23336   │ MEDIUM   │ affected            │ 3.9.18-3.el9_4.3              │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                  │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-36632   │          │ will_not_fix        │                               │               │ python: RecursionError: maximum recursion depth exceeded     │
 │                             │                  │          │                     │                               │               │ while calling a Python object                                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-36632                   │
-│                             ├──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-4032    │ LOW      │ affected            │                               │               │ python: incorrect IPv4 and IPv6 private ranges               │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4032                    │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-5642    │          │                     │                               │               │ python: Invalid value for OpenSSL API may cause Buffer       │
-│                             │                  │          │                     │                               │               │ over-read when NPN...                                        │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-5642                    │
-├─────────────────────────────┼──────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-libs                │ CVE-2021-23336   │ MEDIUM   │                     │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+├─────────────────────────────┼──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-libs                │ CVE-2021-23336   │          │ affected            │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                  │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-36632   │          │ will_not_fix        │                               │               │ python: RecursionError: maximum recursion depth exceeded     │
 │                             │                  │          │                     │                               │               │ while calling a Python object                                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-36632                   │
-│                             ├──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-4032    │ LOW      │ affected            │                               │               │ python: incorrect IPv4 and IPv6 private ranges               │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-4032                    │
-│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-5642    │          │                     │                               │               │ python: Invalid value for OpenSSL API may cause Buffer       │
-│                             │                  │          │                     │                               │               │ over-read when NPN...                                        │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-5642                    │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-pip-wheel           │ CVE-2024-35195   │ MEDIUM   │ under_investigation │ 21.2.3-8.el9                  │               │ requests: subsequent requests to the same host ignore cert   │
-│                             │                  │          │                     │                               │               │ verification                                                 │
-│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-35195                   │
-│                             ├──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-3572    │ LOW      │ affected            │                               │               │ python-pip: Incorrect handling of unicode separators in git  │
+│ python3-pip-wheel           │ CVE-2021-3572    │ LOW      │ affected            │ 21.2.3-8.el9                  │               │ python-pip: Incorrect handling of unicode separators in git  │
 │                             │                  │          │                     │                               │               │ references                                                   │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-3572                    │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ python3-requests            │ CVE-2024-35195   │ MEDIUM   │ under_investigation │ 2.25.1-8.el9                  │               │ requests: subsequent requests to the same host ignore cert   │
 │                             │                  │          │                     │                               │               │ verification                                                 │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-35195                   │
-├─────────────────────────────┼──────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-urllib3             │ CVE-2024-37891   │          │ affected            │ 1.26.5-5.el9                  │               │ urllib3: proxy-authorization request header is not stripped  │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-setuptools          │ CVE-2024-6345    │ HIGH     │ affected            │ 53.0.0-12.el9                 │               │ pypa/setuptools: Remote code execution via download          │
+│                             │                  │          │                     │                               │               │ functions in the package_index module in...                  │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-6345                    │
+├─────────────────────────────┤                  │          │                     │                               ├───────────────┤                                                              │
+│ python3-setuptools-wheel    │                  │          │                     │                               │               │                                                              │
+│                             │                  │          │                     │                               │               │                                                              │
+│                             │                  │          │                     │                               │               │                                                              │
+├─────────────────────────────┼──────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-urllib3             │ CVE-2024-37891   │ MEDIUM   │                     │ 1.26.5-5.el9                  │               │ urllib3: proxy-authorization request header is not stripped  │
 │                             │                  │          │                     │                               │               │ during cross-origin redirects                                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-37891                   │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
@@ -300,7 +306,7 @@ Total: 190 (UNKNOWN: 0, LOW: 156, MEDIUM: 34, HIGH: 0, CRITICAL: 0)
 │                             │ CVE-2024-0232    │          │ affected            │                               │               │ sqlite: use-after-free bug in jsonParseAddNodeArray          │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0232                    │
 ├─────────────────────────────┼──────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ systemd                     │ CVE-2021-3997    │ MEDIUM   │                     │ 252-32.el9_4                  │               │ systemd: Uncontrolled recursion in systemd-tmpfiles when     │
+│ systemd                     │ CVE-2021-3997    │ MEDIUM   │                     │ 252-32.el9_4.6                │               │ systemd: Uncontrolled recursion in systemd-tmpfiles when     │
 │                             │                  │          │                     │                               │               │ removing files                                               │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-3997                    │
 ├─────────────────────────────┤                  │          │                     │                               ├───────────────┤                                                              │
@@ -668,12 +674,15 @@ Total: 190 (UNKNOWN: 0, LOW: 156, MEDIUM: 34, HIGH: 0, CRITICAL: 0)
 
 usr/local/bin/aci-containers-operator (gobinary)
 ================================================
-Total: 1 (UNKNOWN: 0, LOW: 1, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
+Total: 2 (UNKNOWN: 0, LOW: 1, MEDIUM: 1, HIGH: 0, CRITICAL: 0)
 
-┌───────────────────┬───────────────┬──────────┬────────┬───────────────────┬─────────────────────────┬──────────────────────────────────────────────────────────┐
-│      Library      │ Vulnerability │ Severity │ Status │ Installed Version │      Fixed Version      │                          Title                           │
-├───────────────────┼───────────────┼──────────┼────────┼───────────────────┼─────────────────────────┼──────────────────────────────────────────────────────────┤
-│ k8s.io/kubernetes │ CVE-2024-3177 │ LOW      │ fixed  │ v1.29.0           │ 1.27.13, 1.29.4, 1.28.9 │ kubernetes: kube-apiserver: bypassing mountable secrets  │
-│                   │               │          │        │                   │                         │ policy imposed by the ServiceAccount admission plugin... │
-│                   │               │          │        │                   │                         │ https://avd.aquasec.com/nvd/cve-2024-3177                │
-└───────────────────┴───────────────┴──────────┴────────┴───────────────────┴─────────────────────────┴──────────────────────────────────────────────────────────┘
+┌───────────────────┬───────────────┬──────────┬────────┬───────────────────┬──────────────────────────────────┬───────────────────────────────────────────────────────────┐
+│      Library      │ Vulnerability │ Severity │ Status │ Installed Version │          Fixed Version           │                           Title                           │
+├───────────────────┼───────────────┼──────────┼────────┼───────────────────┼──────────────────────────────────┼───────────────────────────────────────────────────────────┤
+│ k8s.io/kubernetes │ CVE-2024-5321 │ MEDIUM   │ fixed  │ v1.29.0           │ 1.27.16, 1.28.12, 1.29.7, 1.30.3 │ kubelet: Incorrect permissions on Windows containers logs │
+│                   │               │          │        │                   │                                  │ https://avd.aquasec.com/nvd/cve-2024-5321                 │
+│                   ├───────────────┼──────────┤        │                   ├──────────────────────────────────┼───────────────────────────────────────────────────────────┤
+│                   │ CVE-2024-3177 │ LOW      │        │                   │ 1.27.13, 1.29.4, 1.28.9          │ kubernetes: kube-apiserver: bypassing mountable secrets   │
+│                   │               │          │        │                   │                                  │ policy imposed by the ServiceAccount admission plugin...  │
+│                   │               │          │        │                   │                                  │ https://avd.aquasec.com/nvd/cve-2024-3177                 │
+└───────────────────┴───────────────┴──────────┴────────┴───────────────────┴──────────────────────────────────┴───────────────────────────────────────────────────────────┘
