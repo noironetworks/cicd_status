@@ -4,7 +4,7 @@ k8s.io/kubernetes  v1.29.0    1.29.4    go-module  GHSA-pxhw-596r-rwq5  Low
 
 quay.io/noiro/aci-containers-host-ovscni:6.0.4.3.81c2369.z (redhat 9.4)
 =======================================================================
-Total: 75 (UNKNOWN: 0, LOW: 49, MEDIUM: 25, HIGH: 1, CRITICAL: 0)
+Total: 79 (UNKNOWN: 0, LOW: 51, MEDIUM: 27, HIGH: 1, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬─────────────────────┬───────────────────────────────┬────────────────┬─────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │       Status        │       Installed Version       │ Fixed Version  │                            Title                            │
@@ -14,8 +14,11 @@ Total: 75 (UNKNOWN: 0, LOW: 49, MEDIUM: 25, HIGH: 1, CRITICAL: 0)
 ├─────────────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
 │ curl                        │ CVE-2024-2398  │ MEDIUM   │                     │ 7.76.1-29.el9_4               │                │ curl: HTTP/2 push headers memory-leak                       │
 │                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2024-2398                   │
-├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
-│ elfutils-default-yama-scope │ CVE-2024-25260 │ LOW      │ will_not_fix        │ 0.191-4.el9                   │                │ elfutils: global-buffer-overflow exists in the function     │
+│                             ├────────────────┼──────────┼─────────────────────┤                               ├────────────────┼─────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-7264  │ LOW      │ under_investigation │                               │                │ curl: libcurl: ASN.1 date parser overread                   │
+│                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2024-7264                   │
+├─────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
+│ elfutils-default-yama-scope │ CVE-2024-25260 │          │ will_not_fix        │ 0.191-4.el9                   │                │ elfutils: global-buffer-overflow exists in the function     │
 │                             │                │          │                     │                               │                │ ebl_machine_flag_name in eblmachineflagname.c               │
 │                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2024-25260                  │
 ├─────────────────────────────┤                │          │                     │                               ├────────────────┤                                                             │
@@ -70,8 +73,11 @@ Total: 75 (UNKNOWN: 0, LOW: 49, MEDIUM: 25, HIGH: 1, CRITICAL: 0)
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
 │ libcurl-minimal             │ CVE-2024-2398  │ MEDIUM   │ affected            │ 7.76.1-29.el9_4               │                │ curl: HTTP/2 push headers memory-leak                       │
 │                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2024-2398                   │
-├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
-│ libgcc                      │ CVE-2022-27943 │ LOW      │ will_not_fix        │ 11.4.1-3.el9                  │                │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows  │
+│                             ├────────────────┼──────────┼─────────────────────┤                               ├────────────────┼─────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-7264  │ LOW      │ under_investigation │                               │                │ curl: libcurl: ASN.1 date parser overread                   │
+│                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2024-7264                   │
+├─────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
+│ libgcc                      │ CVE-2022-27943 │          │ will_not_fix        │ 11.4.1-3.el9                  │                │ binutils: libiberty/rust-demangle.c in GNU GCC 11.2 allows  │
 │                             │                │          │                     │                               │                │ stack exhaustion in demangle_const                          │
 │                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2022-27943                  │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
@@ -96,10 +102,6 @@ Total: 75 (UNKNOWN: 0, LOW: 49, MEDIUM: 25, HIGH: 1, CRITICAL: 0)
 │ libyaml                     │ CVE-2024-35325 │ MEDIUM   │                     │ 0.2.5-7.el9                   │                │ libyaml: double-free in yaml_event_delete in                │
 │                             │                │          │                     │                               │                │ /src/libyaml/src/api.c                                      │
 │                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2024-35325                  │
-│                             ├────────────────┤          │                     │                               ├────────────────┼─────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-35328 │          │                     │                               │                │ libyaml: denial of service in yaml_parser_parse of the file │
-│                             │                │          │                     │                               │                │ /src/libyaml/src/parser.c.                                  │
-│                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2024-35328                  │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼────────────────┼─────────────────────────────────────────────────────────────┤
 │ libzstd                     │ CVE-2022-4899  │ LOW      │ will_not_fix        │ 1.5.1-2.el9                   │                │ zstd: mysql: buffer overrun in util.c                       │
 │                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2022-4899                   │
@@ -209,6 +211,10 @@ Total: 75 (UNKNOWN: 0, LOW: 49, MEDIUM: 25, HIGH: 1, CRITICAL: 0)
 │                             │ CVE-2023-36632 │          │ will_not_fix        │                               │                │ python: RecursionError: maximum recursion depth exceeded    │
 │                             │                │          │                     │                               │                │ while calling a Python object                               │
 │                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2023-36632                  │
+│                             ├────────────────┤          ├─────────────────────┤                               ├────────────────┼─────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-6923  │          │ affected            │                               │                │ cpython: python: email module doesn't properly quotes       │
+│                             │                │          │                     │                               │                │ newlines in email headers, allowing...                      │
+│                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2024-6923                   │
 │                             ├────────────────┼──────────┼─────────────────────┤                               ├────────────────┼─────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-0397  │ LOW      │ under_investigation │                               │                │ cpython: python: Memory race condition in ssl.SSLContext    │
 │                             │                │          │                     │                               │                │ certificate store methods                                   │
@@ -221,6 +227,10 @@ Total: 75 (UNKNOWN: 0, LOW: 49, MEDIUM: 25, HIGH: 1, CRITICAL: 0)
 │                             │ CVE-2023-36632 │          │ will_not_fix        │                               │                │ python: RecursionError: maximum recursion depth exceeded    │
 │                             │                │          │                     │                               │                │ while calling a Python object                               │
 │                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2023-36632                  │
+│                             ├────────────────┤          ├─────────────────────┤                               ├────────────────┼─────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-6923  │          │ affected            │                               │                │ cpython: python: email module doesn't properly quotes       │
+│                             │                │          │                     │                               │                │ newlines in email headers, allowing...                      │
+│                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2024-6923                   │
 │                             ├────────────────┼──────────┼─────────────────────┤                               ├────────────────┼─────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-0397  │ LOW      │ under_investigation │                               │                │ cpython: python: Memory race condition in ssl.SSLContext    │
 │                             │                │          │                     │                               │                │ certificate store methods                                   │
@@ -233,6 +243,10 @@ Total: 75 (UNKNOWN: 0, LOW: 49, MEDIUM: 25, HIGH: 1, CRITICAL: 0)
 │                             │ CVE-2023-36632 │          │ will_not_fix        │                               │                │ python: RecursionError: maximum recursion depth exceeded    │
 │                             │                │          │                     │                               │                │ while calling a Python object                               │
 │                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2023-36632                  │
+│                             ├────────────────┤          ├─────────────────────┤                               ├────────────────┼─────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-6923  │          │ affected            │                               │                │ cpython: python: email module doesn't properly quotes       │
+│                             │                │          │                     │                               │                │ newlines in email headers, allowing...                      │
+│                             │                │          │                     │                               │                │ https://avd.aquasec.com/nvd/cve-2024-6923                   │
 │                             ├────────────────┼──────────┼─────────────────────┤                               ├────────────────┼─────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-0397  │ LOW      │ under_investigation │                               │                │ cpython: python: Memory race condition in ssl.SSLContext    │
 │                             │                │          │                     │                               │                │ certificate store methods                                   │
