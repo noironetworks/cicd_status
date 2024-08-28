@@ -3470,39 +3470,35 @@ releases:
         U: 0
       severity_type: grype
     - base-image:
-      - base_cve_error: ''
-        cve: release_artifacts/6.1.1.1/z/openvswitch/6.1.1.1-cve-base.txt
+      - cve: release_artifacts/6.1.1.1/z/openvswitch/6.1.1.1-cve-base.txt
         severity:
         - C: 0
-          H: 3
-          L: 2
-          M: 7
+          H: 0
+          L: 0
+          M: 0
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d?tab=vulnerabilities
-        severity_type: quay
-        sha: 67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d
+        sha: bc552efb4966aaa44b02532be3168ac1ff18e2af299d0fe89502a1d9fabafbc5
       build-logs: release_artifacts/6.1.1.1/z/openvswitch/6.1.1.1-buildlog.txt
-      build-time: 2024-08-28 13:11:43 PDT
+      build-time: 2024-08-28 16:01:51 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/19531f81c5afd4f2a45d78d622f958773cc75a3a
         sha: 19531f81c5afd4f2a45d78d622f958773cc75a3a
-      cve: release_artifacts/6.1.1.1/z/openvswitch/6.1.1.1-quay-cve.txt
-      cve_error: ''
+      cve: release_artifacts/6.1.1.1/z/openvswitch/6.1.1.1-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/openvswitch/6.1.1.1.81c2369.z/images/sha256-32acf33f7ea4d4180bcb2b44235463e9f748e52413c806a33372f5d726bbd596?context=explore
-        sha: 32acf33f7ea4d4180bcb2b44235463e9f748e52413c806a33372f5d726bbd596
+      - link: https://hub.docker.com/layers/noiro/openvswitch/6.1.1.1.81c2369.z/images/sha256-c07a4073eb3de76beb6271d6408b5d0ce6e59ed85be3b2c36e2bb1aa88f720d4?context=explore
+        sha: c07a4073eb3de76beb6271d6408b5d0ce6e59ed85be3b2c36e2bb1aa88f720d4
         tag: 6.1.1.1.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/openvswitch/6.1.1.1.81c2369.082824.9664/images/sha256-32acf33f7ea4d4180bcb2b44235463e9f748e52413c806a33372f5d726bbd596?context=explore
-        sha: 32acf33f7ea4d4180bcb2b44235463e9f748e52413c806a33372f5d726bbd596
-        tag: 6.1.1.1.81c2369.082824.9664
+      - link: https://hub.docker.com/layers/noiro/openvswitch/6.1.1.1.81c2369.082824.9665/images/sha256-c07a4073eb3de76beb6271d6408b5d0ce6e59ed85be3b2c36e2bb1aa88f720d4?context=explore
+        sha: c07a4073eb3de76beb6271d6408b5d0ce6e59ed85be3b2c36e2bb1aa88f720d4
+        tag: 6.1.1.1.81c2369.082824.9665
       name: openvswitch
       quay:
       - link: https://quay.io/noiro/openvswitch:6.1.1.1.81c2369.z
-        sha: 32acf33f7ea4d4180bcb2b44235463e9f748e52413c806a33372f5d726bbd596
+        sha: c07a4073eb3de76beb6271d6408b5d0ce6e59ed85be3b2c36e2bb1aa88f720d4
         tag: 6.1.1.1.81c2369.z
-      - link: https://quay.io/noiro/openvswitch:6.1.1.1.81c2369.082824.9664
-        sha: 32acf33f7ea4d4180bcb2b44235463e9f748e52413c806a33372f5d726bbd596
-        tag: 6.1.1.1.81c2369.082824.9664
+      - link: https://quay.io/noiro/openvswitch:6.1.1.1.81c2369.082824.9665
+        sha: c07a4073eb3de76beb6271d6408b5d0ce6e59ed85be3b2c36e2bb1aa88f720d4
+        tag: 6.1.1.1.81c2369.082824.9665
       sbom: release_artifacts/6.1.1.1/z/openvswitch/6.1.1.1-sbom.txt
       severity:
       - C: 0
@@ -3510,8 +3506,7 @@ releases:
         L: 0
         M: 0
         U: 0
-      severity_link: https://quay.io/repository/noiro/openvswitch/manifest/sha256:32acf33f7ea4d4180bcb2b44235463e9f748e52413c806a33372f5d726bbd596?tab=vulnerabilities
-      severity_type: quay
+      severity_type: grype
     - base-image:
       - base_cve_error: ''
         cve: release_artifacts/6.1.1.1/z/aci-containers-webhook/6.1.1.1-cve-base.txt
@@ -3684,7 +3679,7 @@ releases:
         U: 1
       severity_link: https://quay.io/repository/noiro/aci-containers-host-ovscni/manifest/sha256:dc3cf6e90745a81239f5331df54ef37b3ad168eff90ee4936f31c327731d9f76?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-08-28 15:59:46 PDT
+    last_updated: 2024-08-28 16:01:51 PDT
     release_name: 6.1.1.1.z
   - acc_provision: []
     container_images: []
