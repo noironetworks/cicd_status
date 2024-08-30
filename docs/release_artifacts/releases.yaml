@@ -4880,7 +4880,14 @@ releases:
     released: true
   release_tag: 6.0.4.3
 - release_streams:
-  - acc_provision: []
+  - acc_provision:
+    - build-logs: release_artifacts/6.1.2.1/z/acc-provision/6.1.2.1-buildlog.txt
+      build-time: 2024-08-30 08:07:30 PDT
+      commit:
+      - link: https://github.com/noironetworks/acc-provision/commit/7f6b1efecfa4957f40f4cddd0b11148bef5e81c0
+        sha: 7f6b1efecfa4957f40f4cddd0b11148bef5e81c0
+      link: https://test.pypi.org/project/acc-provision/6.1.2.1.dev9878/#files
+      tag: 6.1.2.1.dev9878
     container_images:
     - base-image:
       - base_cve_error: ''
@@ -4890,10 +4897,10 @@ releases:
           H: 38
           L: 11
           M: 82
-          U: 0
-        severity_link: https://quay.io/repository/noirolabs/ansible-operator/manifest/sha256:95acab66b626f8b40f577d02d51b4d5e11c5fd7c801a538fd65ced08cc8ee02f?tab=vulnerabilities
+          U: 1
+        severity_link: https://quay.io/repository/noirolabs/ansible-operator/manifest/sha256:62655797fa492f0c975d3dea7e5d0e9ee0fb8590806d3b909859738eb543252a?tab=vulnerabilities
         severity_type: quay
-        sha: 95acab66b626f8b40f577d02d51b4d5e11c5fd7c801a538fd65ced08cc8ee02f
+        sha: 62655797fa492f0c975d3dea7e5d0e9ee0fb8590806d3b909859738eb543252a
       build-logs: release_artifacts/6.1.2.1/z/acc-provision-operator/6.1.2.1-buildlog.txt
       build-time: 2024-08-30 01:51:05 PDT
       commit:
@@ -5264,7 +5271,7 @@ releases:
         U: 1
       severity_link: https://quay.io/repository/noiro/aci-containers-host-ovscni/manifest/sha256:342b3818f4e6588152c14758405ae26900da3fa677258258f624cb9d885d8bb6?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-08-30 02:29:15 PDT
+    last_updated: 2024-08-30 08:07:30 PDT
     release_name: 6.1.2.1.z
   - acc_provision: []
     container_images: []
