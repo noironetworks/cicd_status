@@ -4963,7 +4963,45 @@ releases:
       severity: []
       severity_link: https://quay.io/repository/noiro/aci-containers-host/manifest/sha256:24684604f2e3d9bf39ba2aa44306e44b4056ac17dfb91a182d6bec83ec784d6d?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-08-30 02:17:25 PDT
+    - base-image:
+      - cve: release_artifacts/6.1.2.1/z/aci-containers-controller/6.1.2.1-cve-base.txt
+        severity:
+        - C: 0
+          H: 2
+          L: 0
+          M: 6
+          U: 0
+        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+      build-logs: release_artifacts/6.1.2.1/z/aci-containers-controller/6.1.2.1-buildlog.txt
+      build-time: 2024-08-30 02:19:38 PDT
+      commit:
+      - link: https://github.com/noironetworks/aci-containers/commit/19531f81c5afd4f2a45d78d622f958773cc75a3a
+        sha: 19531f81c5afd4f2a45d78d622f958773cc75a3a
+      cve: release_artifacts/6.1.2.1/z/aci-containers-controller/6.1.2.1-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/aci-containers-controller/6.1.2.1.81c2369.z/images/sha256-9478a01e5d605ade87fe049e81f4eac5b107855a414d54647a3d52e2708f78d7?context=explore
+        sha: 9478a01e5d605ade87fe049e81f4eac5b107855a414d54647a3d52e2708f78d7
+        tag: 6.1.2.1.81c2369.z
+      - link: https://hub.docker.com/layers/noiro/aci-containers-controller/6.1.2.1.81c2369.083024.9669/images/sha256-9478a01e5d605ade87fe049e81f4eac5b107855a414d54647a3d52e2708f78d7?context=explore
+        sha: 9478a01e5d605ade87fe049e81f4eac5b107855a414d54647a3d52e2708f78d7
+        tag: 6.1.2.1.81c2369.083024.9669
+      name: aci-containers-controller
+      quay:
+      - link: https://quay.io/noiro/aci-containers-controller:6.1.2.1.81c2369.z
+        sha: 9478a01e5d605ade87fe049e81f4eac5b107855a414d54647a3d52e2708f78d7
+        tag: 6.1.2.1.81c2369.z
+      - link: https://quay.io/noiro/aci-containers-controller:6.1.2.1.81c2369.083024.9669
+        sha: 9478a01e5d605ade87fe049e81f4eac5b107855a414d54647a3d52e2708f78d7
+        tag: 6.1.2.1.81c2369.083024.9669
+      sbom: release_artifacts/6.1.2.1/z/aci-containers-controller/6.1.2.1-sbom.txt
+      severity:
+      - C: 1
+        H: 5
+        L: 0
+        M: 23
+        U: 0
+      severity_type: grype
+    last_updated: 2024-08-30 02:19:38 PDT
     release_name: 6.1.2.1.z
   - acc_provision: []
     container_images: []
