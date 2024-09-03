@@ -5775,3 +5775,52 @@ releases:
     release_name: 6.0.4.4
     released: false
   release_tag: 6.0.4.4
+- release_streams:
+  - acc_provision: []
+    container_images:
+    - base-image:
+      - cve: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-cve-base.txt
+        severity:
+        - C: 5
+          H: 5
+          L: 175
+          M: 47
+          U: 1
+        sha: 8458427f4c192f4df284b6a3a7c60bd4f1f646828fc8802133c3203fbeb50ab2
+      build-logs: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-buildlog.txt
+      build-time: 2024-09-03 12:31:59 PDT
+      commit:
+      - link: https://github.com/noironetworks/acc-provision-operator/commit/b616a40c804f566eb8b33fa8e353482f05168a08
+        sha: b616a40c804f566eb8b33fa8e353482f05168a08
+      cve: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.1.1.2.81c2369.z/images/sha256-6d1c3b5d0b3fbd8cc86bbf1747c078f7302e5648cad4e6764ed36fe4b90ddff5?context=explore
+        sha: 6d1c3b5d0b3fbd8cc86bbf1747c078f7302e5648cad4e6764ed36fe4b90ddff5
+        tag: 6.1.1.2.81c2369.z
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.1.1.2.81c2369.090324.810/images/sha256-6d1c3b5d0b3fbd8cc86bbf1747c078f7302e5648cad4e6764ed36fe4b90ddff5?context=explore
+        sha: 6d1c3b5d0b3fbd8cc86bbf1747c078f7302e5648cad4e6764ed36fe4b90ddff5
+        tag: 6.1.1.2.81c2369.090324.810
+      name: acc-provision-operator
+      quay:
+      - link: https://quay.io/noiro/acc-provision-operator:6.1.1.2.81c2369.z
+        sha: 6d1c3b5d0b3fbd8cc86bbf1747c078f7302e5648cad4e6764ed36fe4b90ddff5
+        tag: 6.1.1.2.81c2369.z
+      - link: https://quay.io/noiro/acc-provision-operator:6.1.1.2.81c2369.090324.810
+        sha: 6d1c3b5d0b3fbd8cc86bbf1747c078f7302e5648cad4e6764ed36fe4b90ddff5
+        tag: 6.1.1.2.81c2369.090324.810
+      sbom: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-sbom.txt
+      severity:
+      - C: 7
+        H: 5
+        L: 254
+        M: 94
+        U: 2
+      severity_type: grype
+    last_updated: 2024-09-03 12:31:59 PDT
+    release_name: 6.1.1.2.z
+  - acc_provision: []
+    container_images: []
+    last_updated: 2024-09-03 12:31:56 PDT
+    release_name: 6.1.1.2
+    released: false
+  release_tag: 6.1.1.2
