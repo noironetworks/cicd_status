@@ -5277,20 +5277,24 @@ releases:
       severity_link: https://quay.io/repository/noiro/aci-containers-host-ovscni/manifest/sha256:342b3818f4e6588152c14758405ae26900da3fa677258258f624cb9d885d8bb6?tab=vulnerabilities
       severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.2.1/z/opflex/6.1.2.1-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.2.1/z/opflex/6.1.2.1-cve-base.txt
         severity:
         - C: 0
-          H: 0
-          L: 0
-          M: 0
+          H: 3
+          L: 2
+          M: 7
           U: 0
-        sha: bc552efb4966aaa44b02532be3168ac1ff18e2af299d0fe89502a1d9fabafbc5
+        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d?tab=vulnerabilities
+        severity_type: quay
+        sha: 67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d
       build-logs: release_artifacts/6.1.2.1/z/opflex/6.1.2.1-buildlog.txt
       build-time: 2024-09-02 22:51:48 PDT
       commit:
       - link: https://github.com/noironetworks/opflex/commit/39090f831036edcb20d34f0e7e784879a8cff180
         sha: 39090f831036edcb20d34f0e7e784879a8cff180
-      cve: release_artifacts/6.1.2.1/z/opflex/6.1.2.1-cve.txt
+      cve: release_artifacts/6.1.2.1/z/opflex/6.1.2.1-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/opflex/6.1.2.1.81c2369.z/images/sha256-b4203c788f8a98814b3549c2363f13752de507b68c0e2299bf34c968ce6ebc58?context=explore
         sha: b4203c788f8a98814b3549c2363f13752de507b68c0e2299bf34c968ce6ebc58
@@ -5311,9 +5315,10 @@ releases:
       - C: 0
         H: 0
         L: 0
-        M: 0
+        M: 3
         U: 0
-      severity_type: grype
+      severity_link: https://quay.io/repository/noiro/opflex/manifest/sha256:b4203c788f8a98814b3549c2363f13752de507b68c0e2299bf34c968ce6ebc58?tab=vulnerabilities
+      severity_type: quay
     last_updated: 2024-09-02 22:51:48 PDT
     release_name: 6.1.2.1.z
   - acc_provision: []
@@ -5719,7 +5724,45 @@ releases:
         U: 1
       severity_link: https://quay.io/repository/noiro/aci-containers-host-ovscni/manifest/sha256:164cbbecb78504195d9783d5d4138dad4e023ad480ebc2169d49d5c3c7fbfaf9?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-08-30 19:13:33 PDT
+    - base-image:
+      - cve: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-cve-base.txt
+        severity:
+        - C: 0
+          H: 0
+          L: 0
+          M: 0
+          U: 0
+        sha: bc552efb4966aaa44b02532be3168ac1ff18e2af299d0fe89502a1d9fabafbc5
+      build-logs: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-buildlog.txt
+      build-time: 2024-09-03 02:41:19 PDT
+      commit:
+      - link: https://github.com/noironetworks/opflex/commit/743754f06f2fd9b7b786ae7d0e1a7130c26837de
+        sha: 743754f06f2fd9b7b786ae7d0e1a7130c26837de
+      cve: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-cve.txt
+      docker:
+      - link: https://hub.docker.com/layers/noiro/opflex/6.0.4.4.81c2369.z/images/sha256-797b8eca2beb1ac4decdcac59f984c7c7b8e9a7169357bd8fe06d0ec1fd56a43?context=explore
+        sha: 797b8eca2beb1ac4decdcac59f984c7c7b8e9a7169357bd8fe06d0ec1fd56a43
+        tag: 6.0.4.4.81c2369.z
+      - link: https://hub.docker.com/layers/noiro/opflex/6.0.4.4.81c2369.090324.3982/images/sha256-797b8eca2beb1ac4decdcac59f984c7c7b8e9a7169357bd8fe06d0ec1fd56a43?context=explore
+        sha: 797b8eca2beb1ac4decdcac59f984c7c7b8e9a7169357bd8fe06d0ec1fd56a43
+        tag: 6.0.4.4.81c2369.090324.3982
+      name: opflex
+      quay:
+      - link: https://quay.io/noiro/opflex:6.0.4.4.81c2369.z
+        sha: 797b8eca2beb1ac4decdcac59f984c7c7b8e9a7169357bd8fe06d0ec1fd56a43
+        tag: 6.0.4.4.81c2369.z
+      - link: https://quay.io/noiro/opflex:6.0.4.4.81c2369.090324.3982
+        sha: 797b8eca2beb1ac4decdcac59f984c7c7b8e9a7169357bd8fe06d0ec1fd56a43
+        tag: 6.0.4.4.81c2369.090324.3982
+      sbom: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-sbom.txt
+      severity:
+      - C: 0
+        H: 0
+        L: 0
+        M: 0
+        U: 0
+      severity_type: grype
+    last_updated: 2024-09-03 02:41:19 PDT
     release_name: 6.0.4.4.z
   - acc_provision: []
     container_images: []
