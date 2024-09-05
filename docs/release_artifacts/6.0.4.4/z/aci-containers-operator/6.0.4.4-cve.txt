@@ -12,7 +12,7 @@ urllib3            1.26.5     1.26.19   python     GHSA-34jh-p97f-mpxf  Medium
 
 quay.io/noiro/aci-containers-operator:6.0.4.4.81c2369.z (redhat 9.4)
 ====================================================================
-Total: 197 (UNKNOWN: 0, LOW: 166, MEDIUM: 31, HIGH: 0, CRITICAL: 0)
+Total: 199 (UNKNOWN: 0, LOW: 166, MEDIUM: 33, HIGH: 0, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -104,7 +104,8 @@ Total: 197 (UNKNOWN: 0, LOW: 166, MEDIUM: 31, HIGH: 0, CRITICAL: 0)
 │ libcap                      │ CVE-2023-7256    │ MEDIUM   │ affected            │ 2.48-9.el9_2                  │               │ libcap: Double Free in libcap                                │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-7256                    │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-8006    │          │                     │                               │               │ libcap: NULL pointer derefence                               │
+│                             │ CVE-2024-8006    │          │                     │                               │               │ libpcap: NULL pointer derefence in pcap_findalldevs_ex() in  │
+│                             │                  │          │                     │                               │               │ pcap-new.c                                                   │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-8006                    │
 ├─────────────────────────────┼──────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ libcurl-minimal             │ CVE-2024-7264    │ LOW      │                     │ 7.76.1-29.el9_4.1             │               │ curl: libcurl: ASN.1 date parser overread                    │
@@ -184,8 +185,11 @@ Total: 197 (UNKNOWN: 0, LOW: 166, MEDIUM: 31, HIGH: 0, CRITICAL: 0)
 │                             ├──────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2016-20012   │ LOW      │                     │                               │               │ openssh: Public key information leak                         │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2016-20012                   │
-├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ openssl                     │ CVE-2023-3446    │          │                     │ 1:3.0.7-27.el9                │               │ openssl: Excessive time spent checking DH keys and           │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ openssl                     │ CVE-2024-6119    │ MEDIUM   │ affected            │ 1:3.0.7-27.el9                │               │ openssl: Possible denial of service in X.509 name checks     │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-6119                    │
+│                             ├──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-3446    │ LOW      │ will_not_fix        │                               │               │ openssl: Excessive time spent checking DH keys and           │
 │                             │                  │          │                     │                               │               │ parameters                                                   │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-3446                    │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -217,8 +221,11 @@ Total: 197 (UNKNOWN: 0, LOW: 166, MEDIUM: 31, HIGH: 0, CRITICAL: 0)
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-5535    │          │                     │                               │               │ openssl: SSL_select_next_proto buffer overread               │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-5535                    │
-├─────────────────────────────┼──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ openssl-libs                │ CVE-2023-3446    │          │                     │                               │               │ openssl: Excessive time spent checking DH keys and           │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ openssl-libs                │ CVE-2024-6119    │ MEDIUM   │ affected            │                               │               │ openssl: Possible denial of service in X.509 name checks     │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-6119                    │
+│                             ├──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-3446    │ LOW      │ will_not_fix        │                               │               │ openssl: Excessive time spent checking DH keys and           │
 │                             │                  │          │                     │                               │               │ parameters                                                   │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-3446                    │
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
