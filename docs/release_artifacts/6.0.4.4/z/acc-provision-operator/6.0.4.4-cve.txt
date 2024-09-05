@@ -116,7 +116,6 @@ krb5-libs                          1.18.2-28.el8_10                             
 libarchive                         3.3.3-5.el8                              (won't fix)                                  rpm     CVE-2020-21674       Medium    
 libarchive                         3.3.3-5.el8                              (won't fix)                                  rpm     CVE-2018-1000880     Low       
 libarchive                         3.3.3-5.el8                              (won't fix)                                  rpm     CVE-2018-1000879     Low       
-libcap                             2.48-6.el8_9                                                                          rpm     CVE-2024-8006        Medium    
 libcap                             2.48-6.el8_9                                                                          rpm     CVE-2023-7256        Medium    
 libcurl                            7.61.1-34.el8                            0:7.61.1-34.el8_10.2                         rpm     CVE-2024-2398        Medium    
 libcurl                            7.61.1-34.el8                                                                         rpm     CVE-2024-7264        Low       
@@ -372,7 +371,7 @@ zipp                               3.18.1                                   3.19
 
 quay.io/noiro/acc-provision-operator:6.0.4.4.81c2369.z (redhat 8.10)
 ====================================================================
-Total: 1430 (UNKNOWN: 0, LOW: 800, MEDIUM: 626, HIGH: 4, CRITICAL: 0)
+Total: 1429 (UNKNOWN: 0, LOW: 800, MEDIUM: 625, HIGH: 4, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬─────────────────────────────────────────┬────────────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │            Installed Version            │   Fixed Version    │                            Title                             │
@@ -2444,11 +2443,11 @@ Total: 1430 (UNKNOWN: 0, LOW: 800, MEDIUM: 626, HIGH: 4, CRITICAL: 0)
 │                             ├──────────────────┤          ├─────────────────────┤                                         ├────────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-41020   │          │ will_not_fix        │                                         │                    │ kernel: filelock: Fix fcntl/close race recovery compat path  │
 │                             │                  │          │                     │                                         │                    │ https://avd.aquasec.com/nvd/cve-2024-41020                   │
-│                             ├──────────────────┤          ├─────────────────────┤                                         ├────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-41023   │          │ affected            │                                         │                    │ kernel: sched/deadline: Fix task_struct reference leak       │
-│                             │                  │          │                     │                                         │                    │ https://avd.aquasec.com/nvd/cve-2024-41023                   │
 │                             ├──────────────────┤          │                     │                                         ├────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-41038   │          │                     │                                         │                    │ kernel: firmware: cs_dsp: Prevent buffer overrun when        │
+│                             │ CVE-2024-41023   │          │                     │                                         │                    │ kernel: sched/deadline: Fix task_struct reference leak       │
+│                             │                  │          │                     │                                         │                    │ https://avd.aquasec.com/nvd/cve-2024-41023                   │
+│                             ├──────────────────┤          ├─────────────────────┤                                         ├────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-41038   │          │ affected            │                                         │                    │ kernel: firmware: cs_dsp: Prevent buffer overrun when        │
 │                             │                  │          │                     │                                         │                    │ processing V2 alg headers                                    │
 │                             │                  │          │                     │                                         │                    │ https://avd.aquasec.com/nvd/cve-2024-41038                   │
 │                             ├──────────────────┤          │                     │                                         ├────────────────────┼──────────────────────────────────────────────────────────────┤
@@ -4802,9 +4801,6 @@ Total: 1430 (UNKNOWN: 0, LOW: 800, MEDIUM: 626, HIGH: 4, CRITICAL: 0)
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼─────────────────────────────────────────┼────────────────────┼──────────────────────────────────────────────────────────────┤
 │ libcap                      │ CVE-2023-7256    │ MEDIUM   │ affected            │ 2.48-6.el8_9                            │                    │ libcap: Double Free in libcap                                │
 │                             │                  │          │                     │                                         │                    │ https://avd.aquasec.com/nvd/cve-2023-7256                    │
-│                             ├──────────────────┤          │                     │                                         ├────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-8006    │          │                     │                                         │                    │ libcap: NULL pointer derefence                               │
-│                             │                  │          │                     │                                         │                    │ https://avd.aquasec.com/nvd/cve-2024-8006                    │
 ├─────────────────────────────┼──────────────────┤          ├─────────────────────┼─────────────────────────────────────────┼────────────────────┼──────────────────────────────────────────────────────────────┤
 │ libcurl                     │ CVE-2024-2398    │          │ fixed               │ 7.61.1-34.el8                           │ 7.61.1-34.el8_10.2 │ curl: HTTP/2 push headers memory-leak                        │
 │                             │                  │          │                     │                                         │                    │ https://avd.aquasec.com/nvd/cve-2024-2398                    │
