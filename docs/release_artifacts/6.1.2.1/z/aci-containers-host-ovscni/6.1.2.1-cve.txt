@@ -3,7 +3,7 @@ k8s.io/kubernetes  v1.30.2    1.30.3    go-module  GHSA-82m2-cv7p-4m75  Medium
 
 quay.io/noiro/aci-containers-host-ovscni:6.1.2.1.81c2369.z (redhat 9.4)
 =======================================================================
-Total: 82 (UNKNOWN: 0, LOW: 51, MEDIUM: 31, HIGH: 0, CRITICAL: 0)
+Total: 85 (UNKNOWN: 0, LOW: 54, MEDIUM: 31, HIGH: 0, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬─────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                            │
@@ -70,7 +70,7 @@ Total: 82 (UNKNOWN: 0, LOW: 51, MEDIUM: 31, HIGH: 0, CRITICAL: 0)
 │                             │                │          │                     │                               │               │ find_prog_by_sec_insn                                       │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2022-3606                   │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
-│ libcap                      │ CVE-2023-7256  │ MEDIUM   │ affected            │ 2.48-9.el9_2                  │               │ libcap: Double Free in libcap                               │
+│ libcap                      │ CVE-2023-7256  │ MEDIUM   │ affected            │ 2.48-9.el9_2                  │               │ libpcap: Double Free in libcap                              │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-7256                   │
 ├─────────────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
 │ libcurl-minimal             │ CVE-2024-7264  │ LOW      │                     │ 7.76.1-31.el9                 │               │ curl: libcurl: ASN.1 date parser overread                   │
@@ -129,7 +129,7 @@ Total: 82 (UNKNOWN: 0, LOW: 51, MEDIUM: 31, HIGH: 0, CRITICAL: 0)
 │                             │                │          │                     │                               │               │ function                                                    │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-2953                   │
 ├─────────────────────────────┼────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
-│ openssl                     │ CVE-2024-6119  │ MEDIUM   │                     │ 1:3.2.2-4.el9                 │               │ openssl: Possible denial of service in X.509 name checks    │
+│ openssl                     │ CVE-2024-6119  │ MEDIUM   │                     │ 1:3.2.2-6.el9                 │               │ openssl: Possible denial of service in X.509 name checks    │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-6119                   │
 │                             ├────────────────┼──────────┼─────────────────────┤                               ├───────────────┼─────────────────────────────────────────────────────────────┤
 │                             │ CVE-2023-3446  │ LOW      │ will_not_fix        │                               │               │ openssl: Excessive time spent checking DH keys and          │
@@ -221,14 +221,19 @@ Total: 82 (UNKNOWN: 0, LOW: 51, MEDIUM: 31, HIGH: 0, CRITICAL: 0)
 │                             │                │          │                     │                               │               │ while parsing header values                                 │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-6232                   │
 │                             ├────────────────┤          │                     │                               ├───────────────┼─────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-8088  │          │                     │                               │               │ python: cpython: From NVD collector                         │
+│                             │ CVE-2024-8088  │          │                     │                               │               │ python: cpython: Iterating over a malicious ZIP file may    │
+│                             │                │          │                     │                               │               │ lead to Denial...                                           │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-8088                   │
 │                             ├────────────────┼──────────┼─────────────────────┤                               ├───────────────┼─────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-0397  │ LOW      │ under_investigation │                               │               │ cpython: python: Memory race condition in ssl.SSLContext    │
 │                             │                │          │                     │                               │               │ certificate store methods                                   │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0397                   │
-├─────────────────────────────┼────────────────┼──────────┼─────────────────────┤                               ├───────────────┼─────────────────────────────────────────────────────────────┤
-│ python3                     │ CVE-2021-23336 │ MEDIUM   │ affected            │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and  │
+│                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-7592  │          │ affected            │                               │               │ cpython: python: Uncontrolled CPU resource consumption when │
+│                             │                │          │                     │                               │               │ in http.cookies module                                      │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-7592                   │
+├─────────────────────────────┼────────────────┼──────────┤                     │                               ├───────────────┼─────────────────────────────────────────────────────────────┤
+│ python3                     │ CVE-2021-23336 │ MEDIUM   │                     │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and  │
 │                             │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...               │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                  │
 │                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼─────────────────────────────────────────────────────────────┤
@@ -240,14 +245,19 @@ Total: 82 (UNKNOWN: 0, LOW: 51, MEDIUM: 31, HIGH: 0, CRITICAL: 0)
 │                             │                │          │                     │                               │               │ while parsing header values                                 │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-6232                   │
 │                             ├────────────────┤          │                     │                               ├───────────────┼─────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-8088  │          │                     │                               │               │ python: cpython: From NVD collector                         │
+│                             │ CVE-2024-8088  │          │                     │                               │               │ python: cpython: Iterating over a malicious ZIP file may    │
+│                             │                │          │                     │                               │               │ lead to Denial...                                           │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-8088                   │
 │                             ├────────────────┼──────────┼─────────────────────┤                               ├───────────────┼─────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-0397  │ LOW      │ under_investigation │                               │               │ cpython: python: Memory race condition in ssl.SSLContext    │
 │                             │                │          │                     │                               │               │ certificate store methods                                   │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0397                   │
-├─────────────────────────────┼────────────────┼──────────┼─────────────────────┤                               ├───────────────┼─────────────────────────────────────────────────────────────┤
-│ python3-libs                │ CVE-2021-23336 │ MEDIUM   │ affected            │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and  │
+│                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-7592  │          │ affected            │                               │               │ cpython: python: Uncontrolled CPU resource consumption when │
+│                             │                │          │                     │                               │               │ in http.cookies module                                      │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-7592                   │
+├─────────────────────────────┼────────────────┼──────────┤                     │                               ├───────────────┼─────────────────────────────────────────────────────────────┤
+│ python3-libs                │ CVE-2021-23336 │ MEDIUM   │                     │                               │               │ python: Web cache poisoning via urllib.parse.parse_qsl and  │
 │                             │                │          │                     │                               │               │ urllib.parse.parse_qs by using a semicolon...               │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-23336                  │
 │                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼─────────────────────────────────────────────────────────────┤
@@ -259,14 +269,19 @@ Total: 82 (UNKNOWN: 0, LOW: 51, MEDIUM: 31, HIGH: 0, CRITICAL: 0)
 │                             │                │          │                     │                               │               │ while parsing header values                                 │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-6232                   │
 │                             ├────────────────┤          │                     │                               ├───────────────┼─────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-8088  │          │                     │                               │               │ python: cpython: From NVD collector                         │
+│                             │ CVE-2024-8088  │          │                     │                               │               │ python: cpython: Iterating over a malicious ZIP file may    │
+│                             │                │          │                     │                               │               │ lead to Denial...                                           │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-8088                   │
 │                             ├────────────────┼──────────┼─────────────────────┤                               ├───────────────┼─────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-0397  │ LOW      │ under_investigation │                               │               │ cpython: python: Memory race condition in ssl.SSLContext    │
 │                             │                │          │                     │                               │               │ certificate store methods                                   │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-0397                   │
-├─────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
-│ python3-pip-wheel           │ CVE-2021-3572  │          │ affected            │ 21.3.1-1.el9                  │               │ python-pip: Incorrect handling of unicode separators in git │
+│                             ├────────────────┤          ├─────────────────────┤                               ├───────────────┼─────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-7592  │          │ affected            │                               │               │ cpython: python: Uncontrolled CPU resource consumption when │
+│                             │                │          │                     │                               │               │ in http.cookies module                                      │
+│                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-7592                   │
+├─────────────────────────────┼────────────────┤          │                     ├───────────────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
+│ python3-pip-wheel           │ CVE-2021-3572  │          │                     │ 21.3.1-1.el9                  │               │ python-pip: Incorrect handling of unicode separators in git │
 │                             │                │          │                     │                               │               │ references                                                  │
 │                             │                │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-3572                   │
 ├─────────────────────────────┼────────────────┤          ├─────────────────────┼───────────────────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
