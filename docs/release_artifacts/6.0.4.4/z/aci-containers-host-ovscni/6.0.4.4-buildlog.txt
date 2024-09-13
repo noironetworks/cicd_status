@@ -32219,3 +32219,162 @@ c0c2749c4e74: Layer already exists
 e491a0fd8da1: Mounted from noiro/aci-containers-host
 126f1e1ef664: Mounted from noiro/aci-containers-host
 14602e22e1fe: Pushed
+6.0.4.4.81c2369.091324.9885: digest: sha256:fdc09eee204807db3adee2ac45f5aa02bad725d704979c7ce825d8e4b35ebd85 size: 3884
++docker tag quay.io/noirolabs/aci-containers-host-ovscni:6.0.4.4.81c2369 docker.io/noiro/aci-containers-host-ovscni:6.0.4.4.81c2369.z
++docker push docker.io/noiro/aci-containers-host-ovscni:6.0.4.4.81c2369.z
+The push refers to repository [docker.io/noiro/aci-containers-host-ovscni]
+253b1dd8aace: Preparing
+14602e22e1fe: Preparing
+b7ba00356fe7: Preparing
+3f6f065f1af8: Preparing
+ab66f29b6e5b: Preparing
+fcee05c6bf8b: Preparing
+7b2b7d8cfbd8: Preparing
+0164dc821263: Preparing
+300e207bb035: Preparing
+70952474a894: Preparing
+ecc7f98dc38a: Preparing
+1abebba1b11b: Preparing
+cf53e1a67f3f: Preparing
+0c2999e41e8c: Preparing
+e491a0fd8da1: Preparing
+126f1e1ef664: Preparing
+c0c2749c4e74: Preparing
+fcee05c6bf8b: Waiting
+7b2b7d8cfbd8: Waiting
+0164dc821263: Waiting
+300e207bb035: Waiting
+70952474a894: Waiting
+ecc7f98dc38a: Waiting
+1abebba1b11b: Waiting
+cf53e1a67f3f: Waiting
+0c2999e41e8c: Waiting
+e491a0fd8da1: Waiting
+126f1e1ef664: Waiting
+c0c2749c4e74: Waiting
+b7ba00356fe7: Layer already exists
+ab66f29b6e5b: Layer already exists
+14602e22e1fe: Layer already exists
+3f6f065f1af8: Layer already exists
+253b1dd8aace: Layer already exists
+fcee05c6bf8b: Layer already exists
+0164dc821263: Layer already exists
+7b2b7d8cfbd8: Layer already exists
+70952474a894: Layer already exists
+300e207bb035: Layer already exists
+1abebba1b11b: Layer already exists
+ecc7f98dc38a: Layer already exists
+0c2999e41e8c: Layer already exists
+cf53e1a67f3f: Layer already exists
+e491a0fd8da1: Layer already exists
+c0c2749c4e74: Layer already exists
+126f1e1ef664: Layer already exists
+6.0.4.4.81c2369.z: digest: sha256:fdc09eee204807db3adee2ac45f5aa02bad725d704979c7ce825d8e4b35ebd85 size: 3884
+++docker image inspect '--format={{.Id}}' quay.io/noirolabs/aci-containers-host-ovscni:6.0.4.4.81c2369
++IMAGE_SHA=sha256:7ee74ee06f924c7c8828b20e2a84baadbf4ccacd56954b8492f6423f3a139dcd
++/tmp/cicd/travis/push-to-cicd-status.sh quay.io/noiro aci-containers-host-ovscni 6.0.4.4.81c2369 6.0.4.4.81c2369,6.0.4.4.81c2369.091324.9885 sha256:7ee74ee06f924c7c8828b20e2a84baadbf4ccacd56954b8492f6423f3a139dcd registry.access.redhat.com/ubi9/ubi:9.3
+++dirname /tmp/cicd/travis/push-to-cicd-status.sh
++SCRIPTS_DIR=/tmp/cicd/travis
++source /tmp/cicd/travis/globals.sh
+++set -x
+++RELEASE_TAG=6.0.4.4
+++export RELEASE_TAG
++++date +%m%d%y
+++DATE_TAG=091324
+++TRAVIS_TAG_WITH_UPSTREAM_ID=6.0.4.4.81c2369
+++TRAVIS_TAG_WITH_UPSTREAM_ID_DATE_TRAVIS_BUILD_NUMBER=6.0.4.4.81c2369.091324.9885
+++IMAGE_TAG=6.0.4.4.81c2369
+++UPSTREAM_IMAGE_TAG=6.0.4.4.81c2369
+++UPSTREAM_IMAGE_Z_TAG=6.0.4.4.81c2369.z
+++IMAGE_Z_TAG=6.0.4.4.81c2369.z
+++RELEASE_Z_TAG=6.0.4.4.z
+++RC_PREFIX=6.0.4.4rc
+++RC_REGEX='6.0.4.4rc[0-9]+'
+++QUAY_REGISTRY=quay.io/noirolabs
+++QUAY_NOIRO_REGISTRY=quay.io/noiro
+++DOCKER_REGISTRY=docker.io/noiro
+++CICD_STATUS_REPO=https://github.com/noironetworks/cicd-status.git
+++git rev-parse --abbrev-ref HEAD
++current_branch=HEAD
++[[ aci-containers != \a\c\c\-\p\r\o\v\i\s\i\o\n ]]
++IMAGE_BUILD_REGISTRY=quay.io/noiro
++IMAGE=aci-containers-host-ovscni
++IMAGE_BUILD_TAG=6.0.4.4.81c2369
++OTHER_IMAGE_TAGS=6.0.4.4.81c2369,6.0.4.4.81c2369.091324.9885
++IMAGE_SHA=sha256:7ee74ee06f924c7c8828b20e2a84baadbf4ccacd56954b8492f6423f3a139dcd
++BASE_IMAGE=registry.access.redhat.com/ubi9/ubi:9.3
++GIT_REPO=https://github.com/noironetworks/cicd-status.git
++GIT_LOCAL_DIR=cicd-status
++GIT_BRANCH=main
++GIT_EMAIL=test@cisco.com
++GIT_TOKEN=[secure]
++GIT_USER=travis-tagger
++git_clone_repo
++cd /tmp/
++git clone https://travis-tagger:[secure]@github.com/noironetworks/cicd-status.git -b main cicd-status
+fatal: destination path 'cicd-status' already exists and is not an empty directory.
++cd /tmp/cicd-status
++git remote set-url origin https://travis-tagger:[secure]@github.com/noironetworks/cicd-status.git
++true
++[[ aci-containers != \a\c\c\-\p\r\o\v\i\s\i\o\n ]]
++add_artifacts
++cd /tmp/cicd-status
++git pull --rebase origin main
+From https://github.com/noironetworks/cicd-status
+ * branch              main       -> FETCH_HEAD
+Already up to date.
++mkdir -p /tmp/cicd-status/docs/release_artifacts/6.0.4.4/z/aci-containers-host-ovscni
++curl https://api.travis-ci.com/v3/job/626114813/log.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 2392k  100 2392k    0     0  4080k      0 --:--:-- --:--:-- --:--:-- 4083k
++cp /tmp/sbom.txt /tmp/cicd-status/docs/release_artifacts/6.0.4.4/z/aci-containers-host-ovscni/6.0.4.4-sbom.txt
++cp /tmp/cve.txt /tmp/cicd-status/docs/release_artifacts/6.0.4.4/z/aci-containers-host-ovscni/6.0.4.4-cve.txt
++cp /tmp/cve-base.txt /tmp/cicd-status/docs/release_artifacts/6.0.4.4/z/aci-containers-host-ovscni/6.0.4.4-cve-base.txt
++update_container_release
++docker rmi -f sha256:7ee74ee06f924c7c8828b20e2a84baadbf4ccacd56954b8492f6423f3a139dcd
+Untagged: noiro/aci-containers-host-ovscni:6.0.4.4.81c2369.091324.9885
+Untagged: noiro/aci-containers-host-ovscni:6.0.4.4.81c2369.z
+Untagged: noiro/aci-containers-host-ovscni@sha256:fdc09eee204807db3adee2ac45f5aa02bad725d704979c7ce825d8e4b35ebd85
+Untagged: quay.io/noiro/aci-containers-host-ovscni:6.0.4.4.81c2369.091324.9885
+Untagged: quay.io/noiro/aci-containers-host-ovscni:6.0.4.4.81c2369.z
+Untagged: quay.io/noiro/aci-containers-host-ovscni@sha256:fdc09eee204807db3adee2ac45f5aa02bad725d704979c7ce825d8e4b35ebd85
+Untagged: quay.io/noirolabs/aci-containers-host-ovscni:6.0.4.4.81c2369
+Untagged: quay.io/noirolabs/aci-containers-host-ovscni:6.0.4.4.81c2369.091324.9885
+Untagged: quay.io/noirolabs/aci-containers-host-ovscni:6.0.4.4.81c2369.z
+Untagged: quay.io/noirolabs/aci-containers-host-ovscni@sha256:fdc09eee204807db3adee2ac45f5aa02bad725d704979c7ce825d8e4b35ebd85
+Deleted: sha256:7ee74ee06f924c7c8828b20e2a84baadbf4ccacd56954b8492f6423f3a139dcd
++python /tmp/cicd/travis/update-release.py quay.io/noiro aci-containers-host-ovscni 6.0.4.4.81c2369 6.0.4.4.81c2369,6.0.4.4.81c2369.091324.9885 sha256:7ee74ee06f924c7c8828b20e2a84baadbf4ccacd56954b8492f6423f3a139dcd 6.0.4.4.81c2369.z 6.0.4.4.81c2369.091324.9885 registry.access.redhat.com/ubi9/ubi:9.3
++add_trivy_vulnerabilites
++trivy image quay.io/noiro/aci-containers-host-ovscni:6.0.4.4.81c2369.z
+2024-09-13T08:56:36.285Z	[34mINFO[0m	Vulnerability scanning is enabled
+2024-09-13T08:56:36.285Z	[34mINFO[0m	Secret scanning is enabled
+2024-09-13T08:56:36.285Z	[34mINFO[0m	If your scanning is slow, please try '--scanners vuln' to disable secret scanning
+2024-09-13T08:56:36.285Z	[34mINFO[0m	Please see also https://aquasecurity.github.io/trivy/v0.44/docs/scanner/secret/#recommendation for faster secret detection
+2024-09-13T08:56:48.484Z	[34mINFO[0m	Detected OS: redhat
+2024-09-13T08:56:48.484Z	[34mINFO[0m	Detecting RHEL/CentOS vulnerabilities...
+2024-09-13T08:56:48.725Z	[34mINFO[0m	Number of language-specific files: 3
+2024-09-13T08:56:48.725Z	[34mINFO[0m	Detecting gobinary vulnerabilities...
++git push origin main
+To https://github.com/noironetworks/cicd-status.git
+ ! [rejected]          main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/noironetworks/cicd-status.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
++git checkout .
+Updated 0 paths from the index
++git pull --rebase origin main
+From https://github.com/noironetworks/cicd-status
+ * branch              main       -> FETCH_HEAD
+   7cce3351..f3648b55  main       -> origin/main
+Rebasing (1/1)[KSuccessfully rebased and updated refs/heads/main.
++echo 'Retrying git_add_commit_push after stash pop failure...'
+Retrying git_add_commit_push after stash pop failure...
++true
++[[ aci-containers != \a\c\c\-\p\r\o\v\i\s\i\o\n ]]
++add_artifacts
++cd /tmp/cicd-status
++git pull --rebase origin main
