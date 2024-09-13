@@ -4894,9 +4894,9 @@ releases:
         cve: release_artifacts/6.1.2.1/z/acc-provision-operator/6.1.2.1-cve-base.txt
         severity:
         - C: 0
-          H: 38
-          L: 11
-          M: 82
+          H: 27
+          L: 200
+          M: 120
           U: 0
         severity_link: https://quay.io/repository/noirolabs/ansible-operator/manifest/sha256:95acab66b626f8b40f577d02d51b4d5e11c5fd7c801a538fd65ced08cc8ee02f?tab=vulnerabilities
         severity_type: quay
@@ -4926,27 +4926,31 @@ releases:
       sbom: release_artifacts/6.1.2.1/z/acc-provision-operator/6.1.2.1-sbom.txt
       severity:
       - C: 0
-        H: 3
-        L: 1
-        M: 11
+        H: 2
+        L: 265
+        M: 92
         U: 0
       severity_link: https://quay.io/repository/noiro/acc-provision-operator/manifest/sha256:3371c63e63460d887cf163ece97a1b49126f843c4a181af900a787fbfaef7a8b?tab=vulnerabilities
       severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.2.1/z/aci-containers-host/6.1.2.1-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.2.1/z/aci-containers-host/6.1.2.1-cve-base.txt
         severity:
         - C: 0
-          H: 2
-          L: 0
-          M: 6
+          H: 10
+          L: 174
+          M: 50
           U: 0
-        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
+        severity_type: quay
+        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
       build-logs: release_artifacts/6.1.2.1/z/aci-containers-host/6.1.2.1-buildlog.txt
       build-time: 2024-09-13 02:09:38 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/ba1df2dac45ee790d418d5c945b133959ba413f9
         sha: ba1df2dac45ee790d418d5c945b133959ba413f9
-      cve: release_artifacts/6.1.2.1/z/aci-containers-host/6.1.2.1-cve.txt
+      cve: release_artifacts/6.1.2.1/z/aci-containers-host/6.1.2.1-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-host/6.1.2.1.81c2369.z/images/sha256-cb9f573cdf7eced0864385e5d1740132d21ba92a5d47cd92ca4c7d9eae44a0dc?context=explore
         sha: cb9f573cdf7eced0864385e5d1740132d21ba92a5d47cd92ca4c7d9eae44a0dc
@@ -4966,25 +4970,30 @@ releases:
       severity:
       - C: 0
         H: 0
-        L: 0
-        M: 1
-        U: 0
-      severity_type: grype
+        L: 42
+        M: 29
+        U: 1
+      severity_link: https://quay.io/repository/noiro/aci-containers-host/manifest/sha256:cb9f573cdf7eced0864385e5d1740132d21ba92a5d47cd92ca4c7d9eae44a0dc?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.2.1/z/aci-containers-controller/6.1.2.1-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.2.1/z/aci-containers-controller/6.1.2.1-cve-base.txt
         severity:
         - C: 0
-          H: 2
-          L: 0
-          M: 6
+          H: 10
+          L: 174
+          M: 50
           U: 0
-        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
+        severity_type: quay
+        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
       build-logs: release_artifacts/6.1.2.1/z/aci-containers-controller/6.1.2.1-buildlog.txt
       build-time: 2024-09-13 02:11:49 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/ba1df2dac45ee790d418d5c945b133959ba413f9
         sha: ba1df2dac45ee790d418d5c945b133959ba413f9
-      cve: release_artifacts/6.1.2.1/z/aci-containers-controller/6.1.2.1-cve.txt
+      cve: release_artifacts/6.1.2.1/z/aci-containers-controller/6.1.2.1-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-controller/6.1.2.1.81c2369.z/images/sha256-9828d887788cbe87e6760068fc2605ee60e09772607e87d1bad81528d0641e94?context=explore
         sha: 9828d887788cbe87e6760068fc2605ee60e09772607e87d1bad81528d0641e94
@@ -5002,27 +5011,32 @@ releases:
         tag: 6.1.2.1.81c2369.091324.9889
       sbom: release_artifacts/6.1.2.1/z/aci-containers-controller/6.1.2.1-sbom.txt
       severity:
-      - C: 1
-        H: 5
-        L: 0
-        M: 23
-        U: 0
-      severity_type: grype
+      - C: 0
+        H: 0
+        L: 151
+        M: 26
+        U: 1
+      severity_link: https://quay.io/repository/noiro/aci-containers-controller/manifest/sha256:9828d887788cbe87e6760068fc2605ee60e09772607e87d1bad81528d0641e94?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.2.1/z/cnideploy/6.1.2.1-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.2.1/z/cnideploy/6.1.2.1-cve-base.txt
         severity:
         - C: 0
-          H: 2
-          L: 0
-          M: 6
+          H: 10
+          L: 174
+          M: 50
           U: 0
-        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
+        severity_type: quay
+        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
       build-logs: release_artifacts/6.1.2.1/z/cnideploy/6.1.2.1-buildlog.txt
       build-time: 2024-09-13 02:13:31 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/ba1df2dac45ee790d418d5c945b133959ba413f9
         sha: ba1df2dac45ee790d418d5c945b133959ba413f9
-      cve: release_artifacts/6.1.2.1/z/cnideploy/6.1.2.1-cve.txt
+      cve: release_artifacts/6.1.2.1/z/cnideploy/6.1.2.1-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/cnideploy/6.1.2.1.81c2369.z/images/sha256-08a1400eb44007e30feb979ea795723d5eba1f60125a868904687a796ef819ce?context=explore
         sha: 08a1400eb44007e30feb979ea795723d5eba1f60125a868904687a796ef819ce
@@ -5041,26 +5055,31 @@ releases:
       sbom: release_artifacts/6.1.2.1/z/cnideploy/6.1.2.1-sbom.txt
       severity:
       - C: 0
-        H: 2
-        L: 0
-        M: 7
-        U: 0
-      severity_type: grype
+        H: 0
+        L: 151
+        M: 26
+        U: 1
+      severity_link: https://quay.io/repository/noiro/cnideploy/manifest/sha256:08a1400eb44007e30feb979ea795723d5eba1f60125a868904687a796ef819ce?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.2.1/z/aci-containers-operator/6.1.2.1-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.2.1/z/aci-containers-operator/6.1.2.1-cve-base.txt
         severity:
         - C: 0
-          H: 2
-          L: 0
-          M: 6
+          H: 10
+          L: 174
+          M: 50
           U: 0
-        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
+        severity_type: quay
+        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
       build-logs: release_artifacts/6.1.2.1/z/aci-containers-operator/6.1.2.1-buildlog.txt
       build-time: 2024-09-13 02:15:02 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/ba1df2dac45ee790d418d5c945b133959ba413f9
         sha: ba1df2dac45ee790d418d5c945b133959ba413f9
-      cve: release_artifacts/6.1.2.1/z/aci-containers-operator/6.1.2.1-cve.txt
+      cve: release_artifacts/6.1.2.1/z/aci-containers-operator/6.1.2.1-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-operator/6.1.2.1.81c2369.z/images/sha256-04f57f26a983b211e25d72286261e18e1ffca02dc6ac1596f1a9a1435deb5413?context=explore
         sha: 04f57f26a983b211e25d72286261e18e1ffca02dc6ac1596f1a9a1435deb5413
@@ -5079,26 +5098,31 @@ releases:
       sbom: release_artifacts/6.1.2.1/z/aci-containers-operator/6.1.2.1-sbom.txt
       severity:
       - C: 0
-        H: 2
-        L: 0
-        M: 7
-        U: 0
-      severity_type: grype
+        H: 0
+        L: 157
+        M: 31
+        U: 3
+      severity_link: https://quay.io/repository/noiro/aci-containers-operator/manifest/sha256:04f57f26a983b211e25d72286261e18e1ffca02dc6ac1596f1a9a1435deb5413?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.2.1/z/openvswitch/6.1.2.1-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.2.1/z/openvswitch/6.1.2.1-cve-base.txt
         severity:
         - C: 0
-          H: 0
-          L: 0
-          M: 0
+          H: 6
+          L: 42
+          M: 19
           U: 0
-        sha: bc552efb4966aaa44b02532be3168ac1ff18e2af299d0fe89502a1d9fabafbc5
+        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d?tab=vulnerabilities
+        severity_type: quay
+        sha: 67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d
       build-logs: release_artifacts/6.1.2.1/z/openvswitch/6.1.2.1-buildlog.txt
       build-time: 2024-09-13 02:17:02 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/ba1df2dac45ee790d418d5c945b133959ba413f9
         sha: ba1df2dac45ee790d418d5c945b133959ba413f9
-      cve: release_artifacts/6.1.2.1/z/openvswitch/6.1.2.1-cve.txt
+      cve: release_artifacts/6.1.2.1/z/openvswitch/6.1.2.1-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/openvswitch/6.1.2.1.81c2369.z/images/sha256-76b359225dc5d9b8d3b264cab4a4a03852140483d88245314a09089adbda94c8?context=explore
         sha: 76b359225dc5d9b8d3b264cab4a4a03852140483d88245314a09089adbda94c8
@@ -5118,25 +5142,30 @@ releases:
       severity:
       - C: 0
         H: 0
-        L: 0
-        M: 0
+        L: 151
+        M: 30
         U: 0
-      severity_type: grype
+      severity_link: https://quay.io/repository/noiro/openvswitch/manifest/sha256:76b359225dc5d9b8d3b264cab4a4a03852140483d88245314a09089adbda94c8?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.2.1/z/aci-containers-webhook/6.1.2.1-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.2.1/z/aci-containers-webhook/6.1.2.1-cve-base.txt
         severity:
         - C: 0
-          H: 2
-          L: 0
-          M: 6
+          H: 10
+          L: 174
+          M: 50
           U: 0
-        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
+        severity_type: quay
+        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
       build-logs: release_artifacts/6.1.2.1/z/aci-containers-webhook/6.1.2.1-buildlog.txt
       build-time: 2024-09-13 02:18:37 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/ba1df2dac45ee790d418d5c945b133959ba413f9
         sha: ba1df2dac45ee790d418d5c945b133959ba413f9
-      cve: release_artifacts/6.1.2.1/z/aci-containers-webhook/6.1.2.1-cve.txt
+      cve: release_artifacts/6.1.2.1/z/aci-containers-webhook/6.1.2.1-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-webhook/6.1.2.1.81c2369.z/images/sha256-7b60b194f44398763aad828e4b3d8ead41aa23aca64bfd23a9afc011266801dc?context=explore
         sha: 7b60b194f44398763aad828e4b3d8ead41aa23aca64bfd23a9afc011266801dc
@@ -5155,26 +5184,31 @@ releases:
       sbom: release_artifacts/6.1.2.1/z/aci-containers-webhook/6.1.2.1-sbom.txt
       severity:
       - C: 0
-        H: 2
-        L: 0
-        M: 6
+        H: 0
+        L: 151
+        M: 25
         U: 0
-      severity_type: grype
+      severity_link: https://quay.io/repository/noiro/aci-containers-webhook/manifest/sha256:7b60b194f44398763aad828e4b3d8ead41aa23aca64bfd23a9afc011266801dc?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.2.1/z/aci-containers-certmanager/6.1.2.1-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.2.1/z/aci-containers-certmanager/6.1.2.1-cve-base.txt
         severity:
         - C: 0
-          H: 2
-          L: 0
-          M: 6
+          H: 10
+          L: 174
+          M: 50
           U: 0
-        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
+        severity_type: quay
+        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
       build-logs: release_artifacts/6.1.2.1/z/aci-containers-certmanager/6.1.2.1-buildlog.txt
       build-time: 2024-09-13 02:19:53 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/ba1df2dac45ee790d418d5c945b133959ba413f9
         sha: ba1df2dac45ee790d418d5c945b133959ba413f9
-      cve: release_artifacts/6.1.2.1/z/aci-containers-certmanager/6.1.2.1-cve.txt
+      cve: release_artifacts/6.1.2.1/z/aci-containers-certmanager/6.1.2.1-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-certmanager/6.1.2.1.81c2369.z/images/sha256-3cc318728f621f196192c46e0828ce546ed01f9d061e86eb0f07ccd4be46c39d?context=explore
         sha: 3cc318728f621f196192c46e0828ce546ed01f9d061e86eb0f07ccd4be46c39d
@@ -5193,26 +5227,31 @@ releases:
       sbom: release_artifacts/6.1.2.1/z/aci-containers-certmanager/6.1.2.1-sbom.txt
       severity:
       - C: 0
-        H: 2
-        L: 0
-        M: 6
+        H: 0
+        L: 151
+        M: 25
         U: 0
-      severity_type: grype
+      severity_link: https://quay.io/repository/noiro/aci-containers-certmanager/manifest/sha256:3cc318728f621f196192c46e0828ce546ed01f9d061e86eb0f07ccd4be46c39d?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.2.1/z/aci-containers-host-ovscni/6.1.2.1-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.2.1/z/aci-containers-host-ovscni/6.1.2.1-cve-base.txt
         severity:
         - C: 0
-          H: 2
-          L: 0
-          M: 6
+          H: 10
+          L: 174
+          M: 50
           U: 0
-        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
+        severity_type: quay
+        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
       build-logs: release_artifacts/6.1.2.1/z/aci-containers-host-ovscni/6.1.2.1-buildlog.txt
       build-time: 2024-09-13 02:21:27 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/ba1df2dac45ee790d418d5c945b133959ba413f9
         sha: ba1df2dac45ee790d418d5c945b133959ba413f9
-      cve: release_artifacts/6.1.2.1/z/aci-containers-host-ovscni/6.1.2.1-cve.txt
+      cve: release_artifacts/6.1.2.1/z/aci-containers-host-ovscni/6.1.2.1-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-host-ovscni/6.1.2.1.81c2369.z/images/sha256-5441c1a2052c014017f74c657e94a0b9a42d41d6b8788b1acbe17649816bcda1?context=explore
         sha: 5441c1a2052c014017f74c657e94a0b9a42d41d6b8788b1acbe17649816bcda1
@@ -5232,18 +5271,19 @@ releases:
       severity:
       - C: 0
         H: 0
-        L: 0
-        M: 1
-        U: 0
-      severity_type: grype
+        L: 42
+        M: 29
+        U: 1
+      severity_link: https://quay.io/repository/noiro/aci-containers-host-ovscni/manifest/sha256:5441c1a2052c014017f74c657e94a0b9a42d41d6b8788b1acbe17649816bcda1?tab=vulnerabilities
+      severity_type: quay
     - base-image:
       - base_cve_error: ''
         cve: release_artifacts/6.1.2.1/z/opflex/6.1.2.1-cve-base.txt
         severity:
         - C: 0
-          H: 3
-          L: 2
-          M: 9
+          H: 6
+          L: 42
+          M: 19
           U: 0
         severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d?tab=vulnerabilities
         severity_type: quay
@@ -5273,9 +5313,9 @@ releases:
       sbom: release_artifacts/6.1.2.1/z/opflex/6.1.2.1-sbom.txt
       severity:
       - C: 0
-        H: 0
-        L: 0
-        M: 3
+        H: 1
+        L: 158
+        M: 37
         U: 0
       severity_link: https://quay.io/repository/noiro/opflex/manifest/sha256:bb717cdbf76433ac019a38a7bef5b76ccc5cca2e816f8d4177bbca501e0dce9c?tab=vulnerabilities
       severity_type: quay
@@ -5611,26 +5651,26 @@ releases:
           U: 0
         sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
       build-logs: release_artifacts/6.0.4.4/z/aci-containers-host-ovscni/6.0.4.4-buildlog.txt
-      build-time: 2024-09-13 01:56:55 PDT
+      build-time: 2024-09-13 02:27:55 PDT
       commit:
-      - link: https://github.com/noironetworks/aci-containers/commit/d0e34a8f723013c37de62f582d854faa7cbe9c87
-        sha: d0e34a8f723013c37de62f582d854faa7cbe9c87
+      - link: https://github.com/noironetworks/aci-containers/commit/c46b0c5d231014ee9774f3f8a72bdae5525da883
+        sha: c46b0c5d231014ee9774f3f8a72bdae5525da883
       cve: release_artifacts/6.0.4.4/z/aci-containers-host-ovscni/6.0.4.4-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/aci-containers-host-ovscni/6.0.4.4.81c2369.z/images/sha256-fdc09eee204807db3adee2ac45f5aa02bad725d704979c7ce825d8e4b35ebd85?context=explore
-        sha: fdc09eee204807db3adee2ac45f5aa02bad725d704979c7ce825d8e4b35ebd85
+      - link: https://hub.docker.com/layers/noiro/aci-containers-host-ovscni/6.0.4.4.81c2369.z/images/sha256-d4b7026f415f5af4126026018d48515745162fc783cd627a7cea05e26c8b0ded?context=explore
+        sha: d4b7026f415f5af4126026018d48515745162fc783cd627a7cea05e26c8b0ded
         tag: 6.0.4.4.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/aci-containers-host-ovscni/6.0.4.4.81c2369.091324.9885/images/sha256-fdc09eee204807db3adee2ac45f5aa02bad725d704979c7ce825d8e4b35ebd85?context=explore
-        sha: fdc09eee204807db3adee2ac45f5aa02bad725d704979c7ce825d8e4b35ebd85
-        tag: 6.0.4.4.81c2369.091324.9885
+      - link: https://hub.docker.com/layers/noiro/aci-containers-host-ovscni/6.0.4.4.81c2369.091324.9890/images/sha256-d4b7026f415f5af4126026018d48515745162fc783cd627a7cea05e26c8b0ded?context=explore
+        sha: d4b7026f415f5af4126026018d48515745162fc783cd627a7cea05e26c8b0ded
+        tag: 6.0.4.4.81c2369.091324.9890
       name: aci-containers-host-ovscni
       quay:
       - link: https://quay.io/noiro/aci-containers-host-ovscni:6.0.4.4.81c2369.z
-        sha: fdc09eee204807db3adee2ac45f5aa02bad725d704979c7ce825d8e4b35ebd85
+        sha: d4b7026f415f5af4126026018d48515745162fc783cd627a7cea05e26c8b0ded
         tag: 6.0.4.4.81c2369.z
-      - link: https://quay.io/noiro/aci-containers-host-ovscni:6.0.4.4.81c2369.091324.9885
-        sha: fdc09eee204807db3adee2ac45f5aa02bad725d704979c7ce825d8e4b35ebd85
-        tag: 6.0.4.4.81c2369.091324.9885
+      - link: https://quay.io/noiro/aci-containers-host-ovscni:6.0.4.4.81c2369.091324.9890
+        sha: d4b7026f415f5af4126026018d48515745162fc783cd627a7cea05e26c8b0ded
+        tag: 6.0.4.4.81c2369.091324.9890
       sbom: release_artifacts/6.0.4.4/z/aci-containers-host-ovscni/6.0.4.4-sbom.txt
       severity:
       - C: 0
@@ -5682,7 +5722,7 @@ releases:
         U: 0
       severity_link: https://quay.io/repository/noiro/opflex/manifest/sha256:889f964494ff2f8769bb24ca6bb0c9ee468d4a04a2f6a0c9a3504e92d25ca26c?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-09-13 02:26:15 PDT
+    last_updated: 2024-09-13 02:27:55 PDT
     release_name: 6.0.4.4.z
   - acc_provision: []
     container_images: []
@@ -5701,20 +5741,24 @@ releases:
       tag: 6.1.1.2.dev9959
     container_images:
     - base-image:
-      - cve: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-cve-base.txt
         severity:
-        - C: 5
-          H: 5
-          L: 182
-          M: 51
-          U: 1
-        sha: 8458427f4c192f4df284b6a3a7c60bd4f1f646828fc8802133c3203fbeb50ab2
+        - C: 0
+          H: 27
+          L: 200
+          M: 120
+          U: 0
+        severity_link: https://quay.io/repository/noirolabs/ansible-operator/manifest/sha256:95acab66b626f8b40f577d02d51b4d5e11c5fd7c801a538fd65ced08cc8ee02f?tab=vulnerabilities
+        severity_type: quay
+        sha: 95acab66b626f8b40f577d02d51b4d5e11c5fd7c801a538fd65ced08cc8ee02f
       build-logs: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-buildlog.txt
       build-time: 2024-09-13 01:31:27 PDT
       commit:
       - link: https://github.com/noironetworks/acc-provision-operator/commit/b616a40c804f566eb8b33fa8e353482f05168a08
         sha: b616a40c804f566eb8b33fa8e353482f05168a08
-      cve: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-cve.txt
+      cve: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.1.1.2.81c2369.z/images/sha256-74a9e533dcfdb0f84079547d9e943dd5ae0d8131c1e43142fa71bf181e9d944a?context=explore
         sha: 74a9e533dcfdb0f84079547d9e943dd5ae0d8131c1e43142fa71bf181e9d944a
@@ -5732,27 +5776,32 @@ releases:
         tag: 6.1.1.2.81c2369.091324.823
       sbom: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-sbom.txt
       severity:
-      - C: 7
-        H: 5
-        L: 261
-        M: 98
-        U: 2
-      severity_type: grype
+      - C: 0
+        H: 3
+        L: 265
+        M: 91
+        U: 0
+      severity_link: https://quay.io/repository/noiro/acc-provision-operator/manifest/sha256:74a9e533dcfdb0f84079547d9e943dd5ae0d8131c1e43142fa71bf181e9d944a?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.1.2/z/aci-containers-host/6.1.1.2-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.1.2/z/aci-containers-host/6.1.1.2-cve-base.txt
         severity:
         - C: 0
-          H: 2
-          L: 0
-          M: 6
+          H: 10
+          L: 174
+          M: 50
           U: 0
-        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
+        severity_type: quay
+        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
       build-logs: release_artifacts/6.1.1.2/z/aci-containers-host/6.1.1.2-buildlog.txt
       build-time: 2024-09-13 01:56:21 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/93687f2282a6fe216512c470ee73479ebd5591eb
         sha: 93687f2282a6fe216512c470ee73479ebd5591eb
-      cve: release_artifacts/6.1.1.2/z/aci-containers-host/6.1.1.2-cve.txt
+      cve: release_artifacts/6.1.1.2/z/aci-containers-host/6.1.1.2-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-host/6.1.1.2.81c2369.z/images/sha256-fd87c868a0eb59c0c005477868bc398acc8f8b719e4c2b40d5384a85a88660f0?context=explore
         sha: fd87c868a0eb59c0c005477868bc398acc8f8b719e4c2b40d5384a85a88660f0
@@ -5772,25 +5821,30 @@ releases:
       severity:
       - C: 0
         H: 0
-        L: 0
-        M: 1
-        U: 0
-      severity_type: grype
+        L: 42
+        M: 29
+        U: 1
+      severity_link: https://quay.io/repository/noiro/aci-containers-host/manifest/sha256:fd87c868a0eb59c0c005477868bc398acc8f8b719e4c2b40d5384a85a88660f0?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.1.2/z/aci-containers-controller/6.1.1.2-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.1.2/z/aci-containers-controller/6.1.1.2-cve-base.txt
         severity:
         - C: 0
-          H: 2
-          L: 0
-          M: 6
+          H: 10
+          L: 174
+          M: 50
           U: 0
-        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
+        severity_type: quay
+        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
       build-logs: release_artifacts/6.1.1.2/z/aci-containers-controller/6.1.1.2-buildlog.txt
       build-time: 2024-09-13 01:58:32 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/93687f2282a6fe216512c470ee73479ebd5591eb
         sha: 93687f2282a6fe216512c470ee73479ebd5591eb
-      cve: release_artifacts/6.1.1.2/z/aci-containers-controller/6.1.1.2-cve.txt
+      cve: release_artifacts/6.1.1.2/z/aci-containers-controller/6.1.1.2-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-controller/6.1.1.2.81c2369.z/images/sha256-24483eba1c8903102d6ff3d5e76fd11b214063632e9d3faa62a57abc82c73899?context=explore
         sha: 24483eba1c8903102d6ff3d5e76fd11b214063632e9d3faa62a57abc82c73899
@@ -5808,27 +5862,32 @@ releases:
         tag: 6.1.1.2.81c2369.091324.9888
       sbom: release_artifacts/6.1.1.2/z/aci-containers-controller/6.1.1.2-sbom.txt
       severity:
-      - C: 1
-        H: 5
-        L: 0
-        M: 23
-        U: 0
-      severity_type: grype
+      - C: 0
+        H: 0
+        L: 151
+        M: 26
+        U: 1
+      severity_link: https://quay.io/repository/noiro/aci-containers-controller/manifest/sha256:24483eba1c8903102d6ff3d5e76fd11b214063632e9d3faa62a57abc82c73899?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.1.2/z/cnideploy/6.1.1.2-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.1.2/z/cnideploy/6.1.1.2-cve-base.txt
         severity:
         - C: 0
-          H: 2
-          L: 0
-          M: 6
+          H: 10
+          L: 174
+          M: 50
           U: 0
-        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
+        severity_type: quay
+        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
       build-logs: release_artifacts/6.1.1.2/z/cnideploy/6.1.1.2-buildlog.txt
       build-time: 2024-09-13 02:00:14 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/93687f2282a6fe216512c470ee73479ebd5591eb
         sha: 93687f2282a6fe216512c470ee73479ebd5591eb
-      cve: release_artifacts/6.1.1.2/z/cnideploy/6.1.1.2-cve.txt
+      cve: release_artifacts/6.1.1.2/z/cnideploy/6.1.1.2-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/cnideploy/6.1.1.2.81c2369.z/images/sha256-d296e3f7ce0dda863f8b469f732683291761d6a4b823dbc7acf5807e5bbbf194?context=explore
         sha: d296e3f7ce0dda863f8b469f732683291761d6a4b823dbc7acf5807e5bbbf194
@@ -5847,26 +5906,31 @@ releases:
       sbom: release_artifacts/6.1.1.2/z/cnideploy/6.1.1.2-sbom.txt
       severity:
       - C: 0
-        H: 2
-        L: 0
-        M: 7
-        U: 0
-      severity_type: grype
+        H: 0
+        L: 151
+        M: 26
+        U: 1
+      severity_link: https://quay.io/repository/noiro/cnideploy/manifest/sha256:d296e3f7ce0dda863f8b469f732683291761d6a4b823dbc7acf5807e5bbbf194?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.1.2/z/aci-containers-operator/6.1.1.2-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.1.2/z/aci-containers-operator/6.1.1.2-cve-base.txt
         severity:
         - C: 0
-          H: 2
-          L: 0
-          M: 6
+          H: 10
+          L: 174
+          M: 50
           U: 0
-        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
+        severity_type: quay
+        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
       build-logs: release_artifacts/6.1.1.2/z/aci-containers-operator/6.1.1.2-buildlog.txt
       build-time: 2024-09-13 02:01:46 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/93687f2282a6fe216512c470ee73479ebd5591eb
         sha: 93687f2282a6fe216512c470ee73479ebd5591eb
-      cve: release_artifacts/6.1.1.2/z/aci-containers-operator/6.1.1.2-cve.txt
+      cve: release_artifacts/6.1.1.2/z/aci-containers-operator/6.1.1.2-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-operator/6.1.1.2.81c2369.z/images/sha256-309e28c6a0d4e892ad87b361065364cfc07d4045dab7a2bc48b379bab9fccc24?context=explore
         sha: 309e28c6a0d4e892ad87b361065364cfc07d4045dab7a2bc48b379bab9fccc24
@@ -5885,26 +5949,31 @@ releases:
       sbom: release_artifacts/6.1.1.2/z/aci-containers-operator/6.1.1.2-sbom.txt
       severity:
       - C: 0
-        H: 2
-        L: 0
-        M: 7
-        U: 0
-      severity_type: grype
+        H: 0
+        L: 157
+        M: 31
+        U: 3
+      severity_link: https://quay.io/repository/noiro/aci-containers-operator/manifest/sha256:309e28c6a0d4e892ad87b361065364cfc07d4045dab7a2bc48b379bab9fccc24?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.1.2/z/openvswitch/6.1.1.2-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.1.2/z/openvswitch/6.1.1.2-cve-base.txt
         severity:
         - C: 0
-          H: 0
-          L: 0
-          M: 0
+          H: 6
+          L: 42
+          M: 19
           U: 0
-        sha: bc552efb4966aaa44b02532be3168ac1ff18e2af299d0fe89502a1d9fabafbc5
+        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d?tab=vulnerabilities
+        severity_type: quay
+        sha: 67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d
       build-logs: release_artifacts/6.1.1.2/z/openvswitch/6.1.1.2-buildlog.txt
       build-time: 2024-09-13 02:03:53 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/93687f2282a6fe216512c470ee73479ebd5591eb
         sha: 93687f2282a6fe216512c470ee73479ebd5591eb
-      cve: release_artifacts/6.1.1.2/z/openvswitch/6.1.1.2-cve.txt
+      cve: release_artifacts/6.1.1.2/z/openvswitch/6.1.1.2-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/openvswitch/6.1.1.2.81c2369.z/images/sha256-cdfa16a8deffc66102df7153c4cf925c7180829287c51760c043baa839ff9aff?context=explore
         sha: cdfa16a8deffc66102df7153c4cf925c7180829287c51760c043baa839ff9aff
@@ -5924,25 +5993,30 @@ releases:
       severity:
       - C: 0
         H: 0
-        L: 0
-        M: 0
+        L: 151
+        M: 30
         U: 0
-      severity_type: grype
+      severity_link: https://quay.io/repository/noiro/openvswitch/manifest/sha256:cdfa16a8deffc66102df7153c4cf925c7180829287c51760c043baa839ff9aff?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-cve-base.txt
         severity:
         - C: 0
-          H: 2
-          L: 0
-          M: 6
+          H: 10
+          L: 174
+          M: 50
           U: 0
-        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
+        severity_type: quay
+        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
       build-logs: release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-buildlog.txt
       build-time: 2024-09-13 02:05:26 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/93687f2282a6fe216512c470ee73479ebd5591eb
         sha: 93687f2282a6fe216512c470ee73479ebd5591eb
-      cve: release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-cve.txt
+      cve: release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-webhook/6.1.1.2.81c2369.z/images/sha256-9b4eabcc6293cd3c6f58f6b766fb185aef3129f4dd5000590b88630940c2c8d6?context=explore
         sha: 9b4eabcc6293cd3c6f58f6b766fb185aef3129f4dd5000590b88630940c2c8d6
@@ -5961,26 +6035,31 @@ releases:
       sbom: release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-sbom.txt
       severity:
       - C: 0
-        H: 2
-        L: 0
-        M: 6
+        H: 0
+        L: 151
+        M: 25
         U: 0
-      severity_type: grype
+      severity_link: https://quay.io/repository/noiro/aci-containers-webhook/manifest/sha256:9b4eabcc6293cd3c6f58f6b766fb185aef3129f4dd5000590b88630940c2c8d6?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.1.2/z/aci-containers-certmanager/6.1.1.2-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.1.2/z/aci-containers-certmanager/6.1.1.2-cve-base.txt
         severity:
         - C: 0
-          H: 2
-          L: 0
-          M: 6
+          H: 10
+          L: 174
+          M: 50
           U: 0
-        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
+        severity_type: quay
+        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
       build-logs: release_artifacts/6.1.1.2/z/aci-containers-certmanager/6.1.1.2-buildlog.txt
       build-time: 2024-09-13 02:06:40 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/93687f2282a6fe216512c470ee73479ebd5591eb
         sha: 93687f2282a6fe216512c470ee73479ebd5591eb
-      cve: release_artifacts/6.1.1.2/z/aci-containers-certmanager/6.1.1.2-cve.txt
+      cve: release_artifacts/6.1.1.2/z/aci-containers-certmanager/6.1.1.2-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-certmanager/6.1.1.2.81c2369.z/images/sha256-6e1f3b55447ca168e8b71a65b7d0098873a765ba31fc25c2544b9968cfc9755d?context=explore
         sha: 6e1f3b55447ca168e8b71a65b7d0098873a765ba31fc25c2544b9968cfc9755d
@@ -5999,26 +6078,31 @@ releases:
       sbom: release_artifacts/6.1.1.2/z/aci-containers-certmanager/6.1.1.2-sbom.txt
       severity:
       - C: 0
-        H: 2
-        L: 0
-        M: 6
+        H: 0
+        L: 151
+        M: 25
         U: 0
-      severity_type: grype
+      severity_link: https://quay.io/repository/noiro/aci-containers-certmanager/manifest/sha256:6e1f3b55447ca168e8b71a65b7d0098873a765ba31fc25c2544b9968cfc9755d?tab=vulnerabilities
+      severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.1.1.2/z/aci-containers-host-ovscni/6.1.1.2-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.1.1.2/z/aci-containers-host-ovscni/6.1.1.2-cve-base.txt
         severity:
         - C: 0
-          H: 2
-          L: 0
-          M: 6
+          H: 10
+          L: 174
+          M: 50
           U: 0
-        sha: 66233eebd72bb5baa25190d4f55e1dc3fff3a9b77186c1f91a0abdb274452072
+        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185?tab=vulnerabilities
+        severity_type: quay
+        sha: ecb856470e15c7160e22e4b2542fb9b37c30af41ec1b2c2c753ca948d8002185
       build-logs: release_artifacts/6.1.1.2/z/aci-containers-host-ovscni/6.1.1.2-buildlog.txt
       build-time: 2024-09-13 02:08:17 PDT
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/93687f2282a6fe216512c470ee73479ebd5591eb
         sha: 93687f2282a6fe216512c470ee73479ebd5591eb
-      cve: release_artifacts/6.1.1.2/z/aci-containers-host-ovscni/6.1.1.2-cve.txt
+      cve: release_artifacts/6.1.1.2/z/aci-containers-host-ovscni/6.1.1.2-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/aci-containers-host-ovscni/6.1.1.2.81c2369.z/images/sha256-e1dddd1322ddd44b8a40627578534aefa5849d03931e6a0103d61f2e101df78d?context=explore
         sha: e1dddd1322ddd44b8a40627578534aefa5849d03931e6a0103d61f2e101df78d
@@ -6038,18 +6122,19 @@ releases:
       severity:
       - C: 0
         H: 0
-        L: 0
-        M: 1
-        U: 0
-      severity_type: grype
+        L: 42
+        M: 29
+        U: 1
+      severity_link: https://quay.io/repository/noiro/aci-containers-host-ovscni/manifest/sha256:e1dddd1322ddd44b8a40627578534aefa5849d03931e6a0103d61f2e101df78d?tab=vulnerabilities
+      severity_type: quay
     - base-image:
       - base_cve_error: ''
         cve: release_artifacts/6.1.1.2/z/opflex/6.1.1.2-cve-base.txt
         severity:
         - C: 0
-          H: 3
-          L: 2
-          M: 9
+          H: 6
+          L: 42
+          M: 19
           U: 0
         severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d?tab=vulnerabilities
         severity_type: quay
@@ -6079,9 +6164,9 @@ releases:
       sbom: release_artifacts/6.1.1.2/z/opflex/6.1.1.2-sbom.txt
       severity:
       - C: 0
-        H: 0
-        L: 0
-        M: 3
+        H: 1
+        L: 158
+        M: 37
         U: 0
       severity_link: https://quay.io/repository/noiro/opflex/manifest/sha256:f82973ee406fc7bc42f148de7386af4612d9cdcd613814c0bf32b55ee1214d4c?tab=vulnerabilities
       severity_type: quay
