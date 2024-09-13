@@ -5741,48 +5741,43 @@ releases:
       tag: 6.1.1.2.dev9959
     container_images:
     - base-image:
-      - base_cve_error: ''
-        cve: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-cve-base.txt
+      - cve: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-cve-base.txt
         severity:
-        - C: 0
-          H: 38
-          L: 11
-          M: 82
+        - C: 5
+          H: 5
+          L: 182
+          M: 51
           U: 1
-        severity_link: https://quay.io/repository/noirolabs/ansible-operator/manifest/sha256:62655797fa492f0c975d3dea7e5d0e9ee0fb8590806d3b909859738eb543252a?tab=vulnerabilities
-        severity_type: quay
-        sha: 62655797fa492f0c975d3dea7e5d0e9ee0fb8590806d3b909859738eb543252a
+        sha: 8458427f4c192f4df284b6a3a7c60bd4f1f646828fc8802133c3203fbeb50ab2
       build-logs: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-buildlog.txt
-      build-time: 2024-09-06 11:13:56 PDT
+      build-time: 2024-09-13 01:31:27 PDT
       commit:
       - link: https://github.com/noironetworks/acc-provision-operator/commit/b616a40c804f566eb8b33fa8e353482f05168a08
         sha: b616a40c804f566eb8b33fa8e353482f05168a08
-      cve: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-quay-cve.txt
-      cve_error: ''
+      cve: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.1.1.2.81c2369.z/images/sha256-a0660598c6b463fbc222265fd1fb5e7f9ac844a24f63724ea9bcaa192ec98f72?context=explore
-        sha: a0660598c6b463fbc222265fd1fb5e7f9ac844a24f63724ea9bcaa192ec98f72
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.1.1.2.81c2369.z/images/sha256-74a9e533dcfdb0f84079547d9e943dd5ae0d8131c1e43142fa71bf181e9d944a?context=explore
+        sha: 74a9e533dcfdb0f84079547d9e943dd5ae0d8131c1e43142fa71bf181e9d944a
         tag: 6.1.1.2.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.1.1.2.81c2369.090624.817/images/sha256-a0660598c6b463fbc222265fd1fb5e7f9ac844a24f63724ea9bcaa192ec98f72?context=explore
-        sha: a0660598c6b463fbc222265fd1fb5e7f9ac844a24f63724ea9bcaa192ec98f72
-        tag: 6.1.1.2.81c2369.090624.817
+      - link: https://hub.docker.com/layers/noiro/acc-provision-operator/6.1.1.2.81c2369.091324.823/images/sha256-74a9e533dcfdb0f84079547d9e943dd5ae0d8131c1e43142fa71bf181e9d944a?context=explore
+        sha: 74a9e533dcfdb0f84079547d9e943dd5ae0d8131c1e43142fa71bf181e9d944a
+        tag: 6.1.1.2.81c2369.091324.823
       name: acc-provision-operator
       quay:
       - link: https://quay.io/noiro/acc-provision-operator:6.1.1.2.81c2369.z
-        sha: a0660598c6b463fbc222265fd1fb5e7f9ac844a24f63724ea9bcaa192ec98f72
+        sha: 74a9e533dcfdb0f84079547d9e943dd5ae0d8131c1e43142fa71bf181e9d944a
         tag: 6.1.1.2.81c2369.z
-      - link: https://quay.io/noiro/acc-provision-operator:6.1.1.2.81c2369.090624.817
-        sha: a0660598c6b463fbc222265fd1fb5e7f9ac844a24f63724ea9bcaa192ec98f72
-        tag: 6.1.1.2.81c2369.090624.817
+      - link: https://quay.io/noiro/acc-provision-operator:6.1.1.2.81c2369.091324.823
+        sha: 74a9e533dcfdb0f84079547d9e943dd5ae0d8131c1e43142fa71bf181e9d944a
+        tag: 6.1.1.2.81c2369.091324.823
       sbom: release_artifacts/6.1.1.2/z/acc-provision-operator/6.1.1.2-sbom.txt
       severity:
-      - C: 0
-        H: 3
-        L: 1
-        M: 11
-        U: 0
-      severity_link: https://quay.io/repository/noiro/acc-provision-operator/manifest/sha256:a0660598c6b463fbc222265fd1fb5e7f9ac844a24f63724ea9bcaa192ec98f72?tab=vulnerabilities
-      severity_type: quay
+      - C: 7
+        H: 5
+        L: 261
+        M: 98
+        U: 2
+      severity_type: grype
     - base-image:
       - base_cve_error: ''
         cve: release_artifacts/6.1.1.2/z/aci-containers-host/6.1.1.2-cve-base.txt
@@ -6170,7 +6165,7 @@ releases:
         U: 0
       severity_link: https://quay.io/repository/noiro/opflex/manifest/sha256:f82973ee406fc7bc42f148de7386af4612d9cdcd613814c0bf32b55ee1214d4c?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-09-10 15:09:56 PDT
+    last_updated: 2024-09-13 01:31:27 PDT
     release_name: 6.1.1.2.z
   - acc_provision: []
     container_images: []
