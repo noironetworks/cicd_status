@@ -24421,3 +24421,123 @@ f2acf93560ea: Preparing
 76072b3cf9d4: Layer already exists
 f8fe1f784b21: Layer already exists
 f2acf93560ea: Layer already exists
+6.0.4.4.81c2369.z: digest: sha256:29aafa23036d1a9bcf74dc87a539e86246df5b5f1bdb339fbebc58af9091407f size: 1367
+++docker image inspect '--format={{.Id}}' quay.io/noirolabs/cnideploy:6.0.4.4.81c2369
++IMAGE_SHA=sha256:a5ccedbb93d7386cb80648951a819f501e4046745d3c12fc9f2016b403d10b7d
++/tmp/cicd/travis/push-to-cicd-status.sh quay.io/noiro cnideploy 6.0.4.4.81c2369 6.0.4.4.81c2369,6.0.4.4.81c2369.091824.9920 sha256:a5ccedbb93d7386cb80648951a819f501e4046745d3c12fc9f2016b403d10b7d registry.access.redhat.com/ubi9/ubi:9.3
+++dirname /tmp/cicd/travis/push-to-cicd-status.sh
++SCRIPTS_DIR=/tmp/cicd/travis
++source /tmp/cicd/travis/globals.sh
+++set -x
+++RELEASE_TAG=6.0.4.4
+++export RELEASE_TAG
++++date +%m%d%y
+++DATE_TAG=091824
+++TRAVIS_TAG_WITH_UPSTREAM_ID=6.0.4.4.81c2369
+++TRAVIS_TAG_WITH_UPSTREAM_ID_DATE_TRAVIS_BUILD_NUMBER=6.0.4.4.81c2369.091824.9920
+++IMAGE_TAG=6.0.4.4.81c2369
+++UPSTREAM_IMAGE_TAG=6.0.4.4.81c2369
+++UPSTREAM_IMAGE_Z_TAG=6.0.4.4.81c2369.z
+++IMAGE_Z_TAG=6.0.4.4.81c2369.z
+++RELEASE_Z_TAG=6.0.4.4.z
+++RC_PREFIX=6.0.4.4rc
+++RC_REGEX='6.0.4.4rc[0-9]+'
+++QUAY_REGISTRY=quay.io/noirolabs
+++QUAY_NOIRO_REGISTRY=quay.io/noiro
+++DOCKER_REGISTRY=docker.io/noiro
+++CICD_STATUS_REPO=https://github.com/noironetworks/cicd-status.git
+++git rev-parse --abbrev-ref HEAD
++current_branch=HEAD
++[[ aci-containers != \a\c\c\-\p\r\o\v\i\s\i\o\n ]]
++IMAGE_BUILD_REGISTRY=quay.io/noiro
++IMAGE=cnideploy
++IMAGE_BUILD_TAG=6.0.4.4.81c2369
++OTHER_IMAGE_TAGS=6.0.4.4.81c2369,6.0.4.4.81c2369.091824.9920
++IMAGE_SHA=sha256:a5ccedbb93d7386cb80648951a819f501e4046745d3c12fc9f2016b403d10b7d
++BASE_IMAGE=registry.access.redhat.com/ubi9/ubi:9.3
++GIT_REPO=https://github.com/noironetworks/cicd-status.git
++GIT_LOCAL_DIR=cicd-status
++GIT_BRANCH=main
++GIT_EMAIL=test@cisco.com
++GIT_TOKEN=[secure]
++GIT_USER=travis-tagger
++git_clone_repo
++cd /tmp/
++git clone https://travis-tagger:[secure]@github.com/noironetworks/cicd-status.git -b main cicd-status
+fatal: destination path 'cicd-status' already exists and is not an empty directory.
++cd /tmp/cicd-status
++git remote set-url origin https://travis-tagger:[secure]@github.com/noironetworks/cicd-status.git
++true
++[[ aci-containers != \a\c\c\-\p\r\o\v\i\s\i\o\n ]]
++add_artifacts
++cd /tmp/cicd-status
++git pull --rebase origin main
+From https://github.com/noironetworks/cicd-status
+ * branch              main       -> FETCH_HEAD
+Already up to date.
++mkdir -p /tmp/cicd-status/docs/release_artifacts/6.0.4.4/z/cnideploy
++curl https://api.travis-ci.com/v3/job/626262714/log.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 1829k  100 1829k    0     0   9.7M      0 --:--:-- --:--:-- --:--:--  9.8M
++cp /tmp/sbom.txt /tmp/cicd-status/docs/release_artifacts/6.0.4.4/z/cnideploy/6.0.4.4-sbom.txt
++cp /tmp/cve.txt /tmp/cicd-status/docs/release_artifacts/6.0.4.4/z/cnideploy/6.0.4.4-cve.txt
++cp /tmp/cve-base.txt /tmp/cicd-status/docs/release_artifacts/6.0.4.4/z/cnideploy/6.0.4.4-cve-base.txt
++update_container_release
++docker rmi -f sha256:a5ccedbb93d7386cb80648951a819f501e4046745d3c12fc9f2016b403d10b7d
+Untagged: noiro/cnideploy:6.0.4.4.81c2369.091824.9920
+Untagged: noiro/cnideploy:6.0.4.4.81c2369.z
+Untagged: noiro/cnideploy@sha256:29aafa23036d1a9bcf74dc87a539e86246df5b5f1bdb339fbebc58af9091407f
+Untagged: quay.io/noiro/cnideploy:6.0.4.4.81c2369.091824.9920
+Untagged: quay.io/noiro/cnideploy:6.0.4.4.81c2369.z
+Untagged: quay.io/noiro/cnideploy@sha256:29aafa23036d1a9bcf74dc87a539e86246df5b5f1bdb339fbebc58af9091407f
+Untagged: quay.io/noirolabs/cnideploy:6.0.4.4.81c2369
+Untagged: quay.io/noirolabs/cnideploy:6.0.4.4.81c2369.091824.9920
+Untagged: quay.io/noirolabs/cnideploy:6.0.4.4.81c2369.z
+Untagged: quay.io/noirolabs/cnideploy@sha256:29aafa23036d1a9bcf74dc87a539e86246df5b5f1bdb339fbebc58af9091407f
+Deleted: sha256:a5ccedbb93d7386cb80648951a819f501e4046745d3c12fc9f2016b403d10b7d
++python /tmp/cicd/travis/update-release.py quay.io/noiro cnideploy 6.0.4.4.81c2369 6.0.4.4.81c2369,6.0.4.4.81c2369.091824.9920 sha256:a5ccedbb93d7386cb80648951a819f501e4046745d3c12fc9f2016b403d10b7d 6.0.4.4.81c2369.z 6.0.4.4.81c2369.091824.9920 registry.access.redhat.com/ubi9/ubi:9.3
++add_trivy_vulnerabilites
++trivy image quay.io/noiro/cnideploy:6.0.4.4.81c2369.z
+2024-09-18T08:47:21.653Z	[34mINFO[0m	Vulnerability scanning is enabled
+2024-09-18T08:47:21.653Z	[34mINFO[0m	Secret scanning is enabled
+2024-09-18T08:47:21.653Z	[34mINFO[0m	If your scanning is slow, please try '--scanners vuln' to disable secret scanning
+2024-09-18T08:47:21.653Z	[34mINFO[0m	Please see also https://aquasecurity.github.io/trivy/v0.44/docs/scanner/secret/#recommendation for faster secret detection
+2024-09-18T08:47:30.300Z	[34mINFO[0m	Detected OS: redhat
+2024-09-18T08:47:30.300Z	[34mINFO[0m	Detecting RHEL/CentOS vulnerabilities...
+2024-09-18T08:47:30.511Z	[34mINFO[0m	Number of language-specific files: 17
+2024-09-18T08:47:30.511Z	[34mINFO[0m	Detecting gobinary vulnerabilities...
++git_add_commit_push
++cd /tmp/cicd-status
++git config --local user.email test@cisco.com
++git config --local user.name travis-tagger
++git stash
+Saved working directory and index state WIP on main: 6f18e7e3 6.0.4.4.z-aci-containers-controller-9920-2024-09-18_08:46:08
++git pull --rebase origin main
+From https://github.com/noironetworks/cicd-status
+ * branch              main       -> FETCH_HEAD
+Already up to date.
++git stash pop
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   docs/release_artifacts/6.0.4.4/z/cnideploy/6.0.4.4-buildlog.txt
+	modified:   docs/release_artifacts/6.0.4.4/z/cnideploy/6.0.4.4-cve.txt
+	modified:   docs/release_artifacts/releases.yaml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (58b2a25ee2143eff798c5d9e593e2ae62cc468df)
++git add .
++[[ aci-containers != \a\c\c\-\p\r\o\v\i\s\i\o\n ]]
+++docker image inspect --format '{{index (split (index .RepoDigests 0) "@sha256:") 1}}' docker.io/noiro/cnideploy:6.0.4.4.81c2369.z
++DOCKER_REPO_DIGEST_SHA=29aafa23036d1a9bcf74dc87a539e86246df5b5f1bdb339fbebc58af9091407f
+++docker image inspect --format '{{index (split (index .RepoDigests 1) "@sha256:") 1}}' quay.io/noiro/cnideploy:6.0.4.4.81c2369.z
++QUAY_REPO_DIGEST_SHA=29aafa23036d1a9bcf74dc87a539e86246df5b5f1bdb339fbebc58af9091407f
+++date +%F_%H:%M:%S
++git commit -a -m 6.0.4.4.z-cnideploy-9920-2024-09-18_08:47:31 -m 'Commit: c46b0c5d231014ee9774f3f8a72bdae5525da883' -m 'Tags: 6.0.4.4.81c2369.z, 6.0.4.4.81c2369.091824.9920' -m 'ImageId: sha256:a5ccedbb93d7386cb80648951a819f501e4046745d3c12fc9f2016b403d10b7d' -m 'DockerSha: 29aafa23036d1a9bcf74dc87a539e86246df5b5f1bdb339fbebc58af9091407f' -m 'QuaySha: 29aafa23036d1a9bcf74dc87a539e86246df5b5f1bdb339fbebc58af9091407f'
+[main d5d2e106] 6.0.4.4.z-cnideploy-9920-2024-09-18_08:47:31
+ 3 files changed, 15565 insertions(+), 15562 deletions(-)
++git push origin main
