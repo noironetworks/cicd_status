@@ -12,7 +12,7 @@ urllib3            1.26.5     1.26.19   python     GHSA-34jh-p97f-mpxf  Medium
 
 quay.io/noiro/aci-containers-operator:6.0.4.4.81c2369.z (redhat 9.4)
 ====================================================================
-Total: 199 (UNKNOWN: 0, LOW: 169, MEDIUM: 30, HIGH: 0, CRITICAL: 0)
+Total: 205 (UNKNOWN: 0, LOW: 172, MEDIUM: 31, HIGH: 2, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬───────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │       Installed Version       │ Fixed Version │                            Title                             │
@@ -86,8 +86,15 @@ Total: 199 (UNKNOWN: 0, LOW: 169, MEDIUM: 30, HIGH: 0, CRITICAL: 0)
 │                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-26461   │          │                     │                               │               │ krb5: Memory leak at /krb5/src/lib/gssapi/krb5/k5sealv3.c    │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-26461                   │
-├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ libarchive                  │ CVE-2023-30571   │ MEDIUM   │ will_not_fix        │ 3.5.3-4.el9                   │               │ libarchive: Race condition in multi-threaded use of          │
+├─────────────────────────────┼──────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ libarchive                  │ CVE-2024-48957   │ HIGH     │                     │ 3.5.3-4.el9                   │               │ libarchive: Out-of-bounds access in libarchive's archive     │
+│                             │                  │          │                     │                               │               │ file handling                                                │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-48957                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-48958   │          │                     │                               │               │ libarchive: From CVEorg collector                            │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-48958                   │
+│                             ├──────────────────┼──────────┼─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2023-30571   │ MEDIUM   │ will_not_fix        │                               │               │ libarchive: Race condition in multi-threaded use of          │
 │                             │                  │          │                     │                               │               │ archive_write_disk_header() on posix based systems...        │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2023-30571                   │
 ├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
@@ -203,6 +210,10 @@ Total: 199 (UNKNOWN: 0, LOW: 169, MEDIUM: 30, HIGH: 0, CRITICAL: 0)
 │                             │ CVE-2024-2511    │          │ will_not_fix        │                               │               │ openssl: Unbounded memory growth with session handling in    │
 │                             │                  │          │                     │                               │               │ TLSv1.3                                                      │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-2511                    │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-41996   │          │                     │                               │               │ openssl: remote attackers (from the client side) to trigger  │
+│                             │                  │          │                     │                               │               │ unnecessarily expensive server-side...                       │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-41996                   │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-4603    │          │ affected            │                               │               │ openssl: Excessive time spent checking DSA keys and          │
 │                             │                  │          │                     │                               │               │ parameters                                                   │
@@ -236,6 +247,10 @@ Total: 199 (UNKNOWN: 0, LOW: 169, MEDIUM: 30, HIGH: 0, CRITICAL: 0)
 │                             │ CVE-2024-2511    │          │ will_not_fix        │                               │               │ openssl: Unbounded memory growth with session handling in    │
 │                             │                  │          │                     │                               │               │ TLSv1.3                                                      │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-2511                    │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-41996   │          │                     │                               │               │ openssl: remote attackers (from the client side) to trigger  │
+│                             │                  │          │                     │                               │               │ unnecessarily expensive server-side...                       │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-41996                   │
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-4603    │          │ affected            │                               │               │ openssl: Excessive time spent checking DSA keys and          │
 │                             │                  │          │                     │                               │               │ parameters                                                   │
@@ -302,8 +317,12 @@ Total: 199 (UNKNOWN: 0, LOW: 169, MEDIUM: 30, HIGH: 0, CRITICAL: 0)
 │                             │ CVE-2024-7592    │          │ affected            │                               │               │ cpython: python: Uncontrolled CPU resource consumption when  │
 │                             │                  │          │                     │                               │               │ in http.cookies module                                       │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-7592                    │
-├─────────────────────────────┼──────────────────┤          │                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-pip-wheel           │ CVE-2021-3572    │          │                     │ 21.2.3-8.el9                  │               │ python-pip: Incorrect handling of unicode separators in git  │
+├─────────────────────────────┼──────────────────┼──────────┤                     ├───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-pip-wheel           │ CVE-2024-37891   │ MEDIUM   │                     │ 21.2.3-8.el9                  │               │ urllib3: proxy-authorization request header is not stripped  │
+│                             │                  │          │                     │                               │               │ during cross-origin redirects                                │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-37891                   │
+│                             ├──────────────────┼──────────┤                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2021-3572    │ LOW      │                     │                               │               │ python-pip: Incorrect handling of unicode separators in git  │
 │                             │                  │          │                     │                               │               │ references                                                   │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2021-3572                    │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
@@ -698,6 +717,9 @@ Total: 199 (UNKNOWN: 0, LOW: 169, MEDIUM: 30, HIGH: 0, CRITICAL: 0)
 │                             ├──────────────────┤          ├─────────────────────┤                               ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-45306   │          │ affected            │                               │               │ vim: heap-buffer-overflow in Vim                             │
 │                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-45306                   │
+│                             ├──────────────────┤          │                     │                               ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-47814   │          │                     │                               │               │ vim: use-after-free when closing buffers in Vim              │
+│                             │                  │          │                     │                               │               │ https://avd.aquasec.com/nvd/cve-2024-47814                   │
 └─────────────────────────────┴──────────────────┴──────────┴─────────────────────┴───────────────────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
 
 usr/local/bin/aci-containers-operator (gobinary)
