@@ -10,7 +10,7 @@ urllib3     1.26.5     1.26.19   python  GHSA-34jh-p97f-mpxf  Medium
 
 quay.io/noiro/aci-containers-webhook:6.0.4.4.81c2369.z (redhat 9.4)
 ===================================================================
-Total: 182 (UNKNOWN: 0, LOW: 157, MEDIUM: 25, HIGH: 0, CRITICAL: 0)
+Total: 183 (UNKNOWN: 0, LOW: 157, MEDIUM: 26, HIGH: 0, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬─────────────────────┬─────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │       Status        │  Installed Version  │ Fixed Version │                            Title                             │
@@ -155,11 +155,11 @@ Total: 182 (UNKNOWN: 0, LOW: 157, MEDIUM: 25, HIGH: 0, CRITICAL: 0)
 │                             ├────────────────┤          ├─────────────────────┤                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-4741  │          │ will_not_fix        │                     │               │ openssl: Use After Free with SSL_free_buffers                │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-4741                    │
-│                             ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-5535  │          │                     │                     │               │ openssl: SSL_select_next_proto buffer overread               │
+│                             ├────────────────┤          ├─────────────────────┤                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-5535  │          │ affected            │                     │               │ openssl: SSL_select_next_proto buffer overread               │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-5535                    │
-├─────────────────────────────┼────────────────┤          ├─────────────────────┤                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ openssl-libs                │ CVE-2023-6237  │          │ affected            │                     │               │ openssl: Excessive time spent checking invalid RSA public    │
+├─────────────────────────────┼────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ openssl-libs                │ CVE-2023-6237  │          │                     │                     │               │ openssl: Excessive time spent checking invalid RSA public    │
 │                             │                │          │                     │                     │               │ keys                                                         │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-6237                    │
 │                             ├────────────────┤          ├─────────────────────┤                     ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -177,11 +177,14 @@ Total: 182 (UNKNOWN: 0, LOW: 157, MEDIUM: 25, HIGH: 0, CRITICAL: 0)
 │                             ├────────────────┤          ├─────────────────────┤                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-4741  │          │ will_not_fix        │                     │               │ openssl: Use After Free with SSL_free_buffers                │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-4741                    │
-│                             ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-5535  │          │                     │                     │               │ openssl: SSL_select_next_proto buffer overread               │
+│                             ├────────────────┤          ├─────────────────────┤                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-5535  │          │ affected            │                     │               │ openssl: SSL_select_next_proto buffer overread               │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-5535                    │
-├─────────────────────────────┼────────────────┤          │                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ pcre2                       │ CVE-2022-41409 │          │                     │ 10.40-5.el9         │               │ pcre2: negative repeat value in a pcre2test subject line     │
+├─────────────────────────────┼────────────────┼──────────┤                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ pam                         │ CVE-2024-10041 │ MEDIUM   │                     │ 1.5.1-19.el9        │               │ pam: libpam: Libpam vulnerable to read hashed password       │
+│                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-10041                   │
+├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ pcre2                       │ CVE-2022-41409 │ LOW      │ will_not_fix        │ 10.40-5.el9         │               │ pcre2: negative repeat value in a pcre2test subject line     │
 │                             │                │          │                     │                     │               │ leads to inifinite...                                        │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2022-41409                   │
 ├─────────────────────────────┤                │          │                     │                     ├───────────────┤                                                              │
@@ -189,7 +192,7 @@ Total: 182 (UNKNOWN: 0, LOW: 157, MEDIUM: 25, HIGH: 0, CRITICAL: 0)
 │                             │                │          │                     │                     │               │                                                              │
 │                             │                │          │                     │                     │               │                                                              │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3                     │ CVE-2021-23336 │ MEDIUM   │ affected            │ 3.9.18-3.el9_4.5    │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
+│ python3                     │ CVE-2021-23336 │ MEDIUM   │ affected            │ 3.9.18-3.el9_4.6    │               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                │          │                     │                     │               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
 │                             ├────────────────┤          ├─────────────────────┤                     ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -244,8 +247,8 @@ Total: 182 (UNKNOWN: 0, LOW: 157, MEDIUM: 25, HIGH: 0, CRITICAL: 0)
 │                             │ CVE-2021-3572  │ LOW      │                     │                     │               │ python-pip: Incorrect handling of unicode separators in git  │
 │                             │                │          │                     │                     │               │ references                                                   │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2021-3572                    │
-├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ python3-requests            │ CVE-2024-35195 │ MEDIUM   │ under_investigation │ 2.25.1-8.el9        │               │ requests: subsequent requests to the same host ignore cert   │
+├─────────────────────────────┼────────────────┼──────────┤                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ python3-requests            │ CVE-2024-35195 │ MEDIUM   │                     │ 2.25.1-8.el9        │               │ requests: subsequent requests to the same host ignore cert   │
 │                             │                │          │                     │                     │               │ verification                                                 │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-35195                   │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
