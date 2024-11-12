@@ -3,7 +3,7 @@ k8s.io/kubernetes  v1.30.2    1.30.3    go-module  GHSA-82m2-cv7p-4m75  Medium
 
 quay.io/noiro/aci-containers-host-ovscni:6.1.2.1.81c2369.z (redhat 9.4)
 =======================================================================
-Total: 83 (UNKNOWN: 0, LOW: 49, MEDIUM: 26, HIGH: 8, CRITICAL: 0)
+Total: 84 (UNKNOWN: 0, LOW: 49, MEDIUM: 29, HIGH: 6, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬─────────────────────┬─────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │       Status        │  Installed Version  │ Fixed Version │                            Title                             │
@@ -21,28 +21,28 @@ Total: 83 (UNKNOWN: 0, LOW: 49, MEDIUM: 26, HIGH: 8, CRITICAL: 0)
 │                             │ CVE-2024-1975  │          │                     │                     │               │ bind9: bind: SIG(0) can be used to exhaust CPU resources     │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-1975                    │
 │                             ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-3661  │          │                     │                     │               │ DHCP: DHCP routing options can manipulate interface-based    │
-│                             │                │          │                     │                     │               │ VPN traffic                                                  │
-│                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-3661                    │
-│                             ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-4076  │          │                     │                     │               │ bind: bind9: Assertion failure when serving both stale cache │
 │                             │                │          │                     │                     │               │ data and authoritative...                                    │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-4076                    │
-├─────────────────────────────┼────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│ dhcp-common                 │ CVE-2024-1737  │          │                     │                     │               │ bind: bind9: BIND's database will be slow if a very large    │
+│                             ├────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-3661  │ MEDIUM   │                     │                     │               │ DHCP: DHCP routing options can manipulate interface-based    │
+│                             │                │          │                     │                     │               │ VPN traffic                                                  │
+│                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-3661                    │
+├─────────────────────────────┼────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│ dhcp-common                 │ CVE-2024-1737  │ HIGH     │                     │                     │               │ bind: bind9: BIND's database will be slow if a very large    │
 │                             │                │          │                     │                     │               │ number...                                                    │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-1737                    │
 │                             ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-1975  │          │                     │                     │               │ bind9: bind: SIG(0) can be used to exhaust CPU resources     │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-1975                    │
 │                             ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-3661  │          │                     │                     │               │ DHCP: DHCP routing options can manipulate interface-based    │
-│                             │                │          │                     │                     │               │ VPN traffic                                                  │
-│                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-3661                    │
-│                             ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-4076  │          │                     │                     │               │ bind: bind9: Assertion failure when serving both stale cache │
 │                             │                │          │                     │                     │               │ data and authoritative...                                    │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-4076                    │
+│                             ├────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-3661  │ MEDIUM   │                     │                     │               │ DHCP: DHCP routing options can manipulate interface-based    │
+│                             │                │          │                     │                     │               │ VPN traffic                                                  │
+│                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-3661                    │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ elfutils-default-yama-scope │ CVE-2024-25260 │ LOW      │ will_not_fix        │ 0.191-4.el9         │               │ elfutils: global-buffer-overflow exists in the function      │
 │                             │                │          │                     │                     │               │ ebl_machine_flag_name in eblmachineflagname.c                │
@@ -202,6 +202,10 @@ Total: 83 (UNKNOWN: 0, LOW: 49, MEDIUM: 26, HIGH: 8, CRITICAL: 0)
 ├─────────────────────────────┼────────────────┼──────────┤                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ pam                         │ CVE-2024-10041 │ MEDIUM   │                     │ 1.5.1-20.el9        │               │ pam: libpam: Libpam vulnerable to read hashed password       │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-10041                   │
+│                             ├────────────────┤          │                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-10963 │          │                     │                     │               │ pam: Improper Hostname Interpretation in pam_access Leads to │
+│                             │                │          │                     │                     │               │ Access Control Bypass                                        │
+│                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-10963                   │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ pcre2                       │ CVE-2022-41409 │ LOW      │ will_not_fix        │ 10.40-6.el9         │               │ pcre2: negative repeat value in a pcre2test subject line     │
 │                             │                │          │                     │                     │               │ leads to inifinite...                                        │
