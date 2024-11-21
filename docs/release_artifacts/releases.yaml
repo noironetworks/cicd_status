@@ -4926,7 +4926,7 @@ releases:
       sbom: release_artifacts/6.1.2.1/z/acc-provision-operator/6.1.2.1-sbom.txt
       severity:
       - C: 0
-        H: 8
+        H: 9
         L: 272
         M: 71
         U: 0
@@ -5680,49 +5680,44 @@ releases:
         U: 0
       severity_type: grype
     - base-image:
-      - base_cve_error: ''
-        cve: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-cve-base.txt
+      - cve: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-cve-base.txt
         severity:
         - C: 0
-          H: 3
-          L: 2
-          M: 8
+          H: 0
+          L: 0
+          M: 0
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d?tab=vulnerabilities
-        severity_type: quay
-        sha: 67c0ce89aa26291d6eaddca2395ecd9b61644d866bfef65579f3e01e02a63d0d
+        sha: bc552efb4966aaa44b02532be3168ac1ff18e2af299d0fe89502a1d9fabafbc5
       build-logs: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-buildlog.txt
-      build-time: 2024-09-07 02:39:06 PDT
+      build-time: 2024-11-21 04:20:29 PST
       commit:
-      - link: https://github.com/noironetworks/opflex/commit/743754f06f2fd9b7b786ae7d0e1a7130c26837de
-        sha: 743754f06f2fd9b7b786ae7d0e1a7130c26837de
-      cve: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-quay-cve.txt
-      cve_error: ''
+      - link: https://github.com/noironetworks/opflex/commit/2ec4f2d3c6fde1c83a5a04a8f2dd56d5a851b723
+        sha: 2ec4f2d3c6fde1c83a5a04a8f2dd56d5a851b723
+      cve: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/opflex/6.0.4.4.81c2369.z/images/sha256-889f964494ff2f8769bb24ca6bb0c9ee468d4a04a2f6a0c9a3504e92d25ca26c?context=explore
-        sha: 889f964494ff2f8769bb24ca6bb0c9ee468d4a04a2f6a0c9a3504e92d25ca26c
+      - link: https://hub.docker.com/layers/noiro/opflex/6.0.4.4.81c2369.z/images/sha256-fd5e419385f907fdb5cf1041299e8ef6d168c1d2414e70ed353317fb48550ea2?context=explore
+        sha: fd5e419385f907fdb5cf1041299e8ef6d168c1d2414e70ed353317fb48550ea2
         tag: 6.0.4.4.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/opflex/6.0.4.4.81c2369.090724.4008/images/sha256-889f964494ff2f8769bb24ca6bb0c9ee468d4a04a2f6a0c9a3504e92d25ca26c?context=explore
-        sha: 889f964494ff2f8769bb24ca6bb0c9ee468d4a04a2f6a0c9a3504e92d25ca26c
-        tag: 6.0.4.4.81c2369.090724.4008
+      - link: https://hub.docker.com/layers/noiro/opflex/6.0.4.4.81c2369.112124.4056/images/sha256-fd5e419385f907fdb5cf1041299e8ef6d168c1d2414e70ed353317fb48550ea2?context=explore
+        sha: fd5e419385f907fdb5cf1041299e8ef6d168c1d2414e70ed353317fb48550ea2
+        tag: 6.0.4.4.81c2369.112124.4056
       name: opflex
       quay:
       - link: https://quay.io/noiro/opflex:6.0.4.4.81c2369.z
-        sha: 889f964494ff2f8769bb24ca6bb0c9ee468d4a04a2f6a0c9a3504e92d25ca26c
+        sha: fd5e419385f907fdb5cf1041299e8ef6d168c1d2414e70ed353317fb48550ea2
         tag: 6.0.4.4.81c2369.z
-      - link: https://quay.io/noiro/opflex:6.0.4.4.81c2369.090724.4008
-        sha: 889f964494ff2f8769bb24ca6bb0c9ee468d4a04a2f6a0c9a3504e92d25ca26c
-        tag: 6.0.4.4.81c2369.090724.4008
+      - link: https://quay.io/noiro/opflex:6.0.4.4.81c2369.112124.4056
+        sha: fd5e419385f907fdb5cf1041299e8ef6d168c1d2414e70ed353317fb48550ea2
+        tag: 6.0.4.4.81c2369.112124.4056
       sbom: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-sbom.txt
       severity:
       - C: 0
         H: 0
         L: 0
-        M: 3
+        M: 0
         U: 0
-      severity_link: https://quay.io/repository/noiro/opflex/manifest/sha256:889f964494ff2f8769bb24ca6bb0c9ee468d4a04a2f6a0c9a3504e92d25ca26c?tab=vulnerabilities
-      severity_type: quay
-    last_updated: 2024-11-21 02:59:30 PST
+      severity_type: grype
+    last_updated: 2024-11-21 04:20:29 PST
     release_name: 6.0.4.4.z
   - acc_provision: []
     container_images: []
