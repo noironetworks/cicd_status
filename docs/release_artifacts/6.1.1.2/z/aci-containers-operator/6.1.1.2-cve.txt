@@ -1,6 +1,7 @@
 NAME               INSTALLED  FIXED-IN  TYPE       VULNERABILITY        SEVERITY 
 idna               2.10       3.7       python     GHSA-jjg7-2v4v-x38h  Medium    
 k8s.io/kubernetes  v1.30.2    1.30.3    go-module  GHSA-82m2-cv7p-4m75  High      
+k8s.io/kubernetes  v1.30.2    1.30.3    go-module  GHSA-27wf-5967-98gx  High      
 requests           2.25.1     2.31.0    python     GHSA-j8r2-6x86-q33q  Medium    
 requests           2.25.1     2.32.0    python     GHSA-9wx4-h78v-vm56  Medium    
 setuptools         53.0.0     65.5.1    python     GHSA-r9hx-vwmv-q579  High      
@@ -637,11 +638,15 @@ Total: 182 (UNKNOWN: 0, LOW: 157, MEDIUM: 24, HIGH: 1, CRITICAL: 0)
 
 usr/local/bin/aci-containers-operator (gobinary)
 ================================================
-Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 1, HIGH: 0, CRITICAL: 0)
+Total: 2 (UNKNOWN: 0, LOW: 0, MEDIUM: 1, HIGH: 1, CRITICAL: 0)
 
-┌───────────────────┬───────────────┬──────────┬────────┬───────────────────┬──────────────────────────────────┬───────────────────────────────────────────────────────────┐
-│      Library      │ Vulnerability │ Severity │ Status │ Installed Version │          Fixed Version           │                           Title                           │
-├───────────────────┼───────────────┼──────────┼────────┼───────────────────┼──────────────────────────────────┼───────────────────────────────────────────────────────────┤
-│ k8s.io/kubernetes │ CVE-2024-5321 │ MEDIUM   │ fixed  │ v1.30.2           │ 1.27.16, 1.28.12, 1.29.7, 1.30.3 │ kubelet: Incorrect permissions on Windows containers logs │
-│                   │               │          │        │                   │                                  │ https://avd.aquasec.com/nvd/cve-2024-5321                 │
-└───────────────────┴───────────────┴──────────┴────────┴───────────────────┴──────────────────────────────────┴───────────────────────────────────────────────────────────┘
+┌───────────────────┬────────────────┬──────────┬────────┬───────────────────┬──────────────────────────────────┬───────────────────────────────────────────────────────────┐
+│      Library      │ Vulnerability  │ Severity │ Status │ Installed Version │          Fixed Version           │                           Title                           │
+├───────────────────┼────────────────┼──────────┼────────┼───────────────────┼──────────────────────────────────┼───────────────────────────────────────────────────────────┤
+│ k8s.io/kubernetes │ CVE-2024-10220 │ HIGH     │ fixed  │ v1.30.2           │ 1.28.12, 1.29.7, 1.30.3          │ kubernetes: Arbitrary command execution through gitRepo   │
+│                   │                │          │        │                   │                                  │ volume                                                    │
+│                   │                │          │        │                   │                                  │ https://avd.aquasec.com/nvd/cve-2024-10220                │
+│                   ├────────────────┼──────────┤        │                   ├──────────────────────────────────┼───────────────────────────────────────────────────────────┤
+│                   │ CVE-2024-5321  │ MEDIUM   │        │                   │ 1.27.16, 1.28.12, 1.29.7, 1.30.3 │ kubelet: Incorrect permissions on Windows containers logs │
+│                   │                │          │        │                   │                                  │ https://avd.aquasec.com/nvd/cve-2024-5321                 │
+└───────────────────┴────────────────┴──────────┴────────┴───────────────────┴──────────────────────────────────┴───────────────────────────────────────────────────────────┘
