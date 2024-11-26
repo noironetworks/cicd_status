@@ -187,7 +187,7 @@ Total: 182 (UNKNOWN: 0, LOW: 157, MEDIUM: 24, HIGH: 1, CRITICAL: 0)
 │                             │ CVE-2024-5535    │          │ affected            │                     │               │ openssl: SSL_select_next_proto buffer overread               │
 │                             │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-5535                    │
 ├─────────────────────────────┼──────────────────┼──────────┤                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ pam                         │ CVE-2024-10963   │ HIGH     │                     │ 1.5.1-20.el9        │               │ pam: Improper Hostname Interpretation in pam_access Leads to │
+│ pam                         │ CVE-2024-10963   │ HIGH     │                     │ 1.5.1-22.el9_5      │               │ pam: Improper Hostname Interpretation in pam_access Leads to │
 │                             │                  │          │                     │                     │               │ Access Control Bypass                                        │
 │                             │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-10963                   │
 │                             ├──────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
@@ -639,7 +639,7 @@ Total: 182 (UNKNOWN: 0, LOW: 157, MEDIUM: 24, HIGH: 1, CRITICAL: 0)
 
 usr/local/bin/aci-containers-operator (gobinary)
 ================================================
-Total: 3 (UNKNOWN: 0, LOW: 1, MEDIUM: 1, HIGH: 1, CRITICAL: 0)
+Total: 3 (UNKNOWN: 0, LOW: 1, MEDIUM: 0, HIGH: 2, CRITICAL: 0)
 
 ┌───────────────────┬────────────────┬──────────┬────────┬───────────────────┬──────────────────────────────────┬───────────────────────────────────────────────────────────┐
 │      Library      │ Vulnerability  │ Severity │ Status │ Installed Version │          Fixed Version           │                           Title                           │
@@ -647,8 +647,8 @@ Total: 3 (UNKNOWN: 0, LOW: 1, MEDIUM: 1, HIGH: 1, CRITICAL: 0)
 │ k8s.io/kubernetes │ CVE-2024-10220 │ HIGH     │ fixed  │ v1.29.0           │ 1.28.12, 1.29.7, 1.30.3          │ kubernetes: Arbitrary command execution through gitRepo   │
 │                   │                │          │        │                   │                                  │ volume                                                    │
 │                   │                │          │        │                   │                                  │ https://avd.aquasec.com/nvd/cve-2024-10220                │
-│                   ├────────────────┼──────────┤        │                   ├──────────────────────────────────┼───────────────────────────────────────────────────────────┤
-│                   │ CVE-2024-5321  │ MEDIUM   │        │                   │ 1.27.16, 1.28.12, 1.29.7, 1.30.3 │ kubelet: Incorrect permissions on Windows containers logs │
+│                   ├────────────────┤          │        │                   ├──────────────────────────────────┼───────────────────────────────────────────────────────────┤
+│                   │ CVE-2024-5321  │          │        │                   │ 1.27.16, 1.28.12, 1.29.7, 1.30.3 │ kubelet: Incorrect permissions on Windows containers logs │
 │                   │                │          │        │                   │                                  │ https://avd.aquasec.com/nvd/cve-2024-5321                 │
 │                   ├────────────────┼──────────┤        │                   ├──────────────────────────────────┼───────────────────────────────────────────────────────────┤
 │                   │ CVE-2024-3177  │ LOW      │        │                   │ 1.27.13, 1.29.4, 1.28.9          │ kubernetes: kube-apiserver: bypassing mountable secrets   │
