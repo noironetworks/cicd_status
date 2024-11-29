@@ -12,7 +12,7 @@ urllib3            1.26.5     1.26.19   python     GHSA-34jh-p97f-mpxf  Medium
 
 quay.io/noiro/aci-containers-operator:6.1.2.1.81c2369.z (redhat 9.5)
 ====================================================================
-Total: 182 (UNKNOWN: 0, LOW: 159, MEDIUM: 23, HIGH: 0, CRITICAL: 0)
+Total: 183 (UNKNOWN: 0, LOW: 159, MEDIUM: 24, HIGH: 0, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬─────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │  Installed Version  │ Fixed Version │                            Title                             │
@@ -37,8 +37,11 @@ Total: 182 (UNKNOWN: 0, LOW: 159, MEDIUM: 23, HIGH: 0, CRITICAL: 0)
 │ elfutils-libs               │                  │          │                     │                     │               │                                                              │
 │                             │                  │          │                     │                     │               │                                                              │
 │                             │                  │          │                     │                     │               │                                                              │
-├─────────────────────────────┼──────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ emacs-filesystem            │ CVE-2017-1000383 │          │ affected            │ 1:27.2-10.el9_4     │               │ emacs: Ignores umask when creating a swap file               │
+├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ emacs-filesystem            │ CVE-2024-53920   │ MEDIUM   │ affected            │ 1:27.2-10.el9_4     │               │ emacs: arbitrary code execution via Lisp macro expansion     │
+│                             │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-53920                   │
+│                             ├──────────────────┼──────────┤                     │                     ├───────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2017-1000383 │ LOW      │                     │                     │               │ emacs: Ignores umask when creating a swap file               │
 │                             │                  │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2017-1000383                 │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ expat                       │ CVE-2024-45491   │ MEDIUM   │ will_not_fix        │ 2.5.0-3.el9_5.1     │               │ libexpat: Integer Overflow or Wraparound                     │
