@@ -4,7 +4,7 @@ k8s.io/kubernetes  v1.30.2    1.30.3    go-module  GHSA-27wf-5967-98gx  High
 
 quay.io/noiro/aci-containers-host-ovscni:6.1.2.1.81c2369.z (redhat 9.3)
 =======================================================================
-Total: 76 (UNKNOWN: 0, LOW: 48, MEDIUM: 27, HIGH: 1, CRITICAL: 0)
+Total: 74 (UNKNOWN: 0, LOW: 48, MEDIUM: 25, HIGH: 1, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬─────────────────────┬─────────────────────────────┬───────────────────────────────┬─────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │       Status        │      Installed Version      │         Fixed Version         │                            Title                            │
@@ -20,16 +20,8 @@ Total: 76 (UNKNOWN: 0, LOW: 48, MEDIUM: 27, HIGH: 1, CRITICAL: 0)
 │                             ├────────────────┤          │                     │                             ├───────────────────────────────┼─────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-9681  │          │                     │                             │                               │ curl: HSTS subdomain overwrites parent cache entry          │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-9681                   │
-├─────────────────────────────┼────────────────┼──────────┤                     ├─────────────────────────────┼───────────────────────────────┼─────────────────────────────────────────────────────────────┤
-│ dhcp-client                 │ CVE-2024-3661  │ MEDIUM   │                     │ 12:4.4.2-19.b1.el9          │                               │ DHCP: DHCP routing options can manipulate interface-based   │
-│                             │                │          │                     │                             │                               │ VPN traffic                                                 │
-│                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-3661                   │
-├─────────────────────────────┤                │          │                     │                             ├───────────────────────────────┤                                                             │
-│ dhcp-common                 │                │          │                     │                             │                               │                                                             │
-│                             │                │          │                     │                             │                               │                                                             │
-│                             │                │          │                     │                             │                               │                                                             │
-├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────────────┼───────────────────────────────┼─────────────────────────────────────────────────────────────┤
-│ elfutils-default-yama-scope │ CVE-2024-25260 │ LOW      │ will_not_fix        │ 0.192-2.el9                 │                               │ elfutils: global-buffer-overflow exists in the function     │
+├─────────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────────────┼───────────────────────────────┼─────────────────────────────────────────────────────────────┤
+│ elfutils-default-yama-scope │ CVE-2024-25260 │          │ will_not_fix        │ 0.192-2.el9                 │                               │ elfutils: global-buffer-overflow exists in the function     │
 │                             │                │          │                     │                             │                               │ ebl_machine_flag_name in eblmachineflagname.c               │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-25260                  │
 ├─────────────────────────────┤                │          │                     │                             ├───────────────────────────────┤                                                             │
