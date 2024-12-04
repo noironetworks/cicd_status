@@ -1,6 +1,6 @@
 NAME          INSTALLED  FIXED-IN   TYPE    VULNERABILITY        SEVERITY 
 ansible-core  2.17.5     2.17.6rc1  python  GHSA-32p4-gm2c-wmch  Medium    
-ansible-core  2.17.5                python  GHSA-99w6-3xph-cx78  Low       
+ansible-core  2.17.5     2.17.7rc1  python  GHSA-99w6-3xph-cx78  Low       
 idna          2.10       3.7        python  GHSA-jjg7-2v4v-x38h  Medium    
 pip           21.3.1     23.3       python  GHSA-mq26-g339-26xf  Medium    
 requests      2.25.1     2.31.0     python  GHSA-j8r2-6x86-q33q  Medium    
@@ -3581,20 +3581,19 @@ Total: 1885 (UNKNOWN: 0, LOW: 888, MEDIUM: 993, HIGH: 4, CRITICAL: 0)
 │                             │                  │          │                     │                       │                 │ namespace.                                                   │
 │                             │                  │          │                     │                       │                 │ https://avd.aquasec.com/nvd/cve-2024-53095                   │
 │                             ├──────────────────┤          │                     │                       ├─────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-53096   │          │                     │                       │                 │ In the Linux kernel, the following vulnerability has been    │
-│                             │                  │          │                     │                       │                 │ resolved: m...                                               │
+│                             │ CVE-2024-53096   │          │                     │                       │                 │ kernel: mm: resolve faulty mmap_region() error path          │
+│                             │                  │          │                     │                       │                 │ behaviour                                                    │
 │                             │                  │          │                     │                       │                 │ https://avd.aquasec.com/nvd/cve-2024-53096                   │
 │                             ├──────────────────┤          ├─────────────────────┤                       ├─────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-53099   │          │ will_not_fix        │                       │                 │ In the Linux kernel, the following vulnerability has been    │
-│                             │                  │          │                     │                       │                 │ resolved: b...                                               │
+│                             │ CVE-2024-53099   │          │ will_not_fix        │                       │                 │ kernel: bpf: Check validity of link->type in                 │
+│                             │                  │          │                     │                       │                 │ bpf_link_show_fdinfo()                                       │
 │                             │                  │          │                     │                       │                 │ https://avd.aquasec.com/nvd/cve-2024-53099                   │
 │                             ├──────────────────┤          ├─────────────────────┤                       ├─────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-53100   │          │ affected            │                       │                 │ In the Linux kernel, the following vulnerability has been    │
-│                             │                  │          │                     │                       │                 │ resolved: n...                                               │
+│                             │ CVE-2024-53100   │          │ affected            │                       │                 │ kernel: nvme: tcp: avoid race between queue_lock lock and    │
+│                             │                  │          │                     │                       │                 │ destroy                                                      │
 │                             │                  │          │                     │                       │                 │ https://avd.aquasec.com/nvd/cve-2024-53100                   │
 │                             ├──────────────────┤          │                     │                       ├─────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-53102   │          │                     │                       │                 │ In the Linux kernel, the following vulnerability has been    │
-│                             │                  │          │                     │                       │                 │ resolved: n...                                               │
+│                             │ CVE-2024-53102   │          │                     │                       │                 │ kernel: nvme: make keep-alive synchronous operation          │
 │                             │                  │          │                     │                       │                 │ https://avd.aquasec.com/nvd/cve-2024-53102                   │
 │                             ├──────────────────┤          │                     │                       ├─────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-53105   │          │                     │                       │                 │ kernel: mm: page_alloc: move mlocked flag clearance into     │
@@ -6168,8 +6167,7 @@ Total: 1885 (UNKNOWN: 0, LOW: 888, MEDIUM: 993, HIGH: 4, CRITICAL: 0)
 │                             │ CVE-2024-50302   │          │                     │                       │                 │ kernel: HID: core: zero-initialize the report buffer         │
 │                             │                  │          │                     │                       │                 │ https://avd.aquasec.com/nvd/cve-2024-50302                   │
 │                             ├──────────────────┤          │                     │                       ├─────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-53097   │          │                     │                       │                 │ In the Linux kernel, the following vulnerability has been    │
-│                             │                  │          │                     │                       │                 │ resolved: m...                                               │
+│                             │ CVE-2024-53097   │          │                     │                       │                 │ kernel: mm: krealloc: Fix MTE false alarm in __do_krealloc   │
 │                             │                  │          │                     │                       │                 │ https://avd.aquasec.com/nvd/cve-2024-53097                   │
 ├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┼───────────────────────┼─────────────────┼──────────────────────────────────────────────────────────────┤
 │ libarchive                  │ CVE-2023-30571   │ MEDIUM   │ will_not_fix        │ 3.5.3-4.el9           │                 │ libarchive: Race condition in multi-threaded use of          │
