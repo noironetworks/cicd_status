@@ -21441,3 +21441,99 @@ e281fab7ccdd: Layer already exists
 2247eed8f390: Mounted from noiro/aci-containers-operator
 33b6595ef7bd: Mounted from noiro/aci-containers-operator
 67e316471c09: Pushed
+6.1.1.2.81c2369.120624.10281: digest: sha256:1e5f84412a36114bac6f4ee0f8cf3ff999ab1a50ee4fdf8bb059ae2d457297c3 size: 1369
++docker tag quay.io/noirolabs/aci-containers-webhook:6.1.1.2.81c2369 docker.io/noiro/aci-containers-webhook:6.1.1.2.81c2369.z
++docker push docker.io/noiro/aci-containers-webhook:6.1.1.2.81c2369.z
+The push refers to repository [docker.io/noiro/aci-containers-webhook]
+67e316471c09: Preparing
+2247eed8f390: Preparing
+33b6595ef7bd: Preparing
+7dfcfbef9764: Preparing
+e281fab7ccdd: Preparing
+2247eed8f390: Layer already exists
+e281fab7ccdd: Layer already exists
+67e316471c09: Layer already exists
+33b6595ef7bd: Layer already exists
+7dfcfbef9764: Layer already exists
+6.1.1.2.81c2369.z: digest: sha256:1e5f84412a36114bac6f4ee0f8cf3ff999ab1a50ee4fdf8bb059ae2d457297c3 size: 1369
+++docker image inspect '--format={{.Id}}' quay.io/noirolabs/aci-containers-webhook:6.1.1.2.81c2369
++IMAGE_SHA=sha256:357a109394462f8551613601594e00cce0cbda3ab3cb0bad6507f0591b99159d
++/tmp/cicd/travis/push-to-cicd-status.sh quay.io/noiro aci-containers-webhook 6.1.1.2.81c2369 6.1.1.2.81c2369,6.1.1.2.81c2369.120624.10281 sha256:357a109394462f8551613601594e00cce0cbda3ab3cb0bad6507f0591b99159d registry.access.redhat.com/ubi9/ubi:latest
+++dirname /tmp/cicd/travis/push-to-cicd-status.sh
++SCRIPTS_DIR=/tmp/cicd/travis
++source /tmp/cicd/travis/globals.sh
+++set -x
+++RELEASE_TAG=6.1.1.2
+++export RELEASE_TAG
++++date +%m%d%y
+++DATE_TAG=120624
+++TRAVIS_TAG_WITH_UPSTREAM_ID=6.1.1.2.81c2369
+++TRAVIS_TAG_WITH_UPSTREAM_ID_DATE_TRAVIS_BUILD_NUMBER=6.1.1.2.81c2369.120624.10281
+++IMAGE_TAG=6.1.1.2.81c2369
+++UPSTREAM_IMAGE_TAG=6.1.1.2.81c2369
+++UPSTREAM_IMAGE_Z_TAG=6.1.1.2.81c2369.z
+++IMAGE_Z_TAG=6.1.1.2.81c2369.z
+++RELEASE_Z_TAG=6.1.1.2.z
+++RC_PREFIX=6.1.1.2rc
+++RC_REGEX='6.1.1.2rc[0-9]+'
+++QUAY_REGISTRY=quay.io/noirolabs
+++QUAY_NOIRO_REGISTRY=quay.io/noiro
+++DOCKER_REGISTRY=docker.io/noiro
+++CICD_STATUS_REPO=https://github.com/noironetworks/cicd-status.git
+++git rev-parse --abbrev-ref HEAD
++current_branch=HEAD
++[[ aci-containers != \a\c\c\-\p\r\o\v\i\s\i\o\n ]]
++IMAGE_BUILD_REGISTRY=quay.io/noiro
++IMAGE=aci-containers-webhook
++IMAGE_BUILD_TAG=6.1.1.2.81c2369
++OTHER_IMAGE_TAGS=6.1.1.2.81c2369,6.1.1.2.81c2369.120624.10281
++IMAGE_SHA=sha256:357a109394462f8551613601594e00cce0cbda3ab3cb0bad6507f0591b99159d
++BASE_IMAGE=registry.access.redhat.com/ubi9/ubi:latest
++GIT_REPO=https://github.com/noironetworks/cicd-status.git
++GIT_LOCAL_DIR=cicd-status
++GIT_BRANCH=main
++GIT_EMAIL=test@cisco.com
++GIT_TOKEN=[secure]
++GIT_USER=travis-tagger
++git_clone_repo
++cd /tmp/
++git clone https://travis-tagger:[secure]@github.com/noironetworks/cicd-status.git -b main cicd-status
+fatal: destination path 'cicd-status' already exists and is not an empty directory.
++cd /tmp/cicd-status
++git remote set-url origin https://travis-tagger:[secure]@github.com/noironetworks/cicd-status.git
++true
++[[ aci-containers != \a\c\c\-\p\r\o\v\i\s\i\o\n ]]
++add_artifacts
++cd /tmp/cicd-status
++git pull --rebase origin main
+From https://github.com/noironetworks/cicd-status
+ * branch              main       -> FETCH_HEAD
+Already up to date.
++mkdir -p /tmp/cicd-status/docs/release_artifacts/6.1.1.2/z/aci-containers-webhook
++curl https://api.travis-ci.com/v3/job/628788506/log.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 1330k  100 1330k    0     0  7335k      0 --:--:-- --:--:-- --:--:-- 7349k
++cp /tmp/sbom.txt /tmp/cicd-status/docs/release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-sbom.txt
++cp /tmp/cve.txt /tmp/cicd-status/docs/release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-cve.txt
++cp /tmp/cve-base.txt /tmp/cicd-status/docs/release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-cve-base.txt
++update_container_release
++docker rmi -f sha256:357a109394462f8551613601594e00cce0cbda3ab3cb0bad6507f0591b99159d
+Untagged: noiro/aci-containers-webhook:6.1.1.2.81c2369.120624.10281
+Untagged: noiro/aci-containers-webhook:6.1.1.2.81c2369.z
+Untagged: noiro/aci-containers-webhook@sha256:1e5f84412a36114bac6f4ee0f8cf3ff999ab1a50ee4fdf8bb059ae2d457297c3
+Untagged: quay.io/noiro/aci-containers-webhook:6.1.1.2.81c2369.120624.10281
+Untagged: quay.io/noiro/aci-containers-webhook:6.1.1.2.81c2369.z
+Untagged: quay.io/noiro/aci-containers-webhook@sha256:1e5f84412a36114bac6f4ee0f8cf3ff999ab1a50ee4fdf8bb059ae2d457297c3
+Untagged: quay.io/noirolabs/aci-containers-webhook:6.1.1.2.81c2369
+Untagged: quay.io/noirolabs/aci-containers-webhook:6.1.1.2.81c2369.120624.10281
+Untagged: quay.io/noirolabs/aci-containers-webhook:6.1.1.2.81c2369.z
+Deleted: sha256:357a109394462f8551613601594e00cce0cbda3ab3cb0bad6507f0591b99159d
++python /tmp/cicd/travis/update-release.py quay.io/noiro aci-containers-webhook 6.1.1.2.81c2369 6.1.1.2.81c2369,6.1.1.2.81c2369.120624.10281 sha256:357a109394462f8551613601594e00cce0cbda3ab3cb0bad6507f0591b99159d 6.1.1.2.81c2369.z 6.1.1.2.81c2369.120624.10281 registry.access.redhat.com/ubi9/ubi:latest
++[[ aci-containers != \o\p\f\l\e\x ]]
++add_trivy_vulnerabilites
++trivy image quay.io/noiro/aci-containers-webhook:6.1.1.2.81c2369.z
+2024-12-06T07:06:11.175Z	[34mINFO[0m	Vulnerability scanning is enabled
+2024-12-06T07:06:11.175Z	[34mINFO[0m	Secret scanning is enabled
+2024-12-06T07:06:11.175Z	[34mINFO[0m	If your scanning is slow, please try '--scanners vuln' to disable secret scanning
+2024-12-06T07:06:11.175Z	[34mINFO[0m	Please see also https://aquasecurity.github.io/trivy/v0.44/docs/scanner/secret/#recommendation for faster secret detection
