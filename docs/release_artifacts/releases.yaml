@@ -5533,48 +5533,43 @@ releases:
         U: 0
       severity_type: grype
     - base-image:
-      - base_cve_error: ''
-        cve: release_artifacts/6.0.4.4/z/openvswitch/6.0.4.4-cve-base.txt
+      - cve: release_artifacts/6.0.4.4/z/openvswitch/6.0.4.4-cve-base.txt
         severity:
         - C: 0
           H: 0
           L: 0
           M: 0
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:error?tab=vulnerabilities
-        severity_type: quay
-        sha: error
+        sha: d85040b6e3ed3628a89683f51a38c709185efc3fb552db2ad1b9180f2a6c38be
       build-logs: release_artifacts/6.0.4.4/z/openvswitch/6.0.4.4-buildlog.txt
-      build-time: 2024-12-06 02:01:47 PST
+      build-time: 2024-12-06 22:33:41 PST
       commit:
-      - link: https://github.com/noironetworks/aci-containers/commit/a50cd0194b40effa8b669f6a6c01852653ce70ae
-        sha: a50cd0194b40effa8b669f6a6c01852653ce70ae
-      cve: release_artifacts/6.0.4.4/z/openvswitch/6.0.4.4-quay-cve.txt
-      cve_error: ''
+      - link: https://github.com/noironetworks/aci-containers/commit/6cd0472cae57529277b233d9115062e365640e67
+        sha: 6cd0472cae57529277b233d9115062e365640e67
+      cve: release_artifacts/6.0.4.4/z/openvswitch/6.0.4.4-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.4.4.81c2369.z/images/sha256-581b067fab03fd56f3b920c2ba1e58df19310fd48937a2b215c30c9fc2525706?context=explore
-        sha: 581b067fab03fd56f3b920c2ba1e58df19310fd48937a2b215c30c9fc2525706
+      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.4.4.81c2369.z/images/sha256-e174b805bb0c016b95f8a30f52cd46162cb90e9166faa49ef23cbb23463497fd?context=explore
+        sha: e174b805bb0c016b95f8a30f52cd46162cb90e9166faa49ef23cbb23463497fd
         tag: 6.0.4.4.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.4.4.81c2369.120624.10283/images/sha256-581b067fab03fd56f3b920c2ba1e58df19310fd48937a2b215c30c9fc2525706?context=explore
-        sha: 581b067fab03fd56f3b920c2ba1e58df19310fd48937a2b215c30c9fc2525706
-        tag: 6.0.4.4.81c2369.120624.10283
+      - link: https://hub.docker.com/layers/noiro/openvswitch/6.0.4.4.81c2369.120724.10300/images/sha256-e174b805bb0c016b95f8a30f52cd46162cb90e9166faa49ef23cbb23463497fd?context=explore
+        sha: e174b805bb0c016b95f8a30f52cd46162cb90e9166faa49ef23cbb23463497fd
+        tag: 6.0.4.4.81c2369.120724.10300
       name: openvswitch
       quay:
       - link: https://quay.io/noiro/openvswitch:6.0.4.4.81c2369.z
-        sha: 581b067fab03fd56f3b920c2ba1e58df19310fd48937a2b215c30c9fc2525706
+        sha: e174b805bb0c016b95f8a30f52cd46162cb90e9166faa49ef23cbb23463497fd
         tag: 6.0.4.4.81c2369.z
-      - link: https://quay.io/noiro/openvswitch:6.0.4.4.81c2369.120624.10283
-        sha: 581b067fab03fd56f3b920c2ba1e58df19310fd48937a2b215c30c9fc2525706
-        tag: 6.0.4.4.81c2369.120624.10283
+      - link: https://quay.io/noiro/openvswitch:6.0.4.4.81c2369.120724.10300
+        sha: e174b805bb0c016b95f8a30f52cd46162cb90e9166faa49ef23cbb23463497fd
+        tag: 6.0.4.4.81c2369.120724.10300
       sbom: release_artifacts/6.0.4.4/z/openvswitch/6.0.4.4-sbom.txt
       severity:
       - C: 0
         H: 0
-        L: 145
-        M: 18
+        L: 0
+        M: 0
         U: 0
-      severity_link: https://quay.io/repository/noiro/openvswitch/manifest/sha256:581b067fab03fd56f3b920c2ba1e58df19310fd48937a2b215c30c9fc2525706?tab=vulnerabilities
-      severity_type: quay
+      severity_type: grype
     - base-image:
       - base_cve_error: ''
         cve: release_artifacts/6.0.4.4/z/aci-containers-webhook/6.0.4.4-cve-base.txt
@@ -5747,7 +5742,7 @@ releases:
         U: 0
       severity_link: https://quay.io/repository/noiro/opflex/manifest/sha256:fd5e419385f907fdb5cf1041299e8ef6d168c1d2414e70ed353317fb48550ea2?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-12-06 22:31:27 PST
+    last_updated: 2024-12-06 22:33:41 PST
     release_name: 6.0.4.4.z
   - acc_provision: []
     container_images: []
