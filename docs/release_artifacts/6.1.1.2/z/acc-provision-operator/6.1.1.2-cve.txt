@@ -13,7 +13,7 @@ urllib3       1.26.5     1.26.19    python  GHSA-34jh-p97f-mpxf  Medium
 
 quay.io/noiro/acc-provision-operator:6.1.1.2.81c2369.z (redhat 9.5)
 ===================================================================
-Total: 191 (UNKNOWN: 0, LOW: 163, MEDIUM: 27, HIGH: 1, CRITICAL: 0)
+Total: 193 (UNKNOWN: 0, LOW: 163, MEDIUM: 27, HIGH: 3, CRITICAL: 0)
 
 ┌─────────────────────────────┬──────────────────┬──────────┬─────────────────────┬─────────────────────┬─────────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │  Vulnerability   │ Severity │       Status        │  Installed Version  │  Fixed Version  │                            Title                             │
@@ -256,8 +256,12 @@ Total: 191 (UNKNOWN: 0, LOW: 163, MEDIUM: 27, HIGH: 1, CRITICAL: 0)
 │ python3-requests            │ CVE-2024-35195   │ MEDIUM   │                     │ 2.25.1-8.el9        │                 │ requests: subsequent requests to the same host ignore cert   │
 │                             │                  │          │                     │                     │                 │ verification                                                 │
 │                             │                  │          │                     │                     │                 │ https://avd.aquasec.com/nvd/cve-2024-35195                   │
-├─────────────────────────────┼──────────────────┤          ├─────────────────────┼─────────────────────┼─────────────────┼──────────────────────────────────────────────────────────────┤
-│ python3.12                  │ CVE-2024-9287    │          │ under_investigation │ 3.12.5-2.el9_5.1    │                 │ python: Virtual environment (venv) activation scripts don't  │
+├─────────────────────────────┼──────────────────┼──────────┤                     ├─────────────────────┼─────────────────┼──────────────────────────────────────────────────────────────┤
+│ python3.12                  │ CVE-2024-12254   │ HIGH     │                     │ 3.12.5-2.el9_5.1    │                 │ python: Unbounded memory buffering in                        │
+│                             │                  │          │                     │                     │                 │ SelectorSocketTransport.writelines()                         │
+│                             │                  │          │                     │                     │                 │ https://avd.aquasec.com/nvd/cve-2024-12254                   │
+│                             ├──────────────────┼──────────┼─────────────────────┤                     ├─────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-9287    │ MEDIUM   │ under_investigation │                     │                 │ python: Virtual environment (venv) activation scripts don't  │
 │                             │                  │          │                     │                     │                 │ quote paths                                                  │
 │                             │                  │          │                     │                     │                 │ https://avd.aquasec.com/nvd/cve-2024-9287                    │
 │                             ├──────────────────┼──────────┤                     │                     ├─────────────────┼──────────────────────────────────────────────────────────────┤
@@ -268,8 +272,12 @@ Total: 191 (UNKNOWN: 0, LOW: 163, MEDIUM: 27, HIGH: 1, CRITICAL: 0)
 │                             │ CVE-2024-7592    │          │ affected            │                     │                 │ cpython: python: Uncontrolled CPU resource consumption when  │
 │                             │                  │          │                     │                     │                 │ in http.cookies module                                       │
 │                             │                  │          │                     │                     │                 │ https://avd.aquasec.com/nvd/cve-2024-7592                    │
-├─────────────────────────────┼──────────────────┼──────────┼─────────────────────┤                     ├─────────────────┼──────────────────────────────────────────────────────────────┤
-│ python3.12-libs             │ CVE-2024-9287    │ MEDIUM   │ under_investigation │                     │                 │ python: Virtual environment (venv) activation scripts don't  │
+├─────────────────────────────┼──────────────────┼──────────┤                     │                     ├─────────────────┼──────────────────────────────────────────────────────────────┤
+│ python3.12-libs             │ CVE-2024-12254   │ HIGH     │                     │                     │                 │ python: Unbounded memory buffering in                        │
+│                             │                  │          │                     │                     │                 │ SelectorSocketTransport.writelines()                         │
+│                             │                  │          │                     │                     │                 │ https://avd.aquasec.com/nvd/cve-2024-12254                   │
+│                             ├──────────────────┼──────────┼─────────────────────┤                     ├─────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-9287    │ MEDIUM   │ under_investigation │                     │                 │ python: Virtual environment (venv) activation scripts don't  │
 │                             │                  │          │                     │                     │                 │ quote paths                                                  │
 │                             │                  │          │                     │                     │                 │ https://avd.aquasec.com/nvd/cve-2024-9287                    │
 │                             ├──────────────────┼──────────┤                     │                     ├─────────────────┼──────────────────────────────────────────────────────────────┤
