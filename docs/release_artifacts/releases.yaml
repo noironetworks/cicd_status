@@ -5452,48 +5452,43 @@ releases:
         U: 0
       severity_type: grype
     - base-image:
-      - base_cve_error: ''
-        cve: release_artifacts/6.0.4.4/z/cnideploy/6.0.4.4-cve-base.txt
+      - cve: release_artifacts/6.0.4.4/z/cnideploy/6.0.4.4-cve-base.txt
         severity:
         - C: 0
-          H: 0
+          H: 3
           L: 0
-          M: 0
+          M: 5
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:error?tab=vulnerabilities
-        severity_type: quay
-        sha: error
+        sha: 1057dab827c782abcfb9bda0c3900c0966b5066e671d54976a7bcb3a2d1a5e53
       build-logs: release_artifacts/6.0.4.4/z/cnideploy/6.0.4.4-buildlog.txt
-      build-time: 2024-12-06 22:29:54 PST
+      build-time: 2024-12-09 09:40:56 PST
       commit:
-      - link: https://github.com/noironetworks/aci-containers/commit/6cd0472cae57529277b233d9115062e365640e67
-        sha: 6cd0472cae57529277b233d9115062e365640e67
-      cve: release_artifacts/6.0.4.4/z/cnideploy/6.0.4.4-quay-cve.txt
-      cve_error: ''
+      - link: https://github.com/noironetworks/aci-containers/commit/3405d021cb5be250cef9d1a6dbb2e99a449882f7
+        sha: 3405d021cb5be250cef9d1a6dbb2e99a449882f7
+      cve: release_artifacts/6.0.4.4/z/cnideploy/6.0.4.4-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.4.4.81c2369.z/images/sha256-59b44da6c3dad8822bfbaa75f45d6cbd01448988f75dcba9c267b6a413f760e5?context=explore
-        sha: 59b44da6c3dad8822bfbaa75f45d6cbd01448988f75dcba9c267b6a413f760e5
+      - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.4.4.81c2369.z/images/sha256-c91fe5d9047bb67f1c12b5586babc107b75e868130b6d610da8c25d768d6e983?context=explore
+        sha: c91fe5d9047bb67f1c12b5586babc107b75e868130b6d610da8c25d768d6e983
         tag: 6.0.4.4.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.4.4.81c2369.120724.10300/images/sha256-59b44da6c3dad8822bfbaa75f45d6cbd01448988f75dcba9c267b6a413f760e5?context=explore
-        sha: 59b44da6c3dad8822bfbaa75f45d6cbd01448988f75dcba9c267b6a413f760e5
-        tag: 6.0.4.4.81c2369.120724.10300
+      - link: https://hub.docker.com/layers/noiro/cnideploy/6.0.4.4.81c2369.120924.10313/images/sha256-c91fe5d9047bb67f1c12b5586babc107b75e868130b6d610da8c25d768d6e983?context=explore
+        sha: c91fe5d9047bb67f1c12b5586babc107b75e868130b6d610da8c25d768d6e983
+        tag: 6.0.4.4.81c2369.120924.10313
       name: cnideploy
       quay:
       - link: https://quay.io/noiro/cnideploy:6.0.4.4.81c2369.z
-        sha: 59b44da6c3dad8822bfbaa75f45d6cbd01448988f75dcba9c267b6a413f760e5
+        sha: c91fe5d9047bb67f1c12b5586babc107b75e868130b6d610da8c25d768d6e983
         tag: 6.0.4.4.81c2369.z
-      - link: https://quay.io/noiro/cnideploy:6.0.4.4.81c2369.120724.10300
-        sha: 59b44da6c3dad8822bfbaa75f45d6cbd01448988f75dcba9c267b6a413f760e5
-        tag: 6.0.4.4.81c2369.120724.10300
+      - link: https://quay.io/noiro/cnideploy:6.0.4.4.81c2369.120924.10313
+        sha: c91fe5d9047bb67f1c12b5586babc107b75e868130b6d610da8c25d768d6e983
+        tag: 6.0.4.4.81c2369.120924.10313
       sbom: release_artifacts/6.0.4.4/z/cnideploy/6.0.4.4-sbom.txt
       severity:
       - C: 0
-        H: 0
+        H: 3
         L: 0
-        M: 0
-        U: 1
-      severity_link: https://quay.io/repository/noiro/cnideploy/manifest/sha256:59b44da6c3dad8822bfbaa75f45d6cbd01448988f75dcba9c267b6a413f760e5?tab=vulnerabilities
-      severity_type: quay
+        M: 6
+        U: 0
+      severity_type: grype
     - base-image:
       - base_cve_error: ''
         cve: release_artifacts/6.0.4.4/z/aci-containers-operator/6.0.4.4-cve-base.txt
@@ -5752,7 +5747,7 @@ releases:
         U: 0
       severity_link: https://quay.io/repository/noiro/opflex/manifest/sha256:fd5e419385f907fdb5cf1041299e8ef6d168c1d2414e70ed353317fb48550ea2?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-12-09 09:38:56 PST
+    last_updated: 2024-12-09 09:40:56 PST
     release_name: 6.0.4.4.z
   - acc_provision: []
     container_images: []
