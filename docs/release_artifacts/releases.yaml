@@ -5376,48 +5376,43 @@ releases:
         U: 0
       severity_type: grype
     - base-image:
-      - base_cve_error: ''
-        cve: release_artifacts/6.0.4.4/z/aci-containers-host/6.0.4.4-cve-base.txt
+      - cve: release_artifacts/6.0.4.4/z/aci-containers-host/6.0.4.4-cve-base.txt
         severity:
         - C: 0
-          H: 0
+          H: 3
           L: 0
-          M: 0
+          M: 5
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:4a252662dc4ed295eab659cbf4ff72829994529d0f390579d7c8318d94afc592?tab=vulnerabilities
-        severity_type: quay
-        sha: 4a252662dc4ed295eab659cbf4ff72829994529d0f390579d7c8318d94afc592
+        sha: 1057dab827c782abcfb9bda0c3900c0966b5066e671d54976a7bcb3a2d1a5e53
       build-logs: release_artifacts/6.0.4.4/z/aci-containers-host/6.0.4.4-buildlog.txt
-      build-time: 2024-12-11 01:59:34 PST
+      build-time: 2024-12-13 23:56:45 PST
       commit:
       - link: https://github.com/noironetworks/aci-containers/commit/3405d021cb5be250cef9d1a6dbb2e99a449882f7
         sha: 3405d021cb5be250cef9d1a6dbb2e99a449882f7
-      cve: release_artifacts/6.0.4.4/z/aci-containers-host/6.0.4.4-quay-cve.txt
-      cve_error: ''
+      cve: release_artifacts/6.0.4.4/z/aci-containers-host/6.0.4.4-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/aci-containers-host/6.0.4.4.81c2369.z/images/sha256-f4e9e9ed0838eecb5b9280c4ded12890051abbabeb8bd247f156f535ec0c7e71?context=explore
-        sha: f4e9e9ed0838eecb5b9280c4ded12890051abbabeb8bd247f156f535ec0c7e71
+      - link: https://hub.docker.com/layers/noiro/aci-containers-host/6.0.4.4.81c2369.z/images/sha256-518ccdb69385435205ef3d8b06de5baac525d549060a1ae4af94952078ca54f2?context=explore
+        sha: 518ccdb69385435205ef3d8b06de5baac525d549060a1ae4af94952078ca54f2
         tag: 6.0.4.4.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/aci-containers-host/6.0.4.4.81c2369.121124.10317/images/sha256-f4e9e9ed0838eecb5b9280c4ded12890051abbabeb8bd247f156f535ec0c7e71?context=explore
-        sha: f4e9e9ed0838eecb5b9280c4ded12890051abbabeb8bd247f156f535ec0c7e71
-        tag: 6.0.4.4.81c2369.121124.10317
+      - link: https://hub.docker.com/layers/noiro/aci-containers-host/6.0.4.4.81c2369.121424.10320/images/sha256-518ccdb69385435205ef3d8b06de5baac525d549060a1ae4af94952078ca54f2?context=explore
+        sha: 518ccdb69385435205ef3d8b06de5baac525d549060a1ae4af94952078ca54f2
+        tag: 6.0.4.4.81c2369.121424.10320
       name: aci-containers-host
       quay:
       - link: https://quay.io/noiro/aci-containers-host:6.0.4.4.81c2369.z
-        sha: f4e9e9ed0838eecb5b9280c4ded12890051abbabeb8bd247f156f535ec0c7e71
+        sha: 518ccdb69385435205ef3d8b06de5baac525d549060a1ae4af94952078ca54f2
         tag: 6.0.4.4.81c2369.z
-      - link: https://quay.io/noiro/aci-containers-host:6.0.4.4.81c2369.121124.10317
-        sha: f4e9e9ed0838eecb5b9280c4ded12890051abbabeb8bd247f156f535ec0c7e71
-        tag: 6.0.4.4.81c2369.121124.10317
+      - link: https://quay.io/noiro/aci-containers-host:6.0.4.4.81c2369.121424.10320
+        sha: 518ccdb69385435205ef3d8b06de5baac525d549060a1ae4af94952078ca54f2
+        tag: 6.0.4.4.81c2369.121424.10320
       sbom: release_artifacts/6.0.4.4/z/aci-containers-host/6.0.4.4-sbom.txt
       severity:
-      - C: 0
+      - C: 1
         H: 0
         L: 0
         M: 0
         U: 0
-      severity_link: https://quay.io/repository/noiro/aci-containers-host/manifest/sha256:f4e9e9ed0838eecb5b9280c4ded12890051abbabeb8bd247f156f535ec0c7e71?tab=vulnerabilities
-      severity_type: quay
+      severity_type: grype
     - base-image:
       - base_cve_error: ''
         cve: release_artifacts/6.0.4.4/z/aci-containers-controller/6.0.4.4-cve-base.txt
@@ -5762,7 +5757,7 @@ releases:
         U: 0
       severity_link: https://quay.io/repository/noiro/opflex/manifest/sha256:92df37aa049ebaed2b6a0f50222ece81534e12d216215b59e7b35d36e3b60f09?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-12-13 23:26:50 PST
+    last_updated: 2024-12-13 23:56:45 PST
     release_name: 6.0.4.4.z
   - acc_provision: []
     container_images: []
