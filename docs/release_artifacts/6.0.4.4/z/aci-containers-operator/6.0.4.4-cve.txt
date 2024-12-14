@@ -1,14 +1,28 @@
-NAME        INSTALLED  FIXED-IN  TYPE    VULNERABILITY        SEVERITY 
-idna        2.10       3.7       python  GHSA-jjg7-2v4v-x38h  Medium    
-requests    2.25.1     2.31.0    python  GHSA-j8r2-6x86-q33q  Medium    
-requests    2.25.1     2.32.0    python  GHSA-9wx4-h78v-vm56  Medium    
-setuptools  53.0.0     65.5.1    python  GHSA-r9hx-vwmv-q579  High      
-setuptools  53.0.0     70.0.0    python  GHSA-cx63-2mw6-8hw5  High      
-urllib3     1.26.5     1.26.17   python  GHSA-v845-jxx5-vc9f  High      
-urllib3     1.26.5     1.26.18   python  GHSA-g4mx-q9vg-27p4  Medium    
-urllib3     1.26.5     1.26.19   python  GHSA-34jh-p97f-mpxf  Medium
+NAME                 INSTALLED  FIXED-IN  TYPE       VULNERABILITY        SEVERITY 
+golang.org/x/crypto  v0.21.0    0.31.0    go-module  GHSA-v778-237x-gjrc  Critical  
+idna                 2.10       3.7       python     GHSA-jjg7-2v4v-x38h  Medium    
+requests             2.25.1     2.31.0    python     GHSA-j8r2-6x86-q33q  Medium    
+requests             2.25.1     2.32.0    python     GHSA-9wx4-h78v-vm56  Medium    
+setuptools           53.0.0     65.5.1    python     GHSA-r9hx-vwmv-q579  High      
+setuptools           53.0.0     70.0.0    python     GHSA-cx63-2mw6-8hw5  High      
+urllib3              1.26.5     1.26.17   python     GHSA-v845-jxx5-vc9f  High      
+urllib3              1.26.5     1.26.18   python     GHSA-g4mx-q9vg-27p4  Medium    
+urllib3              1.26.5     1.26.19   python     GHSA-34jh-p97f-mpxf  Medium
 
 quay.io/noiro/aci-containers-operator:6.0.4.4.81c2369.z (redhat 9.5)
 ====================================================================
 Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 
+
+usr/local/bin/aci-containers-operator (gobinary)
+================================================
+Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 1)
+
+┌─────────────────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────┬────────────────────────────────────────────────────────┐
+│       Library       │ Vulnerability  │ Severity │ Status │ Installed Version │ Fixed Version │                         Title                          │
+├─────────────────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────┼────────────────────────────────────────────────────────┤
+│ golang.org/x/crypto │ CVE-2024-45337 │ CRITICAL │ fixed  │ v0.21.0           │ 0.31.0        │ golang.org/x/crypto/ssh: Misuse of                     │
+│                     │                │          │        │                   │               │ ServerConfig.PublicKeyCallback may cause authorization │
+│                     │                │          │        │                   │               │ bypass in golang.org/x/crypto                          │
+│                     │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-45337             │
+└─────────────────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────┴────────────────────────────────────────────────────────┘
