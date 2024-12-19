@@ -5969,48 +5969,43 @@ releases:
         U: 0
       severity_type: grype
     - base-image:
-      - base_cve_error: ''
-        cve: release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-cve-base.txt
+      - cve: release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-cve-base.txt
         severity:
         - C: 0
-          H: 0
+          H: 3
           L: 0
-          M: 0
+          M: 5
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:2d267fee99700fab182ecd5eff93baf6b39144a063e06d49adb065ada099e70d?tab=vulnerabilities
-        severity_type: quay
-        sha: 2d267fee99700fab182ecd5eff93baf6b39144a063e06d49adb065ada099e70d
+        sha: 38791b293262ac2169eca2717e68e626a047d2b89fbd1da544db24ed0204efeb
       build-logs: release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-buildlog.txt
-      build-time: 2024-12-14 00:08:33 PST
+      build-time: 2024-12-19 11:39:15 PST
       commit:
-      - link: https://github.com/noironetworks/aci-containers/commit/39b925fbe545e252ead51afa1d9ee7c88bc23960
-        sha: 39b925fbe545e252ead51afa1d9ee7c88bc23960
-      cve: release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-quay-cve.txt
-      cve_error: ''
+      - link: https://github.com/noironetworks/aci-containers/commit/be8800711c8e22f57fc569e9de54283da6d0abe0
+        sha: be8800711c8e22f57fc569e9de54283da6d0abe0
+      cve: release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/aci-containers-webhook/6.1.1.2.81c2369.z/images/sha256-9c9e49c1dc4b821511350ea06099835f79e9aa5452015855634c82bb8c526dfb?context=explore
-        sha: 9c9e49c1dc4b821511350ea06099835f79e9aa5452015855634c82bb8c526dfb
+      - link: https://hub.docker.com/layers/noiro/aci-containers-webhook/6.1.1.2.81c2369.z/images/sha256-39412e84aa7a98c83d9d753282a3b9377b10c89d034ef1a7bbc48d67b9c6dbba?context=explore
+        sha: 39412e84aa7a98c83d9d753282a3b9377b10c89d034ef1a7bbc48d67b9c6dbba
         tag: 6.1.1.2.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/aci-containers-webhook/6.1.1.2.81c2369.121424.10321/images/sha256-9c9e49c1dc4b821511350ea06099835f79e9aa5452015855634c82bb8c526dfb?context=explore
-        sha: 9c9e49c1dc4b821511350ea06099835f79e9aa5452015855634c82bb8c526dfb
-        tag: 6.1.1.2.81c2369.121424.10321
+      - link: https://hub.docker.com/layers/noiro/aci-containers-webhook/6.1.1.2.81c2369.121924.10331/images/sha256-39412e84aa7a98c83d9d753282a3b9377b10c89d034ef1a7bbc48d67b9c6dbba?context=explore
+        sha: 39412e84aa7a98c83d9d753282a3b9377b10c89d034ef1a7bbc48d67b9c6dbba
+        tag: 6.1.1.2.81c2369.121924.10331
       name: aci-containers-webhook
       quay:
       - link: https://quay.io/noiro/aci-containers-webhook:6.1.1.2.81c2369.z
-        sha: 9c9e49c1dc4b821511350ea06099835f79e9aa5452015855634c82bb8c526dfb
+        sha: 39412e84aa7a98c83d9d753282a3b9377b10c89d034ef1a7bbc48d67b9c6dbba
         tag: 6.1.1.2.81c2369.z
-      - link: https://quay.io/noiro/aci-containers-webhook:6.1.1.2.81c2369.121424.10321
-        sha: 9c9e49c1dc4b821511350ea06099835f79e9aa5452015855634c82bb8c526dfb
-        tag: 6.1.1.2.81c2369.121424.10321
+      - link: https://quay.io/noiro/aci-containers-webhook:6.1.1.2.81c2369.121924.10331
+        sha: 39412e84aa7a98c83d9d753282a3b9377b10c89d034ef1a7bbc48d67b9c6dbba
+        tag: 6.1.1.2.81c2369.121924.10331
       sbom: release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-sbom.txt
       severity:
       - C: 0
-        H: 1
+        H: 3
         L: 0
-        M: 0
-        U: 1
-      severity_link: https://quay.io/repository/noiro/aci-containers-webhook/manifest/sha256:9c9e49c1dc4b821511350ea06099835f79e9aa5452015855634c82bb8c526dfb?tab=vulnerabilities
-      severity_type: quay
+        M: 5
+        U: 0
+      severity_type: grype
     - base-image:
       - base_cve_error: ''
         cve: release_artifacts/6.1.1.2/z/aci-containers-certmanager/6.1.1.2-cve-base.txt
@@ -6135,7 +6130,7 @@ releases:
         M: 0
         U: 0
       severity_type: grype
-    last_updated: 2024-12-19 11:37:18 PST
+    last_updated: 2024-12-19 11:39:15 PST
     release_name: 6.1.1.2.z
   - acc_provision: []
     container_images: []
