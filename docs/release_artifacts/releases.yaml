@@ -5281,13 +5281,13 @@ releases:
         cve: release_artifacts/6.1.2.1/z/opflex/6.1.2.1-cve-base.txt
         severity:
         - C: 0
-          H: 0
-          L: 0
-          M: 0
+          H: 7
+          L: 47
+          M: 21
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:b83669217a3b18c0d4269d37ad428dca936cfe9f127fd5ee65ea072670eced82?tab=vulnerabilities
+        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:b59e3773fec0663dde7a3194eea1f014d38795dd6ff80503752df76fd69993b4?tab=vulnerabilities
         severity_type: quay
-        sha: b83669217a3b18c0d4269d37ad428dca936cfe9f127fd5ee65ea072670eced82
+        sha: b59e3773fec0663dde7a3194eea1f014d38795dd6ff80503752df76fd69993b4
       build-logs: release_artifacts/6.1.2.1/z/opflex/6.1.2.1-buildlog.txt
       build-time: 2024-12-19 06:57:40 PST
       commit:
@@ -5725,20 +5725,24 @@ releases:
       severity_link: https://quay.io/repository/noiro/aci-containers-host-ovscni/manifest/sha256:ae1e7015e3d0eb1ab44415fdaff4a72d22b25cf9a21a0f92dafbd63e4072db18?tab=vulnerabilities
       severity_type: quay
     - base-image:
-      - cve: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-cve-base.txt
+      - base_cve_error: ''
+        cve: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-cve-base.txt
         severity:
         - C: 0
           H: 0
           L: 0
           M: 0
           U: 0
-        sha: bc552efb4966aaa44b02532be3168ac1ff18e2af299d0fe89502a1d9fabafbc5
+        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:b83669217a3b18c0d4269d37ad428dca936cfe9f127fd5ee65ea072670eced82?tab=vulnerabilities
+        severity_type: quay
+        sha: b83669217a3b18c0d4269d37ad428dca936cfe9f127fd5ee65ea072670eced82
       build-logs: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-buildlog.txt
       build-time: 2024-12-19 09:05:25 PST
       commit:
       - link: https://github.com/noironetworks/opflex/commit/6b18b1fda433178fef07c29c3c8953fae39f66e8
         sha: 6b18b1fda433178fef07c29c3c8953fae39f66e8
-      cve: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-cve.txt
+      cve: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-quay-cve.txt
+      cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/opflex/6.0.4.4.81c2369.z/images/sha256-c5187a1ee85377ee86d1b637411156aa6f96b5243c95ad7cb38f81b0f3a491a9?context=explore
         sha: c5187a1ee85377ee86d1b637411156aa6f96b5243c95ad7cb38f81b0f3a491a9
@@ -5757,11 +5761,12 @@ releases:
       sbom: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-sbom.txt
       severity:
       - C: 0
-        H: 0
-        L: 0
-        M: 0
+        H: 2
+        L: 162
+        M: 23
         U: 0
-      severity_type: grype
+      severity_link: https://quay.io/repository/noiro/opflex/manifest/sha256:c5187a1ee85377ee86d1b637411156aa6f96b5243c95ad7cb38f81b0f3a491a9?tab=vulnerabilities
+      severity_type: quay
     last_updated: 2024-12-19 09:05:25 PST
     release_name: 6.0.4.4.z
   - acc_provision: []
@@ -6172,35 +6177,35 @@ releases:
         cve: release_artifacts/6.1.1.2/z/opflex/6.1.1.2-cve-base.txt
         severity:
         - C: 0
-          H: 0
-          L: 0
-          M: 0
+          H: 7
+          L: 47
+          M: 21
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:b83669217a3b18c0d4269d37ad428dca936cfe9f127fd5ee65ea072670eced82?tab=vulnerabilities
+        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:b59e3773fec0663dde7a3194eea1f014d38795dd6ff80503752df76fd69993b4?tab=vulnerabilities
         severity_type: quay
-        sha: b83669217a3b18c0d4269d37ad428dca936cfe9f127fd5ee65ea072670eced82
+        sha: b59e3773fec0663dde7a3194eea1f014d38795dd6ff80503752df76fd69993b4
       build-logs: release_artifacts/6.1.1.2/z/opflex/6.1.1.2-buildlog.txt
-      build-time: 2024-12-18 22:46:19 PST
+      build-time: 2024-12-19 09:06:48 PST
       commit:
-      - link: https://github.com/noironetworks/opflex/commit/7c521282dc1d3eedd64e72e4fe5998bef5cc2456
-        sha: 7c521282dc1d3eedd64e72e4fe5998bef5cc2456
+      - link: https://github.com/noironetworks/opflex/commit/23c2e2b244bf6dda972a9e410083cd5e96e87bab
+        sha: 23c2e2b244bf6dda972a9e410083cd5e96e87bab
       cve: release_artifacts/6.1.1.2/z/opflex/6.1.1.2-quay-cve.txt
       cve_error: ''
       docker:
       - link: https://hub.docker.com/layers/noiro/opflex/6.1.1.2.81c2369.z/images/sha256-b323b52dba25da78a5d9a9a7308fd35c9ae76013c028336dc9f8afe5f1a6b04a?context=explore
         sha: b323b52dba25da78a5d9a9a7308fd35c9ae76013c028336dc9f8afe5f1a6b04a
         tag: 6.1.1.2.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/opflex/6.1.1.2.81c2369.121924.4185/images/sha256-b323b52dba25da78a5d9a9a7308fd35c9ae76013c028336dc9f8afe5f1a6b04a?context=explore
+      - link: https://hub.docker.com/layers/noiro/opflex/6.1.1.2.81c2369.121924.4196/images/sha256-b323b52dba25da78a5d9a9a7308fd35c9ae76013c028336dc9f8afe5f1a6b04a?context=explore
         sha: b323b52dba25da78a5d9a9a7308fd35c9ae76013c028336dc9f8afe5f1a6b04a
-        tag: 6.1.1.2.81c2369.121924.4185
+        tag: 6.1.1.2.81c2369.121924.4196
       name: opflex
       quay:
       - link: https://quay.io/noiro/opflex:6.1.1.2.81c2369.z
         sha: b323b52dba25da78a5d9a9a7308fd35c9ae76013c028336dc9f8afe5f1a6b04a
         tag: 6.1.1.2.81c2369.z
-      - link: https://quay.io/noiro/opflex:6.1.1.2.81c2369.121924.4185
+      - link: https://quay.io/noiro/opflex:6.1.1.2.81c2369.121924.4196
         sha: b323b52dba25da78a5d9a9a7308fd35c9ae76013c028336dc9f8afe5f1a6b04a
-        tag: 6.1.1.2.81c2369.121924.4185
+        tag: 6.1.1.2.81c2369.121924.4196
       sbom: release_artifacts/6.1.1.2/z/opflex/6.1.1.2-sbom.txt
       severity:
       - C: 0
@@ -6210,7 +6215,7 @@ releases:
         U: 0
       severity_link: https://quay.io/repository/noiro/opflex/manifest/sha256:b323b52dba25da78a5d9a9a7308fd35c9ae76013c028336dc9f8afe5f1a6b04a?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-12-18 22:46:19 PST
+    last_updated: 2024-12-19 09:06:48 PST
     release_name: 6.1.1.2.z
   - acc_provision: []
     container_images: []
