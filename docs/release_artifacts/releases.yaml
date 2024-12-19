@@ -6045,48 +6045,43 @@ releases:
         U: 0
       severity_type: grype
     - base-image:
-      - base_cve_error: ''
-        cve: release_artifacts/6.1.1.2/z/aci-containers-host-ovscni/6.1.1.2-cve-base.txt
+      - cve: release_artifacts/6.1.1.2/z/aci-containers-host-ovscni/6.1.1.2-cve-base.txt
         severity:
         - C: 0
-          H: 0
+          H: 3
           L: 0
-          M: 0
+          M: 5
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9-minimal/manifest/sha256:b83669217a3b18c0d4269d37ad428dca936cfe9f127fd5ee65ea072670eced82?tab=vulnerabilities
-        severity_type: quay
-        sha: b83669217a3b18c0d4269d37ad428dca936cfe9f127fd5ee65ea072670eced82
+        sha: 38791b293262ac2169eca2717e68e626a047d2b89fbd1da544db24ed0204efeb
       build-logs: release_artifacts/6.1.1.2/z/aci-containers-host-ovscni/6.1.1.2-buildlog.txt
-      build-time: 2024-12-14 00:12:12 PST
+      build-time: 2024-12-19 11:43:34 PST
       commit:
-      - link: https://github.com/noironetworks/aci-containers/commit/39b925fbe545e252ead51afa1d9ee7c88bc23960
-        sha: 39b925fbe545e252ead51afa1d9ee7c88bc23960
-      cve: release_artifacts/6.1.1.2/z/aci-containers-host-ovscni/6.1.1.2-quay-cve.txt
-      cve_error: ''
+      - link: https://github.com/noironetworks/aci-containers/commit/be8800711c8e22f57fc569e9de54283da6d0abe0
+        sha: be8800711c8e22f57fc569e9de54283da6d0abe0
+      cve: release_artifacts/6.1.1.2/z/aci-containers-host-ovscni/6.1.1.2-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/aci-containers-host-ovscni/6.1.1.2.81c2369.z/images/sha256-0efc5d334c4e937f49716eee38bb6c63675adbae24563d16d48a5897b1169bfd?context=explore
-        sha: 0efc5d334c4e937f49716eee38bb6c63675adbae24563d16d48a5897b1169bfd
+      - link: https://hub.docker.com/layers/noiro/aci-containers-host-ovscni/6.1.1.2.81c2369.z/images/sha256-4926182202e14e1732dd2ffcb17a9589f664ba276d83d60a4c5185258b5592ab?context=explore
+        sha: 4926182202e14e1732dd2ffcb17a9589f664ba276d83d60a4c5185258b5592ab
         tag: 6.1.1.2.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/aci-containers-host-ovscni/6.1.1.2.81c2369.121424.10321/images/sha256-0efc5d334c4e937f49716eee38bb6c63675adbae24563d16d48a5897b1169bfd?context=explore
-        sha: 0efc5d334c4e937f49716eee38bb6c63675adbae24563d16d48a5897b1169bfd
-        tag: 6.1.1.2.81c2369.121424.10321
+      - link: https://hub.docker.com/layers/noiro/aci-containers-host-ovscni/6.1.1.2.81c2369.121924.10331/images/sha256-4926182202e14e1732dd2ffcb17a9589f664ba276d83d60a4c5185258b5592ab?context=explore
+        sha: 4926182202e14e1732dd2ffcb17a9589f664ba276d83d60a4c5185258b5592ab
+        tag: 6.1.1.2.81c2369.121924.10331
       name: aci-containers-host-ovscni
       quay:
       - link: https://quay.io/noiro/aci-containers-host-ovscni:6.1.1.2.81c2369.z
-        sha: 0efc5d334c4e937f49716eee38bb6c63675adbae24563d16d48a5897b1169bfd
+        sha: 4926182202e14e1732dd2ffcb17a9589f664ba276d83d60a4c5185258b5592ab
         tag: 6.1.1.2.81c2369.z
-      - link: https://quay.io/noiro/aci-containers-host-ovscni:6.1.1.2.81c2369.121424.10321
-        sha: 0efc5d334c4e937f49716eee38bb6c63675adbae24563d16d48a5897b1169bfd
-        tag: 6.1.1.2.81c2369.121424.10321
+      - link: https://quay.io/noiro/aci-containers-host-ovscni:6.1.1.2.81c2369.121924.10331
+        sha: 4926182202e14e1732dd2ffcb17a9589f664ba276d83d60a4c5185258b5592ab
+        tag: 6.1.1.2.81c2369.121924.10331
       sbom: release_artifacts/6.1.1.2/z/aci-containers-host-ovscni/6.1.1.2-sbom.txt
       severity:
-      - C: 1
-        H: 1
+      - C: 0
+        H: 0
         L: 0
         M: 0
-        U: 2
-      severity_link: https://quay.io/repository/noiro/aci-containers-host-ovscni/manifest/sha256:0efc5d334c4e937f49716eee38bb6c63675adbae24563d16d48a5897b1169bfd?tab=vulnerabilities
-      severity_type: quay
+        U: 0
+      severity_type: grype
     - base-image:
       - cve: release_artifacts/6.1.1.2/z/opflex/6.1.1.2-cve-base.txt
         severity:
@@ -6125,7 +6120,7 @@ releases:
         M: 0
         U: 0
       severity_type: grype
-    last_updated: 2024-12-19 11:40:48 PST
+    last_updated: 2024-12-19 11:43:34 PST
     release_name: 6.1.1.2.z
   - acc_provision: []
     container_images: []
