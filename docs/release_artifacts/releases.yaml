@@ -5566,48 +5566,43 @@ releases:
         U: 0
       severity_type: grype
     - base-image:
-      - base_cve_error: ''
-        cve: release_artifacts/6.0.4.4/z/aci-containers-webhook/6.0.4.4-cve-base.txt
+      - cve: release_artifacts/6.0.4.4/z/aci-containers-webhook/6.0.4.4-cve-base.txt
         severity:
         - C: 0
-          H: 0
+          H: 3
           L: 0
-          M: 0
+          M: 5
           U: 0
-        severity_link: https://quay.io/repository/noirolabs/ubi9/manifest/sha256:2d267fee99700fab182ecd5eff93baf6b39144a063e06d49adb065ada099e70d?tab=vulnerabilities
-        severity_type: quay
-        sha: 2d267fee99700fab182ecd5eff93baf6b39144a063e06d49adb065ada099e70d
+        sha: 38791b293262ac2169eca2717e68e626a047d2b89fbd1da544db24ed0204efeb
       build-logs: release_artifacts/6.0.4.4/z/aci-containers-webhook/6.0.4.4-buildlog.txt
-      build-time: 2024-12-19 11:59:24 PST
-      commit: &id062
-      - link: https://github.com/noironetworks/aci-containers/commit/27c297d9b069fea210759d6ecc9a8f4fd3409282
-        sha: 27c297d9b069fea210759d6ecc9a8f4fd3409282
-      cve: release_artifacts/6.0.4.4/z/aci-containers-webhook/6.0.4.4-quay-cve.txt
-      cve_error: ''
+      build-time: 2024-12-21 13:52:58 PST
+      commit:
+      - link: https://github.com/noironetworks/aci-containers/commit/9e41ab453f2b4157e396dc56dd08299a885adb55
+        sha: 9e41ab453f2b4157e396dc56dd08299a885adb55
+      cve: release_artifacts/6.0.4.4/z/aci-containers-webhook/6.0.4.4-cve.txt
       docker:
-      - link: https://hub.docker.com/layers/noiro/aci-containers-webhook/6.0.4.4.81c2369.z/images/sha256-d3a53276842f2a72180a83bac300c2b8790370ab42f6e994c2be868e4a26f808?context=explore
-        sha: d3a53276842f2a72180a83bac300c2b8790370ab42f6e994c2be868e4a26f808
+      - link: https://hub.docker.com/layers/noiro/aci-containers-webhook/6.0.4.4.81c2369.z/images/sha256-cdad35953dd7eb6fdfd14d7094725fdf2a368b153fadff503078637501867eeb?context=explore
+        sha: cdad35953dd7eb6fdfd14d7094725fdf2a368b153fadff503078637501867eeb
         tag: 6.0.4.4.81c2369.z
-      - link: https://hub.docker.com/layers/noiro/aci-containers-webhook/6.0.4.4.81c2369.121924.10333/images/sha256-d3a53276842f2a72180a83bac300c2b8790370ab42f6e994c2be868e4a26f808?context=explore
-        sha: d3a53276842f2a72180a83bac300c2b8790370ab42f6e994c2be868e4a26f808
-        tag: 6.0.4.4.81c2369.121924.10333
+      - link: https://hub.docker.com/layers/noiro/aci-containers-webhook/6.0.4.4.81c2369.122124.10344/images/sha256-cdad35953dd7eb6fdfd14d7094725fdf2a368b153fadff503078637501867eeb?context=explore
+        sha: cdad35953dd7eb6fdfd14d7094725fdf2a368b153fadff503078637501867eeb
+        tag: 6.0.4.4.81c2369.122124.10344
       name: aci-containers-webhook
       quay:
       - link: https://quay.io/noiro/aci-containers-webhook:6.0.4.4.81c2369.z
-        sha: d3a53276842f2a72180a83bac300c2b8790370ab42f6e994c2be868e4a26f808
+        sha: cdad35953dd7eb6fdfd14d7094725fdf2a368b153fadff503078637501867eeb
         tag: 6.0.4.4.81c2369.z
-      - link: https://quay.io/noiro/aci-containers-webhook:6.0.4.4.81c2369.121924.10333
-        sha: d3a53276842f2a72180a83bac300c2b8790370ab42f6e994c2be868e4a26f808
-        tag: 6.0.4.4.81c2369.121924.10333
+      - link: https://quay.io/noiro/aci-containers-webhook:6.0.4.4.81c2369.122124.10344
+        sha: cdad35953dd7eb6fdfd14d7094725fdf2a368b153fadff503078637501867eeb
+        tag: 6.0.4.4.81c2369.122124.10344
       sbom: release_artifacts/6.0.4.4/z/aci-containers-webhook/6.0.4.4-sbom.txt
       severity:
       - C: 0
-        H: 0
+        H: 3
         L: 0
-        M: 0
+        M: 5
         U: 0
-      severity_link: https://quay.io/repository/noiro/aci-containers-webhook/manifest/sha256:d3a53276842f2a72180a83bac300c2b8790370ab42f6e994c2be868e4a26f808?tab=vulnerabilities
-      severity_type: quay
+      severity_type: grype
     - base-image:
       - base_cve_error: ''
         cve: release_artifacts/6.0.4.4/z/aci-containers-certmanager/6.0.4.4-cve-base.txt
@@ -5622,7 +5617,7 @@ releases:
         sha: 2d267fee99700fab182ecd5eff93baf6b39144a063e06d49adb065ada099e70d
       build-logs: release_artifacts/6.0.4.4/z/aci-containers-certmanager/6.0.4.4-buildlog.txt
       build-time: 2024-12-19 12:01:35 PST
-      commit: &id063
+      commit: &id062
       - link: https://github.com/noironetworks/aci-containers/commit/27c297d9b069fea210759d6ecc9a8f4fd3409282
         sha: 27c297d9b069fea210759d6ecc9a8f4fd3409282
       cve: release_artifacts/6.0.4.4/z/aci-containers-certmanager/6.0.4.4-quay-cve.txt
@@ -5665,7 +5660,7 @@ releases:
         sha: b83669217a3b18c0d4269d37ad428dca936cfe9f127fd5ee65ea072670eced82
       build-logs: release_artifacts/6.0.4.4/z/aci-containers-host-ovscni/6.0.4.4-buildlog.txt
       build-time: 2024-12-19 12:04:07 PST
-      commit: &id064
+      commit: &id063
       - link: https://github.com/noironetworks/aci-containers/commit/27c297d9b069fea210759d6ecc9a8f4fd3409282
         sha: 27c297d9b069fea210759d6ecc9a8f4fd3409282
       cve: release_artifacts/6.0.4.4/z/aci-containers-host-ovscni/6.0.4.4-quay-cve.txt
@@ -5708,7 +5703,7 @@ releases:
         sha: b59e3773fec0663dde7a3194eea1f014d38795dd6ff80503752df76fd69993b4
       build-logs: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-buildlog.txt
       build-time: 2024-12-19 09:05:25 PST
-      commit: &id065
+      commit: &id064
       - link: https://github.com/noironetworks/opflex/commit/6b18b1fda433178fef07c29c3c8953fae39f66e8
         sha: 6b18b1fda433178fef07c29c3c8953fae39f66e8
       cve: release_artifacts/6.0.4.4/z/opflex/6.0.4.4-quay-cve.txt
@@ -5737,7 +5732,7 @@ releases:
         U: 0
       severity_link: https://quay.io/repository/noiro/opflex/manifest/sha256:c5187a1ee85377ee86d1b637411156aa6f96b5243c95ad7cb38f81b0f3a491a9?tab=vulnerabilities
       severity_type: quay
-    last_updated: 2024-12-21 13:51:29 PST
+    last_updated: 2024-12-21 13:52:58 PST
     release_name: 6.0.4.4.z
   - acc_provision:
     - build-logs: release_artifacts/6.0.4.4/r/acc-provision/6.0.4.4-buildlog.txt
@@ -5984,7 +5979,9 @@ releases:
         sha: 2d267fee99700fab182ecd5eff93baf6b39144a063e06d49adb065ada099e70d
       build-logs: release_artifacts/6.0.4.4/r/aci-containers-webhook/6.0.4.4-buildlog.txt
       build-time: 2024-12-20 01:45:01 PST
-      commit: *id062
+      commit:
+      - link: https://github.com/noironetworks/aci-containers/commit/27c297d9b069fea210759d6ecc9a8f4fd3409282
+        sha: 27c297d9b069fea210759d6ecc9a8f4fd3409282
       cve: release_artifacts/6.0.4.4/r/aci-containers-webhook/6.0.4.4-quay-cve.txt
       cve_error: ''
       docker:
@@ -6019,7 +6016,7 @@ releases:
         sha: 2d267fee99700fab182ecd5eff93baf6b39144a063e06d49adb065ada099e70d
       build-logs: release_artifacts/6.0.4.4/r/aci-containers-certmanager/6.0.4.4-buildlog.txt
       build-time: 2024-12-20 01:45:09 PST
-      commit: *id063
+      commit: *id062
       cve: release_artifacts/6.0.4.4/r/aci-containers-certmanager/6.0.4.4-quay-cve.txt
       cve_error: ''
       docker:
@@ -6054,7 +6051,7 @@ releases:
         sha: b83669217a3b18c0d4269d37ad428dca936cfe9f127fd5ee65ea072670eced82
       build-logs: release_artifacts/6.0.4.4/r/aci-containers-host-ovscni/6.0.4.4-buildlog.txt
       build-time: 2024-12-20 01:45:14 PST
-      commit: *id064
+      commit: *id063
       cve: release_artifacts/6.0.4.4/r/aci-containers-host-ovscni/6.0.4.4-quay-cve.txt
       cve_error: ''
       docker:
@@ -6089,7 +6086,7 @@ releases:
         sha: b59e3773fec0663dde7a3194eea1f014d38795dd6ff80503752df76fd69993b4
       build-logs: release_artifacts/6.0.4.4/r/opflex/6.0.4.4-buildlog.txt
       build-time: 2024-12-20 01:45:34 PST
-      commit: *id065
+      commit: *id064
       cve: release_artifacts/6.0.4.4/r/opflex/6.0.4.4-quay-cve.txt
       cve_error: ''
       docker:
@@ -6295,7 +6292,7 @@ releases:
         sha: 2d267fee99700fab182ecd5eff93baf6b39144a063e06d49adb065ada099e70d
       build-logs: release_artifacts/6.1.1.2/z/aci-containers-operator/6.1.1.2-buildlog.txt
       build-time: 2024-12-19 11:34:45 PST
-      commit: &id066
+      commit: &id065
       - link: https://github.com/noironetworks/aci-containers/commit/be8800711c8e22f57fc569e9de54283da6d0abe0
         sha: be8800711c8e22f57fc569e9de54283da6d0abe0
       cve: release_artifacts/6.1.1.2/z/aci-containers-operator/6.1.1.2-quay-cve.txt
@@ -6338,7 +6335,7 @@ releases:
         sha: b83669217a3b18c0d4269d37ad428dca936cfe9f127fd5ee65ea072670eced82
       build-logs: release_artifacts/6.1.1.2/z/openvswitch/6.1.1.2-buildlog.txt
       build-time: 2024-12-19 11:37:18 PST
-      commit: &id067
+      commit: &id066
       - link: https://github.com/noironetworks/aci-containers/commit/be8800711c8e22f57fc569e9de54283da6d0abe0
         sha: be8800711c8e22f57fc569e9de54283da6d0abe0
       cve: release_artifacts/6.1.1.2/z/openvswitch/6.1.1.2-quay-cve.txt
@@ -6381,7 +6378,7 @@ releases:
         sha: 2d267fee99700fab182ecd5eff93baf6b39144a063e06d49adb065ada099e70d
       build-logs: release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-buildlog.txt
       build-time: 2024-12-19 11:39:15 PST
-      commit: &id068
+      commit: &id067
       - link: https://github.com/noironetworks/aci-containers/commit/be8800711c8e22f57fc569e9de54283da6d0abe0
         sha: be8800711c8e22f57fc569e9de54283da6d0abe0
       cve: release_artifacts/6.1.1.2/z/aci-containers-webhook/6.1.1.2-quay-cve.txt
@@ -6424,7 +6421,7 @@ releases:
         sha: 2d267fee99700fab182ecd5eff93baf6b39144a063e06d49adb065ada099e70d
       build-logs: release_artifacts/6.1.1.2/z/aci-containers-certmanager/6.1.1.2-buildlog.txt
       build-time: 2024-12-19 11:40:48 PST
-      commit: &id069
+      commit: &id068
       - link: https://github.com/noironetworks/aci-containers/commit/be8800711c8e22f57fc569e9de54283da6d0abe0
         sha: be8800711c8e22f57fc569e9de54283da6d0abe0
       cve: release_artifacts/6.1.1.2/z/aci-containers-certmanager/6.1.1.2-quay-cve.txt
@@ -6467,7 +6464,7 @@ releases:
         sha: b83669217a3b18c0d4269d37ad428dca936cfe9f127fd5ee65ea072670eced82
       build-logs: release_artifacts/6.1.1.2/z/aci-containers-host-ovscni/6.1.1.2-buildlog.txt
       build-time: 2024-12-19 11:43:34 PST
-      commit: &id070
+      commit: &id069
       - link: https://github.com/noironetworks/aci-containers/commit/be8800711c8e22f57fc569e9de54283da6d0abe0
         sha: be8800711c8e22f57fc569e9de54283da6d0abe0
       cve: release_artifacts/6.1.1.2/z/aci-containers-host-ovscni/6.1.1.2-quay-cve.txt
@@ -6510,7 +6507,7 @@ releases:
         sha: b59e3773fec0663dde7a3194eea1f014d38795dd6ff80503752df76fd69993b4
       build-logs: release_artifacts/6.1.1.2/z/opflex/6.1.1.2-buildlog.txt
       build-time: 2024-12-19 10:52:38 PST
-      commit: &id071
+      commit: &id070
       - link: https://github.com/noironetworks/opflex/commit/23c2e2b244bf6dda972a9e410083cd5e96e87bab
         sha: 23c2e2b244bf6dda972a9e410083cd5e96e87bab
       cve: release_artifacts/6.1.1.2/z/opflex/6.1.1.2-quay-cve.txt
@@ -6712,7 +6709,7 @@ releases:
         sha: 2d267fee99700fab182ecd5eff93baf6b39144a063e06d49adb065ada099e70d
       build-logs: release_artifacts/6.1.1.2/r/aci-containers-operator/6.1.1.2-buildlog.txt
       build-time: 2024-12-20 01:58:38 PST
-      commit: *id066
+      commit: *id065
       cve: release_artifacts/6.1.1.2/r/aci-containers-operator/6.1.1.2-quay-cve.txt
       cve_error: ''
       docker:
@@ -6747,7 +6744,7 @@ releases:
         sha: b83669217a3b18c0d4269d37ad428dca936cfe9f127fd5ee65ea072670eced82
       build-logs: release_artifacts/6.1.1.2/r/openvswitch/6.1.1.2-buildlog.txt
       build-time: 2024-12-20 01:58:58 PST
-      commit: *id067
+      commit: *id066
       cve: release_artifacts/6.1.1.2/r/openvswitch/6.1.1.2-quay-cve.txt
       cve_error: ''
       docker:
@@ -6782,7 +6779,7 @@ releases:
         sha: 2d267fee99700fab182ecd5eff93baf6b39144a063e06d49adb065ada099e70d
       build-logs: release_artifacts/6.1.1.2/r/aci-containers-webhook/6.1.1.2-buildlog.txt
       build-time: 2024-12-20 01:59:02 PST
-      commit: *id068
+      commit: *id067
       cve: release_artifacts/6.1.1.2/r/aci-containers-webhook/6.1.1.2-quay-cve.txt
       cve_error: ''
       docker:
@@ -6817,7 +6814,7 @@ releases:
         sha: 2d267fee99700fab182ecd5eff93baf6b39144a063e06d49adb065ada099e70d
       build-logs: release_artifacts/6.1.1.2/r/aci-containers-certmanager/6.1.1.2-buildlog.txt
       build-time: 2024-12-20 01:59:20 PST
-      commit: *id069
+      commit: *id068
       cve: release_artifacts/6.1.1.2/r/aci-containers-certmanager/6.1.1.2-quay-cve.txt
       cve_error: ''
       docker:
@@ -6852,7 +6849,7 @@ releases:
         sha: b83669217a3b18c0d4269d37ad428dca936cfe9f127fd5ee65ea072670eced82
       build-logs: release_artifacts/6.1.1.2/r/aci-containers-host-ovscni/6.1.1.2-buildlog.txt
       build-time: 2024-12-20 01:59:33 PST
-      commit: *id070
+      commit: *id069
       cve: release_artifacts/6.1.1.2/r/aci-containers-host-ovscni/6.1.1.2-quay-cve.txt
       cve_error: ''
       docker:
@@ -6887,7 +6884,7 @@ releases:
         sha: b59e3773fec0663dde7a3194eea1f014d38795dd6ff80503752df76fd69993b4
       build-logs: release_artifacts/6.1.1.2/r/opflex/6.1.1.2-buildlog.txt
       build-time: 2024-12-20 01:59:53 PST
-      commit: *id071
+      commit: *id070
       cve: release_artifacts/6.1.1.2/r/opflex/6.1.1.2-quay-cve.txt
       cve_error: ''
       docker:
