@@ -2,16 +2,16 @@ No vulnerabilities found
 
 quay.io/noiro/opflex:6.1.2.1.81c2369.z (redhat 9.3)
 ===================================================
-Total: 197 (UNKNOWN: 0, LOW: 165, MEDIUM: 30, HIGH: 2, CRITICAL: 0)
+Total: 192 (UNKNOWN: 0, LOW: 166, MEDIUM: 24, HIGH: 2, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬─────────────────────┬─────────────────────────────┬───────────────────────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │       Status        │      Installed Version      │         Fixed Version         │                            Title                             │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────────────┼───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ bzip2-libs                  │ CVE-2019-12900 │ LOW      │ affected            │ 1.0.8-9.el9                 │                               │ bzip2: bzip2: Data integrity error when decompressing (with  │
+│ bzip2-libs                  │ CVE-2019-12900 │ MEDIUM   │ affected            │ 1.0.8-9.el9                 │                               │ bzip2: bzip2: Data integrity error when decompressing (with  │
 │                             │                │          │                     │                             │                               │ data integrity tests fail)....                               │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2019-12900                   │
-├─────────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────────────┼───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ ca-certificates             │ CVE-2023-37920 │          │ fixed               │ 2024.2.69_v8.0.303-91.4.el9 │ 2024.2.69_v8.0.303-91.4.el9_4 │ python-certifi: Removal of e-Tugra root certificate          │
+├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────────────┼───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ ca-certificates             │ CVE-2023-37920 │ LOW      │ fixed               │ 2024.2.69_v8.0.303-91.4.el9 │ 2024.2.69_v8.0.303-91.4.el9_4 │ python-certifi: Removal of e-Tugra root certificate          │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2023-37920                   │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────────────┼───────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ compat-openssl11            │ CVE-2023-0286  │ HIGH     │ affected            │ 1:1.1.1k-4.el9_0            │                               │ openssl: X.400 address type confusion in X.509 GeneralName   │
@@ -77,7 +77,10 @@ Total: 197 (UNKNOWN: 0, LOW: 165, MEDIUM: 30, HIGH: 2, CRITICAL: 0)
 │                             │ CVE-2024-5535  │          │ affected            │                             │                               │ openssl: SSL_select_next_proto buffer overread               │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-5535                    │
 ├─────────────────────────────┼────────────────┤          │                     ├─────────────────────────────┼───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ curl-minimal                │ CVE-2024-7264  │          │                     │ 7.76.1-31.el9               │                               │ curl: libcurl: ASN.1 date parser overread                    │
+│ curl-minimal                │ CVE-2024-11053 │          │                     │ 7.76.1-31.el9               │                               │ curl: curl netrc password leak                               │
+│                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-11053                   │
+│                             ├────────────────┤          │                     │                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-7264  │          │                     │                             │                               │ curl: libcurl: ASN.1 date parser overread                    │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-7264                    │
 │                             ├────────────────┤          │                     │                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-9681  │          │                     │                             │                               │ curl: HSTS subdomain overwrites parent cache entry           │
@@ -124,7 +127,10 @@ Total: 197 (UNKNOWN: 0, LOW: 165, MEDIUM: 30, HIGH: 2, CRITICAL: 0)
 │                             │                │          │                     │                             │                               │ archive_write_disk_header() on posix based systems...        │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2023-30571                   │
 ├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────────────┼───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ libcurl-minimal             │ CVE-2024-7264  │ LOW      │ affected            │ 7.76.1-31.el9               │                               │ curl: libcurl: ASN.1 date parser overread                    │
+│ libcurl-minimal             │ CVE-2024-11053 │ LOW      │ affected            │ 7.76.1-31.el9               │                               │ curl: curl netrc password leak                               │
+│                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-11053                   │
+│                             ├────────────────┤          │                     │                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-7264  │          │                     │                             │                               │ curl: libcurl: ASN.1 date parser overread                    │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-7264                    │
 │                             ├────────────────┤          │                     │                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-9681  │          │                     │                             │                               │ curl: HSTS subdomain overwrites parent cache entry           │
@@ -222,11 +228,8 @@ Total: 197 (UNKNOWN: 0, LOW: 165, MEDIUM: 30, HIGH: 2, CRITICAL: 0)
 │                             ├────────────────┤          │                     │                             │                               ├──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-5535  │          │                     │                             │                               │ openssl: SSL_select_next_proto buffer overread               │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-5535                    │
-├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────────────┼───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ pam                         │ CVE-2024-10041 │ MEDIUM   │ affected            │ 1.5.1-23.el9                │                               │ pam: libpam: Libpam vulnerable to read hashed password       │
-│                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-10041                   │
-├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────────────┼───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│ pcre2                       │ CVE-2022-41409 │ LOW      │ will_not_fix        │ 10.40-6.el9                 │                               │ pcre2: negative repeat value in a pcre2test subject line     │
+├─────────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────────────┼───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ pcre2                       │ CVE-2022-41409 │          │ will_not_fix        │ 10.40-6.el9                 │                               │ pcre2: negative repeat value in a pcre2test subject line     │
 │                             │                │          │                     │                             │                               │ leads to inifinite...                                        │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2022-41409                   │
 ├─────────────────────────────┤                │          │                     │                             ├───────────────────────────────┤                                                              │
@@ -237,15 +240,8 @@ Total: 197 (UNKNOWN: 0, LOW: 165, MEDIUM: 30, HIGH: 2, CRITICAL: 0)
 │ python-unversioned-command  │ CVE-2021-23336 │ MEDIUM   │ affected            │ 3.9.21-1.el9_5              │                               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                │          │                     │                             │                               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
-│                             ├────────────────┤          │                     │                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-11168 │          │                     │                             │                               │ python: Improper validation of IPv6 and IPvFuture addresses  │
-│                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-11168                   │
-│                             ├────────────────┤          ├─────────────────────┤                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-9287  │          │ under_investigation │                             │                               │ python: Virtual environment (venv) activation scripts don't  │
-│                             │                │          │                     │                             │                               │ quote paths                                                  │
-│                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-9287                    │
-│                             ├────────────────┼──────────┤                     │                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-0397  │ LOW      │                     │                             │                               │ cpython: python: Memory race condition in ssl.SSLContext     │
+│                             ├────────────────┼──────────┼─────────────────────┤                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-0397  │ LOW      │ under_investigation │                             │                               │ cpython: python: Memory race condition in ssl.SSLContext     │
 │                             │                │          │                     │                             │                               │ certificate store methods                                    │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-0397                    │
 │                             ├────────────────┤          ├─────────────────────┤                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
@@ -256,15 +252,8 @@ Total: 197 (UNKNOWN: 0, LOW: 165, MEDIUM: 30, HIGH: 2, CRITICAL: 0)
 │ python3                     │ CVE-2021-23336 │ MEDIUM   │                     │                             │                               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                │          │                     │                             │                               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
-│                             ├────────────────┤          │                     │                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-11168 │          │                     │                             │                               │ python: Improper validation of IPv6 and IPvFuture addresses  │
-│                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-11168                   │
-│                             ├────────────────┤          ├─────────────────────┤                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-9287  │          │ under_investigation │                             │                               │ python: Virtual environment (venv) activation scripts don't  │
-│                             │                │          │                     │                             │                               │ quote paths                                                  │
-│                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-9287                    │
-│                             ├────────────────┼──────────┤                     │                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-0397  │ LOW      │                     │                             │                               │ cpython: python: Memory race condition in ssl.SSLContext     │
+│                             ├────────────────┼──────────┼─────────────────────┤                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-0397  │ LOW      │ under_investigation │                             │                               │ cpython: python: Memory race condition in ssl.SSLContext     │
 │                             │                │          │                     │                             │                               │ certificate store methods                                    │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-0397                    │
 │                             ├────────────────┤          ├─────────────────────┤                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
@@ -275,15 +264,8 @@ Total: 197 (UNKNOWN: 0, LOW: 165, MEDIUM: 30, HIGH: 2, CRITICAL: 0)
 │ python3-libs                │ CVE-2021-23336 │ MEDIUM   │                     │                             │                               │ python: Web cache poisoning via urllib.parse.parse_qsl and   │
 │                             │                │          │                     │                             │                               │ urllib.parse.parse_qs by using a semicolon...                │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2021-23336                   │
-│                             ├────────────────┤          │                     │                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-11168 │          │                     │                             │                               │ python: Improper validation of IPv6 and IPvFuture addresses  │
-│                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-11168                   │
-│                             ├────────────────┤          ├─────────────────────┤                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-9287  │          │ under_investigation │                             │                               │ python: Virtual environment (venv) activation scripts don't  │
-│                             │                │          │                     │                             │                               │ quote paths                                                  │
-│                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-9287                    │
-│                             ├────────────────┼──────────┤                     │                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2024-0397  │ LOW      │                     │                             │                               │ cpython: python: Memory race condition in ssl.SSLContext     │
+│                             ├────────────────┼──────────┼─────────────────────┤                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│                             │ CVE-2024-0397  │ LOW      │ under_investigation │                             │                               │ cpython: python: Memory race condition in ssl.SSLContext     │
 │                             │                │          │                     │                             │                               │ certificate store methods                                    │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-0397                    │
 │                             ├────────────────┤          ├─────────────────────┤                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
@@ -294,6 +276,10 @@ Total: 197 (UNKNOWN: 0, LOW: 165, MEDIUM: 30, HIGH: 2, CRITICAL: 0)
 │ python3-pip-wheel           │ CVE-2021-3572  │          │                     │ 21.3.1-1.el9                │                               │ python-pip: Incorrect handling of unicode separators in git  │
 │                             │                │          │                     │                             │                               │ references                                                   │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2021-3572                    │
+├─────────────────────────────┼────────────────┤          │                     ├─────────────────────────────┼───────────────────────────────┼──────────────────────────────────────────────────────────────┤
+│ shadow-utils                │ CVE-2024-56433 │          │                     │ 2:4.9-12.el9                │                               │ shadow-utils: Default subordinate ID configuration in        │
+│                             │                │          │                     │                             │                               │ /etc/login.defs could lead to compromise                     │
+│                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-56433                   │
 ├─────────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────────────┼───────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │ sqlite-libs                 │ CVE-2023-36191 │          │ will_not_fix        │ 3.34.1-7.el9_3              │                               │ sqlite: CLI fault on missing -nonce                          │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2023-36191                   │
@@ -324,10 +310,7 @@ Total: 197 (UNKNOWN: 0, LOW: 165, MEDIUM: 30, HIGH: 2, CRITICAL: 0)
 │ vim-minimal                 │ CVE-2024-43790 │          │                     │ 2:8.2.2637-21.el9           │                               │ vim: Out of bounds read when performing a search command     │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2024-43790                   │
 │                             ├────────────────┼──────────┼─────────────────────┤                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2020-20703 │ LOW      │ will_not_fix        │                             │                               │ vim: buffer overflow                                         │
-│                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2020-20703                   │
-│                             ├────────────────┤          │                     │                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
-│                             │ CVE-2021-3927  │          │                     │                             │                               │ vim: heap-based buffer overflow in gchar_cursor() in misc1.c │
+│                             │ CVE-2021-3927  │ LOW      │ will_not_fix        │                             │                               │ vim: heap-based buffer overflow in gchar_cursor() in misc1.c │
 │                             │                │          │                     │                             │                               │ https://avd.aquasec.com/nvd/cve-2021-3927                    │
 │                             ├────────────────┤          │                     │                             ├───────────────────────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2021-3928  │          │                     │                             │                               │ vim: stack-based buffer overflow in spell_iswordp() in       │
