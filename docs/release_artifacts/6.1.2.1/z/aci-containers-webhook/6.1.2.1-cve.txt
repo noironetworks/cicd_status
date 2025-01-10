@@ -10,7 +10,7 @@ urllib3     1.26.5     1.26.19   python  GHSA-34jh-p97f-mpxf  Medium
 
 quay.io/noiro/aci-containers-webhook:6.1.2.1.81c2369.z (redhat 9.5)
 ===================================================================
-Total: 170 (UNKNOWN: 0, LOW: 153, MEDIUM: 17, HIGH: 0, CRITICAL: 0)
+Total: 171 (UNKNOWN: 0, LOW: 154, MEDIUM: 17, HIGH: 0, CRITICAL: 0)
 
 ┌─────────────────────────────┬────────────────┬──────────┬─────────────────────┬─────────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
 │           Library           │ Vulnerability  │ Severity │       Status        │  Installed Version  │ Fixed Version │                            Title                             │
@@ -208,8 +208,12 @@ Total: 170 (UNKNOWN: 0, LOW: 153, MEDIUM: 17, HIGH: 0, CRITICAL: 0)
 │ python3-requests            │ CVE-2024-35195 │ MEDIUM   │                     │ 2.25.1-8.el9        │               │ requests: subsequent requests to the same host ignore cert   │
 │                             │                │          │                     │                     │               │ verification                                                 │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-35195                   │
-├─────────────────────────────┼────────────────┼──────────┼─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ sqlite-libs                 │ CVE-2023-36191 │ LOW      │ will_not_fix        │ 3.34.1-7.el9_3      │               │ sqlite: CLI fault on missing -nonce                          │
+├─────────────────────────────┼────────────────┼──────────┤                     ├─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ shadow-utils                │ CVE-2024-56433 │ LOW      │                     │ 2:4.9-10.el9_5      │               │ shadow-utils: Default subordinate ID configuration in        │
+│                             │                │          │                     │                     │               │ /etc/login.defs could lead to compromise                     │
+│                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2024-56433                   │
+├─────────────────────────────┼────────────────┤          ├─────────────────────┼─────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
+│ sqlite-libs                 │ CVE-2023-36191 │          │ will_not_fix        │ 3.34.1-7.el9_3      │               │ sqlite: CLI fault on missing -nonce                          │
 │                             │                │          │                     │                     │               │ https://avd.aquasec.com/nvd/cve-2023-36191                   │
 │                             ├────────────────┤          ├─────────────────────┤                     ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2024-0232  │          │ affected            │                     │               │ sqlite: use-after-free bug in jsonParseAddNodeArray          │
