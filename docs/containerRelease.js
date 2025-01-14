@@ -164,13 +164,13 @@ fetch('release_artifacts/releases.yaml')
                   
                   baseImageCVELink.innerHTML = baseImageCVEText;
                   baseImageCVECell.appendChild(baseImageCVELink);
-                } else if (image.base_cve_error === 'Scanning Queued in Quay'){
-                  if (image.hasOwnProperty('severity_type')) {
-                    severityType = image.severity_type;
+                } else if (image['base-image'][0].hasOwnProperty('base_cve_error') && image['base-image'][0].base_cve_error === 'Scanning Queued in Quay'){
+                  if (image['base-image'][0].hasOwnProperty('severity_type')) {
+                    severityType = image['base-image'][0].severity_type;
                     if (severityType.toLowerCase() === 'quay') {
                       severityTypeClass = 'severity_type_quay';
-                      if (image.severity_link) {
-                        cveLink.href = image.severity_link;
+                      if (image['base-image'][0].severity_link) {
+                        baseImageCVELink.href = image['base-image'][0].severity_link;
                       }
                     }
                   }
@@ -178,8 +178,8 @@ fetch('release_artifacts/releases.yaml')
                   const cveText = ` <div class="${severityTypeClass}">${severityType}</div>
                                     <hr>
                                     <span>Queued</span><br>`;
-                  cveLink.innerHTML = cveText;
-                  cveCell.appendChild(cveLink);
+                  baseImageCVELink.innerHTML = cveText;
+                  baseImageCVECell.appendChild(baseImageCVELink);
                 }
               }
               releaseRow.appendChild(baseImageCVECell);
